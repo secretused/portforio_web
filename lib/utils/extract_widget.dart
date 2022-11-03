@@ -21,7 +21,6 @@ class BodySizedBox extends StatelessWidget {
 class BodyText extends StatelessWidget {
   const BodyText({
     Key? key,
-    required this.deviceHeight,
     required this.text,
     required this.color,
     required this.fontSize,
@@ -29,7 +28,6 @@ class BodyText extends StatelessWidget {
     required this.fontFamily,
   }) : super(key: key);
 
-  final double deviceHeight;
   final String text;
   final Color color;
   final double fontSize;

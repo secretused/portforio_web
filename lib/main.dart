@@ -10,7 +10,6 @@ final statusProvider = StateProvider((_) => false);
 
 void main() {
   runApp(
-    // Riverpodでデータを受け渡しが可能な状態にするために必要
     const ProviderScope(
       child: MyApp(),
     ),
@@ -31,49 +30,6 @@ class MyApp extends StatelessWidget {
       home: _MyHomePageState(),
     );
   }
-
-// Widget build(BuildContext context) => MaterialApp.router(
-//       title: 'Portfolio Web',
-//       theme: ThemeData(
-//         primarySwatch: Colors.blue,
-//       ),
-//       // Debugマークを無効
-//       debugShowCheckedModeBanner: false,
-//       // go routerの有効処理
-//       routeInformationProvider: _router.routeInformationProvider,
-//       routeInformationParser: _router.routeInformationParser,
-//       routerDelegate: _router.routerDelegate,
-//     );
-// // 遷移のRoute設計(ディレクトリもここに依存)
-// final GoRouter _router = GoRouter(
-//   routes: <GoRoute>[
-//     GoRoute(
-//       path: '/',
-//       pageBuilder: (BuildContext context, GoRouterState state) =>
-//           buildPageWithAnimation(
-//         const MyHomePage(title: ''),
-//       ),
-//       routes: <GoRoute>[
-//         GoRoute(
-//           path: 'works',
-//           pageBuilder: (BuildContext context, GoRouterState state) =>
-//               buildPageWithAnimation(
-//             const WorksPage(),
-//           ),
-//         ),
-//       ],
-//     ),
-//   ],
-// );
-// }
-
-// class MyHomePage extends StatefulWidget {
-//   const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-//   final String title;
-
-//   @override
-//   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends ConsumerWidget {
@@ -86,7 +42,12 @@ class _MyHomePageState extends ConsumerWidget {
     final _status = ref.watch(statusProvider);
 
     return Scaffold(
-      appBar: Appbar(deviceWidth: deviceWidth, appbarHeight: appbarHeight),
+      appBar: Appbar(
+        deviceWidth: deviceWidth,
+        appbarHeight: appbarHeight,
+        appbarRef: ref,
+        status: _status,
+      ),
       body: _status
           ? WorksPage(deviceHeight: deviceHeight, deviceWidth: deviceWidth)
           : AboutPage(deviceHeight: deviceHeight, deviceWidth: deviceWidth),
