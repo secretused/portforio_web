@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:photo_view/photo_view.dart';
+import 'package:go_router/go_router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'View/HomePage/works_page.dart';
+import 'View/HomePage/about_page.dart';
+import 'appbar.dart';
+
+final statusProvider = StateProvider((_) => false);
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    // Riverpodでデータを受け渡しが可能な状態にするために必要
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -17,53 +28,86 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: _MyHomePageState(),
     );
   }
+
+// Widget build(BuildContext context) => MaterialApp.router(
+//       title: 'Portfolio Web',
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       // Debugマークを無効
+//       debugShowCheckedModeBanner: false,
+//       // go routerの有効処理
+//       routeInformationProvider: _router.routeInformationProvider,
+//       routeInformationParser: _router.routeInformationParser,
+//       routerDelegate: _router.routerDelegate,
+//     );
+// // 遷移のRoute設計(ディレクトリもここに依存)
+// final GoRouter _router = GoRouter(
+//   routes: <GoRoute>[
+//     GoRoute(
+//       path: '/',
+//       pageBuilder: (BuildContext context, GoRouterState state) =>
+//           buildPageWithAnimation(
+//         const MyHomePage(title: ''),
+//       ),
+//       routes: <GoRoute>[
+//         GoRoute(
+//           path: 'works',
+//           pageBuilder: (BuildContext context, GoRouterState state) =>
+//               buildPageWithAnimation(
+//             const WorksPage(),
+//           ),
+//         ),
+//       ],
+//     ),
+//   ],
+// );
+// }
+
+// class MyHomePage extends StatefulWidget {
+//   const MyHomePage({Key? key, required this.title}) : super(key: key);
+
+//   final String title;
+
+//   @override
+//   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
-
+class _MyHomePageState extends ConsumerWidget {
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
     var appbarHeight = AppBar().preferredSize.height;
+
+    final _status = ref.watch(statusProvider);
+
     return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 100,
-        backgroundColor: Colors.white,
-        title: Row(
-          children: [
-            SizedBox(
-              width: deviceWidth * 0.1,
-              height: appbarHeight,
-              child: PhotoView(
-                imageProvider:
-                    const NetworkImage("https://i.imgur.com/l8QfHVb.jpg"),
-              ),
-            ),
-            Text(
-              "ABOUT",
-              style: TextStyle(),
-            )
-          ],
-        ),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[],
-        ),
-      ),
+      appBar: Appbar(deviceWidth: deviceWidth, appbarHeight: appbarHeight),
+      body: _status
+          ? WorksPage(deviceHeight: deviceHeight, deviceWidth: deviceWidth)
+          : AboutPage(deviceHeight: deviceHeight, deviceWidth: deviceWidth),
     );
   }
+}
+
+// Fade Navigation Animation
+CustomTransitionPage<void> buildPageWithAnimation(Widget page) {
+  return CustomTransitionPage<void>(
+    child: page,
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      const double begin = 0.0;
+      const double end = 1.0;
+      final Animatable<double> tween = Tween(begin: begin, end: end)
+          .chain(CurveTween(curve: Curves.easeInOut));
+      final Animation<double> doubleAnimation = animation.drive(tween);
+      return FadeTransition(
+        opacity: doubleAnimation,
+        child: child,
+      );
+    },
+  );
 }
