@@ -42,7 +42,8 @@ class BodyText extends StatelessWidget {
           color: color,
           fontSize: fontSize,
           fontFamily: fontFamily,
-          fontWeight: fontWeight),
+          fontWeight: fontWeight,
+          height: 1),
     );
   }
 }
