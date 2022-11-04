@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:card_swiper/card_swiper.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
-import '../../utils/extract_widget.dart';
+import '../../utils/works_widget.dart';
 
 class WorksPage extends StatelessWidget {
   const WorksPage({
@@ -14,69 +16,70 @@ class WorksPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: <Widget>[
-          Stack(
-            children: [
-              Container(
-                color: const Color(0xFF89C997),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    BodyText(
-                      text: '1',
-                      color: Colors.white,
-                      fontSize: deviceHeight * 0.1,
-                      fontFamily: '',
-                      fontWeight: FontWeight.bold,
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(
-                          top: deviceHeight * 0.05,
-                          bottom: deviceHeight * 0.05),
-                      child: SizedBox(
-                        height: deviceHeight * 0.6,
-                        child: Image.network(
-                          "https://i.imgur.com/q8j8c1i.png",
-                        ),
-                      ),
-                    ),
-                    BodySizedBox(targetSize: deviceWidth, value: 0.1),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        BodyText(
-                          text: '男性限定 生理管理アプリ',
-                          color: Colors.white,
-                          fontSize: deviceHeight * 0.03,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: '',
-                        ),
-                        BodyText(
-                          text: 'TOMONY',
-                          color: Colors.white,
-                          fontSize: deviceHeight * 0.1,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: '',
-                        ),
-                        BodyText(
-                          text: '2022 UIUX Design App',
-                          color: Colors.white,
-                          fontSize: deviceHeight * 0.03,
-                          fontWeight: FontWeight.normal,
-                          fontFamily: '',
-                        ),
-                        BodySizedBox(targetSize: deviceHeight, value: 0.01),
-                      ],
-                    )
-                  ],
-                ),
-              ),
-            ],
-          )
-        ],
+    // Works List
+    final worksItems = <Widget>[
+      WorksContent(
+        deviceHeight: deviceHeight,
+        deviceWidth: deviceWidth,
+        indexNumber: '01',
+        imagePath: 'https://i.imgur.com/q8j8c1i.png',
+        catchPhrase: '男性限定 生理質問アプリ',
+        title: 'TOMONY',
+        worksGenre: '2022 UIUX Design App',
+      ),
+      WorksContent(
+        deviceHeight: deviceHeight,
+        deviceWidth: deviceWidth,
+        indexNumber: '02',
+        imagePath: 'https://i.imgur.com/q8j8c1i.png',
+        catchPhrase: '男性限定 生理質問アプリ',
+        title: 'TOMONY',
+        worksGenre: '2022 UIUX Design App',
+      ),
+      WorksContent(
+        deviceHeight: deviceHeight,
+        deviceWidth: deviceWidth,
+        indexNumber: '03',
+        imagePath: 'https://i.imgur.com/q8j8c1i.png',
+        catchPhrase: '男性限定 生理質問アプリ',
+        title: 'TOMONY',
+        worksGenre: '2022 UIUX Design App',
+      ),
+      WorksContent(
+        deviceHeight: deviceHeight,
+        deviceWidth: deviceWidth,
+        indexNumber: '04',
+        imagePath: 'https://i.imgur.com/q8j8c1i.png',
+        catchPhrase: '男性限定 生理質問アプリ',
+        title: 'TOMONY',
+        worksGenre: '2022 UIUX Design App',
+      ),
+    ];
+
+    return Container(
+      color: Colors.white,
+      child: Center(
+        // child: CarouselSlider(
+        //   items: worksItems,
+        //   options: CarouselOptions(
+        //     // autoPlay: true,
+        //     autoPlayInterval: const Duration(seconds: 2),
+        //     viewportFraction: 1,
+        //     enlargeCenterPage: true,
+        //   ),
+        // ),
+        child: Padding(
+          padding: EdgeInsets.only(bottom: deviceHeight * 0.03),
+          child: Swiper(
+            itemCount: worksItems.length,
+            itemBuilder: (context, index) {
+              return worksItems[index];
+            },
+            pagination: SwiperPagination(
+                margin: EdgeInsets.only(bottom: deviceHeight * 0.05)),
+            // autoplay: true,
+          ),
+        ),
       ),
     );
   }
