@@ -2,37 +2,78 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'View/HomePage/works_page.dart';
+import 'utils/appbar.dart';
 import 'View/HomePage/about_page.dart';
-import 'appbar.dart';
+import 'View/HomePage/works_page.dart';
+
+import 'package:portfolio_web/View/Works/tomony_page.dart';
+import 'View/Works/shusseki_page.dart';
+import 'View/Works/pochipochi_page.dart';
+import 'View/Works/otherworks.dart';
 
 final statusProvider = StateProvider((_) => false);
 
 void main() {
   runApp(
-    const ProviderScope(
+    ProviderScope(
       child: MyApp(),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+  MyApp({Key? key}) : super(key: key);
+
+  Widget build(BuildContext context) => MaterialApp.router(
+        title: 'Portfolio Web',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        // Debugマークを無効
+        debugShowCheckedModeBanner: false,
+        // go routerの有効処理
+        routeInformationProvider: _router.routeInformationProvider,
+        routeInformationParser: _router.routeInformationParser,
+        routerDelegate: _router.routerDelegate,
+      );
+  // 遷移のRoute設計(ディレクトリもここに依存)
+  final GoRouter _router = GoRouter(
+    routes: <GoRoute>[
+      GoRoute(
+        path: '/',
+        pageBuilder: (BuildContext context, GoRouterState state) =>
+            buildPageWithAnimation(
+          _MyHomePage(),
+        ),
+        routes: <GoRoute>[
+          GoRoute(
+            path: 'tomony',
+            pageBuilder: (BuildContext context, GoRouterState state) =>
+                buildPageWithAnimation(Tomony()),
+          ),
+          GoRoute(
+            path: 'shusseki',
+            pageBuilder: (BuildContext context, GoRouterState state) =>
+                buildPageWithAnimation(const Shusseki()),
+          ),
+          GoRoute(
+            path: 'pochipochi',
+            pageBuilder: (BuildContext context, GoRouterState state) =>
+                buildPageWithAnimation(const Pochipochi()),
+          ),
+          GoRoute(
+            path: 'otherWorks',
+            pageBuilder: (BuildContext context, GoRouterState state) =>
+                buildPageWithAnimation(const OtherWorks()),
+          ),
+        ],
       ),
-      debugShowCheckedModeBanner: false,
-      home: _MyHomePageState(),
-    );
-  }
+    ],
+  );
 }
 
-class _MyHomePageState extends ConsumerWidget {
+class _MyHomePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceWidth = MediaQuery.of(context).size.width;
@@ -49,8 +90,16 @@ class _MyHomePageState extends ConsumerWidget {
         status: _status,
       ),
       body: _status
-          ? WorksPage(deviceHeight: deviceHeight, deviceWidth: deviceWidth)
-          : AboutPage(deviceHeight: deviceHeight, deviceWidth: deviceWidth),
+          ? WorksPage(
+              deviceHeight: deviceHeight,
+              deviceWidth: deviceWidth,
+              worksRef: ref,
+            )
+          : AboutPage(
+              deviceHeight: deviceHeight,
+              deviceWidth: deviceWidth,
+              appbarHeight: appbarHeight,
+            ),
     );
   }
 }
