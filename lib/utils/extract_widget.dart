@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BodySizedBox extends StatelessWidget {
-  const BodySizedBox({
+class WidthSizedBox extends StatelessWidget {
+  const WidthSizedBox({
     Key? key,
     required this.targetSize,
     required this.value,
@@ -14,6 +14,24 @@ class BodySizedBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: targetSize * value,
+    );
+  }
+}
+
+class HeightSizedBox extends StatelessWidget {
+  const HeightSizedBox({
+    Key? key,
+    required this.targetSize,
+    required this.value,
+  }) : super(key: key);
+
+  final double targetSize;
+  final double value;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: targetSize * value,
     );
   }
 }
@@ -38,12 +56,13 @@ class BodyText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
+      textAlign: TextAlign.center,
       style: TextStyle(
           color: color,
           fontSize: fontSize,
           fontFamily: fontFamily,
           fontWeight: fontWeight,
-          height: 1),
+          height: 1.1),
     );
   }
 }
