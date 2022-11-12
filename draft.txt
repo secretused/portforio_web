@@ -1,0 +1,122 @@
+Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        // 制作プロセス
+                        Padding(
+                          padding: EdgeInsets.only(bottom: deviceHeight * 0.01),
+                          child: SmallTitleUnderline(
+                            deviceHeight: deviceHeight,
+                            deviceWidth: deviceWidth,
+                            smallTitle: '制作プロセス',
+                            sizeValue: 0.03,
+                            lineLength: deviceWidth * 0.23,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: deviceWidth * 0.003),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              ProcessTopic(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                circleColor:
+                                    const Color.fromRGBO(151, 151, 151, 0.498),
+                                process: '問題提起・課題前仮説立案',
+                                eventColor: const Color.fromRGBO(0, 0, 0, 0.5),
+                              ),
+                              VerticalBorderLine(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                heightPadding: 0,
+                                heightValue: 0.01,
+                              ),
+                              ProcessDetail(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                circleColor:
+                                    const Color.fromRGBO(151, 151, 151, 0.498),
+                                process: 'リサーチ・インタビュー',
+                                detail: '具体的なエピソードから本質的価値を見つけた',
+                                eventColor: const Color.fromRGBO(0, 0, 0, 0.5),
+                              ),
+                              VerticalBorderLine(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                heightPadding: 0.01,
+                                heightValue: 0.01,
+                              ),
+                              ProcessTopic(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                circleColor:
+                                    const Color.fromRGBO(151, 151, 151, 0.498),
+                                process: '課題抽出・課題後仮説立案',
+                                eventColor: const Color.fromRGBO(0, 0, 0, 0.5),
+                              ),
+                              VerticalBorderLine(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                heightPadding: 0,
+                                heightValue: 0.01,
+                              ),
+                              ProcessDetail(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                circleColor:
+                                    const Color.fromRGBO(151, 151, 151, 0.498),
+                                process: 'コンセプト設定',
+                                detail: '課題後の仮説からコンセプトを設定',
+                                eventColor: const Color.fromRGBO(0, 0, 0, 0.5),
+                              ),
+                              VerticalBorderLine(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                heightPadding: 0.01,
+                                heightValue: 0.01,
+                              ),
+                              ProcessDetail(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                circleColor:
+                                    const Color.fromRGBO(151, 151, 151, 0.498),
+                                process: '要件定義・機能設計',
+                                detail: '直接的な問題解決以外だけではない設計',
+                                eventColor: const Color.fromRGBO(0, 0, 0, 0.5),
+                              ),
+                              VerticalBorderLine(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                heightPadding: 0.01,
+                                heightValue: 0.01,
+                              ),
+                              ProcessTopic(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                circleColor:
+                                    const Color.fromRGBO(151, 151, 151, 0.498),
+                                process: 'UI設計',
+                                eventColor: const Color.fromRGBO(0, 0, 0, 0.5),
+                              ),
+                              VerticalBorderLine(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                heightPadding: 0,
+                                heightValue: 0.01,
+                              ),
+                              ProcessDetail(
+                                deviceHeight: deviceHeight,
+                                deviceWidth: deviceWidth,
+                                circleColor:
+                                    const Color.fromRGBO(151, 151, 151, 0.498),
+                                process: 'ブラッシュアップ',
+                                detail: 'アプリ化への構想',
+                                eventColor: const Color.fromRGBO(0, 0, 0, 0.5),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
