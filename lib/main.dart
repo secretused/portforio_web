@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'utils/appbar.dart';
+import 'utils/Appbar_Widget/appbar.dart';
 import 'View/HomePage/about_page.dart';
 import 'View/HomePage/works_page.dart';
 
@@ -99,6 +99,8 @@ class _MyHomePage extends ConsumerWidget {
               deviceHeight: deviceHeight,
               deviceWidth: deviceWidth,
               appbarHeight: appbarHeight,
+              aboutRef: ref,
+              status: _status,
             ),
     );
   }

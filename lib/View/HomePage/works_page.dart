@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../utils/works_widget.dart';
+import '../../utils/Works_Widget/works_widget.dart';
 
 class WorksPage extends StatelessWidget {
   const WorksPage({
@@ -25,9 +25,12 @@ class WorksPage extends StatelessWidget {
         deviceHeight: deviceHeight,
         deviceWidth: deviceWidth,
         indexNumber: '01',
-        imagePath: 'https://i.imgur.com/q8j8c1i.png',
-        catchPhrase: '男性限定 生理質問アプリ',
+        topicColor: const Color(0xFF87C495),
+        imagePath: 'https://i.imgur.com/R58XrDL.png',
+        catchPhrase: '生理中のパートナーのお悩み質問',
         title: 'TOMONY',
+        paddingLeft: 0.35,
+        imagePadding: 0.1,
         navigationPath: '/tomony',
         worksRef: worksRef,
       ),
@@ -35,9 +38,12 @@ class WorksPage extends StatelessWidget {
         deviceHeight: deviceHeight,
         deviceWidth: deviceWidth,
         indexNumber: '02',
-        imagePath: 'https://i.imgur.com/q8j8c1i.png',
+        topicColor: const Color(0xFF379BA5),
+        imagePath: 'https://i.imgur.com/rV2dMha.png',
         catchPhrase: 'QRコードで簡単入館',
         title: 'シュッ席',
+        paddingLeft: 0.35,
+        imagePadding: 0.1,
         navigationPath: '/shusseki',
         worksRef: worksRef,
       ),
@@ -45,9 +51,12 @@ class WorksPage extends StatelessWidget {
         deviceHeight: deviceHeight,
         deviceWidth: deviceWidth,
         indexNumber: '03',
-        imagePath: 'https://i.imgur.com/q8j8c1i.png',
+        topicColor: const Color(0xFFEBAA14),
+        imagePath: 'https://i.imgur.com/Mr0yQax.png',
         catchPhrase: '長く使える幼児向け録音アプリ',
         title: 'ぽちぽち',
+        paddingLeft: 0.35,
+        imagePadding: 0.1,
         navigationPath: '/pochipochi',
         worksRef: worksRef,
       ),
@@ -55,9 +64,12 @@ class WorksPage extends StatelessWidget {
         deviceHeight: deviceHeight,
         deviceWidth: deviceWidth,
         indexNumber: '04',
-        imagePath: 'https://i.imgur.com/q8j8c1i.png',
+        topicColor: const Color(0xFFCBCBCB),
+        imagePath: 'https://i.imgur.com/g0RSo7d.png',
         catchPhrase: 'その他',
         title: 'OtherWorks',
+        paddingLeft: 0.28,
+        imagePadding: 0.01,
         navigationPath: '/otherWorks',
         worksRef: worksRef,
       ),
