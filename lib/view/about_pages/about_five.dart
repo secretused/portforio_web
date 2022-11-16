@@ -4,8 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../utils/AboutWidget/about_widget.dart';
 import '../../utils/extract_widget.dart';
 
-final _hoverProvider = StateProvider((_) => false);
-
 class AboutFive extends ConsumerWidget {
   const AboutFive({
     Key? key,
@@ -15,9 +13,6 @@ class AboutFive extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
-    var appbarHeight = AppBar().preferredSize.height;
-
-    // final bool _status = ref.watch(_statusProvider);
 
     return Container(
       color: Colors.white,
@@ -78,11 +73,10 @@ class AboutFive extends ConsumerWidget {
                 ),
               ),
               HeightSizedBox(targetSize: deviceHeight, value: 0.075),
-              // WorksNavigationButton(
-              //   buttonText: 'View More',
-              //   sizeValue: 0.02,
-              //   status: _status,
-              // ),
+              const WorksNavigationButton(
+                buttonText: 'View More',
+                sizeValue: 0.02,
+              ),
             ],
           ),
         ],

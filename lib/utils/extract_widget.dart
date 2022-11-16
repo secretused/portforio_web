@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'dart:html' as html;
 
+import '../provider/provider.dart';
+
 // 余白(Width)
 class WidthSizedBox extends StatelessWidget {
   const WidthSizedBox({
@@ -140,10 +142,7 @@ class TextButtonWidget extends StatelessWidget {
 }
 
 // アイコンボタン
-final _statusProvider = StateProvider((_) => false);
-final _iconNameProvider = StateProvider((_) => "");
-
-class IconButtonWidget extends StatelessWidget {
+class IconButtonWidget extends ConsumerWidget {
   const IconButtonWidget({
     Key? key,
     required this.link,
@@ -156,17 +155,52 @@ class IconButtonWidget extends StatelessWidget {
   final String path;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    var deviceHeight = MediaQuery.of(context).size.height;
+
+    final String _imagePath = ref.watch(imagePathProvider);
+    final bool _iconButtonProviderStatus = ref.watch(iconButtonProvider);
+
     return MouseRegion(
+      onEnter: (_) => _iconEnter(ref, path),
+      onExit: (_) => _iconExit(ref),
       child: GestureDetector(
         onTap: () => html.window.open(link, ''),
-        child: ImageWidget(
-          heightValue: heightValue,
-          widthValue: 0,
-          imagePath: path,
+        child: Container(
+          height: deviceHeight * 0.06,
+          decoration: BoxDecoration(
+            color: Colors.transparent,
+            borderRadius: BorderRadius.circular(180),
+            boxShadow: [
+              BoxShadow(
+                color: (_imagePath == path && _iconButtonProviderStatus)
+                    ? const Color.fromRGBO(151, 151, 151, 0.3)
+                    : Colors.transparent,
+                spreadRadius: 1,
+                blurRadius: 5,
+                offset: const Offset(0, 0),
+              ),
+            ],
+          ),
+          child: ImageWidget(
+            heightValue: (_imagePath == path && _iconButtonProviderStatus)
+                ? heightValue
+                : heightValue,
+            widthValue: 0,
+            imagePath: path,
+          ),
         ),
       ),
     );
+  }
+
+  void _iconEnter(WidgetRef ref, String imagePath) {
+    ref.read(imagePathProvider.notifier).update((state) => imagePath);
+    ref.read(iconButtonProvider.notifier).update((state) => true);
+  }
+
+  void _iconExit(WidgetRef ref) {
+    ref.read(iconButtonProvider.notifier).update((state) => false);
   }
 }
 
