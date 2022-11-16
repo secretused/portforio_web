@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../provider/provider.dart';
 import '../extract_widget.dart';
 
 // 小タイトル
@@ -387,9 +388,6 @@ class MyHistoryTopic extends StatelessWidget {
 }
 
 // Works 目次トピック
-final _statusProvider = StateProvider((_) => false);
-final appNameProvider = StateProvider((_) => "");
-
 class WorksTopicContents extends ConsumerWidget {
   const WorksTopicContents({
     Key? key,
@@ -417,7 +415,8 @@ class WorksTopicContents extends ConsumerWidget {
     var deviceHeight = MediaQuery.of(context).size.height;
 
     final String _appName = ref.watch(appNameProvider);
-    final bool _status = ref.watch(_statusProvider);
+    final bool _worksTopicContentsProviderStatus =
+        ref.watch(worksTopicContentsProvider);
 
     return Column(
       children: [
@@ -429,27 +428,34 @@ class WorksTopicContents extends ConsumerWidget {
           fontFamily: "源ノ角ゴシック VF",
         ),
         WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-        Container(
-          decoration: BoxDecoration(
-            color: topicColor,
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: SizedBox(
-            height: deviceHeight * 0.25,
-            width: deviceHeight * 0.25,
-            child: Padding(
-              padding: EdgeInsets.all(
-                deviceHeight * 0.03,
+        MouseRegion(
+          onEnter: (_) => _worksEnter(ref, appName),
+          onExit: (_) => _worksExit(ref),
+          child: GestureDetector(
+            onTap: () => GoRouter.of(context).go(path),
+            child: Container(
+              decoration: BoxDecoration(
+                color: topicColor,
+                borderRadius: BorderRadius.circular(10),
               ),
-              child: Image.network(
-                imagePath,
+              child: SizedBox(
+                height: deviceHeight * 0.25,
+                width: deviceHeight * 0.25,
+                child: Padding(
+                  padding: EdgeInsets.all(
+                    deviceHeight * 0.03,
+                  ),
+                  child: Image.network(
+                    imagePath,
+                  ),
+                ),
               ),
             ),
           ),
         ),
         HeightSizedBox(targetSize: deviceHeight, value: 0.02),
         MouseRegion(
-          onEnter: (_) => _worksEnter(ref),
+          onEnter: (_) => _worksEnter(ref, appName),
           onExit: (_) => _worksExit(ref),
           child: GestureDetector(
             onTap: () => GoRouter.of(context).go(path),
@@ -457,9 +463,10 @@ class WorksTopicContents extends ConsumerWidget {
               children: [
                 BodyText(
                   text: appName,
-                  color: (_appName == appName && _status)
-                      ? topicColor
-                      : const Color.fromRGBO(0, 0, 0, 0.8),
+                  color:
+                      (_appName == appName && _worksTopicContentsProviderStatus)
+                          ? topicColor
+                          : const Color.fromRGBO(0, 0, 0, 0.8),
                   fontSize: deviceHeight * 0.05,
                   fontWeight: FontWeight.bold,
                   fontFamily: "源ノ角ゴシック VF",
@@ -467,9 +474,10 @@ class WorksTopicContents extends ConsumerWidget {
                 HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                 BodyText(
                   text: appDisc,
-                  color: (_appName == appName && _status)
-                      ? topicColor
-                      : const Color.fromRGBO(151, 151, 151, 1),
+                  color:
+                      (_appName == appName && _worksTopicContentsProviderStatus)
+                          ? topicColor
+                          : const Color.fromRGBO(151, 151, 151, 1),
                   fontSize: deviceHeight * 0.02,
                   fontWeight: FontWeight.bold,
                   fontFamily: "源ノ角ゴシック VF",
@@ -482,12 +490,13 @@ class WorksTopicContents extends ConsumerWidget {
     );
   }
 
-  void _worksEnter(WidgetRef ref) {
+  void _worksEnter(WidgetRef ref, String appName) {
     ref.read(appNameProvider.notifier).update((state) => appName);
+    ref.read(worksTopicContentsProvider.notifier).update((state) => true);
   }
 
   void _worksExit(WidgetRef ref) {
-    ref.read(_statusProvider.notifier).update((state) => false);
+    ref.read(worksTopicContentsProvider.notifier).update((state) => false);
   }
 }
 
@@ -495,15 +504,12 @@ class WorksTopicContents extends ConsumerWidget {
 class WorksNavigationButton extends ConsumerWidget {
   const WorksNavigationButton({
     Key? key,
-    required this.status,
     required this.buttonText,
     required this.sizeValue,
   }) : super(key: key);
 
   final String buttonText;
   final double sizeValue;
-
-  final bool status;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -531,11 +537,7 @@ class WorksNavigationButton extends ConsumerWidget {
           borderRadius: BorderRadius.circular(10),
         ),
       ),
-      onPressed: () {
-        if (status == false) {
-          ref.read(_statusProvider.notifier).update((state) => !status);
-        }
-      },
+      onPressed: () => GoRouter.of(context).go("/works"),
     );
   }
 }

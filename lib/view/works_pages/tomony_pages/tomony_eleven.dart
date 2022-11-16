@@ -5,12 +5,9 @@ import 'dart:html' as html;
 import '../../../utils/AboutWidget/about_widget.dart';
 import '../../../utils/extract_widget.dart';
 
-final _statusProvider = StateProvider((_) => false);
-final _iconNameProvider = StateProvider((_) => "");
-
-const String _notion_url =
+const String _notionUrl =
     "https://trusting-syzygy-7c5.notion.site/TOMONY-e374bb2f78464931b715b667f2cd13b3";
-const String _figma_url =
+const String _figmaUrl =
     "https://www.figma.com/file/uQf8EItAZKndlzsWlKgxeA/%E7%94%9F%E7%90%86%E8%B3%AA%E5%95%8F%E3%82%A2%E3%83%97%E3%83%AA-UI?node-id=0%3A1&t=TAFCb0xpwiuxJCZy-1";
 
 class TomonyEleven extends ConsumerWidget {
@@ -22,9 +19,6 @@ class TomonyEleven extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
-    var appbarHeight = AppBar().preferredSize.height;
-
-    final bool _status = ref.watch(_statusProvider);
 
     return Container(
       color: Colors.white,
@@ -147,30 +141,23 @@ class TomonyEleven extends ConsumerWidget {
                     HeightSizedBox(targetSize: deviceHeight, value: 0.1),
                     Row(
                       children: [
-                        GestureDetector(
-                          onTap: () => html.window.open(_notion_url, ''),
-                          child: const ImageWidget(
-                            heightValue: 0.05,
-                            widthValue: 0,
-                            imagePath: "https://i.imgur.com/mzA6IxP.png",
-                          ),
+                        const IconButtonWidget(
+                          heightValue: 0.05,
+                          link: _notionUrl,
+                          path: 'https://i.imgur.com/mzA6IxP.png',
                         ),
                         WidthSizedBox(targetSize: deviceWidth, value: 0.03),
-                        GestureDetector(
-                          onTap: () => html.window.open(_figma_url, ''),
-                          child: const ImageWidget(
-                            heightValue: 0.05,
-                            widthValue: 0,
-                            imagePath: "https://i.imgur.com/uZTvT8k.png",
-                          ),
+                        const IconButtonWidget(
+                          heightValue: 0.05,
+                          link: _figmaUrl,
+                          path: 'https://i.imgur.com/uZTvT8k.png',
                         ),
                       ],
                     ),
                     HeightSizedBox(targetSize: deviceWidth, value: 0.03),
-                    WorksNavigationButton(
+                    const WorksNavigationButton(
                       buttonText: 'View More',
                       sizeValue: 0.02,
-                      status: _status,
                     ),
                   ],
                 ),

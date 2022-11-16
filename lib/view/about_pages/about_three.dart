@@ -301,7 +301,7 @@ class AboutThree extends StatelessWidget {
                       MyHistoryTopic(
                         circleColor: Color.fromRGBO(3, 144, 126, 1),
                         time: '2022.7',
-                        event: 'エヌ次元株式会社 アルバイト 入社',
+                        event: 'エヌ次元株式会社 アルバイト 入社(PM補佐)',
                         eventColor: Color.fromRGBO(0, 0, 0, 0.8),
                       ),
                     ],

@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../provider/provider.dart';
 import 'about_widget.dart';
 import '../extract_widget.dart';
-
-final _statusProvider = StateProvider((_) => false);
 
 // WorksTopicWidget
 class WorksTopic extends ConsumerWidget {
@@ -35,7 +34,7 @@ class WorksTopic extends ConsumerWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
 
-    final bool _status = ref.watch(_statusProvider);
+    final bool _worksTopicProviderStatus = ref.watch(worksTopicProvider);
 
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -104,8 +103,8 @@ class WorksTopic extends ConsumerWidget {
                 onExit: (_) => statusExit(ref),
                 child: SizedBox(
                   child: Container(
-                    color: _status
-                        ? const Color.fromRGBO(158, 158, 158, 0.3)
+                    color: _worksTopicProviderStatus
+                        ? const Color.fromRGBO(151, 151, 151, 0.15)
                         : Colors.transparent,
                   ),
                   width: deviceWidth * 0.55,
@@ -120,11 +119,11 @@ class WorksTopic extends ConsumerWidget {
   }
 
   void statusEnter(WidgetRef ref) {
-    ref.read(_statusProvider.notifier).update((state) => true);
+    ref.read(worksTopicProvider.notifier).update((state) => true);
   }
 
   void statusExit(WidgetRef ref) {
-    ref.read(_statusProvider.notifier).update((state) => false);
+    ref.read(worksTopicProvider.notifier).update((state) => false);
   }
 }
 
@@ -256,6 +255,7 @@ class ProcessDetail extends StatelessWidget {
   }
 }
 
+//
 class VerticalLine extends StatelessWidget {
   const VerticalLine({
     Key? key,

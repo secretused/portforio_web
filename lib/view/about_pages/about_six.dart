@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'dart:html' as html;
 
 import '../../utils/extract_widget.dart';
-
-const String _twitter_url = "https://twitter.com/uta_app_vta";
-const String _github_url = "https://github.com/secretused";
-const String _qiita_url = "https://qiita.com/utasan_com";
 
 class AboutSix extends ConsumerWidget {
   const AboutSix({
@@ -17,6 +12,12 @@ class AboutSix extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
+
+    const String _twitteUrl = "https://twitter.com/uta_app_vta";
+    const String _githubUrl = "https://github.com/secretused";
+    const String _qiitaUrl = "https://qiita.com/utasan_com";
+
+    final double _paddingSize = deviceHeight * 0.075 - deviceHeight * 0.05;
 
     return Container(
       color: Colors.white,
@@ -35,24 +36,23 @@ class AboutSix extends ConsumerWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: "Bebas Neue",
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.005),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const IconButtonWidget(
-                    link: _twitter_url,
+                    link: _twitteUrl,
                     heightValue: 0.05,
-                    path: "https://i.imgur.com/h1llIxv.png",
+                    path: "https://i.imgur.com/Bcr11yX.png",
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                   const IconButtonWidget(
-                    link: _github_url,
+                    link: _githubUrl,
                     heightValue: 0.05,
-                    path: "https://i.imgur.com/h1llIxv.png",
+                    path: "https://i.imgur.com/nuHWZ8T.png",
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                   const IconButtonWidget(
-                    link: _qiita_url,
+                    link: _qiitaUrl,
                     heightValue: 0.05,
                     path: "https://i.imgur.com/6XzxBQS.png",
                   ),
