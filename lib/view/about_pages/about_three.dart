@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/AboutWidget/about_widget.dart';
+import '../../utils/project_widget/about_widget.dart';
 import '../../utils/extract_widget.dart';
 
 class AboutThree extends StatelessWidget {

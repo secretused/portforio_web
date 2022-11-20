@@ -5,7 +5,11 @@ import 'package:go_router/go_router.dart';
 import '../../utils/extract_widget.dart';
 
 class CustomAppbar extends ConsumerWidget {
-  const CustomAppbar({Key? key}) : super(key: key);
+  const CustomAppbar({
+    Key? key,
+    required this.backgroundColor,
+  }) : super(key: key);
+  final Color backgroundColor;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -23,7 +27,10 @@ class CustomAppbar extends ConsumerWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            AppbarIcon(appbarHeight: appbarHeight),
+            AppbarIcon(
+              appbarHeight: appbarHeight,
+              backgroundColor: backgroundColor,
+            ),
             Row(
               children: [
                 TextButtonWidget(
@@ -57,9 +64,11 @@ class AppbarIcon extends StatelessWidget {
   const AppbarIcon({
     Key? key,
     required this.appbarHeight,
+    required this.backgroundColor,
   }) : super(key: key);
 
   final double appbarHeight;
+  final Color backgroundColor;
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +93,7 @@ class AppbarIcon extends StatelessWidget {
               fontSize: appbarHeight * 0.4,
             ),
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromRGBO(3, 144, 126, 1),
+              backgroundColor: backgroundColor,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(180),
               ),

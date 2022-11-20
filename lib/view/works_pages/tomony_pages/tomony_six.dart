@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../utils/extract_widget.dart';
-import '../../../../utils/AboutWidget/works_widget.dart';
+import '../../../utils/project_widget/works_widget.dart';
 
 // ペルソナ・課題発見後の仮説
 class TomonySix extends StatelessWidget {
@@ -381,7 +381,7 @@ class TomonySix extends StatelessWidget {
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                             BodyText(
-                              text: "＞",
+                              text: "=",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.03,
                               fontWeight: FontWeight.bold,

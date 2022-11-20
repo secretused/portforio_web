@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'dart:html' as html;
 
-import '../../../utils/AboutWidget/about_widget.dart';
+import '../../../utils/project_widget/about_widget.dart';
 import '../../../utils/extract_widget.dart';
 
 const String _notionUrl =
@@ -88,7 +88,7 @@ class TomonyEleven extends ConsumerWidget {
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
                             BodyText(
-                              text: "課題を立てるだけで終わらず、常に結果に疑問を抱き続けれた",
+                              text: "課題を立てるだけで終わらず、常に結果に疑問を抱き続けれました。",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
@@ -128,7 +128,7 @@ class TomonyEleven extends ConsumerWidget {
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
                             BodyText(
-                              text: "プロジェクトを回すことをさらに追求できるようにしたい",
+                              text: "プロジェクトを回すことをさらに追求できるようにしたいです。",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,

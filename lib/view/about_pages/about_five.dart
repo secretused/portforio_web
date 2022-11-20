@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../utils/AboutWidget/about_widget.dart';
+import '../../utils/project_widget/about_widget.dart';
 import '../../utils/extract_widget.dart';
 
 class AboutFive extends ConsumerWidget {
@@ -42,6 +42,7 @@ class AboutFive extends ConsumerWidget {
                       topicColor: Color(0xFF87C495),
                       imagePath: 'https://i.imgur.com/R58XrDL.png',
                       appName: 'Tomony',
+                      fontName: "Arial Black",
                       appDisc: '生理中のパートナーのお悩み質問',
                       path: '/tomony',
                     ),
@@ -50,15 +51,17 @@ class AboutFive extends ConsumerWidget {
                       topicColor: Color(0xFF379BA5),
                       imagePath: 'https://i.imgur.com/rV2dMha.png',
                       appName: 'シュッ席',
+                      fontName: "Arial Black",
                       appDisc: 'QRコードで簡単入館',
                       path: '/shusseki',
                     ),
                     WorksTopicContents(
                       index: '03',
                       topicColor: Color(0xFFEBAA14),
-                      imagePath: 'https://i.imgur.com/Mr0yQax.png',
+                      imagePath: 'https://i.imgur.com/jNFOx30.png',
                       appName: 'ぽちぽち',
-                      appDisc: '長く使える幼児向け録音アプリ',
+                      fontName: "しあさって",
+                      appDisc: '長く使える幼児向け音声再生アプリ',
                       path: '/pochipochi',
                     ),
                     WorksTopicContents(
@@ -66,6 +69,7 @@ class AboutFive extends ConsumerWidget {
                       topicColor: Color(0xFFCBCBCB),
                       imagePath: 'https://i.imgur.com/POd7NXF.png',
                       appName: 'その他',
+                      fontName: "Potta One",
                       appDisc: 'OtherWorks',
                       path: '/otherWorks',
                     ),

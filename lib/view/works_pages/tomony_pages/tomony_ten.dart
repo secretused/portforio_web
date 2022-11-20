@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../utils/extract_widget.dart';
+import '../../../utils/project_widget/works_widget.dart';
 
 // デザイン・トンマナ
 class TomonyTen extends StatelessWidget {
@@ -60,7 +61,7 @@ class TomonyTen extends StatelessWidget {
                               padding:
                                   EdgeInsets.only(left: deviceWidth * 0.02),
                               child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   BodyText(
                                     text: "TOMONY",
@@ -105,22 +106,24 @@ class TomonyTen extends StatelessWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            Column(
+                            Row(
                               crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 const ImageWidget(
                                   heightValue: 0.15,
                                   widthValue: 0,
                                   imagePath: "https://i.imgur.com/9gP3MSM.png",
                                 ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.01),
-                                BodyText(
-                                  text: "寄り添い合い、抱擁感のあるイメージ",
+                                WidthSizedBox(
+                                    targetSize: deviceWidth, value: 0.01),
+                                LongText(
+                                  text: "寄り添い合い\n抱擁感のあるイメージ",
                                   color: const Color.fromRGBO(0, 0, 0, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
                                   fontFamily: "Noto Sans JP",
+                                  textAlign: TextAlign.start,
                                 ),
                               ],
                             ),
@@ -152,107 +155,21 @@ class TomonyTen extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Row(
-                                    children: [
-                                      Container(
-                                        width: deviceHeight * 0.06,
-                                        height: deviceHeight * 0.06,
-                                        decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(180),
-                                          boxShadow: const [
-                                            BoxShadow(
-                                              color: Color.fromRGBO(
-                                                  151, 151, 151, 0.3), //色
-                                              spreadRadius: 1,
-                                              blurRadius: 5,
-                                              offset: Offset(-3, 3),
-                                            ),
-                                          ],
-                                          color: const Color(0xFF87C495),
-                                        ),
-                                      ),
-                                      WidthSizedBox(
-                                          targetSize: deviceWidth, value: 0.01),
-                                      Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          BodyText(
-                                            text: "#89C997",
-                                            color: const Color.fromRGBO(
-                                                0, 0, 0, 0.8),
-                                            fontSize: deviceHeight * 0.02,
-                                            fontWeight: FontWeight.normal,
-                                            fontFamily: "Noto Sans JP",
-                                          ),
-                                          HeightSizedBox(
-                                              targetSize: deviceHeight,
-                                              value: 0.01),
-                                          BodyText(
-                                            text: "R: 135　G: 196　B: 149",
-                                            color: const Color.fromRGBO(
-                                                0, 0, 0, 0.8),
-                                            fontSize: deviceHeight * 0.02,
-                                            fontWeight: FontWeight.normal,
-                                            fontFamily: "Noto Sans JP",
-                                          ),
-                                        ],
-                                      ),
-                                    ],
+                                  ColorDesignWidget(
+                                    deviceHeight: deviceHeight,
+                                    deviceWidth: deviceWidth,
+                                    colorCode: "87C495",
+                                    color: const Color(0xFF87C495),
+                                    rgbColorModel: "R: 135　G: 196　B: 149",
                                   ),
                                   HeightSizedBox(
                                       targetSize: deviceHeight, value: 0.02),
-                                  Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      Container(
-                                        width: deviceHeight * 0.06,
-                                        height: deviceHeight * 0.06,
-                                        decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(180),
-                                          boxShadow: const [
-                                            BoxShadow(
-                                              color: Color.fromRGBO(
-                                                  151, 151, 151, 0.3), //色
-                                              spreadRadius: 1,
-                                              blurRadius: 5,
-                                              offset: Offset(-3, 3),
-                                            ),
-                                          ],
-                                          color: const Color(0xFFF3A68C),
-                                        ),
-                                      ),
-                                      WidthSizedBox(
-                                          targetSize: deviceWidth, value: 0.01),
-                                      Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          BodyText(
-                                            text: "#F3A68C",
-                                            color: const Color.fromRGBO(
-                                                0, 0, 0, 0.8),
-                                            fontSize: deviceHeight * 0.02,
-                                            fontWeight: FontWeight.normal,
-                                            fontFamily: "Noto Sans JP",
-                                          ),
-                                          HeightSizedBox(
-                                              targetSize: deviceHeight,
-                                              value: 0.01),
-                                          BodyText(
-                                            text: "R: 243　G: 166　B: 140",
-                                            color: const Color.fromRGBO(
-                                                0, 0, 0, 0.8),
-                                            fontSize: deviceHeight * 0.02,
-                                            fontWeight: FontWeight.normal,
-                                            fontFamily: "Noto Sans JP",
-                                          ),
-                                        ],
-                                      ),
-                                    ],
+                                  ColorDesignWidget(
+                                    deviceHeight: deviceHeight,
+                                    deviceWidth: deviceWidth,
+                                    colorCode: "F3A68C",
+                                    color: const Color(0xFFF3A68C),
+                                    rgbColorModel: "R: 243　G: 166　B: 140",
                                   ),
                                   HeightSizedBox(
                                       targetSize: deviceHeight, value: 0.025),

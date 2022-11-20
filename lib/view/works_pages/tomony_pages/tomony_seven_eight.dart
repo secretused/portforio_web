@@ -74,16 +74,16 @@ class TomonySeven extends StatelessWidget {
                               fontFamily: "Noto Snas JP",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.015),
+                                targetSize: deviceHeight, value: 0.03),
                             BodyText(
                               text: "・タグと絵文字で詳細な状況と感情を表せる",
-                              color: const Color.fromRGBO(0, 0, 0, 0.8),
+                              color: const Color(0xFF87C495),
                               fontSize: deviceHeight * 0.02,
-                              fontWeight: FontWeight.normal,
+                              fontWeight: FontWeight.bold,
                               fontFamily: "Noto Snas JP",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.015),
+                                targetSize: deviceHeight, value: 0.03),
                             BodyText(
                               text: "・質問内容がわかりやすい項目ごとの表示",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
@@ -92,7 +92,7 @@ class TomonySeven extends StatelessWidget {
                               fontFamily: "Noto Snas JP",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.015),
+                                targetSize: deviceHeight, value: 0.03),
                             BodyText(
                               text: "・真面目さと気軽さを感じさせるための",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
@@ -160,21 +160,21 @@ class TomonyEight extends StatelessWidget {
                               fontFamily: "Noto Snas JP",
                             ),
                             Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
                                 BodyText(
-                                  text: "・トレンドで簡単に新しい知識が身に付く",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
+                                  text: "・絞り込みでより自分に近い悩みを探せる",
+                                  color: const Color(0xFF87C495),
                                   fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
+                                  fontWeight: FontWeight.bold,
                                   fontFamily: "Noto Snas JP",
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.015),
                                 BodyText(
-                                  text: "・絞り込みでより自分に近い人を探せる",
+                                  text: "・トレンドで簡単に新しい知識が身に付く",
                                   color: const Color.fromRGBO(0, 0, 0, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
@@ -243,17 +243,17 @@ class TomonyEight extends StatelessWidget {
                               fontFamily: "Noto Snas JP",
                             ),
                             Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
                                 LongText(
                                   text: "・ベストアンサー数が多いスコア上位者\n　「マスター」に直接質問を聞ける",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
+                                  color: const Color(0xFF87C495),
                                   fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
+                                  fontWeight: FontWeight.bold,
                                   fontFamily: "Noto Snas JP",
-                                  textAlign: TextAlign.start,
+                                  textAlign: TextAlign.center,
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.015),

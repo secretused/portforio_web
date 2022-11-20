@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio_web/view/home_page/appbar.dart';
-import 'package:portfolio_web/view/works_pages/tomony_pages/tomony_eleven.dart';
-import 'dart:html' as html;
 
 import '../works_pages/tomony_pages/tomony_five.dart';
 import '../works_pages/tomony_pages/tomony_four.dart';
@@ -13,16 +10,19 @@ import '../works_pages/tomony_pages/tomony_six.dart';
 import '../works_pages/tomony_pages/tomony_ten.dart';
 import '../works_pages/tomony_pages/tomony_three.dart';
 import '../works_pages/tomony_pages/tomony_two.dart';
+import 'package:portfolio_web/view/works_pages/tomony_pages/tomony_eleven.dart';
 
-class Tomony extends ConsumerWidget {
+class Tomony extends StatelessWidget {
   const Tomony({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(100),
-        child: CustomAppbar(),
+        child: CustomAppbar(
+          backgroundColor: Color(0xFF87C495),
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
