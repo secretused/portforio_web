@@ -109,6 +109,42 @@ class LongText extends StatelessWidget {
   }
 }
 
+// 折りたたみテキスト(余白 高)
+class HighPaddingText extends StatelessWidget {
+  const HighPaddingText({
+    Key? key,
+    required this.text,
+    required this.color,
+    required this.fontSize,
+    required this.fontWeight,
+    required this.fontFamily,
+    required this.textAlign,
+    required this.paddingValue,
+  }) : super(key: key);
+
+  final String text;
+  final Color color;
+  final double fontSize;
+  final FontWeight fontWeight;
+  final String fontFamily;
+  final TextAlign textAlign;
+  final double paddingValue;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      textAlign: textAlign,
+      style: TextStyle(
+          color: color,
+          fontSize: fontSize,
+          fontFamily: fontFamily,
+          fontWeight: fontWeight,
+          height: paddingValue),
+    );
+  }
+}
+
 // テキストボタン
 class TextButtonWidget extends StatelessWidget {
   const TextButtonWidget({

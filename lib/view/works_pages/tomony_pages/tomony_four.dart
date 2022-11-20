@@ -36,12 +36,13 @@ class TomonyFour extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    BodyText(
+                    LongText(
                       text: "パートナーにどうして欲しいか？\n具体的にどう対応しているのか？",
                       color: Colors.black,
                       fontSize: deviceHeight * 0.03,
                       fontWeight: FontWeight.bold,
                       fontFamily: "源ノ角ゴシック VF",
+                      textAlign: TextAlign.start,
                     ),
                     HeightSizedBox(targetSize: deviceHeight, value: 0.05),
                     SizedBox(
@@ -83,13 +84,14 @@ class TomonyFour extends StatelessWidget {
                               ),
                               HeightSizedBox(
                                   targetSize: deviceHeight, value: 0.03),
-                              BodyText(
+                              LongText(
                                 text:
                                     "生理中の症状などを自分から聞く\n相談はしない。男友達に近況を話すが不満は言わない\nめんどくさいのは嫌なため、わかったらそっとしてる",
                                 color: const Color.fromRGBO(0, 0, 0, 0.6),
                                 fontSize: deviceHeight * 0.02,
                                 fontWeight: FontWeight.normal,
                                 fontFamily: "源ノ角ゴシック VF",
+                                textAlign: TextAlign.center,
                               ),
                             ],
                           ),
@@ -147,13 +149,14 @@ class TomonyFour extends StatelessWidget {
                               ),
                               HeightSizedBox(
                                   targetSize: deviceHeight, value: 0.03),
-                              BodyText(
+                              LongText(
                                 text:
                                     "生理はどういうものかは把握している\nどうにもならないから、経験がありそうな男女に聞く\n相談は解決するというより心が良くなる\n人に聞くと俯瞰して意見を聞ける\n自己理解をし共有することが大事だと思う",
                                 color: Colors.black,
                                 fontSize: deviceHeight * 0.02,
                                 fontWeight: FontWeight.normal,
                                 fontFamily: "源ノ角ゴシック VF",
+                                textAlign: TextAlign.center,
                               ),
                             ],
                           ),
@@ -190,13 +193,14 @@ class TomonyFour extends StatelessWidget {
                               ),
                               HeightSizedBox(
                                   targetSize: deviceHeight, value: 0.03),
-                              BodyText(
+                              LongText(
                                 text:
                                     "生理に関することを付き合う段階で全て調べた。\n一方的に怒られるが、好きだからイライラしない\n不満があったらパートナーと話しあう。\nバレると怒られるのが嫌なので相談はしない",
                                 color: const Color.fromRGBO(0, 0, 0, 0.6),
                                 fontSize: deviceHeight * 0.02,
                                 fontWeight: FontWeight.normal,
                                 fontFamily: "源ノ角ゴシック VF",
+                                textAlign: TextAlign.center,
                               ),
                             ],
                           ),

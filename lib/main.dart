@@ -81,7 +81,7 @@ class MyApp extends ConsumerWidget {
             GoRoute(
               path: 'pochipochi',
               pageBuilder: (BuildContext context, GoRouterState state) =>
-                  buildPageWithAnimation(const Pochipochi()),
+                  buildPageWithAnimation(Pochipochi()),
             ),
             GoRoute(
               path: 'otherWorks',
@@ -101,7 +101,9 @@ class _MyHomePage extends ConsumerWidget {
     return const Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(100),
-        child: CustomAppbar(),
+        child: CustomAppbar(
+          backgroundColor: Color.fromRGBO(3, 144, 126, 1),
+        ),
       ),
       body: AboutPage(),
     );

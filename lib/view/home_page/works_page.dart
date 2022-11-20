@@ -3,7 +3,7 @@ import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'appbar.dart';
-import '../../utils/AboutWidget/works_widget.dart';
+import '../../utils/project_widget/works_widget.dart';
 
 class WorksPage extends ConsumerWidget {
   WorksPage({
@@ -15,9 +15,12 @@ class WorksPage extends ConsumerWidget {
     var deviceHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      // isuue Appbarを色が変えれるか
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(100),
-        child: CustomAppbar(),
+        child: CustomAppbar(
+          backgroundColor: Color(0xFF87C495),
+        ),
       ),
       body: Container(
         color: Colors.white,
@@ -39,6 +42,8 @@ class WorksPage extends ConsumerWidget {
               itemBuilder: (context, index) {
                 return worksItems[index];
               },
+              controller: SwiperController(),
+              autoplayDelay: 2500,
               // autoplay: true,
             ),
           ),
@@ -55,7 +60,8 @@ class WorksPage extends ConsumerWidget {
       imagePath: 'https://i.imgur.com/R58XrDL.png',
       catchPhrase: '生理中のパートナーのお悩み質問',
       title: 'TOMONY',
-      paddingLeft: 0.35,
+      fontName: "Arial Black",
+      paddingLeft: 0.33,
       imagePadding: 0.1,
       navigationPath: '/tomony',
     ),
@@ -65,6 +71,7 @@ class WorksPage extends ConsumerWidget {
       imagePath: 'https://i.imgur.com/rV2dMha.png',
       catchPhrase: 'QRコードで簡単入館',
       title: 'シュッ席',
+      fontName: "Arial Black",
       paddingLeft: 0.35,
       imagePadding: 0.1,
       navigationPath: '/shusseki',
@@ -72,9 +79,10 @@ class WorksPage extends ConsumerWidget {
     const WorksTopic(
       indexNumber: '03',
       topicColor: Color(0xFFEBAA14),
-      imagePath: 'https://i.imgur.com/Mr0yQax.png',
-      catchPhrase: '長く使える幼児向け録音アプリ',
+      imagePath: 'https://i.imgur.com/jNFOx30.png',
+      catchPhrase: '長く使える幼児向け音声再生アプリ',
       title: 'ぽちぽち',
+      fontName: "しあさって",
       paddingLeft: 0.35,
       imagePadding: 0.1,
       navigationPath: '/pochipochi',
@@ -85,6 +93,7 @@ class WorksPage extends ConsumerWidget {
       imagePath: 'https://i.imgur.com/g0RSo7d.png',
       catchPhrase: 'その他',
       title: 'OtherWorks',
+      fontName: "Potta One",
       paddingLeft: 0.28,
       imagePadding: 0.01,
       navigationPath: '/otherWorks',
