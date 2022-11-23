@@ -165,7 +165,7 @@ class TomonyEight extends StatelessWidget {
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
                                 BodyText(
-                                  text: "・絞り込みでより自分に近い悩みを探せる",
+                                  text: "・絞り込み機能でより自分に近い悩みを探せる",
                                   color: const Color(0xFF87C495),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.bold,
