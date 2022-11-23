@@ -49,9 +49,9 @@ class AboutFive extends ConsumerWidget {
                     WorksTopicContents(
                       index: '02',
                       topicColor: Color(0xFF379BA5),
-                      imagePath: 'https://i.imgur.com/rV2dMha.png',
+                      imagePath: 'https://i.imgur.com/2Mn21yC.png',
                       appName: 'シュッ席',
-                      fontName: "Arial Black",
+                      fontName: "源ノ角ゴシック VF",
                       appDisc: 'QRコードで簡単入館',
                       path: '/shusseki',
                     ),

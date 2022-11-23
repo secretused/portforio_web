@@ -218,7 +218,7 @@ class TomonySix extends StatelessWidget {
                                       fontFamily: "源ノ角ゴシック VF",
                                     ),
                                     BodyText(
-                                      text: "できず、どうすればいい関係を築けるのか悩んでいる。",
+                                      text: "できず、どうすれば良い関係を築けるのか悩んでいる。",
                                       color: Colors.black,
                                       fontSize: deviceHeight * 0.02,
                                       fontWeight: FontWeight.normal,

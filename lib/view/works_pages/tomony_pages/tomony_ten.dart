@@ -106,7 +106,7 @@ class TomonyTen extends StatelessWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            Row(
+                            Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -115,15 +115,19 @@ class TomonyTen extends StatelessWidget {
                                   widthValue: 0,
                                   imagePath: "https://i.imgur.com/9gP3MSM.png",
                                 ),
-                                WidthSizedBox(
-                                    targetSize: deviceWidth, value: 0.01),
-                                LongText(
-                                  text: "寄り添い合い\n抱擁感のあるイメージ",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
-                                  textAlign: TextAlign.start,
+                                HeightSizedBox(
+                                    targetSize: deviceHeight, value: 0.02),
+                                Padding(
+                                  padding:
+                                      EdgeInsets.only(left: deviceWidth * 0.03),
+                                  child: LongText(
+                                    text: "2人で寄り添い合い\n抱擁感のあるイメージ",
+                                    color: const Color.fromRGBO(0, 0, 0, 0.8),
+                                    fontSize: deviceHeight * 0.02,
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily: "Noto Sans JP",
+                                    textAlign: TextAlign.start,
+                                  ),
                                 ),
                               ],
                             ),

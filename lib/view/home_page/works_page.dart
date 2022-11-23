@@ -19,7 +19,7 @@ class WorksPage extends ConsumerWidget {
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(100),
         child: CustomAppbar(
-          backgroundColor: Color(0xFF87C495),
+          backgroundColor: Color.fromRGBO(3, 144, 126, 1),
         ),
       ),
       body: Container(
@@ -68,10 +68,10 @@ class WorksPage extends ConsumerWidget {
     const WorksTopic(
       indexNumber: '02',
       topicColor: Color(0xFF379BA5),
-      imagePath: 'https://i.imgur.com/rV2dMha.png',
+      imagePath: 'https://i.imgur.com/2Mn21yC.png',
       catchPhrase: 'QRコードで簡単入館',
       title: 'シュッ席',
-      fontName: "Arial Black",
+      fontName: "源ノ角ゴシック VF",
       paddingLeft: 0.35,
       imagePadding: 0.1,
       navigationPath: '/shusseki',
