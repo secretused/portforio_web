@@ -10,6 +10,9 @@ color: const Color.fromRGBO(235, 170, 20, 0.6),
 color: const Color(0xFF379BA5),
 color: const Color.fromRGBO(55, , 155, 165, 0.6),
 
+color: const  Color(0xFFCBCBCB),
+color: const Color.fromRGBO(203, , 203, 203, 0.6),
+
 Noto Sans JP
 源ノ角ゴシック VF
 HeightSizedBox(targetSize: deviceHeight, value: 0.03),

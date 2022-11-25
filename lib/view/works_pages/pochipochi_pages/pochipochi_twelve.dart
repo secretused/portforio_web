@@ -10,6 +10,7 @@ const String _notionUrl =
 const String _figmaUrl =
     "https://www.figma.com/file/DfI5iNN3wSBKdO98IpgK66/%E5%B9%BC%E5%85%90%E3%82%A2%E3%83%97%E3%83%AA-UI?node-id=96%3A223&t=jRiZBvMrgXIb1dBt-1";
 
+// 感想・改善点
 class PochipochiTwelve extends ConsumerWidget {
   const PochipochiTwelve({
     Key? key,
