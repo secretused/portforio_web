@@ -18,7 +18,7 @@ class TomonyNine extends StatelessWidget {
       height: deviceHeight - 100,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,7 +32,9 @@ class TomonyNine extends StatelessWidget {
                 fontFamily: "源ノ角ゴシック VF",
               ),
               Padding(
-                padding: EdgeInsets.all(deviceHeight * 0.05),
+                padding: EdgeInsets.symmetric(
+                    vertical: deviceHeight * 0.05,
+                    horizontal: deviceHeight * 0.03),
                 child: Row(
                   children: [
                     Column(
@@ -103,7 +105,7 @@ class TomonyNine extends StatelessWidget {
               ),
             ],
           ),
-          WidthSizedBox(targetSize: deviceWidth, value: 0.05),
+          WidthSizedBox(targetSize: deviceWidth, value: 0.03),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -116,47 +118,45 @@ class TomonyNine extends StatelessWidget {
                 fontFamily: "源ノ角ゴシック VF",
               ),
               Padding(
-                padding: EdgeInsets.all(deviceHeight * 0.05),
+                padding: EdgeInsets.symmetric(
+                    vertical: deviceHeight * 0.05,
+                    horizontal: deviceHeight * 0.03),
                 child: Column(
                   children: [
                     Row(
                       children: [
-                        Row(
+                        const ImageWidget(
+                          heightValue: 0.3,
+                          widthValue: 0,
+                          imagePath: "https://i.imgur.com/SU9DPwE.png",
+                        ),
+                        WidthSizedBox(targetSize: deviceWidth, value: 0.03),
+                        Column(
                           children: [
-                            const ImageWidget(
-                              heightValue: 0.3,
-                              widthValue: 0,
-                              imagePath: "https://i.imgur.com/SU9DPwE.png",
+                            BodyText(
+                              text: "チップ機能",
+                              color: const Color.fromRGBO(0, 0, 0, 0.8),
+                              fontSize: deviceHeight * 0.03,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Noto Sans JP",
                             ),
-                            WidthSizedBox(targetSize: deviceWidth, value: 0.03),
-                            Column(
-                              children: [
-                                BodyText(
-                                  text: "チップ機能",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                  fontSize: deviceHeight * 0.03,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: "Noto Sans JP",
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.01),
-                                BodyText(
-                                  text: "質問にチップを付与可能",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.005),
-                                BodyText(
-                                  text: "10%の手数料を差し引きます",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
-                                ),
-                              ],
+                            HeightSizedBox(
+                                targetSize: deviceHeight, value: 0.01),
+                            BodyText(
+                              text: "質問にチップを付与可能",
+                              color: const Color.fromRGBO(0, 0, 0, 0.8),
+                              fontSize: deviceHeight * 0.02,
+                              fontWeight: FontWeight.normal,
+                              fontFamily: "Noto Sans JP",
+                            ),
+                            HeightSizedBox(
+                                targetSize: deviceHeight, value: 0.005),
+                            BodyText(
+                              text: "10%の手数料を差し引きます",
+                              color: const Color.fromRGBO(0, 0, 0, 0.8),
+                              fontSize: deviceHeight * 0.02,
+                              fontWeight: FontWeight.normal,
+                              fontFamily: "Noto Sans JP",
                             ),
                           ],
                         ),
@@ -165,53 +165,49 @@ class TomonyNine extends StatelessWidget {
                     HeightSizedBox(targetSize: deviceHeight, value: 0.05),
                     Row(
                       children: [
-                        Row(
+                        Column(
                           children: [
-                            Column(
-                              children: [
-                                BodyText(
-                                  text: "マスターの特典",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                  fontSize: deviceHeight * 0.03,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: "Noto Sans JP",
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.01),
-                                BodyText(
-                                  text: "マスターは1回の質問の料金を設定できる。",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.005),
-                                BodyText(
-                                  text: "回答者はマスターを選び、料金を払うことで",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.005),
-                                BodyText(
-                                  text: "マスターの高度な回答を得る事ができる",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
-                                ),
-                              ],
+                            BodyText(
+                              text: "マスターの特典",
+                              color: const Color.fromRGBO(0, 0, 0, 0.8),
+                              fontSize: deviceHeight * 0.03,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Noto Sans JP",
                             ),
-                            WidthSizedBox(targetSize: deviceWidth, value: 0.03),
-                            const ImageWidget(
-                              heightValue: 0.3,
-                              widthValue: 0,
-                              imagePath: "https://i.imgur.com/kirjgm5.png",
+                            HeightSizedBox(
+                                targetSize: deviceHeight, value: 0.01),
+                            BodyText(
+                              text: "マスターは1回の質問の料金を設定できる。",
+                              color: const Color.fromRGBO(0, 0, 0, 0.8),
+                              fontSize: deviceHeight * 0.02,
+                              fontWeight: FontWeight.normal,
+                              fontFamily: "Noto Sans JP",
+                            ),
+                            HeightSizedBox(
+                                targetSize: deviceHeight, value: 0.005),
+                            BodyText(
+                              text: "回答者はマスターを選び、料金を払うことで",
+                              color: const Color.fromRGBO(0, 0, 0, 0.8),
+                              fontSize: deviceHeight * 0.02,
+                              fontWeight: FontWeight.normal,
+                              fontFamily: "Noto Sans JP",
+                            ),
+                            HeightSizedBox(
+                                targetSize: deviceHeight, value: 0.005),
+                            BodyText(
+                              text: "マスターの高度な回答を得る事ができる",
+                              color: const Color.fromRGBO(0, 0, 0, 0.8),
+                              fontSize: deviceHeight * 0.02,
+                              fontWeight: FontWeight.normal,
+                              fontFamily: "Noto Sans JP",
                             ),
                           ],
+                        ),
+                        WidthSizedBox(targetSize: deviceWidth, value: 0.03),
+                        const ImageWidget(
+                          heightValue: 0.3,
+                          widthValue: 0,
+                          imagePath: "https://i.imgur.com/kirjgm5.png",
                         ),
                       ],
                     )

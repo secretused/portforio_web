@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../utils/extract_widget.dart';
 import '../../../utils/project_widget/works_widget.dart';
 
-// 背景・リサーチ
+// UI改修背景
 class ShussekiFive extends StatelessWidget {
   const ShussekiFive({
     Key? key,

@@ -41,7 +41,11 @@ class TomonyThree extends StatelessWidget {
                     color: Colors.white,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(deviceHeight * 0.02),
+                    padding: EdgeInsets.only(
+                        top: deviceHeight * 0.03,
+                        bottom: deviceHeight * 0.02,
+                        left: deviceHeight * 0.03,
+                        right: deviceHeight * 0.03),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,

@@ -10,6 +10,7 @@ const String _notionUrl =
 const String _figmaUrl =
     "https://www.figma.com/file/uQf8EItAZKndlzsWlKgxeA/%E7%94%9F%E7%90%86%E8%B3%AA%E5%95%8F%E3%82%A2%E3%83%97%E3%83%AA-UI?node-id=0%3A1&t=TAFCb0xpwiuxJCZy-1";
 
+// 感想・改善点
 class TomonyEleven extends ConsumerWidget {
   const TomonyEleven({
     Key? key,

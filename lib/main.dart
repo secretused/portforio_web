@@ -12,7 +12,7 @@ import 'view/home_page/works_page.dart';
 import 'package:portfolio_web/view/works_topics/tomony_page.dart';
 import 'view/works_topics/shusseki_page.dart';
 import 'view/works_topics/pochipochi_page.dart';
-import 'view/works_topics/otherworks.dart';
+import 'view/works_topics/otherworks_page.dart';
 import 'utils/extract_widget.dart';
 
 Future<void> main() async {
@@ -77,17 +77,23 @@ class MyApp extends ConsumerWidget {
             GoRoute(
               path: 'shusseki',
               pageBuilder: (BuildContext context, GoRouterState state) =>
-                  buildPageWithAnimation(const Shusseki()),
+                  buildPageWithAnimation(
+                const Shusseki(),
+              ),
             ),
             GoRoute(
               path: 'pochipochi',
               pageBuilder: (BuildContext context, GoRouterState state) =>
-                  buildPageWithAnimation(Pochipochi()),
+                  buildPageWithAnimation(
+                const Pochipochi(),
+              ),
             ),
             GoRoute(
               path: 'otherWorks',
               pageBuilder: (BuildContext context, GoRouterState state) =>
-                  buildPageWithAnimation(const OtherWorks()),
+                  buildPageWithAnimation(
+                const OtherWorks(),
+              ),
             ),
           ],
         ),

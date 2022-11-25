@@ -14,6 +14,7 @@ const String _figmaWorkUrl =
 const String _figmaUIUrl =
     "https://www.figma.com/file/NfrvRQpW84pxMibw2BJwpR/%E3%82%B7%E3%83%A5%E3%83%83%E5%B8%AD-%E6%94%B9%E4%BF%AEUI?node-id=0%3A1&t=CU8RbQkkPMLy4AD6-1";
 
+// 感想・改善点
 class ShussekiNine extends ConsumerWidget {
   const ShussekiNine({
     Key? key,

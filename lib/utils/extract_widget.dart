@@ -136,11 +136,12 @@ class HighPaddingText extends StatelessWidget {
       text,
       textAlign: textAlign,
       style: TextStyle(
-          color: color,
-          fontSize: fontSize,
-          fontFamily: fontFamily,
-          fontWeight: fontWeight,
-          height: paddingValue),
+        color: color,
+        fontSize: fontSize,
+        fontFamily: fontFamily,
+        fontWeight: fontWeight,
+        height: paddingValue,
+      ),
     );
   }
 }

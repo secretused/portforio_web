@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../utils/extract_widget.dart';
 import '../../../utils/project_widget/works_widget.dart';
 
-// マネタイズ
+// マネタイズ・デザイン
 class ShussekiEight extends StatelessWidget {
   const ShussekiEight({
     Key? key,
@@ -39,7 +39,7 @@ class ShussekiEight extends StatelessWidget {
                       fontFamily: "源ノ角ゴシック VF",
                     ),
                     Padding(
-                      padding: EdgeInsets.all(deviceHeight * 0.05),
+                      padding: EdgeInsets.all(deviceHeight * 0.03),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -67,7 +67,7 @@ class ShussekiEight extends StatelessWidget {
                   ],
                 ),
               ),
-              HeightSizedBox(targetSize: deviceWidth, value: 0.01),
+              HeightSizedBox(targetSize: deviceWidth, value: 0.03),
               SizedBox(
                 width: deviceWidth * 0.67,
                 child: Column(
@@ -82,7 +82,7 @@ class ShussekiEight extends StatelessWidget {
                       fontFamily: "源ノ角ゴシック VF",
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: deviceHeight * 0.05),
+                      padding: EdgeInsets.only(left: deviceHeight * 0.03),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [

@@ -4,7 +4,7 @@ import '../../../../utils/extract_widget.dart';
 import '../../../utils/project_widget/about_widget.dart';
 import '../../../utils/project_widget/works_widget.dart';
 
-// 背景・リサーチ
+// 背景
 class ShussekiThree extends StatelessWidget {
   const ShussekiThree({
     Key? key,
@@ -41,7 +41,11 @@ class ShussekiThree extends StatelessWidget {
                     color: Colors.white,
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(deviceHeight * 0.02),
+                    padding: EdgeInsets.only(
+                        top: deviceHeight * 0.03,
+                        bottom: deviceHeight * 0.02,
+                        left: deviceHeight * 0.03,
+                        right: deviceHeight * 0.03),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -155,9 +159,7 @@ class ShussekiThree extends StatelessWidget {
                             fontFamily: "源ノ角ゴシック VF",
                           ),
                           Padding(
-                            padding: EdgeInsets.only(
-                                top: deviceHeight * 0.01,
-                                left: deviceHeight * 0.03),
+                            padding: EdgeInsets.only(left: deviceHeight * 0.03),
                             child: Row(
                               children: [
                                 Column(

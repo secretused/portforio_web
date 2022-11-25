@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../utils/extract_widget.dart';
 
-// UI
+// UI設計
 class ShussekiSix extends StatelessWidget {
   const ShussekiSix({
     Key? key,

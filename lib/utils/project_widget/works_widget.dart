@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'dart:html' as html;
 
 import '../../provider/provider.dart';
 import 'about_widget.dart';
@@ -163,6 +164,47 @@ class IconText extends StatelessWidget {
         BodyText(
           text: text,
           color: Colors.white,
+          fontFamily: '源ノ角ゴシック VF',
+          fontSize: deviceHeight * textSize,
+          fontWeight: FontWeight.normal,
+        ),
+      ],
+    );
+  }
+}
+
+// アイコン + テキスト 黒字
+class IconTextBlack extends StatelessWidget {
+  const IconTextBlack({
+    Key? key,
+    required this.icon,
+    required this.iconSize,
+    required this.text,
+    required this.textSize,
+  }) : super(key: key);
+
+  final IconData icon;
+  final double iconSize;
+  final String text;
+  final double textSize;
+
+  @override
+  Widget build(BuildContext context) {
+    var deviceWidth = MediaQuery.of(context).size.width;
+    var deviceHeight = MediaQuery.of(context).size.height;
+
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Icon(
+          icon,
+          color: const Color(0xFFCBCBCB),
+          size: deviceHeight * iconSize,
+        ),
+        WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+        BodyText(
+          text: text,
+          color: const Color.fromRGBO(0, 0, 0, 0.8),
           fontFamily: '源ノ角ゴシック VF',
           fontSize: deviceHeight * textSize,
           fontWeight: FontWeight.normal,
@@ -493,5 +535,95 @@ class ColorDesignWidget extends StatelessWidget {
         ),
       ],
     );
+  }
+}
+
+// OtherWorks 小タイトルとテキスト
+class TitleAndTextWidget extends StatelessWidget {
+  const TitleAndTextWidget({
+    Key? key,
+    required this.tiltle,
+    required this.widget,
+    required this.textColor,
+  }) : super(key: key);
+  final String tiltle;
+  final Widget widget;
+  final Color textColor;
+
+  @override
+  Widget build(BuildContext context) {
+    var deviceHeight = MediaQuery.of(context).size.height;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        BodyText(
+          text: tiltle,
+          color: textColor,
+          fontSize: deviceHeight * 0.025,
+          fontWeight: FontWeight.bold,
+          fontFamily: "源ノ角ゴシック VF",
+        ),
+        HeightSizedBox(
+          targetSize: deviceHeight,
+          value: 0.01,
+        ),
+        widget,
+      ],
+    );
+  }
+}
+
+// ImageLinkWidget
+class ImageLinkWidget extends ConsumerWidget {
+  const ImageLinkWidget(
+    this.linkPath,
+    this.imageWidthValue,
+    this.imagePath, {
+    Key? key,
+  }) : super(key: key);
+
+  final String linkPath;
+  final double imageWidthValue;
+  final String imagePath;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    var deviceWidth = MediaQuery.of(context).size.width;
+
+    final bool _imageLinkProviderStatus = ref.watch(imageLinkProvider);
+
+    return MouseRegion(
+      onEnter: (_) => _imageEnter(ref),
+      onExit: (_) => _imageExit(ref),
+      child: GestureDetector(
+        onTap: () => html.window.open(linkPath, ''),
+        child: Container(
+          decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: _imageLinkProviderStatus
+                    ? Colors.grey
+                    : Colors.transparent, //色
+                spreadRadius: 5,
+                blurRadius: 5,
+                offset: const Offset(1, 1),
+              ),
+            ],
+            color: Colors.white,
+          ),
+          width: deviceWidth * imageWidthValue,
+          child: Image.network(imagePath),
+        ),
+      ),
+    );
+  }
+
+  void _imageEnter(WidgetRef ref) {
+    ref.read(imageLinkProvider.notifier).update((state) => true);
+  }
+
+  void _imageExit(WidgetRef ref) {
+    ref.read(imageLinkProvider.notifier).update((state) => false);
   }
 }
