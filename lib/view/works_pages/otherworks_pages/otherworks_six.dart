@@ -69,7 +69,6 @@ class OtherWorksSix extends StatelessWidget {
                           children: [
                             const ImageWidget(
                               heightValue: 0.53,
-                              widthValue: 0.3,
                               imagePath: "https://i.imgur.com/wCegYhl.jpg",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.03),
@@ -125,7 +124,7 @@ class OtherWorksSix extends StatelessWidget {
                                     const IconTextBlack(
                                       icon: Icons.brush,
                                       iconSize: 0.025,
-                                      text: 'PhotoShop',
+                                      text: 'Photoshop',
                                       textSize: 0.02,
                                     ),
                                     HeightSizedBox(
@@ -162,7 +161,7 @@ class OtherWorksSix extends StatelessWidget {
                                           EdgeInsets.all(deviceHeight * 0.015),
                                       child: HighPaddingText(
                                         text:
-                                            "一年次前期のアートシンキングの授業で\n「SF」をテーマに共同で書籍を\n出版する事になりました。",
+                                            "一年次前期のアートシンキングの授業で\n「SF」をテーマに共同で書籍を\n出版することになりました。",
                                         color:
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.02,
@@ -252,11 +251,11 @@ class OtherWorksSix extends StatelessWidget {
                                                 ),
                                                 ProcessDetail(
                                                   process: "ストーリー構想",
-                                                  detail: "テーマに沿って思考",
+                                                  detail: "テーマに沿って物語を構想",
                                                 ),
                                                 ProcessDetail(
                                                   process: "執筆と編集",
-                                                  detail: "原稿を書き、書式を揃える",
+                                                  detail: "PCで原稿を書き、書式を揃える",
                                                 ),
                                                 ProcessDetail(
                                                   process: "タイトル・表紙作成",

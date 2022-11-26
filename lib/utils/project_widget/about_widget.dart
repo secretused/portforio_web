@@ -369,7 +369,7 @@ class MyHistoryTopic extends StatelessWidget {
             BodyText(
               text: time,
               color: const Color.fromRGBO(0, 0, 0, 0.8),
-              fontSize: deviceWidth * 0.005,
+              fontSize: deviceWidth * 0.008,
               fontWeight: FontWeight.normal,
               fontFamily: "",
             ),

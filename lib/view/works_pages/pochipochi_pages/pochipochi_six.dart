@@ -26,7 +26,7 @@ class PochipochiSix extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                height: deviceHeight * 0.26,
+                height: deviceHeight * 0.25,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -49,39 +49,37 @@ class PochipochiSix extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               fontFamily: "源ノ角ゴシック VF",
                             ),
-                            Padding(
-                              padding:
-                                  EdgeInsets.only(top: deviceHeight * 0.02),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  BodyText(
-                                    text: "幼児の興味・関心に追いつける",
-                                    color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.normal,
-                                    fontFamily: "Noto Sans JP",
-                                  ),
-                                  HeightSizedBox(
-                                      targetSize: deviceHeight, value: 0.01),
-                                  BodyText(
-                                    text: "⬇︎",
-                                    color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "Noto Sans JP",
-                                  ),
-                                  HeightSizedBox(
-                                      targetSize: deviceHeight, value: 0.01),
-                                  BodyText(
-                                    text: "カスタマイズ性があり、アプリも共に成長していく必要がある",
-                                    color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.normal,
-                                    fontFamily: "Noto Sans JP",
-                                  ),
-                                ],
-                              ),
+                            HeightSizedBox(
+                                targetSize: deviceHeight, value: 0.025),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                BodyText(
+                                  text: "幼児の興味・関心に追いつける",
+                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
+                                  fontSize: deviceHeight * 0.02,
+                                  fontWeight: FontWeight.normal,
+                                  fontFamily: "Noto Sans JP",
+                                ),
+                                HeightSizedBox(
+                                    targetSize: deviceHeight, value: 0.01),
+                                BodyText(
+                                  text: "⬇︎",
+                                  color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                  fontSize: deviceHeight * 0.02,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: "Noto Sans JP",
+                                ),
+                                HeightSizedBox(
+                                    targetSize: deviceHeight, value: 0.01),
+                                BodyText(
+                                  text: "カスタマイズ性があり、アプリも共に成長していく必要がある",
+                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
+                                  fontSize: deviceHeight * 0.02,
+                                  fontWeight: FontWeight.normal,
+                                  fontFamily: "Noto Sans JP",
+                                ),
+                              ],
                             ),
                           ],
                         ),
@@ -116,7 +114,7 @@ class PochipochiSix extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
                               textAlign: TextAlign.center,
-                              paddingValue: 1.5,
+                              paddingValue: 1.3,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -128,7 +126,7 @@ class PochipochiSix extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
                               textAlign: TextAlign.center,
-                              paddingValue: 1.5,
+                              paddingValue: 1.3,
                             ),
                           ],
                         ),
@@ -168,7 +166,6 @@ class PochipochiSix extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(180),
                                       child: const ImageWidget(
                                         heightValue: 0.2,
-                                        widthValue: 0.2,
                                         imagePath:
                                             "https://i.imgur.com/D8FYpPj.png",
                                       ),
@@ -208,7 +205,7 @@ class PochipochiSix extends StatelessWidget {
                                             value: 0.01),
                                         HighPaddingText(
                                           text:
-                                              "埼玉県のマンションに在住。\nしっかりした性格で、仕事も育児も両立している。\n旦那さんは建築設計事務所に勤めている。",
+                                              "埼玉県のマンションに在住。\nしっかりした性格で\n仕事も育児も両立している。\n旦那さんは建築設計事務所に勤めている。",
                                           color: Colors.black,
                                           fontSize: deviceHeight * 0.02,
                                           fontWeight: FontWeight.normal,
@@ -253,11 +250,11 @@ class PochipochiSix extends StatelessWidget {
                                     children: [
                                       HighPaddingText(
                                         text:
-                                            "出産前は広告代理店の営業部門に属していたが、1年間の休職の末\nリモートワークをメインに半年前から業務に復帰した。リモート\nワークになってから日菜ちゃんの面倒を付きっきりで出来なくなり、\n業務中に泣いてしまったり、心配で離席してしまうことが多い。\n週に1,2日は会社に出社しないといけないため、母親を家に呼び\n日菜ちゃんの面倒を見ているが、泣き出してしまうことも多い。",
+                                            "広告代理店の営業部門に勤めており、1年間の産休を明けて\nリモートワークをメインに3ヶ月前から業務に復帰した。リモート\nワークになってから日菜ちゃんの面倒を付きっきりで出来なくなり\n業務中に泣いてしまったり、心配で離席してしまうことが多い。\n週に1,2日は会社に出社しないといけないため、母親を家に呼び\n日菜ちゃんの面倒を見てもらっているが、泣き出してしまうことも多い。",
                                         color: Colors.black,
                                         fontSize: deviceHeight * 0.02,
                                         fontWeight: FontWeight.normal,
-                                        fontFamily: "源ノ角ゴシック VF",
+                                        fontFamily: "Noto Sans JP",
                                         textAlign: TextAlign.start,
                                         paddingValue: 1.5,
                                       ),
@@ -277,7 +274,6 @@ class PochipochiSix extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(180),
                                       child: const ImageWidget(
                                         heightValue: 0.2,
-                                        widthValue: 0.2,
                                         imagePath:
                                             "https://i.imgur.com/HBhSURO.png",
                                       ),
@@ -362,11 +358,11 @@ class PochipochiSix extends StatelessWidget {
                                     children: [
                                       HighPaddingText(
                                         text:
-                                            "よく踊ったり、動き回るためママを困らせることも多い。\nママがリビングで仕事をしているときは、テレビでYoutubeを\n流したり、ブロックで遊んでいる。よく動くため度々転んで泣いてしまい、\nママになぐさめてもらう。おばあちゃんが来ると遊んでいる時は元気だが、\n不意にママに会えずに寂しくて泣いてしまう時がある",
+                                            "よく踊ったり動き回るため、ママを困らせることも多い。\nママがリビングで仕事をしている時は、テレビでYoutubeを流したり\nブロックで遊んでいる。よく動くため、度々転んで泣いてしまい\nママになぐさめてもらう。おばあちゃんが来ると遊んでいる時は\n元気だが、不意にママに会えずに寂しくて泣いてしまう時がある。",
                                         color: Colors.black,
                                         fontSize: deviceHeight * 0.02,
                                         fontWeight: FontWeight.normal,
-                                        fontFamily: "源ノ角ゴシック VF",
+                                        fontFamily: "Noto Sans JP",
                                         textAlign: TextAlign.start,
                                         paddingValue: 1.5,
                                       ),

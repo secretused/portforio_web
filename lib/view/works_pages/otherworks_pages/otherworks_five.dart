@@ -63,7 +63,6 @@ class OtherWorksFive extends StatelessWidget {
                                 targetSize: deviceHeight, value: 0.02),
                             const ImageWidget(
                               heightValue: 0.25,
-                              widthValue: 0.25,
                               imagePath: "https://i.imgur.com/qnNkLu8.jpg",
                             ),
                             HeightSizedBox(
@@ -82,7 +81,7 @@ class OtherWorksFive extends StatelessWidget {
                                   padding: EdgeInsets.all(deviceHeight * 0.015),
                                   child: HighPaddingText(
                                     text:
-                                        "トルコ出身のアーティストUğur Gallenkuşから\nインスピレーションを受け、現在の世界の矛盾を\n表現しました。環境問題や貧困問題などの\n日常と密接に関わっている事柄に目を向け続け\nデザインの力を持て余さずに、解決に近づけたら\n良いと考えております。",
+                                        "トルコ出身のアーティストUğur Gallenkuşから\nインスピレーションを受け、現在の世界の矛盾を\n表現しました。環境問題や貧困問題などの\n日常と密接に関わっている事柄に目を向け続け\n自分達が持つデザインの力を持て余さずに\n解決に近づけたら良いと考えております。",
                                     color: const Color.fromRGBO(0, 0, 0, 0.8),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
@@ -112,7 +111,7 @@ class OtherWorksFive extends StatelessWidget {
                                         CrossAxisAlignment.start,
                                     children: [
                                       BodyText(
-                                        text: "・アートの奥深さと、日常への繋がり方を学べました",
+                                        text: "・アートの奥深さと、日常との繋がり方を学べました",
                                         color:
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.02,
@@ -157,7 +156,6 @@ class OtherWorksFive extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.02),
                                 const ImageWidget(
                                   heightValue: 0.25,
-                                  widthValue: 0.25,
                                   imagePath: "https://i.imgur.com/u630Gji.jpg",
                                 ),
                               ],

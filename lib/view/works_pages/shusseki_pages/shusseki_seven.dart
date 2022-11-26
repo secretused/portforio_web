@@ -51,25 +51,21 @@ class ShussekiSeven extends StatelessWidget {
                           children: [
                             const ImageWidget(
                               heightValue: 0.33,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/sPpXecU.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/BYjCQss.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/ihV37xj.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/2DzJX8r.png",
                             ),
                           ],
@@ -93,25 +89,21 @@ class ShussekiSeven extends StatelessWidget {
                           children: [
                             const ImageWidget(
                               heightValue: 0.33,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/zbpIv7k.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/ZZd5lXL.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/zUphl8Y.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/0LAsoFt.png",
                             ),
                           ],
@@ -128,13 +120,11 @@ class ShussekiSeven extends StatelessWidget {
                           children: [
                             const ImageWidget(
                               heightValue: 0.45,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/zbpIv7k.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.45,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/zUphl8Y.png",
                             ),
                           ],
@@ -142,7 +132,7 @@ class ShussekiSeven extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.03),
                         HighPaddingText(
                           text:
-                              "・一目見て分かる程ひどいタスクベースな画面から\n　オブジェクトとアクションを取り出し、まとめ上げた事により\n　画面遷移数を大幅に減少させることが出来ました。",
+                              "・一目見て分かる程ひどいタスクベースな画面から\n　オブジェクトとアクションを取り出し、まとめ上げたことにより\n　画面遷移数を大幅に減少させることが出来ました。",
                           color: const Color.fromRGBO(0, 0, 0, 0.8),
                           fontSize: deviceHeight * 0.02,
                           fontWeight: FontWeight.normal,

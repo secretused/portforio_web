@@ -86,7 +86,8 @@ class TomonyFive extends StatelessWidget {
                                             targetSize: deviceHeight,
                                             value: 0.01),
                                         BodyText(
-                                          text: "・愚痴はあまり言いたくないが、話したり相談はする時もある",
+                                          text:
+                                              "・愚痴はあまり言いたくないが、友人に話したり相談する時もある",
                                           color: const Color.fromRGBO(
                                               0, 0, 0, 0.8),
                                           fontSize: deviceHeight * 0.02,
@@ -97,7 +98,7 @@ class TomonyFive extends StatelessWidget {
                                             targetSize: deviceHeight,
                                             value: 0.01),
                                         BodyText(
-                                          text: "・どうしようもないと割り切っていることが多い",
+                                          text: "・どうしようもないことだと割り切っていることが多い",
                                           color: const Color.fromRGBO(
                                               0, 0, 0, 0.8),
                                           fontSize: deviceHeight * 0.02,
@@ -209,8 +210,7 @@ class TomonyFive extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                                 boxShadow: const [
                                   BoxShadow(
-                                    color:
-                                        Color.fromRGBO(151, 151, 151, 0.3), //色
+                                    color: Color.fromRGBO(151, 151, 151, 0.3),
                                     spreadRadius: 1,
                                     blurRadius: 2,
                                     offset: Offset(1, 1),
@@ -234,8 +234,9 @@ class TomonyFive extends StatelessWidget {
                                     ),
                                     Padding(
                                       padding: EdgeInsets.only(
-                                          top: deviceHeight * 0.02,
-                                          left: deviceHeight * 0.02),
+                                        top: deviceHeight * 0.02,
+                                        left: deviceHeight * 0.02,
+                                      ),
                                       child: Column(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
@@ -263,7 +264,7 @@ class TomonyFive extends StatelessWidget {
                                           const IssueTopic(
                                             isuueTopic: "課題",
                                             isuueDetail:
-                                                "生理中の相手の気持ちや、対応方法の正解が分からず\n気持ちを我慢したり溜め込んでしまう",
+                                                "生理中の相手の気持ちや、適切な対応方法が分からず\n気持ちを我慢したり、不満を溜め込んでしまう",
                                             isuueDisc: "ため",
                                             containerColor: Color.fromRGBO(
                                                 135, 196, 149, 0.6),
@@ -290,7 +291,6 @@ class TomonyFive extends StatelessWidget {
                           WidthSizedBox(targetSize: deviceWidth, value: 0.015),
                           const ImageWidget(
                             heightValue: 0.4,
-                            widthValue: 0.4,
                             imagePath: "https://i.imgur.com/def1C01.png",
                           ),
                         ],

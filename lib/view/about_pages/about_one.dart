@@ -26,11 +26,9 @@ class AboutOne extends StatelessWidget {
               children: [
                 Align(
                   alignment: Alignment.centerRight,
-                  child: SizedBox(
-                    height: deviceHeight,
-                    child: Image.network(
-                      "https://i.imgur.com/uo2dbX3.png",
-                    ),
+                  child: ImageWidget(
+                    heightValue: deviceHeight,
+                    imagePath: "https://i.imgur.com/uo2dbX3.png",
                   ),
                 ),
                 Padding(
@@ -59,39 +57,34 @@ class AboutOne extends StatelessWidget {
                       ),
                       HeightSizedBox(
                         targetSize: deviceHeight,
-                        value: 0.025,
+                        value: 0.01,
                       ),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Padding(
-                            padding: EdgeInsets.only(left: deviceWidth * 0.01),
-                            child: BodyText(
-                              text: "鳥羽悠太",
-                              color: Colors.black,
-                              fontFamily: '',
-                              fontSize: deviceHeight * 0.04,
-                              fontWeight: FontWeight.bold,
-                            ),
+                          WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+                          BodyText(
+                            text: "鳥羽悠太",
+                            color: Colors.black,
+                            fontFamily: 'Objective-bold',
+                            fontSize: deviceHeight * 0.04,
+                            fontWeight: FontWeight.bold,
                           ),
-                          Padding(
-                            padding: EdgeInsets.only(left: deviceWidth * 0.01),
-                            child: BodyText(
-                              text: "/",
-                              color: Colors.black,
-                              fontFamily: '',
-                              fontSize: deviceHeight * 0.04,
-                              fontWeight: FontWeight.bold,
-                            ),
+                          WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+                          BodyText(
+                            text: "/",
+                            color: Colors.black,
+                            fontFamily: 'Objective-bold',
+                            fontSize: deviceHeight * 0.04,
+                            fontWeight: FontWeight.bold,
                           ),
-                          Padding(
-                            padding: EdgeInsets.only(left: deviceWidth * 0.01),
-                            child: BodyText(
-                              text: "Design Portfolio",
-                              color: Colors.black,
-                              fontFamily: 'Objective-bold',
-                              fontSize: deviceHeight * 0.04,
-                              fontWeight: FontWeight.bold,
-                            ),
+                          WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+                          BodyText(
+                            text: "Design Portfolio",
+                            color: Colors.black,
+                            fontFamily: 'Objective-bold',
+                            fontSize: deviceHeight * 0.04,
+                            fontWeight: FontWeight.bold,
                           ),
                         ],
                       ),

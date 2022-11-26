@@ -19,11 +19,9 @@ class TomonyOne extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          SizedBox(
-            height: deviceHeight,
-            child: Image.network(
-              "https://i.imgur.com/R58XrDL.png",
-            ),
+          const ImageWidget(
+            heightValue: 1,
+            imagePath: "https://i.imgur.com/R58XrDL.png",
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,46 +45,41 @@ class TomonyOne extends StatelessWidget {
                 targetSize: deviceHeight,
                 value: 0.025,
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const IconText(
-                    icon: Icons.insert_drive_file,
-                    iconSize: 0.025,
-                    text: 'UI/UX Design',
-                    textSize: 0.025,
-                  ),
-                  HeightSizedBox(
-                    targetSize: deviceHeight,
-                    value: 0.01,
-                  ),
-                  const IconText(
-                    icon: Icons.people,
-                    iconSize: 0.025,
-                    text: '個人制作',
-                    textSize: 0.025,
-                  ),
-                  HeightSizedBox(
-                    targetSize: deviceHeight,
-                    value: 0.01,
-                  ),
-                  const IconText(
-                    icon: Icons.brush,
-                    iconSize: 0.025,
-                    text: 'Figma',
-                    textSize: 0.025,
-                  ),
-                  HeightSizedBox(
-                    targetSize: deviceHeight,
-                    value: 0.01,
-                  ),
-                  const IconText(
-                    icon: Icons.timer,
-                    iconSize: 0.025,
-                    text: '2022.9 (2週間)',
-                    textSize: 0.025,
-                  ),
-                ],
+              const IconText(
+                icon: Icons.insert_drive_file,
+                iconSize: 0.025,
+                text: 'UI/UX Design',
+                textSize: 0.025,
+              ),
+              HeightSizedBox(
+                targetSize: deviceHeight,
+                value: 0.01,
+              ),
+              const IconText(
+                icon: Icons.people,
+                iconSize: 0.025,
+                text: '個人制作',
+                textSize: 0.025,
+              ),
+              HeightSizedBox(
+                targetSize: deviceHeight,
+                value: 0.01,
+              ),
+              const IconText(
+                icon: Icons.brush,
+                iconSize: 0.025,
+                text: 'Figma',
+                textSize: 0.025,
+              ),
+              HeightSizedBox(
+                targetSize: deviceHeight,
+                value: 0.01,
+              ),
+              const IconText(
+                icon: Icons.timer,
+                iconSize: 0.025,
+                text: '2022.9 (2週間)',
+                textSize: 0.025,
               )
             ],
           ),

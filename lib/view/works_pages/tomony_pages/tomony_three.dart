@@ -76,7 +76,7 @@ class TomonyThree extends StatelessWidget {
                                       targetSize: deviceHeight, value: 0.01),
                                   BodyText(
                                     text:
-                                        "このサービスは、自分の彼女が生理中の時によく接し方や、喧嘩の対応法を検索することから発案",
+                                        "このサービスは、自分の彼女が生理中の時に、よく接し方や喧嘩の解決策を検索することから発案しました。",
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
@@ -84,7 +84,7 @@ class TomonyThree extends StatelessWidget {
                                   ),
                                   BodyText(
                                     text:
-                                        "客観的に問題をみれずに喧嘩になってしまったり、溜め込んだりしてしまうのではないかと仮定し",
+                                        "客観的に問題を見れずに喧嘩になってしまったり、溜め込んだりしてしまうのではないかと仮定し",
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
@@ -92,7 +92,7 @@ class TomonyThree extends StatelessWidget {
                                   ),
                                   BodyText(
                                     text:
-                                        "女性だけの問題ではなく、それ以上に男性の考え方・接し方を深めることが重要だと考え制作した",
+                                        "女性だけの問題ではなく、それ以上に男性の考え方・接し方を深めることが重要だと考え制作に至りました。",
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
@@ -113,45 +113,15 @@ class TomonyThree extends StatelessWidget {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(90),
-                                      color: const Color.fromRGBO(
-                                          151, 151, 151, 0.3),
-                                    ),
-                                    child: Padding(
-                                      padding:
-                                          EdgeInsets.all(deviceHeight * 0.015),
-                                      child: BodyText(
-                                        text: "ピンポイントで自分達の状況にあった質問が少ない",
-                                        color:
-                                            const Color.fromRGBO(0, 0, 0, 0.8),
-                                        fontSize: deviceHeight * 0.02,
-                                        fontWeight: FontWeight.normal,
-                                        fontFamily: "Noto Sans JP",
-                                      ),
-                                    ),
+                                  ShadowContainerText(
+                                    deviceHeight: deviceHeight,
+                                    text: "ピンポイントで自分達の状況にあった質問が少ない",
                                   ),
                                   HeightSizedBox(
-                                      targetSize: deviceHeight, value: 0.03),
-                                  Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(90),
-                                      color: const Color.fromRGBO(
-                                          151, 151, 151, 0.3),
-                                    ),
-                                    child: Padding(
-                                      padding:
-                                          EdgeInsets.all(deviceHeight * 0.015),
-                                      child: BodyText(
-                                        text: "専門的に1つにまとまっているサービスがない",
-                                        color:
-                                            const Color.fromRGBO(0, 0, 0, 0.8),
-                                        fontSize: deviceHeight * 0.02,
-                                        fontWeight: FontWeight.normal,
-                                        fontFamily: "Noto Sans JP",
-                                      ),
-                                    ),
+                                      targetSize: deviceHeight, value: 0.01),
+                                  ShadowContainerText(
+                                    deviceHeight: deviceHeight,
+                                    text: '専門的に1つにまとまっているサービスがない',
                                   ),
                                 ],
                               ),
@@ -159,8 +129,7 @@ class TomonyThree extends StatelessWidget {
                           ],
                         ),
                         const ImageWidget(
-                          heightValue: 0.4,
-                          widthValue: 0.4,
+                          heightValue: 0.38,
                           imagePath: "https://i.imgur.com/PNGN244.png",
                         ),
                       ],
@@ -169,7 +138,7 @@ class TomonyThree extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: deviceWidth * 0.9,
+                width: deviceWidth * 0.92,
                 child: Padding(
                   padding: EdgeInsets.only(
                       top: deviceHeight * 0.03,
@@ -189,9 +158,7 @@ class TomonyThree extends StatelessWidget {
                             fontFamily: "源ノ角ゴシック VF",
                           ),
                           Padding(
-                            padding: EdgeInsets.only(
-                                top: deviceHeight * 0.01,
-                                left: deviceHeight * 0.03),
+                            padding: EdgeInsets.only(left: deviceHeight * 0.03),
                             child: Row(
                               children: [
                                 Column(
@@ -309,7 +276,7 @@ class TomonyThree extends StatelessWidget {
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
                                 BodyText(
-                                  text: "相談や既存の回答を参考に解決できた回数が少ないのでは？",
+                                  text: "相談や既存の回答を参考に、解決できた回数が少ないのでは？",
                                   color: const Color.fromRGBO(1, 1, 1, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
@@ -318,7 +285,7 @@ class TomonyThree extends StatelessWidget {
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
                                 BodyText(
-                                  text: "あまり検索したり、パートナーと話をしていないのでは？",
+                                  text: "あまり検索したり、パートナーと生理の話をしていないのでは？",
                                   color: const Color.fromRGBO(1, 1, 1, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
@@ -343,7 +310,7 @@ class TomonyThree extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 BodyText(
-                                  text: "リサーチ結果(生理経験なし400名)",
+                                  text: "リサーチ結果(生理経験なし 400名)",
                                   color: Colors.black,
                                   fontSize: deviceHeight * 0.028,
                                   fontWeight: FontWeight.bold,
@@ -351,67 +318,80 @@ class TomonyThree extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                Row(
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    BodyText(
-                                      text: "生理についてよく理解している",
-                                      color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
+                                    Row(
+                                      children: [
+                                        BodyText(
+                                          text: "生理についてよく理解している",
+                                          color: const Color.fromRGBO(
+                                              1, 1, 1, 0.8),
+                                          fontSize: deviceHeight * 0.02,
+                                          fontWeight: FontWeight.normal,
+                                          fontFamily: "Noto Sans JP",
+                                        ),
+                                        WidthSizedBox(
+                                            targetSize: deviceWidth,
+                                            value: 0.01),
+                                        BodyText(
+                                          text: "21.1%",
+                                          color: const Color(0xFF87C495),
+                                          fontSize: deviceHeight * 0.025,
+                                          fontWeight: FontWeight.bold,
+                                          fontFamily: "Noto Sans JP",
+                                        ),
+                                      ],
                                     ),
-                                    WidthSizedBox(
-                                        targetSize: deviceWidth, value: 0.01),
-                                    BodyText(
-                                      text: "21.1%",
-                                      color: const Color(0xFF87C495),
-                                      fontSize: deviceHeight * 0.025,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: "Noto Sans JP",
+                                    HeightSizedBox(
+                                        targetSize: deviceHeight, value: 0.01),
+                                    Row(
+                                      children: [
+                                        BodyText(
+                                          text: "生理の話をできる相談相手がいる",
+                                          color: const Color.fromRGBO(
+                                              1, 1, 1, 0.8),
+                                          fontSize: deviceHeight * 0.02,
+                                          fontWeight: FontWeight.normal,
+                                          fontFamily: "Noto Sans JP",
+                                        ),
+                                        WidthSizedBox(
+                                            targetSize: deviceWidth,
+                                            value: 0.01),
+                                        BodyText(
+                                          text: "34.2%",
+                                          color: const Color(0xFF87C495),
+                                          fontSize: deviceHeight * 0.025,
+                                          fontWeight: FontWeight.bold,
+                                          fontFamily: "Noto Sans JP",
+                                        ),
+                                      ],
                                     ),
-                                  ],
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.01),
-                                Row(
-                                  children: [
-                                    BodyText(
-                                      text: "生理の話や相談相手がいる",
-                                      color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                    WidthSizedBox(
-                                        targetSize: deviceWidth, value: 0.01),
-                                    BodyText(
-                                      text: "34.2%",
-                                      color: const Color(0xFF87C495),
-                                      fontSize: deviceHeight * 0.025,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                  ],
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.01),
-                                Row(
-                                  children: [
-                                    BodyText(
-                                      text: "理解不足を感じ、生理について\nもっと理解したいと感じている",
-                                      color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                    WidthSizedBox(
-                                        targetSize: deviceWidth, value: 0.01),
-                                    BodyText(
-                                      text: "約半数",
-                                      color: const Color(0xFF87C495),
-                                      fontSize: deviceHeight * 0.025,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: "Noto Sans JP",
+                                    HeightSizedBox(
+                                        targetSize: deviceHeight, value: 0.01),
+                                    Row(
+                                      children: [
+                                        LongText(
+                                          text:
+                                              "理解不足を感じ、生理について\nもっと理解したいと感じている",
+                                          color: const Color.fromRGBO(
+                                              1, 1, 1, 0.8),
+                                          fontSize: deviceHeight * 0.02,
+                                          fontWeight: FontWeight.normal,
+                                          fontFamily: "Noto Sans JP",
+                                          textAlign: TextAlign.start,
+                                        ),
+                                        WidthSizedBox(
+                                            targetSize: deviceWidth,
+                                            value: 0.01),
+                                        BodyText(
+                                          text: "約半数",
+                                          color: const Color(0xFF87C495),
+                                          fontSize: deviceHeight * 0.025,
+                                          fontWeight: FontWeight.bold,
+                                          fontFamily: "Noto Sans JP",
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
@@ -426,12 +406,14 @@ class TomonyThree extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.01),
-                                BodyText(
-                                  text: "生理の人に対する接し方を知りたい\n生理への向き合い方を知りたい",
+                                HighPaddingText(
+                                  text: "・生理の人に対する接し方を知りたい\n・生理への向き合い方を知りたい",
                                   color: const Color(0xFF87C495),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: "Noto Sans JP",
+                                  textAlign: TextAlign.center,
+                                  paddingValue: 1.2,
                                 ),
                               ],
                             ),
