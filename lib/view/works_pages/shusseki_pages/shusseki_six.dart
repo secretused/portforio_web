@@ -49,7 +49,6 @@ class ShussekiSix extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         const ImageWidget(
                           heightValue: 0.7,
-                          widthValue: 0,
                           imagePath: "https://i.imgur.com/mOshwq9.png",
                         ),
                       ],
@@ -68,7 +67,6 @@ class ShussekiSix extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         const ImageWidget(
                           heightValue: 0.4,
-                          widthValue: 0,
                           imagePath: "https://i.imgur.com/B8ooAYf.png",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.02),
@@ -82,7 +80,6 @@ class ShussekiSix extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         const ImageWidget(
                           heightValue: 0.25,
-                          widthValue: 0,
                           imagePath: "https://i.imgur.com/NOlXk6Y.png",
                         ),
                       ],

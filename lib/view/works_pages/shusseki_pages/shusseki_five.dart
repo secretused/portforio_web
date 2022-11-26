@@ -72,7 +72,7 @@ class ShussekiFive extends StatelessWidget {
                                       targetSize: deviceHeight, value: 0.01),
                                   BodyText(
                                     text:
-                                        "2022年の4月頃からUI/UXに興味を抱き始め、授業でもUI/UXコースに所属しました。",
+                                        "2022年頃からUI/UXに興味を抱き始め、授業でもUI/UXコースに所属しました。",
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
@@ -80,14 +80,15 @@ class ShussekiFive extends StatelessWidget {
                                   ),
                                   BodyText(
                                     text:
-                                        "それに伴い、授業や自主学習を行っていく内にただ作るだけではなく、五段階モデルを",
+                                        "授業や自主学習を行っていくうちに、様々な新しい考え方に触れ、ただ作るだけではなく",
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
                                     fontFamily: "Noto Sans JP",
                                   ),
                                   BodyText(
-                                    text: "意識した開発を行うことで、シュッ席のデザインの悪さにも気づきました。",
+                                    text:
+                                        "5段階モデルを意識した開発を行うことで、シュッ席のデザインの悪さにも気づきました。",
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
@@ -119,7 +120,6 @@ class ShussekiFive extends StatelessWidget {
                         ),
                         const ImageWidget(
                           heightValue: 0.4,
-                          widthValue: 0.2,
                           imagePath: "https://i.imgur.com/htHfPUH.png",
                         ),
                       ],
@@ -194,19 +194,14 @@ class ShussekiFive extends StatelessWidget {
                       children: [
                         const ImageWidget(
                           heightValue: 0.2,
-                          widthValue: 0.2,
                           imagePath: "https://i.imgur.com/7BDf19N.png",
                         ),
-                        Text(
-                          "→",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: const Color.fromRGBO(151, 151, 151, 1.0),
-                            fontSize: deviceHeight * 0.1,
-                            fontFamily: "Noto Sans JP",
-                            fontWeight: FontWeight.normal,
-                            height: 0.5,
-                          ),
+                        BodyText(
+                          text: "→",
+                          color: const Color.fromRGBO(151, 151, 151, 1.0),
+                          fontSize: deviceHeight * 0.1,
+                          fontWeight: FontWeight.normal,
+                          fontFamily: "Noto Sans JP",
                         ),
                       ],
                     ),
@@ -234,7 +229,7 @@ class ShussekiFive extends StatelessWidget {
                               HeightSizedBox(
                                   targetSize: deviceHeight, value: 0.02),
                               BodyText(
-                                text: "・何のオブジェクトが含まれているだろうか？",
+                                text: "・要件に含まれるオブジェクトは何だろうか？",
                                 color: const Color(0xFF379BA5),
                                 fontSize: deviceHeight * 0.02,
                                 fontWeight: FontWeight.normal,

@@ -51,11 +51,11 @@ class PochipochiEight extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
-                              paddingValue: 1.3,
+                              paddingValue: 1.4,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            LongText(
+                            HighPaddingText(
                               text:
                                   "・万が一、設定を開いてしまっても\n　赤く大きい戻るボタンとダイアログ外を\n　タッチしてもホームに戻れる仕様に",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
@@ -63,16 +63,18 @@ class PochipochiEight extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
+                              paddingValue: 1.3,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            LongText(
+                            HighPaddingText(
                               text: "・保護者の方の時間を少しでも軽減するために\n　一目でわかりやすいデザインを意識",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
+                              paddingValue: 1.3,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -83,7 +85,7 @@ class PochipochiEight extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
-                              paddingValue: 1.3,
+                              paddingValue: 1.4,
                             ),
                           ],
                         ),
@@ -92,12 +94,10 @@ class PochipochiEight extends StatelessWidget {
                     WidthSizedBox(targetSize: deviceWidth, value: 0.04),
                     const ImageWidget(
                       heightValue: 0.7,
-                      widthValue: 0,
                       imagePath: "https://i.imgur.com/c15EU2r.png",
                     ),
                     const ImageWidget(
                       heightValue: 0.7,
-                      widthValue: 0,
                       imagePath: "https://i.imgur.com/bCaPTj8.png",
                     ),
                   ],

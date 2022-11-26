@@ -76,7 +76,7 @@ class PochipochiThree extends StatelessWidget {
                                       targetSize: deviceHeight, value: 0.01),
                                   BodyText(
                                     text:
-                                        "アプリ開発を始めた頃に彼女からの要求があり、自分はその言葉に少し耳を疑いました。",
+                                        "アプリ開発を始めた頃に彼女からの要望があり、自分はその言葉に少し耳を疑いました。",
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
@@ -84,7 +84,7 @@ class PochipochiThree extends StatelessWidget {
                                   ),
                                   BodyText(
                                     text:
-                                        "飽和に近い状態の幼児向けアプリでどうして少ないと感じているのか？と疑問に思いました。実際に、彼女の",
+                                        "飽和に近い状態の幼児向けアプリでどうして少ないと感じているのか？と思いました。現に、彼女の姪は",
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
@@ -92,7 +92,7 @@ class PochipochiThree extends StatelessWidget {
                                   ),
                                   BodyText(
                                     text:
-                                        "姪っ子はアプリよりYoutubeでの動画視聴をメインに楽しんでいるため、要求に興味を持ち、制作に至った。",
+                                        "アプリよりYoutubeでの動画視聴をメインに楽しんでいるため、要望に興味を持ち、制作に至りました。",
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
@@ -130,7 +130,6 @@ class PochipochiThree extends StatelessWidget {
                         ),
                         const ImageWidget(
                           heightValue: 0.3,
-                          widthValue: 0.3,
                           imagePath: "https://i.imgur.com/J7MEDOp.png",
                         ),
                       ],
@@ -253,7 +252,7 @@ class PochipochiThree extends StatelessWidget {
                                   fontFamily: "Noto Sans JP",
                                 ),
                                 HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.02),
+                                    targetSize: deviceHeight, value: 0.025),
                                 BodyText(
                                   text: "なぜ幼児アプリが少ないと思っているのか？",
                                   color: const Color.fromRGBO(1, 1, 1, 0.8),
@@ -263,24 +262,26 @@ class PochipochiThree extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                LongText(
+                                HighPaddingText(
                                   text:
-                                      "本当に幼児はアプリに飽きてしまっているのか、\nカスタマイズ性を求めているのか？",
+                                      "本当に幼児はアプリに飽きてしまっているのか\nカスタマイズ性を求めているのか？",
                                   color: const Color.fromRGBO(1, 1, 1, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
                                   fontFamily: "Noto Sans JP",
                                   textAlign: TextAlign.center,
+                                  paddingValue: 1.3,
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                LongText(
-                                  text: "保護者目線では幼児の興味・関心の動向を\nどう捉えているだろうか？",
+                                HighPaddingText(
+                                  text: "保護者目線では幼児の興味・関心の動向を\nどう捉えているのだろうか？",
                                   color: const Color.fromRGBO(1, 1, 1, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
                                   fontFamily: "Noto Sans JP",
                                   textAlign: TextAlign.center,
+                                  paddingValue: 1.3,
                                 ),
                               ],
                             ),
@@ -309,19 +310,20 @@ class PochipochiThree extends StatelessWidget {
                                   fontFamily: "Noto Sans JP",
                                 ),
                                 HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.02),
-                                LongText(
+                                    targetSize: deviceHeight, value: 0.025),
+                                HighPaddingText(
                                   text:
-                                      "Youtubeの方が既に満足しているように見受けられるが、\nなぜそれでもアプリが必要なのかが鍵なのでは？",
+                                      "Youtubeで既に満足しているように見受けられるが\nそれでもなぜアプリが必要なのかが鍵になるのでは？",
                                   color: const Color.fromRGBO(1, 1, 1, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
                                   fontFamily: "Noto Sans JP",
                                   textAlign: TextAlign.center,
+                                  paddingValue: 1.3,
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                LongText(
+                                HighPaddingText(
                                   text:
                                       "幼児それぞれの興味・関心にあったベストな\nコンテンツを含んだアプリがないのでは？",
                                   color: const Color.fromRGBO(1, 1, 1, 0.8),
@@ -329,6 +331,7 @@ class PochipochiThree extends StatelessWidget {
                                   fontWeight: FontWeight.normal,
                                   fontFamily: "Noto Sans JP",
                                   textAlign: TextAlign.center,
+                                  paddingValue: 1.3,
                                 ),
                               ],
                             ),

@@ -51,12 +51,10 @@ class ShussekiFour extends StatelessWidget {
                           children: const [
                             ImageWidget(
                               heightValue: 0.55,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/b9XZFPP.gif",
                             ),
                             ImageWidget(
                               heightValue: 0.59,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/iZYuwvA.png",
                             ),
                           ],
@@ -89,7 +87,6 @@ class ShussekiFour extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.01),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  widthValue: 0,
                                   imagePath: "https://i.imgur.com/iB5MXAf.png",
                                 ),
                               ],
@@ -107,7 +104,6 @@ class ShussekiFour extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.01),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  widthValue: 0,
                                   imagePath: "https://i.imgur.com/f7ZcK2d.png",
                                 ),
                               ],
@@ -125,7 +121,6 @@ class ShussekiFour extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.01),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  widthValue: 0,
                                   imagePath: "https://i.imgur.com/2DzJX8r.png",
                                 ),
                               ],

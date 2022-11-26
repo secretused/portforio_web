@@ -54,7 +54,7 @@ class PochipochiTen extends StatelessWidget {
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.015),
                                 BodyText(
-                                  text: "・事前に設定し、制限時間になると子供が驚かない音のアラームが鳴る",
+                                  text: "・事前に設定し、子供が驚かない音と大きさのアラームが鳴る",
                                   color: const Color.fromRGBO(0, 0, 0, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
@@ -72,16 +72,15 @@ class PochipochiTen extends StatelessWidget {
                               children: [
                                 BodyText(
                                   text: "デフォルト",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.6),
+                                  color: Colors.black,
                                   fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
+                                  fontWeight: FontWeight.bold,
                                   fontFamily: "Noto Snas JP",
                                 ),
                                 HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.02),
+                                    targetSize: deviceHeight, value: 0.015),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  widthValue: 0,
                                   imagePath: "https://i.imgur.com/KKryqRL.png",
                                 ),
                               ],
@@ -91,16 +90,15 @@ class PochipochiTen extends StatelessWidget {
                               children: [
                                 BodyText(
                                   text: "タイマー設定",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.6),
+                                  color: Colors.black,
                                   fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
+                                  fontWeight: FontWeight.bold,
                                   fontFamily: "Noto Snas JP",
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  widthValue: 0,
                                   imagePath: "https://i.imgur.com/omjz6QS.png",
                                 ),
                               ],
@@ -127,28 +125,30 @@ class PochipochiTen extends StatelessWidget {
                               children: [
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                LongText(
-                                  text: "・毎回アプリを開くと表示され\n　お子さんの健康への影響を呼びかける",
+                                HighPaddingText(
+                                  text: "・毎回アプリを開くと表示され\nお子さんの健康への影響を呼びかける",
                                   color: const Color(0xFFEBAA14),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: "Noto Snas JP",
                                   textAlign: TextAlign.center,
+                                  paddingValue: 1.3,
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.015),
-                                BodyText(
-                                  text: "・Androidでは端末ごとに機能が\n　異なるため、表示の仕方を検討中",
+                                HighPaddingText(
+                                  text: "・Androidでは端末ごとに機能が\n異なるため、表示の仕方を検討中",
                                   color: const Color.fromRGBO(0, 0, 0, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
                                   fontFamily: "Noto Snas JP",
+                                  textAlign: TextAlign.center,
+                                  paddingValue: 1.3,
                                 ),
                               ],
                             ),
                           ],
                         ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
@@ -156,7 +156,6 @@ class PochipochiTen extends StatelessWidget {
                                 targetSize: deviceHeight, value: 0.02),
                             const ImageWidget(
                               heightValue: 0.6,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/ILPVBKd.png",
                             ),
                           ],

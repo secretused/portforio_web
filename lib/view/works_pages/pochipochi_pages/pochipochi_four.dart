@@ -58,8 +58,10 @@ class PochipochiFour extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "",
                             ),
+                            HeightSizedBox(
+                                targetSize: deviceHeight, value: 0.005),
                             BodyText(
-                              text: "30歳 OL たまに遊ぶ程度",
+                              text: "30歳 OL たまに姪と遊ぶ程度",
                               color: const Color.fromRGBO(0, 0, 0, 0.6),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
@@ -76,7 +78,6 @@ class PochipochiFour extends StatelessWidget {
                               ),
                               child: const ImageWidget(
                                 heightValue: 0.3,
-                                widthValue: 0.3,
                                 imagePath: "https://i.imgur.com/cnghG8X.png",
                               ),
                             ),
@@ -90,10 +91,10 @@ class PochipochiFour extends StatelessWidget {
                               fontFamily: "源ノ角ゴシック VF",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.03),
+                                targetSize: deviceHeight, value: 0.02),
                             LongText(
                               text:
-                                  "健康に悪いから端末は使わせていない\nおもちゃも誤飲や怪我が心配ではある\nママにテレビ電話をしたらすぐに泣き止んだ\n興味はすぐに変わるが、新しいおもちゃを\n買っても気に入ってるものだけを使用する",
+                                  "健康に悪いから端末は使わせていない\nおもちゃも誤飲や怪我が心配ではある\nママにテレビ電話をしたらすぐに泣き止む\n興味はすぐに変わるが、新しいおもちゃを\n買っても気に入ってるものだけを使用する",
                               color: const Color.fromRGBO(0, 0, 0, 0.6),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
@@ -114,8 +115,10 @@ class PochipochiFour extends StatelessWidget {
                                   fontWeight: FontWeight.normal,
                                   fontFamily: "",
                                 ),
+                                HeightSizedBox(
+                                    targetSize: deviceHeight, value: 0.005),
                                 BodyText(
-                                  text: "22歳 学生 よく預かり子守り",
+                                  text: "22歳 学生 姪をよく預かり面倒",
                                   color: const Color.fromRGBO(0, 0, 0, 0.6),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
@@ -138,7 +141,6 @@ class PochipochiFour extends StatelessWidget {
                                 children: [
                                   const ImageWidget(
                                     heightValue: 0.3,
-                                    widthValue: 0.3,
                                     imagePath:
                                         "https://i.imgur.com/sYOygsl.png",
                                   ),
@@ -165,7 +167,7 @@ class PochipochiFour extends StatelessWidget {
                               fontFamily: "源ノ角ゴシック VF",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.03),
+                                targetSize: deviceHeight, value: 0.02),
                             LongText(
                               text:
                                   "広告が出るアプリはタッチしないと戻らない\n代わり映えのないアプリだとすぐに飽きていた\nYoutubeはタッチミスで画面が切り変わってしまう\n絵が切り替わるアプリやフレーズを繰り返す歌動画が好き",
@@ -187,8 +189,10 @@ class PochipochiFour extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "",
                             ),
+                            HeightSizedBox(
+                                targetSize: deviceHeight, value: 0.005),
                             BodyText(
-                              text: "25歳 専業主婦 付きっきりで子守り",
+                              text: "25歳 専業主婦 子供に付きっきり",
                               color: const Color.fromRGBO(0, 0, 0, 0.6),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
@@ -205,7 +209,6 @@ class PochipochiFour extends StatelessWidget {
                               ),
                               child: const ImageWidget(
                                 heightValue: 0.3,
-                                widthValue: 0.3,
                                 imagePath: "https://i.imgur.com/TtJ5jeQ.png",
                               ),
                             ),
@@ -219,7 +222,7 @@ class PochipochiFour extends StatelessWidget {
                               fontFamily: "源ノ角ゴシック VF",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.03),
+                                targetSize: deviceHeight, value: 0.02),
                             LongText(
                               text:
                                   "アプリの存在は知っているが\n検索はしたことないし\nYoutubeを何不自由なく使っている\n動画の好みは度々変わる",

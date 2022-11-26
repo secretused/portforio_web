@@ -37,17 +37,14 @@ class TomonySeven extends StatelessWidget {
                   children: [
                     const ImageWidget(
                       heightValue: 0.7,
-                      widthValue: 0,
                       imagePath: "https://i.imgur.com/P1zdOQu.png",
                     ),
                     const ImageWidget(
                       heightValue: 0.7,
-                      widthValue: 0,
                       imagePath: "https://i.imgur.com/wJvCVFK.png",
                     ),
                     const ImageWidget(
                       heightValue: 0.7,
-                      widthValue: 0,
                       imagePath: "https://i.imgur.com/nRMcoad.png",
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.04),
@@ -85,7 +82,7 @@ class TomonySeven extends StatelessWidget {
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
                             BodyText(
-                              text: "・質問内容がわかりやすい項目ごとの表示",
+                              text: "・質問内容がわかりやすい、項目ごとの表示",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
@@ -93,19 +90,14 @@ class TomonySeven extends StatelessWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
-                            BodyText(
-                              text: "・真面目さと気軽さを感じさせるための",
+                            HighPaddingText(
+                              text: "・真面目さと気軽さを感じさせるための\n　落ち着いた色味と要素を抑えたデザイン",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Snas JP",
-                            ),
-                            BodyText(
-                              text: "　落ち着いた色味と要素を抑えたデザイン",
-                              color: const Color.fromRGBO(0, 0, 0, 0.8),
-                              fontSize: deviceHeight * 0.02,
-                              fontWeight: FontWeight.normal,
-                              fontFamily: "Noto Snas JP",
+                              textAlign: TextAlign.start,
+                              paddingValue: 1.3,
                             ),
                           ],
                         ),
@@ -192,16 +184,15 @@ class TomonyEight extends StatelessWidget {
                               children: [
                                 BodyText(
                                   text: "デフォルト",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.6),
+                                  color: Colors.black,
                                   fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
+                                  fontWeight: FontWeight.bold,
                                   fontFamily: "Noto Snas JP",
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  widthValue: 0,
                                   imagePath: "https://i.imgur.com/FszIG7K.png",
                                 ),
                               ],
@@ -211,17 +202,16 @@ class TomonyEight extends StatelessWidget {
                               children: [
                                 BodyText(
                                   text: "検索結果",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.6),
+                                  color: Colors.black,
                                   fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
+                                  fontWeight: FontWeight.bold,
                                   fontFamily: "Noto Snas JP",
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  widthValue: 0,
-                                  imagePath: "https://i.imgur.com/ySksMWl.png",
+                                  imagePath: "https://i.imgur.com/tkq9mS8.png",
                                 ),
                               ],
                             ),
@@ -247,13 +237,14 @@ class TomonyEight extends StatelessWidget {
                               children: [
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                LongText(
-                                  text: "・ベストアンサー数が多いスコア上位者\n　「マスター」に直接質問を聞ける",
+                                HighPaddingText(
+                                  text: "・ベストアンサー数が多い、スコア上位者\n　「マスター」に直接質問を聞ける",
                                   color: const Color(0xFF87C495),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: "Noto Snas JP",
                                   textAlign: TextAlign.center,
+                                  paddingValue: 1.3,
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.015),
@@ -268,7 +259,7 @@ class TomonyEight extends StatelessWidget {
                             ),
                           ],
                         ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.03),
+                        HeightSizedBox(targetSize: deviceHeight, value: 0.025),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
@@ -276,7 +267,6 @@ class TomonyEight extends StatelessWidget {
                                 targetSize: deviceHeight, value: 0.02),
                             const ImageWidget(
                               heightValue: 0.6,
-                              widthValue: 0,
                               imagePath: "https://i.imgur.com/QQNx0VH.png",
                             ),
                           ],

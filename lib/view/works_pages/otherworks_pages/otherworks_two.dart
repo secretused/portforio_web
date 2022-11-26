@@ -68,7 +68,6 @@ class OtherWorksTwo extends StatelessWidget {
                               children: [
                                 const ImageWidget(
                                   heightValue: 0.3,
-                                  widthValue: 0.3,
                                   imagePath: "https://i.imgur.com/EgtF30v.png",
                                 ),
                                 HeightSizedBox(
@@ -127,7 +126,7 @@ class OtherWorksTwo extends StatelessWidget {
                                       const IconTextBlack(
                                         icon: Icons.brush,
                                         iconSize: 0.025,
-                                        text: 'PhotoShop',
+                                        text: 'Photoshop',
                                         textSize: 0.02,
                                       ),
                                       HeightSizedBox(
@@ -169,7 +168,7 @@ class OtherWorksTwo extends StatelessWidget {
                                           EdgeInsets.all(deviceHeight * 0.015),
                                       child: HighPaddingText(
                                         text:
-                                            "選考の一つのアートシンキングの授業で\nチームに分かれて、ビジネスコンテストに応募する\n課題があり、自分は社長(リーダー)に立候補しました。\n生徒自身で就きたい社長を決め、10数名の方が\n自分のチームに集ってくださり、スタートしました。",
+                                            "選考の一つのアートシンキングの授業で、チームに\n分かれてビジネスコンテストに応募するという\n課題があり、自分は社長(リーダー)に立候補しました。\n生徒自身で就きたい社長を決め、10数名の方が\n自分のチームに集ってくださり、スタートしました。",
                                         color:
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.02,

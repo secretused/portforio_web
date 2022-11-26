@@ -223,7 +223,6 @@ class IconButtonWidget extends ConsumerWidget {
             heightValue: (_imagePath == path && _iconButtonProviderStatus)
                 ? heightValue
                 : heightValue,
-            widthValue: 0,
             imagePath: path,
           ),
         ),
@@ -246,12 +245,10 @@ class ImageWidget extends StatelessWidget {
   const ImageWidget({
     Key? key,
     required this.heightValue,
-    required this.widthValue,
     required this.imagePath,
   }) : super(key: key);
 
   final double heightValue;
-  final double widthValue;
   final String imagePath;
 
   @override
@@ -260,7 +257,6 @@ class ImageWidget extends StatelessWidget {
 
     return SizedBox(
       height: deviceHeight * heightValue,
-      // width: widthTarget * widthValue,
       child: Image.network(
         imagePath,
       ),

@@ -68,7 +68,6 @@ class OtherWorksFour extends StatelessWidget {
                               children: [
                                 const ImageWidget(
                                   heightValue: 0.3,
-                                  widthValue: 0.3,
                                   imagePath: "https://i.imgur.com/qnNkLu8.jpg",
                                 ),
                                 HeightSizedBox(
@@ -127,7 +126,7 @@ class OtherWorksFour extends StatelessWidget {
                                       const IconTextBlack(
                                         icon: Icons.brush,
                                         iconSize: 0.025,
-                                        text: 'PhotoShop',
+                                        text: 'Photoshop',
                                         textSize: 0.02,
                                       ),
                                       HeightSizedBox(
@@ -165,7 +164,7 @@ class OtherWorksFour extends StatelessWidget {
                                           EdgeInsets.all(deviceHeight * 0.015),
                                       child: HighPaddingText(
                                         text:
-                                            "一年次後期のアートシンキングの授業は主に\nNFTを中心に勉強していて、実際にNFTを\n制作をする事になりました。",
+                                            "一年次後期のアートシンキングの授業では\n主にNFTを中心とした授業が行われ\n実際にNFTを制作をすることになりました。",
                                         color:
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.02,
@@ -241,7 +240,7 @@ class OtherWorksFour extends StatelessWidget {
                                                   CrossAxisAlignment.start,
                                               children: const [
                                                 ProcessDetail(
-                                                  process: "課題立案",
+                                                  process: "目標選定",
                                                   detail: "NFTをOpenSeaにミントする",
                                                 ),
                                                 ProcessDetail(

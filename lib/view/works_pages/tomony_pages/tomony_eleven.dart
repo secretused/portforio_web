@@ -69,7 +69,7 @@ class TomonyEleven extends ConsumerWidget {
                               fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.01),
+                                targetSize: deviceHeight, value: 0.015),
                             BodyText(
                               text: "インタビュー内容の検討や会話の仕方の学びになりました。",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
@@ -80,16 +80,16 @@ class TomonyEleven extends ConsumerWidget {
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
                             BodyText(
-                              text: "課題のインサイトを深堀し、必要なUIを設計できた",
+                              text: "課題のインサイトを深堀りし、必要なUIを設計できた",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.025,
                               fontWeight: FontWeight.bold,
                               fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.01),
+                                targetSize: deviceHeight, value: 0.015),
                             BodyText(
-                              text: "課題を立てるだけで終わらず、常に結果に疑問を抱き続けれました。",
+                              text: "課題を立てるだけで終わらず、常に疑問を抱き続けれました。",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
@@ -118,22 +118,16 @@ class TomonyEleven extends ConsumerWidget {
                               fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.01),
-                            BodyText(
-                              text: "頭にあるビジネス戦略に捉われず、ユーザーベースで",
+                                targetSize: deviceHeight, value: 0.015),
+                            HighPaddingText(
+                              text:
+                                  "頭にあるビジネス戦略に捉われず、ユーザーベースで\nプロジェクトを回すことをさらに追求できるようにしたいです。",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
-                            ),
-                            HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.01),
-                            BodyText(
-                              text: "プロジェクトを回すことをさらに追求できるようにしたいです。",
-                              color: const Color.fromRGBO(0, 0, 0, 0.8),
-                              fontSize: deviceHeight * 0.02,
-                              fontWeight: FontWeight.normal,
-                              fontFamily: "Noto Sans JP",
+                              textAlign: TextAlign.center,
+                              paddingValue: 1.3,
                             ),
                           ],
                         ),

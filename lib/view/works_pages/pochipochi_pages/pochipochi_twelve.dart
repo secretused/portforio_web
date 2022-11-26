@@ -61,24 +61,24 @@ class PochipochiTwelve extends ConsumerWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
-                            HighPaddingText(
+                            BodyText(
                               text: "前提に疑いを持ち続けることの重要さ",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.025,
                               fontWeight: FontWeight.bold,
                               fontFamily: "Noto Sans JP",
-                              textAlign: TextAlign.center,
-                              paddingValue: 1.5,
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.01),
-                            BodyText(
+                                targetSize: deviceHeight, value: 0.015),
+                            HighPaddingText(
                               text:
-                                  "身近な問題に疑問を抱いたことから始まり、\nここまで1から作り上げることが出来たことから\n身の回りの問題に耳を傾ける大事さをあらためて実感しました。",
+                                  "身近な問題に疑問を抱いたことから始まり\nここまで一から作り上げることができたことから\n身の回りの問題に耳を傾ける大事さをあらためて実感しました。",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
+                              textAlign: TextAlign.center,
+                              paddingValue: 1.3,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
@@ -90,14 +90,16 @@ class PochipochiTwelve extends ConsumerWidget {
                               fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.01),
-                            BodyText(
+                                targetSize: deviceHeight, value: 0.015),
+                            HighPaddingText(
                               text:
-                                  "外部コンテンツを扱う上での利用規約や著作権などの\nデザインだけではない部分にも配慮することができました。",
+                                  "外部コンテンツを扱う上での利用規約や著作権などの\nデザインだけではない部分にも配慮することが出来ました。",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
+                              textAlign: TextAlign.center,
+                              paddingValue: 1.3,
                             ),
                           ],
                         ),
@@ -122,14 +124,16 @@ class PochipochiTwelve extends ConsumerWidget {
                               fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.01),
-                            BodyText(
+                                targetSize: deviceHeight, value: 0.015),
+                            HighPaddingText(
                               text:
-                                  "toB向けのデザインを多く作ってきたので、\n初めてのターゲット層で、幼児が無意識に\n気に入るデザインを考えるのが難しく、\n改善の余地がまだまだあると思いました。",
+                                  "toB向けのデザインを多く作ってきたので\n初めてのターゲット層で、幼児が無意識に\n気に入るようなデザインを考えるのが難しく\n改善の余地がまだまだあると思いました。",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
+                              textAlign: TextAlign.center,
+                              paddingValue: 1.3,
                             ),
                           ],
                         ),

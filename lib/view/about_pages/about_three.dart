@@ -28,180 +28,168 @@ class AboutThree extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    SizedBox(
-                      height: deviceHeight * 0.2,
-                      width: deviceHeight * 0.2,
-                      child: Image.network(
-                        "https://i.imgur.com/tckg49G.jpg",
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(180),
+                      child: const ImageWidget(
+                        heightValue: 0.2,
+                        imagePath: "https://i.imgur.com/tckg49G.jpg",
                       ),
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(left: deviceWidth * 0.03),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          BodyText(
-                            text: "Yuta Toba",
-                            color: const Color.fromRGBO(0, 0, 0, 0.8),
-                            fontFamily: 'Nasu',
-                            fontSize: deviceHeight * 0.02,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          BodyText(
-                            text: "鳥羽悠太",
-                            color: const Color.fromRGBO(0, 0, 0, 0.8),
-                            fontFamily: 'Nasu',
-                            fontSize: deviceHeight * 0.05,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          HeightSizedBox(targetSize: deviceHeight, value: 0.02),
-                          BodyText(
-                            text: "Vantanテックフォードアカデミー",
-                            color: const Color.fromRGBO(0, 0, 0, 0.8),
-                            fontFamily: '源ノ角ゴシック VF',
-                            fontSize: deviceHeight * 0.02,
-                            fontWeight: FontWeight.normal,
-                          ),
-                          BodyText(
-                            text: "専門学部 IT総合学科 UIUXクラス",
-                            color: const Color.fromRGBO(0, 0, 0, 0.8),
-                            fontFamily: '',
-                            fontSize: deviceHeight * 0.02,
-                            fontWeight: FontWeight.normal,
-                          ),
-                        ],
-                      ),
+                    WidthSizedBox(targetSize: deviceWidth, value: 0.03),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        BodyText(
+                          text: "Yuta Toba",
+                          color: const Color.fromRGBO(0, 0, 0, 0.8),
+                          fontFamily: '源ノ角ゴシック VF',
+                          fontSize: deviceHeight * 0.02,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
+                        BodyText(
+                          text: "鳥羽悠太",
+                          color: const Color.fromRGBO(0, 0, 0, 0.8),
+                          fontFamily: '源ノ角ゴシック VF',
+                          fontSize: deviceHeight * 0.05,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        HeightSizedBox(targetSize: deviceHeight, value: 0.02),
+                        HighPaddingText(
+                          text: "Vantanテックフォードアカデミー\n専門学部 IT総合学科 UIUXクラス",
+                          color: const Color.fromRGBO(0, 0, 0, 0.8),
+                          fontSize: deviceHeight * 0.02,
+                          fontWeight: FontWeight.normal,
+                          fontFamily: "源ノ角ゴシック VF",
+                          textAlign: TextAlign.start,
+                          paddingValue: 1.3,
+                        ),
+                      ],
                     ),
                   ],
                 ),
-                HeightSizedBox(targetSize: deviceHeight, value: 0.03),
+                HeightSizedBox(targetSize: deviceHeight, value: 0.02),
                 // 強み
                 SmallTitleUnderline(
                   smallTitle: '強み',
                   sizeValue: 0.03,
                   lineLength: deviceWidth * 0.32,
                 ),
-                Padding(
-                  padding: EdgeInsets.only(
-                      top: deviceHeight * 0.03, bottom: deviceHeight * 0.03),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      // 戦略
-                      Column(
-                        children: const [
-                          StrengthTopic(
-                            topicTitle: '戦略',
-                            icon: Icons.search,
-                          ),
-                          FiveLevelEvaluation(
-                            one: TrueCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                            two: TrueCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                            three: TrueCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                            four: TrueCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                            five: FalseCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                          )
-                        ],
-                      ),
-                      // 表層
-                      Column(
-                        children: const [
-                          StrengthTopic(
-                            topicTitle: '表層',
-                            icon: Icons.brush,
-                          ),
-                          FiveLevelEvaluation(
-                            one: TrueCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                            two: TrueCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                            three: TrueCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                            four: FalseCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                            five: FalseCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                          )
-                        ],
-                      ),
-                      // 技術
-                      Column(
-                        children: const [
-                          StrengthTopic(
-                            topicTitle: '技術',
-                            icon: Icons.computer,
-                          ),
-                          FiveLevelEvaluation(
-                            one: TrueCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                            two: TrueCircle(
-                                sizeValue: 0.02, color: Color(0xFF919191)),
-                            three: TrueCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                            four: TrueCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                            five: FalseCircle(
-                              sizeValue: 0.02,
-                              color: Color(0xFF919191),
-                            ),
-                          )
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
                 HeightSizedBox(targetSize: deviceHeight, value: 0.03),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    // 戦略
+                    Column(
+                      children: const [
+                        StrengthTopic(
+                          topicTitle: '戦略',
+                          icon: Icons.search,
+                        ),
+                        FiveLevelEvaluation(
+                          one: TrueCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                          two: TrueCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                          three: TrueCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                          four: TrueCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                          five: FalseCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                        )
+                      ],
+                    ),
+                    // 表層
+                    Column(
+                      children: const [
+                        StrengthTopic(
+                          topicTitle: '表層',
+                          icon: Icons.brush,
+                        ),
+                        FiveLevelEvaluation(
+                          one: TrueCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                          two: TrueCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                          three: TrueCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                          four: FalseCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                          five: FalseCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                        )
+                      ],
+                    ),
+                    // 技術
+                    Column(
+                      children: const [
+                        StrengthTopic(
+                          topicTitle: '技術',
+                          icon: Icons.computer,
+                        ),
+                        FiveLevelEvaluation(
+                          one: TrueCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                          two: TrueCircle(
+                              sizeValue: 0.02, color: Color(0xFF919191)),
+                          three: TrueCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                          four: TrueCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                          five: FalseCircle(
+                            sizeValue: 0.02,
+                            color: Color(0xFF919191),
+                          ),
+                        )
+                      ],
+                    ),
+                  ],
+                ),
+                HeightSizedBox(targetSize: deviceHeight, value: 0.04),
                 // スキル
                 SmallTitleUnderline(
                   smallTitle: 'スキル',
                   sizeValue: 0.03,
                   lineLength: deviceWidth * 0.32,
                 ),
-                Padding(
-                  padding: EdgeInsets.only(
-                      top: deviceHeight * 0.02, bottom: deviceHeight * 0.02),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: const [
-                      SkillText(text: 'Ai', fontValue: 0.07),
-                      SkillText(text: 'Ps', fontValue: 0.07),
-                      SkillText(text: 'Xd', fontValue: 0.07),
-                      SkilIcon(imagePath: 'assets/figma.svg'),
-                      SkilIcon(imagePath: 'assets/flutter.svg'),
-                      SkilIcon(imagePath: 'assets/python.svg'),
-                    ],
-                  ),
+                HeightSizedBox(targetSize: deviceHeight, value: 0.03),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: const [
+                    SkillText(text: 'Ai', fontValue: 0.07),
+                    SkillText(text: 'Ps', fontValue: 0.07),
+                    SkillText(text: 'Xd', fontValue: 0.07),
+                    SkilIcon(imagePath: 'assets/figma.svg'),
+                    SkilIcon(imagePath: 'assets/flutter.svg'),
+                    SkilIcon(imagePath: 'assets/python.svg'),
+                  ],
                 ),
               ],
             ),
@@ -214,14 +202,12 @@ class AboutThree extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 // 自分年表
-                Padding(
-                  padding: EdgeInsets.only(bottom: deviceHeight * 0.03),
-                  child: SmallTitleUnderline(
-                    smallTitle: '自分年表',
-                    sizeValue: 0.03,
-                    lineLength: deviceWidth * 0.23,
-                  ),
+                SmallTitleUnderline(
+                  smallTitle: '自分年表',
+                  sizeValue: 0.03,
+                  lineLength: deviceWidth * 0.23,
                 ),
+                HeightSizedBox(targetSize: deviceHeight, value: 0.03),
                 Padding(
                   padding: EdgeInsets.only(left: deviceWidth * 0.003),
                   child: Column(
@@ -281,7 +267,7 @@ class AboutThree extends StatelessWidget {
                       MyHistoryTopic(
                         circleColor: Color.fromRGBO(151, 151, 151, 0.5),
                         time: '2022.2',
-                        event: 'OpenSea NFTコンテンツ 販売',
+                        event: 'OpenSea「Contradicting World」NFT販売',
                         eventColor: Color.fromRGBO(0, 0, 0, 0.5),
                       ),
                       VerticalBorderLine(

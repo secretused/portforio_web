@@ -180,7 +180,7 @@ class PochipochiFive extends StatelessWidget {
                                                 targetSize: deviceHeight,
                                                 value: 0.01),
                                             BodyText(
-                                              text: "・テレビ電話で顔や声を認識して泣き止んだ",
+                                              text: "・テレビ電話でママの顔や声を認識して泣き止んだ",
                                               color: const Color.fromRGBO(
                                                   0, 0, 0, 0.8),
                                               fontSize: deviceHeight * 0.02,
@@ -274,6 +274,8 @@ class PochipochiFive extends StatelessWidget {
                                           targetSize: deviceHeight,
                                           value: 0.02),
                                       Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Row(
                                             children: [
@@ -477,7 +479,7 @@ class PochipochiFive extends StatelessWidget {
                                           const IssueTopic(
                                             isuueTopic: "提供価値",
                                             isuueDetail:
-                                                "そのアプリ一つで、保護者の方の育児の手助けをし\n幼児が持続的に楽しんで遊べれる",
+                                                "そのアプリ一つで、保護者の方の育児の手助けをし\n幼児が持続的に楽しみながら遊べる",
                                             isuueDisc: "体験を提供する",
                                             containerColor: Color.fromRGBO(
                                                 235, 170, 20, 0.6),

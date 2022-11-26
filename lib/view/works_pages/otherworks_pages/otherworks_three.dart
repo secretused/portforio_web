@@ -71,7 +71,6 @@ class OtherWorksThree extends ConsumerWidget {
                                 targetSize: deviceHeight, value: 0.02),
                             const ImageWidget(
                               heightValue: 0.25,
-                              widthValue: 0.25,
                               imagePath: "https://i.imgur.com/DuxQVPx.jpg",
                             ),
                             HeightSizedBox(
@@ -79,7 +78,7 @@ class OtherWorksThree extends ConsumerWidget {
                             TitleAndTextWidget(
                               tiltle: "制作対象",
                               widget: BodyText(
-                                text: "銀座駅 銀座ツインウォール 広告デザイン",
+                                text: "銀座駅 銀座ツインウォール 構内広告デザイン",
                                 color: const Color.fromRGBO(0, 0, 0, 0.8),
                                 fontSize: deviceHeight * 0.02,
                                 fontWeight: FontWeight.normal,
@@ -201,7 +200,7 @@ class OtherWorksThree extends ConsumerWidget {
                                     children: [
                                       HighPaddingText(
                                         text:
-                                            "・チームマネジメントの難しさと、自分に足りない点に\n　気づけました。",
+                                            "・リーダーを務める上で、自分に足りていない要素を知り\n　チームマネジメントに興味を持つきっかけとなりました。",
                                         color:
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.02,
@@ -215,7 +214,7 @@ class OtherWorksThree extends ConsumerWidget {
                                           value: 0.01),
                                       HighPaddingText(
                                         text:
-                                            "・チームの一人一人を見渡して、意見の取捨選択したり\n　メンバーを信じ、サポートし続ける大切さを実感しました。",
+                                            "・チームの一人一人を見渡して、意見の取捨選択を行ったり\n　メンバーを信じ、サポートし続ける大切さを実感しました。",
                                         color:
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.02,

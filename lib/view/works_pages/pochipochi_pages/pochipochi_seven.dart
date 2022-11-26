@@ -37,17 +37,14 @@ class PochipochiSeven extends StatelessWidget {
                   children: [
                     const ImageWidget(
                       heightValue: 0.7,
-                      widthValue: 0,
                       imagePath: "https://i.imgur.com/gTuhv36.png",
                     ),
                     const ImageWidget(
                       heightValue: 0.7,
-                      widthValue: 0,
                       imagePath: "https://i.imgur.com/VD36a2n.png",
                     ),
                     const ImageWidget(
                       heightValue: 0.7,
-                      widthValue: 0,
                       imagePath: "https://i.imgur.com/CCdzjoN.png",
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.04),
@@ -66,33 +63,36 @@ class PochipochiSeven extends StatelessWidget {
                           children: [
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            LongText(
+                            HighPaddingText(
                               text: "・誤操作や興味の分散を防ぐため\n　要素は少なめでシンプルなものを",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
+                              paddingValue: 1.3,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.015),
-                            LongText(
+                            HighPaddingText(
                               text: "・お子さんの好きな画像を設定し\n　押したいと思えるボタンを自作",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
+                              paddingValue: 1.3,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.015),
-                            LongText(
+                            HighPaddingText(
                               text: "・複数のステージが用意してあり\n　再生以外の楽しさも感じてもらう",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
+                              paddingValue: 1.3,
                             ),
                           ],
                         ),

@@ -69,7 +69,6 @@ class TomonyFour extends StatelessWidget {
                                 ),
                                 child: const ImageWidget(
                                   heightValue: 0.3,
-                                  widthValue: 0.3,
                                   imagePath: "https://i.imgur.com/ghKJwKI.png",
                                 ),
                               ),
@@ -83,10 +82,10 @@ class TomonyFour extends StatelessWidget {
                                 fontFamily: "源ノ角ゴシック VF",
                               ),
                               HeightSizedBox(
-                                  targetSize: deviceHeight, value: 0.03),
+                                  targetSize: deviceHeight, value: 0.02),
                               LongText(
                                 text:
-                                    "生理中の症状などを自分から聞く\n相談はしない。男友達に近況を話すが不満は言わない\nめんどくさいのは嫌なため、わかったらそっとしてる",
+                                    "生理中の症状などをあらかじめ自分から聞く\n相談はしない。男友達に近況を話すが不満は言わない\nめんどくさいのは嫌なため、わかったらそっとしてる",
                                 color: const Color.fromRGBO(0, 0, 0, 0.6),
                                 fontSize: deviceHeight * 0.02,
                                 fontWeight: FontWeight.normal,
@@ -121,7 +120,6 @@ class TomonyFour extends StatelessWidget {
                                   children: [
                                     const ImageWidget(
                                       heightValue: 0.3,
-                                      widthValue: 0.3,
                                       imagePath:
                                           "https://i.imgur.com/9V4DkJn.png",
                                     ),
@@ -129,11 +127,12 @@ class TomonyFour extends StatelessWidget {
                                       padding: EdgeInsets.only(
                                           bottom: deviceHeight * 0.005),
                                       child: BodyText(
-                                          text: "強いニーズ",
-                                          color: const Color(0xFF87C495),
-                                          fontSize: deviceHeight * 0.03,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: "源ノ角ゴシック VF"),
+                                        text: "強いニーズ",
+                                        color: const Color(0xFF87C495),
+                                        fontSize: deviceHeight * 0.03,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: "源ノ角ゴシック VF",
+                                      ),
                                     )
                                   ],
                                 ),
@@ -148,10 +147,10 @@ class TomonyFour extends StatelessWidget {
                                 fontFamily: "源ノ角ゴシック VF",
                               ),
                               HeightSizedBox(
-                                  targetSize: deviceHeight, value: 0.03),
+                                  targetSize: deviceHeight, value: 0.02),
                               LongText(
                                 text:
-                                    "生理はどういうものかは把握している\nどうにもならないから、経験がありそうな男女に聞く\n相談は解決するというより心が良くなる\n人に聞くと俯瞰して意見を聞ける\n自己理解をし共有することが大事だと思う",
+                                    "生理はどういうものかは把握している\nどうにもならないなら、経験がありそうな男女に聞く\n相談は解決するというより心が楽になる\n人に聞くと俯瞰して意見を聞ける\n自己理解をし、共有することが大事だと思う",
                                 color: Colors.black,
                                 fontSize: deviceHeight * 0.02,
                                 fontWeight: FontWeight.normal,
@@ -178,7 +177,6 @@ class TomonyFour extends StatelessWidget {
                                 ),
                                 child: const ImageWidget(
                                   heightValue: 0.3,
-                                  widthValue: 0.3,
                                   imagePath: "https://i.imgur.com/Eskdj6Q.png",
                                 ),
                               ),
@@ -192,10 +190,10 @@ class TomonyFour extends StatelessWidget {
                                 fontFamily: "源ノ角ゴシック VF",
                               ),
                               HeightSizedBox(
-                                  targetSize: deviceHeight, value: 0.03),
+                                  targetSize: deviceHeight, value: 0.02),
                               LongText(
                                 text:
-                                    "生理に関することを付き合う段階で全て調べた。\n一方的に怒られるが、好きだからイライラしない\n不満があったらパートナーと話しあう。\nバレると怒られるのが嫌なので相談はしない",
+                                    "生理に関することを付き合う段階で全て調べた。\n一方的に怒られるが、好きだからイライラしない\n不満があったらパートナーと話しあう。\nバレると怒られるのが嫌なため、相談はしない",
                                 color: const Color.fromRGBO(0, 0, 0, 0.6),
                                 fontSize: deviceHeight * 0.02,
                                 fontWeight: FontWeight.normal,

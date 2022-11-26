@@ -45,7 +45,6 @@ class PochipochiEleven extends StatelessWidget {
                         children: [
                           const ImageWidget(
                             heightValue: 0.25,
-                            widthValue: 0,
                             imagePath: "https://i.imgur.com/BUePyZn.png",
                           ),
                           WidthSizedBox(targetSize: deviceWidth, value: 0.03),
@@ -141,7 +140,7 @@ class PochipochiEleven extends StatelessWidget {
                                         targetSize: deviceHeight, value: 0.01),
                                     HighPaddingText(
                                       text:
-                                          "幼児が言いやすいパ行とタ行を\n反復させることで、いち早くアプリを\n覚えてもらい、保護者の方にも幼児が\n何をしたいのか伝わりやすくする",
+                                          "幼児の言いやすいパ行とタ行を\n反復させることで、いち早くアプリを\n覚えてもらい、保護者の方にも幼児が\n何をしたいのか伝わりやすくする",
                                       color: const Color.fromRGBO(0, 0, 0, 0.8),
                                       fontSize: deviceHeight * 0.02,
                                       fontWeight: FontWeight.normal,

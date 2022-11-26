@@ -76,7 +76,7 @@ class OtherWorksSeven extends StatelessWidget {
                                 targetSize: deviceHeight, value: 0.01),
                             HighPaddingText(
                               text:
-                                  "ある日、曲が売れずに伸び悩むバンドマンが\n酔い潰れて帰路に着き、ある夢を見ました。\nその中で繰り広げられる奇想天外な出来事は\n果たして何だったのか？",
+                                  "ある日、曲が売れずに伸び悩むバンドマンが\n酔い潰れて帰路に着くと、ある夢を見た。\nその中で繰り広げられる奇想天外な出来事は\n果たして何だったのだろうか？",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,

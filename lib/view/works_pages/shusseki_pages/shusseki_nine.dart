@@ -65,24 +65,24 @@ class ShussekiNine extends ConsumerWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
-                            HighPaddingText(
+                            BodyText(
                               text: "サービスはただ作るだけではない",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.025,
                               fontWeight: FontWeight.bold,
                               fontFamily: "Noto Sans JP",
-                              textAlign: TextAlign.center,
-                              paddingValue: 1.5,
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.01),
-                            BodyText(
+                                targetSize: deviceHeight, value: 0.015),
+                            HighPaddingText(
                               text:
-                                  "見た目だけだと思っていたデザインは\n自分が今まで1番重要視していた機能と密接に関わり合っていて\nただ作るのではなく戦略から表層までを一貫して行う事が\n良いサービスに近づくと気づきました。",
+                                  "見た目だけだと思っていたデザインは\n自分が今まで1番重要視していた「機能」と密接に関わり合っていて\nただ作るのではなく戦略から表層までを一貫して行うことが\n良いサービスに近づくと気づくことが出来ました。",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
+                              textAlign: TextAlign.center,
+                              paddingValue: 1.3,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
@@ -94,14 +94,16 @@ class ShussekiNine extends ConsumerWidget {
                               fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.01),
-                            BodyText(
+                                targetSize: deviceHeight, value: 0.015),
+                            HighPaddingText(
                               text:
                                   "リリース後でも、よりユーザーが使いやすいデザインや\nサービス要件があるのではないか？と常に考え続け\n柔軟にアップデートし続ける姿勢の重要さを実感しました。",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
+                              textAlign: TextAlign.center,
+                              paddingValue: 1.3,
                             ),
                           ],
                         ),
@@ -126,21 +128,23 @@ class ShussekiNine extends ConsumerWidget {
                               fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.01),
-                            BodyText(
+                                targetSize: deviceHeight, value: 0.015),
+                            HighPaddingText(
                               text:
                                   "デザインを見ていると、エンジニアが実装可能なのか？と\n思う時がよくあります。自分のコミュニティが実現できる\n度合いを十分に理解して、よりディレクションを意識した\n実践的なプロジェクトを磨きたいと思います。",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
+                              textAlign: TextAlign.center,
+                              paddingValue: 1.3,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.04),
                             Row(
                               children: [
                                 BodyText(
-                                  text: "UI改修後\nモックアップ",
+                                  text: "UI改修後モックアップ",
                                   color: const Color.fromRGBO(0, 0, 0, 0.8),
                                   fontSize: deviceHeight * 0.025,
                                   fontWeight: FontWeight.bold,

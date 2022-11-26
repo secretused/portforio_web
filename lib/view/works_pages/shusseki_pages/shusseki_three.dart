@@ -92,7 +92,7 @@ class ShussekiThree extends StatelessWidget {
                                   ),
                                   BodyText(
                                     text:
-                                        "ぜひ作ってほしいと要求があったので、Flutterの勉強も兼ねて制作に至りました。",
+                                        "ぜひ作ってほしいと要望があったので、Flutterの勉強も兼ねて制作に至りました。",
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
@@ -130,7 +130,6 @@ class ShussekiThree extends StatelessWidget {
                         ),
                         const ImageWidget(
                           heightValue: 0.4,
-                          widthValue: 0.4,
                           imagePath: "https://i.imgur.com/llohL9K.png",
                         ),
                       ],
@@ -266,7 +265,7 @@ class ShussekiThree extends StatelessWidget {
                                   fontFamily: "Noto Sans JP",
                                 ),
                                 HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.02),
+                                    targetSize: deviceHeight, value: 0.025),
                                 BodyText(
                                   text: "元々Swiftをやっていて、アプリ開発に興味があった",
                                   color: const Color.fromRGBO(1, 1, 1, 0.8),
@@ -278,13 +277,22 @@ class ShussekiThree extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.02),
                                 HighPaddingText(
                                   text:
-                                      "クロスプラットフォーム開発が可能で\nWidgetが豊富に揃っており、学習コストが低いため",
+                                      "クロスプラットフォームで\niOS・Android・Webなど多様な開発を可能とし\nWidgetが豊富に揃っており、学習コストが低いため",
                                   color: const Color.fromRGBO(1, 1, 1, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
                                   fontFamily: "Noto Sans JP",
                                   textAlign: TextAlign.center,
-                                  paddingValue: 1.5,
+                                  paddingValue: 1.3,
+                                ),
+                                HeightSizedBox(
+                                    targetSize: deviceHeight, value: 0.02),
+                                BodyText(
+                                  text: "人気の言語というのもあり、成長度合いを感じたため",
+                                  color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                  fontSize: deviceHeight * 0.02,
+                                  fontWeight: FontWeight.normal,
+                                  fontFamily: "Noto Sans JP",
                                 ),
                               ],
                             ),
@@ -313,6 +321,15 @@ class ShussekiThree extends StatelessWidget {
                                   fontFamily: "Noto Sans JP",
                                 ),
                                 HeightSizedBox(
+                                    targetSize: deviceHeight, value: 0.025),
+                                BodyText(
+                                  text: "データベースのデータを非同期処理で保存・受け取る",
+                                  color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                  fontSize: deviceHeight * 0.02,
+                                  fontWeight: FontWeight.normal,
+                                  fontFamily: "Noto Sans JP",
+                                ),
+                                HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
                                 HighPaddingText(
                                   text: "リリースまわりの設定や\nFlutter以外でのエラーに苦戦しました",
@@ -321,16 +338,19 @@ class ShussekiThree extends StatelessWidget {
                                   fontWeight: FontWeight.normal,
                                   fontFamily: "Noto Sans JP",
                                   textAlign: TextAlign.center,
-                                  paddingValue: 1.5,
+                                  paddingValue: 1.3,
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                BodyText(
-                                  text: "データベースのデータを非同期処理で保存・受け取る",
+                                HighPaddingText(
+                                  text:
+                                      "情報が少ないので海外の記事を読んだり\n質問サイトで英語での質問をする必要があった",
                                   color: const Color.fromRGBO(1, 1, 1, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,
                                   fontFamily: "Noto Sans JP",
+                                  textAlign: TextAlign.center,
+                                  paddingValue: 1.3,
                                 ),
                               ],
                             ),

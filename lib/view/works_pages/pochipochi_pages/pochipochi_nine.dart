@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../utils/extract_widget.dart';
 
-// UI
+// Youtube画面
 class PochipochiNine extends StatelessWidget {
   const PochipochiNine({
     Key? key,
@@ -47,7 +47,7 @@ class PochipochiNine extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           fontFamily: "Noto Snas JP",
                           textAlign: TextAlign.start,
-                          paddingValue: 1.3,
+                          paddingValue: 1.5,
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -61,7 +61,7 @@ class PochipochiNine extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
-                              paddingValue: 1.3,
+                              paddingValue: 1.4,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.015),
@@ -75,13 +75,14 @@ class PochipochiNine extends StatelessWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.005),
-                            LongText(
+                            HighPaddingText(
                               text: "・動画は自動で再生され、画面をフリック\n　するとホームに戻れる仕様に",
                               color: const Color(0xFFEBAA14),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.bold,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
+                              paddingValue: 1.4,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.015),
@@ -101,12 +102,11 @@ class PochipochiNine extends StatelessWidget {
                     WidthSizedBox(targetSize: deviceWidth, value: 0.04),
                     const ImageWidget(
                       heightValue: 0.7,
-                      widthValue: 0,
                       imagePath: "https://i.imgur.com/JxEUwCu.png",
                     ),
+                    WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                     const ImageWidget(
                       heightValue: 0.35,
-                      widthValue: 0,
                       imagePath: "https://i.imgur.com/vX7yFvT.png",
                     ),
                   ],

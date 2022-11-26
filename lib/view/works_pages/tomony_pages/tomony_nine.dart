@@ -49,7 +49,6 @@ class TomonyNine extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         const ImageWidget(
                           heightValue: 0.13,
-                          widthValue: 0,
                           imagePath: "https://i.imgur.com/IgTQaEX.png",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
@@ -79,7 +78,6 @@ class TomonyNine extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         const ImageWidget(
                           heightValue: 0.2,
-                          widthValue: 0,
                           imagePath: "https://i.imgur.com/WQR5ct3.png",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
@@ -127,7 +125,6 @@ class TomonyNine extends StatelessWidget {
                       children: [
                         const ImageWidget(
                           heightValue: 0.3,
-                          widthValue: 0,
                           imagePath: "https://i.imgur.com/SU9DPwE.png",
                         ),
                         WidthSizedBox(targetSize: deviceWidth, value: 0.03),
@@ -168,7 +165,7 @@ class TomonyNine extends StatelessWidget {
                         Column(
                           children: [
                             BodyText(
-                              text: "マスターの特典",
+                              text: "マスターの特権",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.03,
                               fontWeight: FontWeight.bold,
@@ -195,7 +192,7 @@ class TomonyNine extends StatelessWidget {
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.005),
                             BodyText(
-                              text: "マスターの高度な回答を得る事ができる",
+                              text: "マスターの高度な回答を得ることができる",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
@@ -206,7 +203,6 @@ class TomonyNine extends StatelessWidget {
                         WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                         const ImageWidget(
                           heightValue: 0.3,
-                          widthValue: 0,
                           imagePath: "https://i.imgur.com/kirjgm5.png",
                         ),
                       ],

@@ -112,7 +112,6 @@ class TomonyTen extends StatelessWidget {
                               children: [
                                 const ImageWidget(
                                   heightValue: 0.15,
-                                  widthValue: 0,
                                   imagePath: "https://i.imgur.com/9gP3MSM.png",
                                 ),
                                 HeightSizedBox(
@@ -135,7 +134,7 @@ class TomonyTen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    WidthSizedBox(targetSize: deviceWidth, value: 0.1),
+                    WidthSizedBox(targetSize: deviceWidth, value: 0.08),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,

@@ -115,7 +115,7 @@ class ShussekiEight extends StatelessWidget {
                                         targetSize: deviceHeight, value: 0.04),
                                     HighPaddingText(
                                       text:
-                                          "「シュッ」とスマートフォンをかざすように\n素早く出席を果たしたかった事から命名",
+                                          "「シュッ」とスマートフォンをかざして\n素早く出席を行えることから命名",
                                       color: const Color.fromRGBO(0, 0, 0, 0.8),
                                       fontSize: deviceHeight * 0.02,
                                       fontWeight: FontWeight.normal,
@@ -135,13 +135,12 @@ class ShussekiEight extends StatelessWidget {
                             children: [
                               const ImageWidget(
                                 heightValue: 0.15,
-                                widthValue: 0,
                                 imagePath: "https://i.imgur.com/5jaDwbV.png",
                               ),
                               HeightSizedBox(
                                   targetSize: deviceHeight, value: 0.02),
                               LongText(
-                                text: "バインダーを使って\n出席していた事から抜粋",
+                                text: "バインダーを使って\n出席していたことから抜粋",
                                 color: const Color.fromRGBO(0, 0, 0, 0.8),
                                 fontSize: deviceHeight * 0.02,
                                 fontWeight: FontWeight.normal,
