@@ -32,7 +32,7 @@ class AboutThree extends StatelessWidget {
                       borderRadius: BorderRadius.circular(180),
                       child: const ImageWidget(
                         heightValue: 0.2,
-                        imagePath: "https://i.imgur.com/tckg49G.jpg",
+                        imagePath: "https://i.imgur.com/p3o4bTd.jpg",
                       ),
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.03),
