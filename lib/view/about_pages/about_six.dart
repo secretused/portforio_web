@@ -17,8 +17,6 @@ class AboutSix extends ConsumerWidget {
     const String _githubUrl = "https://github.com/secretused";
     const String _qiitaUrl = "https://qiita.com/utasan_com";
 
-    final double _paddingSize = deviceHeight * 0.075 - deviceHeight * 0.05;
-
     return Container(
       color: Colors.white,
       height: deviceHeight - 100,

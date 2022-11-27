@@ -58,7 +58,7 @@ class TomonyFour extends StatelessWidget {
                                 color: const Color.fromRGBO(0, 0, 0, 0.6),
                                 fontSize: deviceWidth * 0.015,
                                 fontWeight: FontWeight.normal,
-                                fontFamily: "",
+                                fontFamily: "Noto Sans JP",
                               ),
                               Container(
                                 decoration: BoxDecoration(
@@ -103,7 +103,7 @@ class TomonyFour extends StatelessWidget {
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceWidth * 0.015,
                                     fontWeight: FontWeight.normal,
-                                    fontFamily: "",
+                                    fontFamily: "Noto Sans JP",
                                   ),
                                 ],
                               ),
@@ -166,7 +166,7 @@ class TomonyFour extends StatelessWidget {
                                 color: const Color.fromRGBO(0, 0, 0, 0.6),
                                 fontSize: deviceWidth * 0.015,
                                 fontWeight: FontWeight.normal,
-                                fontFamily: "",
+                                fontFamily: "Noto Sans JP",
                               ),
                               Container(
                                 decoration: BoxDecoration(

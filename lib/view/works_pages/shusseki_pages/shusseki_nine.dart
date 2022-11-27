@@ -1,18 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'dart:html' as html;
 
 import '../../../utils/project_widget/about_widget.dart';
 import '../../../utils/extract_widget.dart';
-
-const String _figmaMockUpUrl =
-    "https://www.figma.com/proto/quOVJmX7jA06wJlYYsPjby/%E3%82%B7%E3%83%A5%E3%83%83%E5%B8%AD-%E3%82%B9%E3%83%9E%E3%83%9BMockUp?page-id=0%3A1&node-id=1%3A537&viewport=569%2C398%2C0.3&scaling=scale-down&starting-point-node-id=1%3A537";
-const String _appStoreUrl =
-    "https://apps.apple.com/jp/app/id1620188388?platform=iphone";
-const String _figmaWorkUrl =
-    "https://www.figma.com/file/3EdXPhb5bXm7LqARMLATAR/%E3%82%B7%E3%83%A5%E3%83%83%E5%B8%AD-%E6%94%B9%E4%BF%AE-%E3%83%AF%E3%83%BC%E3%82%AF?node-id=0%3A1&t=hqUijzgTSL8DrAks-1";
-const String _figmaUIUrl =
-    "https://www.figma.com/file/NfrvRQpW84pxMibw2BJwpR/%E3%82%B7%E3%83%A5%E3%83%83%E5%B8%AD-%E6%94%B9%E4%BF%AEUI?node-id=0%3A1&t=CU8RbQkkPMLy4AD6-1";
 
 // 感想・改善点
 class ShussekiNine extends ConsumerWidget {
@@ -24,6 +14,15 @@ class ShussekiNine extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
+
+    const String _figmaMockUpUrl =
+        "https://www.figma.com/proto/quOVJmX7jA06wJlYYsPjby/%E3%82%B7%E3%83%A5%E3%83%83%E5%B8%AD-%E3%82%B9%E3%83%9E%E3%83%9BMockUp?page-id=0%3A1&node-id=1%3A537&viewport=569%2C398%2C0.3&scaling=scale-down&starting-point-node-id=1%3A537";
+    const String _appStoreUrl =
+        "https://apps.apple.com/jp/app/id1620188388?platform=iphone";
+    const String _figmaWorkUrl =
+        "https://www.figma.com/file/3EdXPhb5bXm7LqARMLATAR/%E3%82%B7%E3%83%A5%E3%83%83%E5%B8%AD-%E6%94%B9%E4%BF%AE-%E3%83%AF%E3%83%BC%E3%82%AF?node-id=0%3A1&t=hqUijzgTSL8DrAks-1";
+    const String _figmaUIUrl =
+        "https://www.figma.com/file/NfrvRQpW84pxMibw2BJwpR/%E3%82%B7%E3%83%A5%E3%83%83%E5%B8%AD-%E6%94%B9%E4%BF%AEUI?node-id=0%3A1&t=CU8RbQkkPMLy4AD6-1";
 
     return Container(
       color: Colors.white,

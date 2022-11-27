@@ -34,11 +34,13 @@
 .packages
 .pub-cache/
 .pub/
-/build/
+build/
 flutter_*.png
 linked_*.ds
 unlinked.ds
 unlinked_spec.ds
+*.fvm
+pubspec.lock
 
 # Flutter repo-specific
 /bin/cache/
@@ -104,6 +106,9 @@ analysis_benchmark.json
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
 
+# Firebase related
+firebase.json
+
 # macOS
 **/macos/Flutter/GeneratedPluginRegistrant.swift
 **/macos/Flutter/ephemeral
@@ -134,5 +139,6 @@ app.*.map.json
 
 #other 
 !*.gitignore
-.text
+.metadata
 .fvm/flutter_sdk
+.txt

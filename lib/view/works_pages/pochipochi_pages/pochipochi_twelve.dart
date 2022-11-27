@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'dart:html' as html;
 
 import '../../../utils/project_widget/about_widget.dart';
 import '../../../utils/extract_widget.dart';
-
-const String _notionUrl =
-    "https://trusting-syzygy-7c5.notion.site/c29527115132407ca4274c0e204eee88";
-const String _figmaUrl =
-    "https://www.figma.com/file/DfI5iNN3wSBKdO98IpgK66/%E5%B9%BC%E5%85%90%E3%82%A2%E3%83%97%E3%83%AA-UI?node-id=96%3A223&t=jRiZBvMrgXIb1dBt-1";
 
 // 感想・改善点
 class PochipochiTwelve extends ConsumerWidget {
@@ -20,6 +14,11 @@ class PochipochiTwelve extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
+
+    const String _notionUrl =
+        "https://trusting-syzygy-7c5.notion.site/c29527115132407ca4274c0e204eee88";
+    const String _figmaUrl =
+        "https://www.figma.com/file/DfI5iNN3wSBKdO98IpgK66/%E5%B9%BC%E5%85%90%E3%82%A2%E3%83%97%E3%83%AA-UI?node-id=96%3A223&t=jRiZBvMrgXIb1dBt-1";
 
     return Container(
       color: Colors.white,

@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -66,11 +67,12 @@ class BodyText extends StatelessWidget {
       text,
       textAlign: TextAlign.center,
       style: TextStyle(
-          color: color,
-          fontSize: fontSize,
-          fontFamily: fontFamily,
-          fontWeight: fontWeight,
-          height: 1.1),
+        color: color,
+        fontSize: fontSize,
+        fontFamily: fontFamily,
+        fontWeight: fontWeight,
+        height: 1.1,
+      ),
     );
   }
 }
@@ -257,8 +259,11 @@ class ImageWidget extends StatelessWidget {
 
     return SizedBox(
       height: deviceHeight * heightValue,
-      child: Image.network(
-        imagePath,
+      child: CachedNetworkImage(
+        imageUrl: imagePath,
+        placeholder: (context, url) => const Center(
+          child: CircularProgressIndicator(),
+        ),
       ),
     );
   }

@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'dart:html' as html;
 
 import '../../../utils/project_widget/about_widget.dart';
 import '../../../utils/extract_widget.dart';
-
-const String _notionUrl =
-    "https://trusting-syzygy-7c5.notion.site/TOMONY-e374bb2f78464931b715b667f2cd13b3";
-const String _figmaUrl =
-    "https://www.figma.com/file/uQf8EItAZKndlzsWlKgxeA/%E7%94%9F%E7%90%86%E8%B3%AA%E5%95%8F%E3%82%A2%E3%83%97%E3%83%AA-UI?node-id=0%3A1&t=TAFCb0xpwiuxJCZy-1";
 
 // 感想・改善点
 class TomonyEleven extends ConsumerWidget {
@@ -20,6 +14,11 @@ class TomonyEleven extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
+
+    const String _notionUrl =
+        "https://trusting-syzygy-7c5.notion.site/TOMONY-e374bb2f78464931b715b667f2cd13b3";
+    const String _figmaUrl =
+        "https://www.figma.com/file/uQf8EItAZKndlzsWlKgxeA/%E7%94%9F%E7%90%86%E8%B3%AA%E5%95%8F%E3%82%A2%E3%83%97%E3%83%AA-UI?node-id=0%3A1&t=TAFCb0xpwiuxJCZy-1";
 
     return Container(
       color: Colors.white,

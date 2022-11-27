@@ -5,6 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'appbar.dart';
 import '../../utils/project_widget/works_widget.dart';
 
+final controller = SwiperController();
+
 class WorksPage extends ConsumerWidget {
   WorksPage({
     Key? key,
@@ -42,9 +44,8 @@ class WorksPage extends ConsumerWidget {
               itemBuilder: (context, index) {
                 return worksItems[index];
               },
-              controller: SwiperController(),
+              controller: controller,
               autoplayDelay: 2500,
-              // autoplay: true,
             ),
           ),
         ),
