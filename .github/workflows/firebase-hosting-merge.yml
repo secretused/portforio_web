@@ -19,7 +19,7 @@ jobs:
 
       - name: Download Flutter packages
         run: flutter pub get
-      - run: flutter run -d chrome --web-renderer html
+      - run: flutter build web --base-href /portforio_web/
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
