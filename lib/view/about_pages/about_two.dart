@@ -9,7 +9,6 @@ class AboutTwo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
 
     return Container(

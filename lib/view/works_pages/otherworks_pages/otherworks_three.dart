@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'dart:html' as html;
 
-import 'package:portfolio_web/provider/provider.dart';
 import '../../../../utils/extract_widget.dart';
 import '../../../utils/project_widget/works_widget.dart';
-
-const String _pdfUrl =
-    "https://drive.google.com/file/d/1rE6F-A_PMxMnSLlz-7C5BQYinOPWc4ma/view";
 
 class OtherWorksThree extends ConsumerWidget {
   const OtherWorksThree({
@@ -19,7 +14,8 @@ class OtherWorksThree extends ConsumerWidget {
     var deviceHeight = MediaQuery.of(context).size.height;
     var deviceWidth = MediaQuery.of(context).size.width;
 
-    final bool _imageLinkProviderStatus = ref.watch(imageLinkProvider);
+    const String _pdfUrl =
+        "https://drive.google.com/file/d/1rE6F-A_PMxMnSLlz-7C5BQYinOPWc4ma/view";
 
     return Container(
       color: Colors.white,
@@ -162,7 +158,7 @@ class OtherWorksThree extends ConsumerWidget {
                               ],
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.035),
+                                targetSize: deviceHeight, value: 0.025),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -181,7 +177,7 @@ class OtherWorksThree extends ConsumerWidget {
                               ],
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.035),
+                                targetSize: deviceHeight, value: 0.025),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -240,13 +236,5 @@ class OtherWorksThree extends ConsumerWidget {
         ],
       ),
     );
-  }
-
-  void _imageEnter(WidgetRef ref) {
-    ref.read(imageLinkProvider.notifier).update((state) => true);
-  }
-
-  void _imageExit(WidgetRef ref) {
-    ref.read(imageLinkProvider.notifier).update((state) => false);
   }
 }

@@ -128,6 +128,7 @@ class TomonyThree extends StatelessWidget {
                             )
                           ],
                         ),
+                        WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                         const ImageWidget(
                           heightValue: 0.38,
                           imagePath: "https://i.imgur.com/PNGN244.png",
@@ -245,7 +246,7 @@ class TomonyThree extends StatelessWidget {
                       ),
                       WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                       SizedBox(
-                        height: deviceHeight * 0.32,
+                        height: deviceHeight * 0.35,
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
@@ -298,7 +299,7 @@ class TomonyThree extends StatelessWidget {
                       ),
                       WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                       SizedBox(
-                        height: deviceHeight * 0.32,
+                        height: deviceHeight * 0.35,
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
@@ -308,6 +309,7 @@ class TomonyThree extends StatelessWidget {
                             padding: EdgeInsets.all(deviceHeight * 0.03),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 BodyText(
                                   text: "リサーチ結果(生理経験なし 400名)",

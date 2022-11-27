@@ -1,46 +1,46 @@
 {
-  "project_info": {
-    "project_number": "326334951620",
-    "project_id": "portfolio-flutter-web-86ff6",
-    "storage_bucket": "portfolio-flutter-web-86ff6.appspot.com"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:326334951620:android:626f96fccf1efbef045991",
-        "android_client_info": {
-          "package_name": "com.example.portfolio_web"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "326334951620-fh960tucbl8096h6k409mnope39mieja.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyANn-Q9woaqiTivw5i25x7Wjm0z1OlKJcw"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "326334951620-fh960tucbl8096h6k409mnope39mieja.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "326334951620-omj8deg6ps86g9faqjqi63vedltufp4f.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.portfolioWeb"
-              }
-            }
-          ]
-        }
-      }
-    }
-  ],
-  "configuration_version": "1"
+	"project_info": {
+		"project_number": "326334951620",
+		"project_id": "portfolio-flutter-web-86ff6",
+		"storage_bucket": "portfolio-flutter-web-86ff6.appspot.com"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:326334951620:android:626f96fccf1efbef045991",
+				"android_client_info": {
+					"package_name": "com.example.portfolio_web"
+				}
+			},
+			"oauth_client": [
+				{
+					"client_id": "326334951620-fh960tucbl8096h6k409mnope39mieja.apps.googleusercontent.com",
+					"client_type": 3
+				}
+			],
+			"api_key": [
+				{
+					"current_key": "AIzaSyANn-Q9woaqiTivw5i25x7Wjm0z1OlKJcw"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": [
+						{
+							"client_id": "326334951620-fh960tucbl8096h6k409mnope39mieja.apps.googleusercontent.com",
+							"client_type": 3
+						},
+						{
+							"client_id": "326334951620-omj8deg6ps86g9faqjqi63vedltufp4f.apps.googleusercontent.com",
+							"client_type": 2,
+							"ios_info": {
+								"bundle_id": "com.example.portfolioWeb"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
 }

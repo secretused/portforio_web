@@ -371,7 +371,7 @@ class MyHistoryTopic extends StatelessWidget {
               color: const Color.fromRGBO(0, 0, 0, 0.8),
               fontSize: deviceWidth * 0.005,
               fontWeight: FontWeight.normal,
-              fontFamily: "",
+              fontFamily: "Noto Sans JP",
             ),
             BodyText(
               text: event,

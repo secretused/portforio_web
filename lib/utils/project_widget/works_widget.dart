@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:portfolio_web/view/home_page/works_page.dart';
 import 'dart:html' as html;
 
 import '../../provider/provider.dart';
@@ -125,10 +126,12 @@ class WorksTopic extends ConsumerWidget {
 
   void statusEnter(WidgetRef ref) {
     ref.read(worksTopicProvider.notifier).update((state) => true);
+    controller.stopAutoplay();
   }
 
   void statusExit(WidgetRef ref) {
     ref.read(worksTopicProvider.notifier).update((state) => false);
+    controller.startAutoplay();
   }
 }
 
@@ -328,7 +331,7 @@ class ProcessDetail extends StatelessWidget {
           color: const Color.fromRGBO(0, 0, 0, 0.6),
           fontSize: deviceWidth * 0.01,
           fontWeight: FontWeight.normal,
-          fontFamily: "",
+          fontFamily: "Noto Sans JP",
         ),
       ],
     );

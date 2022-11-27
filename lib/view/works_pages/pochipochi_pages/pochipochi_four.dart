@@ -56,7 +56,7 @@ class PochipochiFour extends StatelessWidget {
                               color: const Color.fromRGBO(0, 0, 0, 0.6),
                               fontSize: deviceWidth * 0.015,
                               fontWeight: FontWeight.normal,
-                              fontFamily: "",
+                              fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.005),
@@ -113,7 +113,7 @@ class PochipochiFour extends StatelessWidget {
                                   color: const Color.fromRGBO(0, 0, 0, 0.6),
                                   fontSize: deviceWidth * 0.015,
                                   fontWeight: FontWeight.normal,
-                                  fontFamily: "",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.005),
@@ -187,7 +187,7 @@ class PochipochiFour extends StatelessWidget {
                               color: const Color.fromRGBO(0, 0, 0, 0.6),
                               fontSize: deviceWidth * 0.015,
                               fontWeight: FontWeight.normal,
-                              fontFamily: "",
+                              fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.005),

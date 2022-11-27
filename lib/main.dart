@@ -2,7 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:video_player/video_player.dart';
 
 import 'firebase_options.dart';
 import 'view/home_page/appbar.dart';
@@ -18,7 +17,6 @@ import 'utils/extract_widget.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    // options: DefaultFirebaseOptions.android,
     options: DefaultFirebaseOptions.web,
   );
   runApp(
@@ -34,18 +32,28 @@ class MyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // 821, deviceWidth
     return MaterialApp.router(
       title: 'Portfolio Web',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+
       // Debugマークを無効
       debugShowCheckedModeBanner: false,
+
       // go routerの有効処理
       routeInformationProvider:
           ref.watch(_routerProvider).routeInformationProvider,
       routeInformationParser: ref.watch(_routerProvider).routeInformationParser,
       routerDelegate: ref.watch(_routerProvider).routerDelegate,
+
+      builder: (context, child) {
+        return MediaQuery(
+          data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+          child: child!,
+        );
+      },
     );
   }
 
