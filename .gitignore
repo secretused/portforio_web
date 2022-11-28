@@ -108,6 +108,7 @@ analysis_benchmark.json
 
 # Firebase related
 firebase.json
+*.firebaserc
 
 # macOS
 **/macos/Flutter/GeneratedPluginRegistrant.swift
@@ -141,4 +142,4 @@ app.*.map.json
 !*.gitignore
 .metadata
 .fvm/flutter_sdk
-.txt
+*.txt

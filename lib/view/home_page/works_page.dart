@@ -40,13 +40,13 @@ class WorksPage extends ConsumerWidget {
                   space: 5,
                 ),
               ),
-              duration: 500,
+              duration: 1000,
               itemCount: worksItems.length,
               itemBuilder: (context, index) {
                 return worksItems[index];
               },
               controller: controller,
-              autoplayDelay: 2500,
+              autoplayDelay: 5000,
             ),
           ),
         ),
