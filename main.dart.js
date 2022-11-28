@@ -72872,7 +72872,7 @@ return null},
 $S:0}
 A.NI.prototype={
 c1(a,b){var s=null,r=a.u(t.w).f.a.b
-return A.zL(B.w1,A.ac(s,A.kt(new A.O(new A.I(0,0,0,r*0.03),new A.tv(new A.aec(this),4,2500,500,new A.acm(new A.I(0,0,0,r*0.05),B.CR),$.anu(),s),s),s,s),B.o,s,s,s,s,s,s,s))}}
+return A.zL(B.w1,A.ac(s,A.kt(new A.O(new A.I(0,0,0,r*0.03),new A.tv(new A.aec(this),4,5000,1000,new A.acm(new A.I(0,0,0,r*0.05),B.CR),$.anu(),s),s),s,s),B.o,s,s,s,s,s,s,s))}}
 A.aec.prototype={
 $2(a,b){return this.a.e[b]},
 $S:90}
