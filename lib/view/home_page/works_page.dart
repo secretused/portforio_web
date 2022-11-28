@@ -40,6 +40,7 @@ class WorksPage extends ConsumerWidget {
                   space: 5,
                 ),
               ),
+              duration: 500,
               itemCount: worksItems.length,
               itemBuilder: (context, index) {
                 return worksItems[index];
