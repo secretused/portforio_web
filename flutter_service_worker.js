@@ -8,7 +8,7 @@ const RESOURCES = {
 "assets/assets/flutter.svg": "c7c943611b8d3221777e288f5b0fad34",
 "assets/assets/figma.svg": "eadd22a98ff258da074fe475a56c1cf5",
 "assets/assets/python.svg": "63b2e65cd41aa4af6598b944e8b0b26a",
-"assets/NOTICES": "f0172b97d20487878545f5c6bdc60f11",
+"assets/NOTICES": "8e021c5dcc32d38b4e381c64251af7a6",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/AssetManifest.json": "7bada92b13fb187d821472b51d79d8b3",
@@ -19,16 +19,15 @@ const RESOURCES = {
 "canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
 "canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
 "canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
-"index.html": "dd962b49948d0ad2025bc7f38d3be8f1",
-"/": "dd962b49948d0ad2025bc7f38d3be8f1",
-"404.html": "0a27a4163254fc8fce870c8cc3a3f94f",
+"index.html": "4ebadc09e16585530b9fb5932c5bb5d9",
+"/": "4ebadc09e16585530b9fb5932c5bb5d9",
 "version.json": "cc132570d6d238130e38adc59e1f998d",
 "manifest.json": "314a2993bf7a8a606a639502e9b9b2c9",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"main.dart.js": "ae31ef19448a5639937eabe3f72a4804"
+"main.dart.js": "cd0c3bcb3a91ac7d817abeb97f30aad1"
 };
 
 // The application shell files that are downloaded before a service worker can
