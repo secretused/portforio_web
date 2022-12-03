@@ -4,14 +4,16 @@ import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'firebase_options.dart';
-import 'view/home_page/appbar.dart';
-import 'view/home_page/about_page.dart';
-import 'view/home_page/works_page.dart';
+import 'view/Web/home_page_web/appbar_web.dart';
+import 'view/Web/home_page_web/about_page_web.dart';
+import 'view/Web/home_page_web/works_page_web.dart';
+import 'view/iPad/home_page_ipad/about_page_ipad.dart';
+import 'view/iPhone/home_page_iphone/about_page_iphone.dart';
 
-import 'package:portfolio_web/view/works_topics/tomony_page.dart';
-import 'view/works_topics/shusseki_page.dart';
-import 'view/works_topics/pochipochi_page.dart';
-import 'view/works_topics/otherworks_page.dart';
+import 'package:portfolio_web/view/Web/works_topics_web/tomony_page_web.dart';
+import 'view/Web/works_topics_web/shusseki_page_web.dart';
+import 'view/Web/works_topics_web/pochipochi_page_web.dart';
+import 'view/Web/works_topics_web/otherworks_page_web.dart';
 import 'utils/extract_widget.dart';
 
 Future<void> main() async {
@@ -32,7 +34,6 @@ class MyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // 821, deviceWidth
     return MaterialApp.router(
       title: 'Portfolio Web',
       theme: ThemeData(
@@ -113,14 +114,46 @@ class MyApp extends ConsumerWidget {
 class _MyHomePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return const Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(100),
-        child: CustomAppbar(
-          backgroundColor: Color.fromRGBO(3, 144, 126, 1),
-        ),
-      ),
-      body: AboutPage(),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 1199) {
+          // PC
+          return const Scaffold(
+            appBar: PreferredSize(
+              preferredSize: Size.fromHeight(100),
+              child: CustomAppbar(
+                backgroundColor: Color.fromRGBO(3, 144, 126, 1),
+              ),
+            ),
+            body: AboutPageWeb(),
+          );
+        } else if (constraints.maxWidth <= 1200 &&
+            constraints.maxWidth >= 800) {
+          // iPad
+          return const Scaffold(
+            appBar: PreferredSize(
+              preferredSize: Size.fromHeight(80),
+              child: CustomAppbar(
+                // backgroundColor: Color.fromRGBO(3, 144, 126, 1),
+                backgroundColor: Colors.blue,
+              ),
+            ),
+            body: AboutPageIpad(),
+          );
+        } else {
+          //iPhone
+          return const Scaffold(
+            appBar: PreferredSize(
+              preferredSize: Size.fromHeight(50),
+              child: CustomAppbar(
+                // backgroundColor: Color.fromRGBO(3, 144, 126, 1),
+                backgroundColor: Colors.red,
+              ),
+            ),
+            body: AboutPageIphone(),
+          );
+        }
+      },
     );
   }
 }
