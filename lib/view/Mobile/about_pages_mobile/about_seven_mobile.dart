@@ -4,8 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../provider/provider.dart';
 import '../../../utils/extract_widget.dart';
 
-class AboutSix extends ConsumerWidget {
-  const AboutSix({
+class AboutSevenMobile extends ConsumerWidget {
+  const AboutSevenMobile({
     Key? key,
   }) : super(key: key);
 
@@ -16,7 +16,7 @@ class AboutSix extends ConsumerWidget {
 
     return Container(
       color: Colors.white,
-      height: deviceHeight - 100,
+      height: deviceHeight - 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -27,7 +27,7 @@ class AboutSix extends ConsumerWidget {
               BodyText(
                 text: "Thank you",
                 color: Colors.black,
-                fontSize: deviceWidth * 0.1,
+                fontSize: deviceWidth * 0.15,
                 fontWeight: FontWeight.bold,
                 fontFamily: "Bebas Neue",
               ),
@@ -39,13 +39,13 @@ class AboutSix extends ConsumerWidget {
                     heightValue: 0.05,
                     path: "https://i.imgur.com/Bcr11yX.png",
                   ),
-                  WidthSizedBox(targetSize: deviceWidth, value: 0.03),
+                  WidthSizedBox(targetSize: deviceWidth, value: 0.05),
                   const IconButtonWidget(
                     link: githubUrl,
                     heightValue: 0.05,
                     path: "https://i.imgur.com/nuHWZ8T.png",
                   ),
-                  WidthSizedBox(targetSize: deviceWidth, value: 0.03),
+                  WidthSizedBox(targetSize: deviceWidth, value: 0.05),
                   const IconButtonWidget(
                     link: qiitaUrl,
                     heightValue: 0.05,
@@ -57,7 +57,7 @@ class AboutSix extends ConsumerWidget {
               BodyText(
                 text: "t.yuta.v9410@icloud.com",
                 color: Colors.black,
-                fontSize: deviceWidth * 0.015,
+                fontSize: deviceWidth * 0.03,
                 fontWeight: FontWeight.normal,
                 fontFamily: "Nasu",
               )

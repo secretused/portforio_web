@@ -57,7 +57,7 @@ class OtherWorksThree extends ConsumerWidget {
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
                             BodyText(
-                              text: "プランニング部門",
+                              text: "東京メトロ主催",
                               color: Colors.black,
                               fontFamily: '源ノ角ゴシック VF',
                               fontSize: deviceHeight * 0.02,

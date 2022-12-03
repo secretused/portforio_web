@@ -20,7 +20,7 @@ class WorksPage extends ConsumerWidget {
       // isuue Appbarを色が変えれるか
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(100),
-        child: CustomAppbar(
+        child: CustomAppbarWeb(
           backgroundColor: Color.fromRGBO(3, 144, 126, 1),
         ),
       ),

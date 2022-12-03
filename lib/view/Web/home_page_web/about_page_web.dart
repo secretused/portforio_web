@@ -18,7 +18,7 @@ class AboutPageWeb extends ConsumerWidget {
       child: Column(
         children: const [
           // 1枚目
-          AboutOne(),
+          AboutOneWeb(),
           // 2枚目
           AboutTwo(),
           // 3枚目

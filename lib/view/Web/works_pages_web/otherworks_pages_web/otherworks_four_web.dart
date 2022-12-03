@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../utils/extract_widget.dart';
-import '../../../../utils/about_widget/about_widget.dart';
+
+import '../../../../utils/project_widget/about_widget.dart';
 import '../../../../utils/project_widget/works_widget.dart';
 
 class OtherWorksFour extends StatelessWidget {

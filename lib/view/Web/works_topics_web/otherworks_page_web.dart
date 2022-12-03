@@ -18,7 +18,7 @@ class OtherWorks extends ConsumerWidget {
     return Scaffold(
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(100),
-        child: CustomAppbar(
+        child: CustomAppbarWeb(
           backgroundColor: Color(0xFFCBCBCB),
         ),
       ),

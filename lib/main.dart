@@ -2,13 +2,15 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio_web/view/Mobile/home_page_mobile/appbar_mobile.dart';
 
 import 'firebase_options.dart';
+import 'utils/mobile_widget/about_widgrt_mobile.dart';
 import 'view/Web/home_page_web/appbar_web.dart';
 import 'view/Web/home_page_web/about_page_web.dart';
 import 'view/Web/home_page_web/works_page_web.dart';
 import 'view/iPad/home_page_ipad/about_page_ipad.dart';
-import 'view/iPhone/home_page_iphone/about_page_iphone.dart';
+import 'view/Mobile/home_page_mobile/about_page_mobile.dart';
 
 import 'package:portfolio_web/view/Web/works_topics_web/tomony_page_web.dart';
 import 'view/Web/works_topics_web/shusseki_page_web.dart';
@@ -121,7 +123,7 @@ class _MyHomePage extends ConsumerWidget {
           return const Scaffold(
             appBar: PreferredSize(
               preferredSize: Size.fromHeight(100),
-              child: CustomAppbar(
+              child: CustomAppbarWeb(
                 backgroundColor: Color.fromRGBO(3, 144, 126, 1),
               ),
             ),
@@ -129,27 +131,28 @@ class _MyHomePage extends ConsumerWidget {
           );
         } else if (constraints.maxWidth <= 1200 &&
             constraints.maxWidth >= 800) {
-          // iPad
+          // iPad & iPhone(横)
           return const Scaffold(
             appBar: PreferredSize(
-              preferredSize: Size.fromHeight(80),
-              child: CustomAppbar(
-                // backgroundColor: Color.fromRGBO(3, 144, 126, 1),
-                backgroundColor: Colors.blue,
-              ),
-            ),
-            body: AboutPageIpad(),
-          );
-        } else {
-          //iPhone
-          return const Scaffold(
-            appBar: PreferredSize(
-              preferredSize: Size.fromHeight(50),
-              child: CustomAppbar(
+              preferredSize: Size.fromHeight(60),
+              child: CustomAppbarMobile(
                 // backgroundColor: Color.fromRGBO(3, 144, 126, 1),
                 backgroundColor: Colors.red,
               ),
             ),
+            endDrawer: DrawerWidget(),
+            body: AboutPageIpad(),
+          );
+        } else {
+          //iPhone(縦)
+          return const Scaffold(
+            appBar: PreferredSize(
+              preferredSize: Size.fromHeight(60),
+              child: CustomAppbarMobile(
+                backgroundColor: Color.fromRGBO(3, 144, 126, 1),
+              ),
+            ),
+            endDrawer: DrawerWidget(),
             body: AboutPageIphone(),
           );
         }
