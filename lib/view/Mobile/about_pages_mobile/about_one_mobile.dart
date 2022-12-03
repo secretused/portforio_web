@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../utils/extract_widget.dart';
 
-class AboutOneWeb extends StatelessWidget {
-  const AboutOneWeb({
+class AboutOneMobile extends StatelessWidget {
+  const AboutOneMobile({
     Key? key,
   }) : super(key: key);
 
@@ -16,7 +16,7 @@ class AboutOneWeb extends StatelessWidget {
 
     return Container(
       color: Colors.white,
-      height: deviceHeight - 100,
+      height: deviceHeight - 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
@@ -27,17 +27,18 @@ class AboutOneWeb extends StatelessWidget {
               fit: StackFit.passthrough,
               children: [
                 Align(
-                  alignment: Alignment.centerRight,
-                  child: ImageWidget(
-                    heightValue: deviceHeight,
-                    imagePath: "https://i.imgur.com/uo2dbX3.png",
+                  alignment: Alignment.center,
+                  child: ImageWidthWidget(
+                    widthValue: deviceWidth,
+                    imagePath: "https://i.imgur.com/mFt6tNO.png",
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: deviceWidth * 0.05),
+                  padding: EdgeInsets.only(
+                      left: deviceWidth * 0.03, bottom: deviceWidth * 0.03),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
                       Row(
                         children: [
@@ -45,14 +46,14 @@ class AboutOneWeb extends StatelessWidget {
                             text: "Yuta",
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
-                            fontSize: deviceHeight * 0.15,
+                            fontSize: deviceWidth * 0.13,
                             fontWeight: FontWeight.bold,
                           ),
                           BodyText(
                             text: "Toba",
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
-                            fontSize: deviceHeight * 0.15,
+                            fontSize: deviceWidth * 0.13,
                             fontWeight: FontWeight.bold,
                           ),
                         ],
@@ -69,7 +70,7 @@ class AboutOneWeb extends StatelessWidget {
                             text: "鳥羽悠太",
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
-                            fontSize: deviceHeight * 0.04,
+                            fontSize: deviceWidth * 0.04,
                             fontWeight: FontWeight.bold,
                           ),
                           WidthSizedBox(targetSize: deviceWidth, value: 0.01),
@@ -77,7 +78,7 @@ class AboutOneWeb extends StatelessWidget {
                             text: "/",
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
-                            fontSize: deviceHeight * 0.04,
+                            fontSize: deviceWidth * 0.04,
                             fontWeight: FontWeight.bold,
                           ),
                           WidthSizedBox(targetSize: deviceWidth, value: 0.01),
@@ -85,7 +86,7 @@ class AboutOneWeb extends StatelessWidget {
                             text: "Design Portfolio",
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
-                            fontSize: deviceHeight * 0.04,
+                            fontSize: deviceWidth * 0.04,
                             fontWeight: FontWeight.bold,
                           ),
                         ],

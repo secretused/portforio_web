@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../utils/project_widget/about_widget.dart';
 import '../../../utils/extract_widget.dart';
 
-class AboutThree extends StatelessWidget {
-  const AboutThree({
+class AboutThreeMobile extends StatelessWidget {
+  const AboutThreeMobile({
     Key? key,
   }) : super(key: key);
 
@@ -15,18 +15,19 @@ class AboutThree extends StatelessWidget {
 
     return Container(
       color: Colors.white,
-      height: deviceHeight - 100,
+      height: deviceHeight - 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           // 左サイド
           SizedBox(
-            width: deviceWidth * 0.33,
+            width: deviceWidth * 0.8,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(180),
@@ -37,13 +38,13 @@ class AboutThree extends StatelessWidget {
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                     Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         BodyText(
                           text: "Yuta Toba",
                           color: const Color.fromRGBO(0, 0, 0, 0.8),
                           fontFamily: '源ノ角ゴシック VF',
-                          fontSize: deviceHeight * 0.02,
+                          fontSize: deviceWidth * 0.02,
                           fontWeight: FontWeight.bold,
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.005),
@@ -51,14 +52,14 @@ class AboutThree extends StatelessWidget {
                           text: "鳥羽悠太",
                           color: const Color.fromRGBO(0, 0, 0, 0.8),
                           fontFamily: '源ノ角ゴシック VF',
-                          fontSize: deviceHeight * 0.05,
+                          fontSize: deviceWidth * 0.05,
                           fontWeight: FontWeight.bold,
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.02),
                         HighPaddingText(
                           text: "Vantanテックフォードアカデミー\n専門学部 IT総合学科 UIUXクラス",
                           color: const Color.fromRGBO(0, 0, 0, 0.8),
-                          fontSize: deviceHeight * 0.02,
+                          fontSize: deviceWidth * 0.02,
                           fontWeight: FontWeight.normal,
                           fontFamily: "源ノ角ゴシック VF",
                           textAlign: TextAlign.start,
@@ -72,9 +73,9 @@ class AboutThree extends StatelessWidget {
                 // 強み
                 SmallTitleUnderline(
                   smallTitle: '強み',
-                  sizeValue: 0.03,
-                  lineLength: deviceWidth * 0.32,
-                  alignment: CrossAxisAlignment.start,
+                  sizeValue: 0.035,
+                  lineLength: deviceWidth * 0.6,
+                  alignment: CrossAxisAlignment.center,
                 ),
                 HeightSizedBox(targetSize: deviceHeight, value: 0.03),
                 Row(
@@ -177,9 +178,9 @@ class AboutThree extends StatelessWidget {
                 // スキル
                 SmallTitleUnderline(
                   smallTitle: 'スキル',
-                  sizeValue: 0.03,
-                  lineLength: deviceWidth * 0.32,
-                  alignment: CrossAxisAlignment.start,
+                  sizeValue: 0.035,
+                  lineLength: deviceWidth * 0.75,
+                  alignment: CrossAxisAlignment.center,
                 ),
                 HeightSizedBox(targetSize: deviceHeight, value: 0.03),
                 Row(
@@ -193,116 +194,6 @@ class AboutThree extends StatelessWidget {
                     SkilIcon(imagePath: 'assets/python.svg'),
                   ],
                 ),
-              ],
-            ),
-          ),
-          WidthSizedBox(targetSize: deviceWidth, value: 0.06),
-          SizedBox(
-            width: deviceWidth * 0.25,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // 自分年表
-                SmallTitleUnderline(
-                  smallTitle: '自分年表',
-                  sizeValue: 0.03,
-                  lineLength: deviceWidth * 0.23,
-                  alignment: CrossAxisAlignment.start,
-                ),
-                HeightSizedBox(targetSize: deviceHeight, value: 0.03),
-                Padding(
-                  padding: EdgeInsets.only(left: deviceWidth * 0.003),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      MyHistoryTopic(
-                        circleColor: Color.fromRGBO(151, 151, 151, 0.5),
-                        time: '2019.3',
-                        event: '岡崎城西高等学校中途退学',
-                        eventColor: Color.fromRGBO(0, 0, 0, 0.5),
-                      ),
-                      VerticalBorderLine(
-                        heightPadding: 0.01,
-                        widthPadding: 0.004,
-                        heightValue: 0.05,
-                      ),
-                      MyHistoryTopic(
-                        circleColor: Color.fromRGBO(151, 151, 151, 0.5),
-                        time: '2020.1',
-                        event: 'Langara College LEAP(Canada)入学',
-                        eventColor: Color.fromRGBO(0, 0, 0, 0.5),
-                      ),
-                      VerticalBorderLine(
-                        heightPadding: 0.01,
-                        widthPadding: 0.004,
-                        heightValue: 0.05,
-                      ),
-                      MyHistoryTopic(
-                        circleColor: Color.fromRGBO(3, 144, 126, 1),
-                        time: '2021.4',
-                        event: 'Vantanテックフォードアカデミー入学',
-                        eventColor: Color.fromRGBO(0, 0, 0, 0.8),
-                      ),
-                      VerticalBorderLine(
-                        heightPadding: 0.01,
-                        widthPadding: 0.004,
-                        heightValue: 0.05,
-                      ),
-                      MyHistoryTopic(
-                        circleColor: Color.fromRGBO(151, 151, 151, 0.5),
-                        time: '2021.7',
-                        event: 'Kindle短編小説集「混沌」出版',
-                        eventColor: Color.fromRGBO(0, 0, 0, 0.5),
-                      ),
-                      VerticalBorderLine(
-                        heightPadding: 0.01,
-                        widthPadding: 0.004,
-                        heightValue: 0.05,
-                      ),
-                      MyHistoryTopic(
-                        circleColor: Color.fromRGBO(3, 144, 126, 1),
-                        time: '2021.12',
-                        event: '東京メトロ「Metro Ad Creative Award」作品応募',
-                        eventColor: Color.fromRGBO(0, 0, 0, 0.8),
-                      ),
-                      VerticalBorderLine(
-                        heightPadding: 0.01,
-                        widthPadding: 0.004,
-                        heightValue: 0.05,
-                      ),
-                      MyHistoryTopic(
-                        circleColor: Color.fromRGBO(151, 151, 151, 0.5),
-                        time: '2022.2',
-                        event: 'OpenSea「Contradicting World」NFT販売',
-                        eventColor: Color.fromRGBO(0, 0, 0, 0.5),
-                      ),
-                      VerticalBorderLine(
-                        heightPadding: 0.01,
-                        widthPadding: 0.004,
-                        heightValue: 0.05,
-                      ),
-                      MyHistoryTopic(
-                        circleColor: Color.fromRGBO(3, 144, 126, 1),
-                        time: '2022.5',
-                        event: '入館管理アプリ「シュッ席」リリース',
-                        eventColor: Color.fromRGBO(0, 0, 0, 0.8),
-                      ),
-                      VerticalBorderLine(
-                        heightPadding: 0.01,
-                        widthPadding: 0.004,
-                        heightValue: 0.05,
-                      ),
-                      MyHistoryTopic(
-                        circleColor: Color.fromRGBO(3, 144, 126, 1),
-                        time: '2022.7',
-                        event: 'エヌ次元株式会社 アルバイト 入社(PM補佐)',
-                        eventColor: Color.fromRGBO(0, 0, 0, 0.8),
-                      ),
-                    ],
-                  ),
-                )
               ],
             ),
           ),

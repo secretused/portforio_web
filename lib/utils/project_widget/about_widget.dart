@@ -14,23 +14,25 @@ class SmallTitleUnderline extends StatelessWidget {
     required this.smallTitle,
     required this.sizeValue,
     required this.lineLength,
+    required this.alignment,
   }) : super(key: key);
 
   final String smallTitle;
   final double sizeValue;
   final double lineLength;
+  final CrossAxisAlignment alignment;
 
   @override
   Widget build(BuildContext context) {
     var deviceHeight = MediaQuery.of(context).size.height;
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: alignment,
       children: [
         BodyText(
           text: smallTitle,
           color: const Color.fromRGBO(3, 144, 126, 1),
-          fontFamily: '',
+          fontFamily: 'Noto Sans JP',
           fontSize: deviceHeight * sizeValue,
           fontWeight: FontWeight.bold,
         ),
@@ -308,10 +310,12 @@ class VerticalBorderLine extends StatelessWidget {
   const VerticalBorderLine({
     Key? key,
     required this.heightPadding,
+    required this.widthPadding,
     required this.heightValue,
   }) : super(key: key);
 
   final double heightPadding;
+  final double widthPadding;
   final double heightValue;
 
   @override
@@ -321,7 +325,9 @@ class VerticalBorderLine extends StatelessWidget {
 
     return Padding(
       padding: EdgeInsets.only(
-          top: deviceHeight * heightPadding, left: deviceWidth * 0.004),
+        top: deviceHeight * heightPadding,
+        left: deviceWidth * widthPadding,
+      ),
       child: Container(
         width: 1,
         height: deviceHeight * heightValue,
@@ -352,8 +358,8 @@ class MyHistoryTopic extends StatelessWidget {
     var deviceHeight = MediaQuery.of(context).size.height;
 
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.end,
       mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Padding(
           padding: EdgeInsets.only(bottom: deviceHeight * 0.003),
@@ -527,7 +533,7 @@ class WorksNavigationButton extends ConsumerWidget {
           child: BodyText(
             text: buttonText,
             color: Colors.white,
-            fontFamily: '',
+            fontFamily: 'Noto Sans JP',
             fontWeight: FontWeight.bold,
             fontSize: appbarHeight * 0.4,
           ),
@@ -535,6 +541,7 @@ class WorksNavigationButton extends ConsumerWidget {
       ),
       style: ElevatedButton.styleFrom(
         backgroundColor: const Color.fromRGBO(151, 151, 151, 1),
+        elevation: 10,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),

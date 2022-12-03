@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import '../../../utils/extract_widget.dart';
 
-class CustomAppbarWeb extends ConsumerWidget {
-  const CustomAppbarWeb({
+class CustomAppbarMobile extends ConsumerWidget {
+  const CustomAppbarMobile({
     Key? key,
     required this.backgroundColor,
   }) : super(key: key);
@@ -17,10 +16,11 @@ class CustomAppbarWeb extends ConsumerWidget {
     var appbarHeight = AppBar().preferredSize.height;
 
     return AppBar(
-      toolbarHeight: 100,
+      toolbarHeight: 60,
       backgroundColor: Colors.white,
       elevation: 0.0,
       automaticallyImplyLeading: false,
+      iconTheme: const IconThemeData(color: Colors.black),
       title: Padding(
         padding: EdgeInsets.only(
             right: deviceWidth * 0.05, left: deviceWidth * 0.02),
@@ -29,30 +29,8 @@ class CustomAppbarWeb extends ConsumerWidget {
           children: [
             AppbarIcon(
               appbarHeight: appbarHeight,
-              heightValue: 1.3,
+              heightValue: 0.7,
               backgroundColor: backgroundColor,
-            ),
-            Row(
-              children: [
-                TextButtonWidget(
-                  targetSize: appbarHeight,
-                  text: "ABOUT",
-                  sizeValue: 0.5,
-                  color: Colors.black,
-                  path: "/",
-                ),
-                WidthSizedBox(
-                  targetSize: deviceWidth,
-                  value: 0.05,
-                ),
-                TextButtonWidget(
-                  targetSize: appbarHeight,
-                  text: "WORKS",
-                  sizeValue: 0.5,
-                  color: Colors.black,
-                  path: "/works",
-                ),
-              ],
             ),
           ],
         ),

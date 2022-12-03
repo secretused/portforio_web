@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../Mobile/about_pages_mobile/about_one_mobile.dart';
-import '../../Mobile/about_pages_mobile/about_two_mobile.dart';
-import '../../Mobile/about_pages_mobile/about_three_mobile.dart';
-import '../../Mobile/about_pages_mobile/about_four_mobile.dart';
-import '../about_pages_ipad/about_five_ipad.dart';
-import '../about_pages_ipad/about_six_ipad.dart';
-import '../../Mobile/about_pages_mobile/about_seven_mobile.dart';
+import '../about_pages_mobile/about_one_mobile.dart';
+import '../about_pages_mobile/about_two_mobile.dart';
+import '../about_pages_mobile/about_four_mobile.dart';
+import '../about_pages_mobile/about_three_mobile.dart';
+import '../about_pages_mobile/about_five_mobile.dart';
+import '../about_pages_mobile/about_six_mobile.dart';
+import '../about_pages_mobile/about_seven_mobile.dart';
 
-class AboutPageIpad extends ConsumerWidget {
-  const AboutPageIpad({
+class AboutPageIphone extends ConsumerWidget {
+  const AboutPageIphone({
     Key? key,
   }) : super(key: key);
 
@@ -28,9 +28,9 @@ class AboutPageIpad extends ConsumerWidget {
           // 4枚目
           AboutFourMobile(),
           // 5枚目
-          AboutFiveIPad(),
+          AboutFiveMobile(),
           // 6枚目
-          AboutSixIPad(),
+          AboutSixMobile(),
           // 7枚目
           AboutSevenMobile(),
         ],

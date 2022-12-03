@@ -6,6 +6,47 @@ import 'dart:html' as html;
 
 import '../provider/provider.dart';
 
+// AppbarIcon
+class AppbarIcon extends StatelessWidget {
+  const AppbarIcon({
+    Key? key,
+    required this.appbarHeight,
+    required this.heightValue,
+    required this.backgroundColor,
+  }) : super(key: key);
+
+  final double appbarHeight;
+  final double heightValue;
+  final Color backgroundColor;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () => GoRouter.of(context).go("/"),
+      child: SizedBox(
+        width: appbarHeight * heightValue,
+        height: appbarHeight * heightValue,
+        child: ElevatedButton(
+          child: BodyText(
+            text: "",
+            color: Colors.white,
+            fontFamily: '',
+            fontWeight: FontWeight.bold,
+            fontSize: appbarHeight * 0.4,
+          ),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: backgroundColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(180),
+            ),
+          ),
+          onPressed: () => context.go("/"),
+        ),
+      ),
+    );
+  }
+}
+
 // 余白(Width)
 class WidthSizedBox extends StatelessWidget {
   const WidthSizedBox({
@@ -260,6 +301,34 @@ class ImageWidget extends StatelessWidget {
     return SizedBox(
       height: deviceHeight * heightValue,
       child: CachedNetworkImage(
+        imageUrl: imagePath,
+        placeholder: (context, url) => const Center(
+          child: CircularProgressIndicator(),
+        ),
+      ),
+    );
+  }
+}
+
+// イメージ
+class ImageWidthWidget extends StatelessWidget {
+  const ImageWidthWidget({
+    Key? key,
+    required this.widthValue,
+    required this.imagePath,
+  }) : super(key: key);
+
+  final double widthValue;
+  final String imagePath;
+
+  @override
+  Widget build(BuildContext context) {
+    var deviceHeight = MediaQuery.of(context).size.height;
+
+    return SizedBox(
+      height: deviceHeight * widthValue,
+      child: CachedNetworkImage(
+        fit: BoxFit.cover,
         imageUrl: imagePath,
         placeholder: (context, url) => const Center(
           child: CircularProgressIndicator(),
