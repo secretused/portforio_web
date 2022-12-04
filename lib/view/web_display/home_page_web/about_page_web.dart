@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio_web/view/web/about_pages_web/about_five_web.dart';
-import 'package:portfolio_web/view/web/about_pages_web/about_four_web.dart';
-import 'package:portfolio_web/view/web/about_pages_web/about_one_web.dart';
-import 'package:portfolio_web/view/web/about_pages_web/about_six_web.dart';
-import 'package:portfolio_web/view/web/about_pages_web/about_three_web.dart';
-import 'package:portfolio_web/view/web/about_pages_web/about_two_web.dart';
+import 'package:portfolio_web/view/web_display/about_pages_web/about_five_web.dart';
+import 'package:portfolio_web/view/web_display/about_pages_web/about_four_web.dart';
+import 'package:portfolio_web/view/web_display/about_pages_web/about_one_web.dart';
+import 'package:portfolio_web/view/web_display/about_pages_web/about_six_web.dart';
+import 'package:portfolio_web/view/web_display/about_pages_web/about_three_web.dart';
+import 'package:portfolio_web/view/web_display/about_pages_web/about_two_web.dart';
 
 class AboutPageWeb extends ConsumerWidget {
   const AboutPageWeb({

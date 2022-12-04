@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio_web/view/web/home_page_web/appbar_web.dart';
+import 'package:portfolio_web/view/web_display/home_page_web/appbar_web.dart';
 
 import '../works_pages_web/pochipochi_pages_web/pochipochi_one_web.dart';
 import '../works_pages_web/pochipochi_pages_web/pochipochi_two_web.dart';
