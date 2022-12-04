@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../utils/iPad_widget/about_widgrt_ipad.dart';
+import '../../../utils/ipad_widget/about_widget_ipad.dart';
 import '../../../utils/project_widget/about_widget.dart';
 import '../../../utils/extract_widget.dart';
 

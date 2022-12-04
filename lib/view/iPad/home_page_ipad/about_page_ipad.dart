@@ -6,7 +6,7 @@ import '../../Mobile/about_pages_mobile/about_two_mobile.dart';
 import '../../Mobile/about_pages_mobile/about_three_mobile.dart';
 import '../../Mobile/about_pages_mobile/about_four_mobile.dart';
 import '../about_pages_ipad/about_five_ipad.dart';
-import '../about_pages_ipad/about_six_ipad.dart';
+import '../about_pages_ipad/about_six_Ipad.dart';
 import '../../Mobile/about_pages_mobile/about_seven_mobile.dart';
 
 class AboutPageIpad extends ConsumerWidget {
