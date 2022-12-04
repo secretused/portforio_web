@@ -2,8 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio_web/view/IPad/home_page_ipad/about_page_ipad.dart';
-import 'package:portfolio_web/view/Mobile/home_page_mobile/appbar_mobile.dart';
 
 import 'firebase_options.dart';
 import 'utils/mobile_widget/about_widgrt_mobile.dart';
@@ -11,6 +9,9 @@ import 'view/Web/home_page_web/appbar_web.dart';
 import 'view/Web/home_page_web/about_page_web.dart';
 import 'view/Web/home_page_web/works_page_web.dart';
 
+import 'package:portfolio_web/view/Mobile/home_page_mobile/appbar_mobile.dart';
+
+import 'view/IPad/home_page_ipad/about_page_ipad.dart';
 import 'view/Mobile/home_page_mobile/about_page_mobile.dart';
 
 import 'package:portfolio_web/view/Web/works_topics_web/tomony_page_web.dart';
