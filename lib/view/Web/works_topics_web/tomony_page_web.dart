@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_web/view/Web/home_page_web/appbar_web.dart';
+import 'package:portfolio_web/view/web/home_page_web/appbar_web.dart';
 
 import '../works_pages_web/tomony_pages_web/tomony_five_web.dart';
 import '../works_pages_web/tomony_pages_web/tomony_four_web.dart';
@@ -10,7 +10,7 @@ import '../works_pages_web/tomony_pages_web/tomony_six_web.dart';
 import '../works_pages_web/tomony_pages_web/tomony_ten_web.dart';
 import '../works_pages_web/tomony_pages_web/tomony_three_web.dart';
 import '../works_pages_web/tomony_pages_web/tomony_two_web.dart';
-import 'package:portfolio_web/view/Web/works_pages_web/tomony_pages_web/tomony_eleven_web.dart';
+import 'package:portfolio_web/view/web/works_pages_web/tomony_pages_web/tomony_eleven_web.dart';
 
 class Tomony extends StatelessWidget {
   const Tomony({Key? key}) : super(key: key);

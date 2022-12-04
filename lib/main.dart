@@ -5,19 +5,19 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'firebase_options.dart';
 import 'utils/mobile_widget/about_widgrt_mobile.dart';
-import 'view/Web/home_page_web/appbar_web.dart';
-import 'view/Web/home_page_web/about_page_web.dart';
-import 'view/Web/home_page_web/works_page_web.dart';
+import 'view/web/home_page_web/appbar_web.dart';
+import 'view/web/home_page_web/about_page_web.dart';
+import 'view/web/home_page_web/works_page_web.dart';
 
-import 'package:portfolio_web/view/Mobile/home_page_mobile/appbar_mobile.dart';
+import 'package:portfolio_web/view/mobile/home_page_mobile/appbar_mobile.dart';
 
-import 'view/IPad/home_page_ipad/about_page_ipad.dart';
-import 'view/Mobile/home_page_mobile/about_page_mobile.dart';
+import 'view/ipad/home_page_ipad/about_page_ipad.dart';
+import 'view/mobile/home_page_mobile/about_page_mobile.dart';
 
-import 'package:portfolio_web/view/Web/works_topics_web/tomony_page_web.dart';
-import 'view/Web/works_topics_web/shusseki_page_web.dart';
-import 'view/Web/works_topics_web/pochipochi_page_web.dart';
-import 'view/Web/works_topics_web/otherworks_page_web.dart';
+import 'package:portfolio_web/view/web/works_topics_web/tomony_page_web.dart';
+import 'view/web/works_topics_web/shusseki_page_web.dart';
+import 'view/web/works_topics_web/pochipochi_page_web.dart';
+import 'view/web/works_topics_web/otherworks_page_web.dart';
 import 'utils/extract_widget.dart';
 
 Future<void> main() async {
