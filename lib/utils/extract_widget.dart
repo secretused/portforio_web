@@ -30,7 +30,7 @@ class AppbarIcon extends StatelessWidget {
           child: BodyText(
             text: "",
             color: Colors.white,
-            fontFamily: '',
+            fontFamily: 'Noto Sans JP',
             fontWeight: FontWeight.bold,
             fontSize: appbarHeight * 0.4,
           ),
@@ -226,12 +226,14 @@ class IconButtonWidget extends ConsumerWidget {
   const IconButtonWidget({
     Key? key,
     required this.link,
-    required this.heightValue,
+    required this.imageValue,
+    required this.iconValue,
     required this.path,
   }) : super(key: key);
 
   final String link;
-  final double heightValue;
+  final double iconValue;
+  final double imageValue;
   final String path;
 
   @override
@@ -247,7 +249,7 @@ class IconButtonWidget extends ConsumerWidget {
       child: GestureDetector(
         onTap: () => html.window.open(link, ''),
         child: Container(
-          height: deviceHeight * 0.06,
+          height: deviceHeight * iconValue,
           decoration: BoxDecoration(
             color: Colors.transparent,
             borderRadius: BorderRadius.circular(180),
@@ -264,8 +266,8 @@ class IconButtonWidget extends ConsumerWidget {
           ),
           child: ImageWidget(
             heightValue: (_imagePath == path && _iconButtonProviderStatus)
-                ? heightValue
-                : heightValue,
+                ? imageValue
+                : imageValue,
             imagePath: path,
           ),
         ),

@@ -46,7 +46,7 @@ class AboutTwo extends StatelessWidget {
               ),
               HeightSizedBox(targetSize: deviceHeight, value: 0.005),
               BodyText(
-                text: "サービス・プロダクトを使ってくれる人のこと最優先に考え、デザインすることで",
+                text: "サービス・プロダクトを使ってくれる人のことを最優先に考え、デザインすることで",
                 color: Colors.black,
                 fontFamily: 'Noto Sans JP',
                 fontSize: deviceHeight * 0.023,

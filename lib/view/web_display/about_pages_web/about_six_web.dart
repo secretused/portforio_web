@@ -36,19 +36,22 @@ class AboutSix extends ConsumerWidget {
                 children: [
                   const IconButtonWidget(
                     link: twitteUrl,
-                    heightValue: 0.05,
+                    imageValue: 0.06,
+                    iconValue: 0.05,
                     path: "https://i.imgur.com/Bcr11yX.png",
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                   const IconButtonWidget(
                     link: githubUrl,
-                    heightValue: 0.05,
+                    imageValue: 0.06,
+                    iconValue: 0.05,
                     path: "https://i.imgur.com/nuHWZ8T.png",
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                   const IconButtonWidget(
                     link: qiitaUrl,
-                    heightValue: 0.05,
+                    imageValue: 0.06,
+                    iconValue: 0.05,
                     path: "https://i.imgur.com/6XzxBQS.png",
                   ),
                 ],

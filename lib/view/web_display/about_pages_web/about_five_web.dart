@@ -79,6 +79,7 @@ class AboutFive extends ConsumerWidget {
               HeightSizedBox(targetSize: deviceHeight, value: 0.075),
               const WorksNavigationButton(
                 buttonText: 'View More',
+                fontValue: 0.02,
                 sizeValue: 0.02,
               ),
             ],

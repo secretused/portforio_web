@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../provider/provider.dart';
 import '../../../utils/extract_widget.dart';
 
-class AboutFiveMobile extends StatelessWidget {
+class AboutFiveMobile extends ConsumerWidget {
   const AboutFiveMobile({
     Key? key,
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     var deviceHeight = MediaQuery.of(context).size.height;
     var deviceWidth = MediaQuery.of(context).size.width;
 
+    final bool _mobileDirectionProviderStatus =
+        ref.watch(mobileDirectionProvider);
+
     return Container(
       color: Colors.white,
-      height: deviceHeight - 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -36,7 +40,9 @@ class AboutFiveMobile extends StatelessWidget {
                 fontWeight: FontWeight.normal,
                 fontFamily: "Nasu",
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.04),
+              HeightSizedBox(
+                  targetSize: deviceHeight,
+                  value: _mobileDirectionProviderStatus ? 0.08 : 0.04),
               BodyText(
                 text: "Business",
                 color: const Color.fromRGBO(151, 151, 151, 1),
@@ -44,18 +50,22 @@ class AboutFiveMobile extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: "MS ゴシック",
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+              HeightSizedBox(
+                  targetSize: deviceHeight,
+                  value: _mobileDirectionProviderStatus ? 0.02 : 0.01),
               HighPaddingText(
                 text:
                     "専門学校の授業のひとつのアートシンキングでは\n物事への価値創出を考えることを始めとし\nビジネスコンテストに参加し、チームマネジメントの大切さを学びました。\nマネジメントでは、アルバイト先でディレクターアシスタントとして\n会社の価値を常に忘れずに日々業務を行なっております。",
                 color: const Color.fromRGBO(0, 0, 0, 0.8),
-                fontSize: deviceWidth * 0.023,
+                fontSize: deviceWidth * 0.025,
                 fontWeight: FontWeight.normal,
                 fontFamily: "源ノ角ゴシック",
                 textAlign: TextAlign.center,
                 paddingValue: 1.3,
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.04),
+              HeightSizedBox(
+                  targetSize: deviceHeight,
+                  value: _mobileDirectionProviderStatus ? 0.08 : 0.04),
               BodyText(
                 text: "Design",
                 color: const Color.fromRGBO(151, 151, 151, 1),
@@ -63,18 +73,22 @@ class AboutFiveMobile extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: "MS ゴシック",
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+              HeightSizedBox(
+                  targetSize: deviceHeight,
+                  value: _mobileDirectionProviderStatus ? 0.02 : 0.01),
               HighPaddingText(
                 text:
                     "現役のデザイナーの方々からの講義で、考え方をインプットし\n戦略から表層まで、HCDの観点で\n常にユーザーを思い続けることを意識しております。\n直接リサーチを行い、本質的な価値を見極めることを日々心がけ\nOOUIをベースにUI設計までを行えるのが強みです。",
                 color: const Color.fromRGBO(0, 0, 0, 0.8),
-                fontSize: deviceWidth * 0.023,
+                fontSize: deviceWidth * 0.025,
                 fontWeight: FontWeight.normal,
                 fontFamily: "源ノ角ゴシック",
                 textAlign: TextAlign.center,
                 paddingValue: 1.3,
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.04),
+              HeightSizedBox(
+                  targetSize: deviceHeight,
+                  value: _mobileDirectionProviderStatus ? 0.08 : 0.04),
               BodyText(
                 text: "Programming",
                 color: const Color.fromRGBO(151, 151, 151, 1),
@@ -82,18 +96,19 @@ class AboutFiveMobile extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: "MS ゴシック",
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+              HeightSizedBox(
+                  targetSize: deviceHeight,
+                  value: _mobileDirectionProviderStatus ? 0.02 : 0.01),
               HighPaddingText(
                 text:
                     "個人的にアプリケーション開発を学び\n構想だけで終わらないプロジェクトを実装しております。\nDartのフレームワークである\nFlutterを用いたアプリ開発・リリース経験があります。",
                 color: const Color.fromRGBO(0, 0, 0, 0.8),
-                fontSize: deviceWidth * 0.023,
+                fontSize: deviceWidth * 0.025,
                 fontWeight: FontWeight.normal,
                 fontFamily: "源ノ角ゴシック",
                 textAlign: TextAlign.center,
                 paddingValue: 1.3,
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.04)
             ],
           )
         ],

@@ -14,9 +14,11 @@ class AboutSevenMobile extends ConsumerWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
 
+    final bool _mobileDirectionProviderStatus =
+        ref.watch(mobileDirectionProvider);
+
     return Container(
       color: Colors.white,
-      height: deviceHeight - 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -34,21 +36,24 @@ class AboutSevenMobile extends ConsumerWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const IconButtonWidget(
+                  IconButtonWidget(
                     link: twitteUrl,
-                    heightValue: 0.05,
+                    iconValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                    imageValue: _mobileDirectionProviderStatus ? 0.1 : 0.05,
                     path: "https://i.imgur.com/Bcr11yX.png",
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.05),
-                  const IconButtonWidget(
+                  IconButtonWidget(
                     link: githubUrl,
-                    heightValue: 0.05,
+                    iconValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                    imageValue: _mobileDirectionProviderStatus ? 0.1 : 0.05,
                     path: "https://i.imgur.com/nuHWZ8T.png",
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.05),
-                  const IconButtonWidget(
+                  IconButtonWidget(
                     link: qiitaUrl,
-                    heightValue: 0.05,
+                    iconValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                    imageValue: _mobileDirectionProviderStatus ? 0.1 : 0.05,
                     path: "https://i.imgur.com/6XzxBQS.png",
                   ),
                 ],

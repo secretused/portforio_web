@@ -93,7 +93,6 @@ class AboutFiveIPad extends StatelessWidget {
                 textAlign: TextAlign.center,
                 paddingValue: 1.3,
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.04)
             ],
           )
         ],

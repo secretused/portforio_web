@@ -14,12 +14,14 @@ class SmallTitleUnderline extends StatelessWidget {
     required this.smallTitle,
     required this.sizeValue,
     required this.lineLength,
+    required this.paddingValue,
     required this.alignment,
   }) : super(key: key);
 
   final String smallTitle;
   final double sizeValue;
   final double lineLength;
+  final double paddingValue;
   final CrossAxisAlignment alignment;
 
   @override
@@ -36,7 +38,7 @@ class SmallTitleUnderline extends StatelessWidget {
           fontSize: deviceHeight * sizeValue,
           fontWeight: FontWeight.bold,
         ),
-        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
+        HeightSizedBox(targetSize: deviceHeight, value: paddingValue),
         DotLine(
           axis: Axis.horizontal,
           lineLength: lineLength,
@@ -85,7 +87,7 @@ class DotLine extends StatelessWidget {
 }
 
 // 強みのアイコン
-class StrengthTopic extends StatelessWidget {
+class StrengthTopic extends ConsumerWidget {
   const StrengthTopic({
     Key? key,
     required this.topicTitle,
@@ -96,34 +98,47 @@ class StrengthTopic extends StatelessWidget {
   final IconData icon;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     var deviceHeight = MediaQuery.of(context).size.height;
+    final bool _mobileDirectionProviderStatus =
+        ref.watch(mobileDirectionProvider);
 
-    return Container(
-      width: deviceHeight * 0.1,
-      height: deviceHeight * 0.1,
-      decoration: BoxDecoration(
-        color: const Color.fromRGBO(151, 151, 151, 0.5),
-        borderRadius: BorderRadius.circular(180),
-      ),
-      child: Padding(
-        padding: EdgeInsets.all(deviceHeight * 0.005),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              icon,
-              color: Colors.white,
-              size: deviceHeight * 0.04,
-            ),
-            BodyText(
-              text: topicTitle,
-              color: Colors.white,
-              fontFamily: '',
-              fontSize: deviceHeight * 0.025,
-              fontWeight: FontWeight.normal,
-            ),
-          ],
+    return Center(
+      child: Container(
+        width: _mobileDirectionProviderStatus
+            ? deviceHeight * 0.15
+            : deviceHeight * 0.1,
+        height: _mobileDirectionProviderStatus
+            ? deviceHeight * 0.15
+            : deviceHeight * 0.1,
+        decoration: BoxDecoration(
+          color: const Color.fromRGBO(151, 151, 151, 0.5),
+          borderRadius: BorderRadius.circular(180),
+        ),
+        child: Padding(
+          padding: EdgeInsets.all(deviceHeight * 0.005),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                icon,
+                color: Colors.white,
+                size: _mobileDirectionProviderStatus
+                    ? deviceHeight * 0.06
+                    : deviceHeight * 0.04,
+              ),
+              BodyText(
+                text: topicTitle,
+                color: Colors.white,
+                fontFamily: 'Noto Sans JP',
+                fontSize: _mobileDirectionProviderStatus
+                    ? deviceHeight * 0.04
+                    : deviceHeight * 0.025,
+                fontWeight: FontWeight.normal,
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -233,8 +248,10 @@ class SkillText extends StatelessWidget {
     Key? key,
     required this.text,
     required this.fontValue,
+    required this.sizeValue,
   }) : super(key: key);
 
+  final double sizeValue;
   final double fontValue;
   final String text;
 
@@ -244,8 +261,8 @@ class SkillText extends StatelessWidget {
 
     return Center(
       child: Container(
-        width: deviceHeight * fontValue,
-        height: deviceHeight * fontValue,
+        width: deviceHeight * sizeValue,
+        height: deviceHeight * sizeValue,
         decoration: BoxDecoration(
           color: const Color.fromRGBO(151, 151, 151, 0.5),
           borderRadius: BorderRadius.circular(10),
@@ -260,8 +277,8 @@ class SkillText extends StatelessWidget {
             child: BodyText(
               text: text,
               color: Colors.white,
-              fontFamily: '',
-              fontSize: deviceHeight * 0.035,
+              fontFamily: 'Noto Sans JP',
+              fontSize: deviceHeight * fontValue,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -276,17 +293,21 @@ class SkilIcon extends StatelessWidget {
   const SkilIcon({
     Key? key,
     required this.imagePath,
+    required this.sizeValue,
+    required this.imageValue,
   }) : super(key: key);
 
+  final double sizeValue;
   final String imagePath;
+  final double imageValue;
 
   @override
   Widget build(BuildContext context) {
     var deviceHeight = MediaQuery.of(context).size.height;
 
     return Container(
-      width: deviceHeight * 0.07,
-      height: deviceHeight * 0.07,
+      width: deviceHeight * sizeValue,
+      height: deviceHeight * sizeValue,
       decoration: BoxDecoration(
         color: const Color.fromRGBO(151, 151, 151, 0.5),
         borderRadius: BorderRadius.circular(10),
@@ -296,8 +317,8 @@ class SkilIcon extends StatelessWidget {
           padding: EdgeInsets.all(deviceHeight * 0.005),
           child: SvgPicture.asset(
             imagePath,
-            width: deviceHeight * 0.04,
-            height: deviceHeight * 0.04,
+            width: deviceHeight * imageValue,
+            height: deviceHeight * imageValue,
           ),
         ),
       ),
@@ -513,16 +534,18 @@ class WorksNavigationButton extends ConsumerWidget {
   const WorksNavigationButton({
     Key? key,
     required this.buttonText,
+    required this.fontValue,
     required this.sizeValue,
   }) : super(key: key);
 
   final String buttonText;
+  final double fontValue;
   final double sizeValue;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceHeight = MediaQuery.of(context).size.height;
-    var appbarHeight = AppBar().preferredSize.height;
+    var deviceWidth = MediaQuery.of(context).size.width;
 
     return ElevatedButton(
       child: Padding(
@@ -535,7 +558,7 @@ class WorksNavigationButton extends ConsumerWidget {
             color: Colors.white,
             fontFamily: 'Noto Sans JP',
             fontWeight: FontWeight.bold,
-            fontSize: appbarHeight * 0.4,
+            fontSize: deviceWidth * fontValue,
           ),
         ),
       ),

@@ -4,7 +4,8 @@ import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'firebase_options.dart';
-import 'utils/mobile_widget/about_widgrt_mobile.dart';
+import 'provider/provider.dart';
+import 'utils/mobile_widget/about_widget_mobile.dart';
 import 'view/web_display/home_page_web/appbar_web.dart';
 import 'view/web_display/home_page_web/about_page_web.dart';
 import 'view/web_display/home_page_web/works_page_web.dart';
@@ -133,7 +134,7 @@ class _MyHomePage extends ConsumerWidget {
           );
         } else if (constraints.maxWidth <= 1200 &&
             constraints.maxWidth >= 800) {
-          // iPad & iPhone(横)
+          // iPad
           return const Scaffold(
             appBar: PreferredSize(
               preferredSize: Size.fromHeight(60),
@@ -145,17 +146,39 @@ class _MyHomePage extends ConsumerWidget {
             endDrawer: DrawerWidget(),
             body: AboutPageIpad(),
           );
-        } else {
-          //iPhone(縦)
-          return const Scaffold(
-            appBar: PreferredSize(
-              preferredSize: Size.fromHeight(60),
-              child: CustomAppbarMobile(
-                backgroundColor: Color.fromRGBO(3, 144, 126, 1),
+        } else if (constraints.maxWidth > constraints.maxHeight) {
+          //iPhone(横)
+          return ProviderScope(
+            overrides: [
+              mobileDirectionProvider.overrideWithValue(true),
+            ],
+            child: const Scaffold(
+              appBar: PreferredSize(
+                preferredSize: Size.fromHeight(60),
+                child: CustomAppbarMobile(
+                  backgroundColor: Color.fromRGBO(3, 144, 126, 1),
+                ),
               ),
+              endDrawer: DrawerWidget(),
+              body: AboutPageIphone(),
             ),
-            endDrawer: DrawerWidget(),
-            body: AboutPageIphone(),
+          );
+        } else {
+          //iPhone(横)
+          return ProviderScope(
+            overrides: [
+              mobileDirectionProvider.overrideWithValue(false),
+            ],
+            child: const Scaffold(
+              appBar: PreferredSize(
+                preferredSize: Size.fromHeight(60),
+                child: CustomAppbarMobile(
+                  backgroundColor: Color.fromRGBO(3, 144, 126, 1),
+                ),
+              ),
+              endDrawer: DrawerWidget(),
+              body: AboutPageIphone(),
+            ),
           );
         }
       },

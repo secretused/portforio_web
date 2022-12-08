@@ -14,6 +14,9 @@ final worksTopicContentsProvider = StateProvider((_) => false);
 // WorksPageアニメーション
 final imageLinkProvider = StateProvider((ref) => false);
 
+// モバイル 縦横
+final mobileDirectionProvider = Provider<bool>((ref) => false);
+
 // Profile SNS URl
 const String twitteUrl = "https://twitter.com/uta_app_vta";
 const String githubUrl = "https://github.com/secretused";

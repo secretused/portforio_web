@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../utils/mobile_widget/about_widgrt_mobile.dart';
+import '../../../provider/provider.dart';
+import '../../../utils/mobile_widget/about_widget_mobile.dart';
 import '../../../utils/project_widget/about_widget.dart';
 import '../../../utils/extract_widget.dart';
 
@@ -15,9 +16,11 @@ class AboutSixMobile extends ConsumerWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
 
+    final bool _mobileDirectionProviderStatus =
+        ref.watch(mobileDirectionProvider);
+
     return Container(
       color: Colors.white,
-      height: deviceHeight - 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -44,7 +47,7 @@ class AboutSixMobile extends ConsumerWidget {
                     appDisc: '生理中のパートナーのお悩み質問',
                     path: '/tomony',
                   ),
-                  HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+                  HeightSizedBox(targetSize: deviceHeight, value: 0.03),
                   const WorksTopicRightMobile(
                     index: '02',
                     topicColor: Color(0xFF379BA5),
@@ -54,7 +57,7 @@ class AboutSixMobile extends ConsumerWidget {
                     appDisc: 'QRコードで簡単入館',
                     path: '/shusseki',
                   ),
-                  HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+                  HeightSizedBox(targetSize: deviceHeight, value: 0.03),
                   const WorksTopicLeftMobile(
                     index: '03',
                     topicColor: Color(0xFFEBAA14),
@@ -64,7 +67,7 @@ class AboutSixMobile extends ConsumerWidget {
                     appDisc: '長く使える幼児向け音声再生アプリ',
                     path: '/pochipochi',
                   ),
-                  HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+                  HeightSizedBox(targetSize: deviceHeight, value: 0.03),
                   const WorksTopicRightMobile(
                     index: '04',
                     topicColor: Color(0xFFCBCBCB),
@@ -76,10 +79,11 @@ class AboutSixMobile extends ConsumerWidget {
                   ),
                 ],
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.03),
-              const WorksNavigationButton(
+              HeightSizedBox(targetSize: deviceHeight, value: 0.05),
+              WorksNavigationButton(
                 buttonText: 'View More',
-                sizeValue: 0.02,
+                fontValue: 0.03,
+                sizeValue: _mobileDirectionProviderStatus ? 0.04 : 0.015,
               ),
             ],
           ),

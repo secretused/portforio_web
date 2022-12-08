@@ -159,6 +159,7 @@ class OtherWorksSeven extends StatelessWidget {
               HeightSizedBox(targetSize: deviceHeight, value: 0.03),
               const WorksNavigationButton(
                 buttonText: 'View More',
+                fontValue: 0.02,
                 sizeValue: 0.02,
               ),
               HeightSizedBox(targetSize: deviceHeight, value: 0.03),
