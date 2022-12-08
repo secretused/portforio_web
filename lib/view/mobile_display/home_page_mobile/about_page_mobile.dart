@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../provider/provider.dart';
+import '../../../utils/mobile_widget/about_widget_mobile.dart';
 import '../about_pages_mobile/about_one_mobile.dart';
 import '../about_pages_mobile/about_two_mobile.dart';
 import '../about_pages_mobile/about_four_mobile.dart';
@@ -16,23 +18,56 @@ class AboutPageIphone extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    var deviceWidth = MediaQuery.of(context).size.width;
+
+    final bool _mobileDirectionProviderStatus =
+        ref.watch(mobileDirectionProvider);
+
     return SingleChildScrollView(
       child: Column(
-        children: const [
+        children: [
           // 1枚目
-          AboutOneMobile(),
+          const AboutOneMobile(),
+          HaightColorContainer(
+            targetSize: deviceWidth,
+            value: _mobileDirectionProviderStatus ? 0.15 : 0.35,
+          ),
           // 2枚目
-          AboutTwoMobile(),
+          const AboutTwoMobile(),
+          HaightColorContainer(
+            targetSize: deviceWidth,
+            value: _mobileDirectionProviderStatus ? 0.15 : 0.35,
+          ),
           // 3枚目
-          AboutThreeMobile(),
+          const AboutThreeMobile(),
+          HaightColorContainer(
+            targetSize: deviceWidth,
+            value: 0.15,
+          ),
           // 4枚目
-          AboutFourMobile(),
+          const AboutFourMobile(),
+          HaightColorContainer(
+            targetSize: deviceWidth,
+            value: 0.15,
+          ),
           // 5枚目
-          AboutFiveMobile(),
+          const AboutFiveMobile(),
+          HaightColorContainer(
+            targetSize: deviceWidth,
+            value: 0.15,
+          ),
           // 6枚目
-          AboutSixMobile(),
+          const AboutSixMobile(),
+          HaightColorContainer(
+            targetSize: deviceWidth,
+            value: 0.15,
+          ),
           // 7枚目
-          AboutSevenMobile(),
+          const AboutSevenMobile(),
+          HaightColorContainer(
+            targetSize: deviceWidth,
+            value: 0.1,
+          ),
         ],
       ),
     );

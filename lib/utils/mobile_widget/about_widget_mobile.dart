@@ -6,6 +6,26 @@ import '../../provider/provider.dart';
 import '../extract_widget.dart';
 import '../project_widget/about_widget.dart';
 
+//  余白(Height)
+class HaightColorContainer extends StatelessWidget {
+  const HaightColorContainer({
+    Key? key,
+    required this.targetSize,
+    required this.value,
+  }) : super(key: key);
+
+  final double targetSize;
+  final double value;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: targetSize * value,
+      color: Colors.white,
+    );
+  }
+}
+
 // ドロワー
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({
@@ -110,12 +130,16 @@ class HistoryTopicMobile extends StatelessWidget {
   const HistoryTopicMobile({
     Key? key,
     required this.circleColor,
+    required this.circleValue,
+    required this.circleBottomPadding,
     required this.time,
     required this.event,
     required this.eventColor,
   }) : super(key: key);
 
   final Color circleColor;
+  final double circleValue;
+  final double circleBottomPadding;
   final String time;
   final String event;
   final Color eventColor;
@@ -123,14 +147,18 @@ class HistoryTopicMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var deviceWidth = MediaQuery.of(context).size.width;
+    var deviceHeight = MediaQuery.of(context).size.height;
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        TrueCircle(
-          sizeValue: 0.02,
-          color: circleColor,
+        Padding(
+          padding: EdgeInsets.only(bottom: deviceHeight * circleBottomPadding),
+          child: TrueCircle(
+            sizeValue: circleValue,
+            color: circleColor,
+          ),
         ),
         WidthSizedBox(targetSize: deviceWidth, value: 0.01),
         Column(
@@ -139,14 +167,14 @@ class HistoryTopicMobile extends StatelessWidget {
             BodyText(
               text: time,
               color: const Color.fromRGBO(0, 0, 0, 0.8),
-              fontSize: deviceWidth * 0.015,
+              fontSize: deviceWidth * 0.02,
               fontWeight: FontWeight.normal,
               fontFamily: "Noto Sans JP",
             ),
             BodyText(
               text: event,
               color: eventColor,
-              fontSize: deviceWidth * 0.017,
+              fontSize: deviceWidth * 0.025,
               fontWeight: FontWeight.normal,
               fontFamily: "源ノ角ゴシック VF",
             ),
@@ -233,7 +261,7 @@ class WorksTopicLeftMobile extends ConsumerWidget {
                       (_appName == appName && _worksTopicContentsProviderStatus)
                           ? topicColor
                           : const Color.fromRGBO(0, 0, 0, 0.8),
-                  fontSize: deviceWidth * 0.05,
+                  fontSize: deviceWidth * 0.065,
                   fontWeight: FontWeight.bold,
                   fontFamily: fontName,
                 ),
@@ -246,7 +274,7 @@ class WorksTopicLeftMobile extends ConsumerWidget {
               onPressed: () => GoRouter.of(context).go(path),
               onLongPress: () => _textLongPress(ref, appName),
             ),
-            HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+            HeightSizedBox(targetSize: deviceHeight, value: 0.005),
             BodyText(
               text: appDisc,
               color: const Color.fromRGBO(151, 151, 151, 1),
@@ -314,7 +342,7 @@ class WorksTopicRightMobile extends ConsumerWidget {
                       (_appName == appName && _worksTopicContentsProviderStatus)
                           ? topicColor
                           : const Color.fromRGBO(0, 0, 0, 0.8),
-                  fontSize: deviceWidth * 0.05,
+                  fontSize: deviceWidth * 0.065,
                   fontWeight: FontWeight.bold,
                   fontFamily: fontName,
                 ),

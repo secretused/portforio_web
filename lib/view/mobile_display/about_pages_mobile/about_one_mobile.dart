@@ -1,24 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../provider/provider.dart';
 import '../../../utils/extract_widget.dart';
 
-class AboutOneMobile extends StatelessWidget {
+class AboutOneMobile extends ConsumerWidget {
   const AboutOneMobile({
     Key? key,
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    // deviceWidth
+  Widget build(BuildContext context, WidgetRef ref) {
     var deviceWidth = MediaQuery.of(context).size.width;
-    // 821
     var deviceHeight = MediaQuery.of(context).size.height;
+
+    final bool _mobileDirectionProviderStatus =
+        ref.watch(mobileDirectionProvider);
 
     return Container(
       color: Colors.white,
-      height: deviceHeight - 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           SizedBox(
             width: deviceWidth,
@@ -27,18 +30,28 @@ class AboutOneMobile extends StatelessWidget {
               fit: StackFit.passthrough,
               children: [
                 Align(
-                  alignment: Alignment.center,
+                  alignment: _mobileDirectionProviderStatus
+                      ? Alignment.centerRight
+                      : Alignment.center,
                   child: ImageWidthWidget(
                     widthValue: deviceWidth,
-                    imagePath: "https://i.imgur.com/mFt6tNO.png",
+                    imagePath: _mobileDirectionProviderStatus
+                        ? "https://i.imgur.com/t0QknQA.png"
+                        : "https://i.imgur.com/mFt6tNO.png",
                   ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(
-                      left: deviceWidth * 0.03, bottom: deviceWidth * 0.03),
+                    left: _mobileDirectionProviderStatus
+                        ? deviceWidth * 0.2
+                        : deviceWidth * 0.03,
+                    bottom: deviceWidth * 0.03,
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.end,
+                    mainAxisAlignment: _mobileDirectionProviderStatus
+                        ? MainAxisAlignment.center
+                        : MainAxisAlignment.end,
                     children: <Widget>[
                       Row(
                         children: [
@@ -46,14 +59,18 @@ class AboutOneMobile extends StatelessWidget {
                             text: "Yuta",
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
-                            fontSize: deviceWidth * 0.13,
+                            fontSize: _mobileDirectionProviderStatus
+                                ? deviceHeight * 0.13
+                                : deviceWidth * 0.13,
                             fontWeight: FontWeight.bold,
                           ),
                           BodyText(
                             text: "Toba",
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
-                            fontSize: deviceWidth * 0.13,
+                            fontSize: _mobileDirectionProviderStatus
+                                ? deviceHeight * 0.13
+                                : deviceWidth * 0.13,
                             fontWeight: FontWeight.bold,
                           ),
                         ],
@@ -70,7 +87,9 @@ class AboutOneMobile extends StatelessWidget {
                             text: "鳥羽悠太",
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
-                            fontSize: deviceWidth * 0.04,
+                            fontSize: _mobileDirectionProviderStatus
+                                ? deviceHeight * 0.04
+                                : deviceWidth * 0.04,
                             fontWeight: FontWeight.bold,
                           ),
                           WidthSizedBox(targetSize: deviceWidth, value: 0.01),
@@ -78,7 +97,9 @@ class AboutOneMobile extends StatelessWidget {
                             text: "/",
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
-                            fontSize: deviceWidth * 0.04,
+                            fontSize: _mobileDirectionProviderStatus
+                                ? deviceHeight * 0.04
+                                : deviceWidth * 0.04,
                             fontWeight: FontWeight.bold,
                           ),
                           WidthSizedBox(targetSize: deviceWidth, value: 0.01),
@@ -86,7 +107,9 @@ class AboutOneMobile extends StatelessWidget {
                             text: "Design Portfolio",
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
-                            fontSize: deviceWidth * 0.04,
+                            fontSize: _mobileDirectionProviderStatus
+                                ? deviceHeight * 0.04
+                                : deviceWidth * 0.04,
                             fontWeight: FontWeight.bold,
                           ),
                         ],

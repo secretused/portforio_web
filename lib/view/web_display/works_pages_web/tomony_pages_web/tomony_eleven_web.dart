@@ -136,13 +136,15 @@ class TomonyEleven extends ConsumerWidget {
                     Row(
                       children: [
                         const IconButtonWidget(
-                          heightValue: 0.05,
+                          iconValue: 0.06,
+                          imageValue: 0.05,
                           link: _notionUrl,
                           path: 'https://i.imgur.com/mzA6IxP.png',
                         ),
                         WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                         const IconButtonWidget(
-                          heightValue: 0.05,
+                          iconValue: 0.06,
+                          imageValue: 0.05,
                           link: _figmaUrl,
                           path: 'https://i.imgur.com/uZTvT8k.png',
                         ),
@@ -151,6 +153,7 @@ class TomonyEleven extends ConsumerWidget {
                     HeightSizedBox(targetSize: deviceWidth, value: 0.03),
                     const WorksNavigationButton(
                       buttonText: 'View More',
+                      fontValue: 0.02,
                       sizeValue: 0.02,
                     ),
                   ],

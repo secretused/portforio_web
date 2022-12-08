@@ -152,7 +152,8 @@ class ShussekiNine extends ConsumerWidget {
                                 WidthSizedBox(
                                     targetSize: deviceWidth, value: 0.01),
                                 const IconButtonWidget(
-                                  heightValue: 0.05,
+                                  imageValue: 0.06,
+                                  iconValue: 0.05,
                                   link: _figmaMockUpUrl,
                                   path: 'https://i.imgur.com/pQ88SXh.png',
                                 ),
@@ -168,7 +169,8 @@ class ShussekiNine extends ConsumerWidget {
                         Column(
                           children: [
                             const IconButtonWidget(
-                              heightValue: 0.05,
+                              iconValue: 0.06,
+                              imageValue: 0.05,
                               link: _appStoreUrl,
                               path: 'https://i.imgur.com/5jaDwbV.png',
                             ),
@@ -187,7 +189,8 @@ class ShussekiNine extends ConsumerWidget {
                         Column(
                           children: [
                             const IconButtonWidget(
-                              heightValue: 0.05,
+                              iconValue: 0.06,
+                              imageValue: 0.05,
                               link: _figmaWorkUrl,
                               path: 'https://i.imgur.com/uZTvT8k.png',
                             ),
@@ -206,7 +209,8 @@ class ShussekiNine extends ConsumerWidget {
                         Column(
                           children: [
                             const IconButtonWidget(
-                              heightValue: 0.05,
+                              iconValue: 0.06,
+                              imageValue: 0.05,
                               link: _figmaUIUrl,
                               path: 'https://i.imgur.com/1pkEq73.png',
                             ),
@@ -226,6 +230,7 @@ class ShussekiNine extends ConsumerWidget {
                     HeightSizedBox(targetSize: deviceWidth, value: 0.03),
                     const WorksNavigationButton(
                       buttonText: 'View More',
+                      fontValue: 0.02,
                       sizeValue: 0.02,
                     ),
                   ],

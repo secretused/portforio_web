@@ -54,7 +54,7 @@ class WorksTopic extends ConsumerWidget {
                 text: indexNumber,
                 color: Colors.grey,
                 fontSize: deviceHeight * 0.1,
-                fontFamily: '',
+                fontFamily: 'Noto Sans JP',
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -90,7 +90,7 @@ class WorksTopic extends ConsumerWidget {
                     color: Colors.white,
                     fontSize: deviceHeight * 0.02,
                     fontWeight: FontWeight.bold,
-                    fontFamily: '',
+                    fontFamily: 'Noto Sans JP',
                   ),
                   BodyText(
                     text: title,
