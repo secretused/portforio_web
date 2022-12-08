@@ -37,7 +37,8 @@ class AboutThreeMobile extends ConsumerWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(180),
                       child: ImageWidget(
-                        heightValue: _mobileDirectionProviderStatus ? 0.4 : 0.2,
+                        heightValue:
+                            _mobileDirectionProviderStatus ? 0.4 : 0.15,
                         imagePath: "https://i.imgur.com/p3o4bTd.jpg",
                       ),
                     ),
@@ -103,27 +104,27 @@ class AboutThreeMobile extends ConsumerWidget {
                         FiveLevelEvaluation(
                           one: TrueCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                           two: TrueCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                           three: TrueCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                           four: TrueCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                           five: FalseCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                         )
@@ -139,27 +140,27 @@ class AboutThreeMobile extends ConsumerWidget {
                         FiveLevelEvaluation(
                           one: TrueCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                           two: TrueCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                           three: TrueCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                           four: FalseCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                           five: FalseCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                         )
@@ -175,26 +176,27 @@ class AboutThreeMobile extends ConsumerWidget {
                         FiveLevelEvaluation(
                           one: TrueCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                           two: TrueCircle(
-                              sizeValue:
-                                  _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                              sizeValue: _mobileDirectionProviderStatus
+                                  ? 0.035
+                                  : 0.018,
                               color: const Color(0xFF919191)),
                           three: TrueCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                           four: TrueCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                           five: FalseCircle(
                             sizeValue:
-                                _mobileDirectionProviderStatus ? 0.035 : 0.02,
+                                _mobileDirectionProviderStatus ? 0.035 : 0.018,
                             color: const Color(0xFF919191),
                           ),
                         )
@@ -223,33 +225,33 @@ class AboutThreeMobile extends ConsumerWidget {
                   children: [
                     SkillText(
                       text: 'Ai',
-                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.07,
-                      fontValue: _mobileDirectionProviderStatus ? 0.06 : 0.035,
+                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                      fontValue: _mobileDirectionProviderStatus ? 0.06 : 0.03,
                     ),
                     SkillText(
                       text: 'Ps',
-                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.07,
-                      fontValue: _mobileDirectionProviderStatus ? 0.06 : 0.035,
+                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                      fontValue: _mobileDirectionProviderStatus ? 0.06 : 0.03,
                     ),
                     SkillText(
                       text: 'Xd',
-                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.07,
-                      fontValue: _mobileDirectionProviderStatus ? 0.06 : 0.035,
+                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                      fontValue: _mobileDirectionProviderStatus ? 0.06 : 0.03,
                     ),
                     SkilIcon(
-                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.07,
-                      imageValue: _mobileDirectionProviderStatus ? 0.07 : 0.04,
+                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                      imageValue: _mobileDirectionProviderStatus ? 0.07 : 0.035,
                       imagePath: 'assets/figma.svg',
                     ),
                     SkilIcon(
-                        sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.07,
+                        sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
                         imageValue:
-                            _mobileDirectionProviderStatus ? 0.07 : 0.04,
+                            _mobileDirectionProviderStatus ? 0.07 : 0.035,
                         imagePath: 'assets/flutter.svg'),
                     SkilIcon(
-                        sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.07,
+                        sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
                         imageValue:
-                            _mobileDirectionProviderStatus ? 0.07 : 0.04,
+                            _mobileDirectionProviderStatus ? 0.07 : 0.035,
                         imagePath: 'assets/python.svg'),
                   ],
                 ),

@@ -107,10 +107,10 @@ class StrengthTopic extends ConsumerWidget {
       child: Container(
         width: _mobileDirectionProviderStatus
             ? deviceHeight * 0.15
-            : deviceHeight * 0.1,
+            : deviceHeight * 0.075,
         height: _mobileDirectionProviderStatus
             ? deviceHeight * 0.15
-            : deviceHeight * 0.1,
+            : deviceHeight * 0.075,
         decoration: BoxDecoration(
           color: const Color.fromRGBO(151, 151, 151, 0.5),
           borderRadius: BorderRadius.circular(180),
@@ -126,7 +126,7 @@ class StrengthTopic extends ConsumerWidget {
                 color: Colors.white,
                 size: _mobileDirectionProviderStatus
                     ? deviceHeight * 0.06
-                    : deviceHeight * 0.04,
+                    : deviceHeight * 0.03,
               ),
               BodyText(
                 text: topicTitle,
@@ -134,7 +134,7 @@ class StrengthTopic extends ConsumerWidget {
                 fontFamily: 'Noto Sans JP',
                 fontSize: _mobileDirectionProviderStatus
                     ? deviceHeight * 0.04
-                    : deviceHeight * 0.025,
+                    : deviceHeight * 0.02,
                 fontWeight: FontWeight.normal,
               ),
             ],

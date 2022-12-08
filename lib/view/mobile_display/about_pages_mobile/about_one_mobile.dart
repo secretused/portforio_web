@@ -60,7 +60,7 @@ class AboutOneMobile extends ConsumerWidget {
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
                             fontSize: _mobileDirectionProviderStatus
-                                ? deviceHeight * 0.13
+                                ? deviceHeight * 0.15
                                 : deviceWidth * 0.13,
                             fontWeight: FontWeight.bold,
                           ),
@@ -69,7 +69,7 @@ class AboutOneMobile extends ConsumerWidget {
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
                             fontSize: _mobileDirectionProviderStatus
-                                ? deviceHeight * 0.13
+                                ? deviceHeight * 0.15
                                 : deviceWidth * 0.13,
                             fontWeight: FontWeight.bold,
                           ),
@@ -88,7 +88,7 @@ class AboutOneMobile extends ConsumerWidget {
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
                             fontSize: _mobileDirectionProviderStatus
-                                ? deviceHeight * 0.04
+                                ? deviceHeight * 0.06
                                 : deviceWidth * 0.04,
                             fontWeight: FontWeight.bold,
                           ),
@@ -98,7 +98,7 @@ class AboutOneMobile extends ConsumerWidget {
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
                             fontSize: _mobileDirectionProviderStatus
-                                ? deviceHeight * 0.04
+                                ? deviceHeight * 0.06
                                 : deviceWidth * 0.04,
                             fontWeight: FontWeight.bold,
                           ),
@@ -108,7 +108,7 @@ class AboutOneMobile extends ConsumerWidget {
                             color: Colors.black,
                             fontFamily: 'Objective-bold',
                             fontSize: _mobileDirectionProviderStatus
-                                ? deviceHeight * 0.04
+                                ? deviceHeight * 0.06
                                 : deviceWidth * 0.04,
                             fontWeight: FontWeight.bold,
                           ),

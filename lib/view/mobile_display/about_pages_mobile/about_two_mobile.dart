@@ -38,7 +38,9 @@ class AboutTwoMobile extends ConsumerWidget {
                 text:
                     "「何かわからないけど、このデザインいいな」\n「使いやすくて楽しい、ワクワクする」\n良いデザインとは、自然と人の興味を惹き\n魅了する力があると私は思っています。\nサービス・プロダクトを使ってくれる人のことを最優先に考え\nデザインすることで、誰もがデザインを考える世界を\nより多くの人にデザインの力で広げていくことが私のミッションです。",
                 color: const Color.fromRGBO(0, 0, 0, 0.8),
-                fontSize: deviceWidth * 0.023,
+                fontSize: _mobileDirectionProviderStatus
+                    ? deviceWidth * 0.023
+                    : deviceWidth * 0.03,
                 fontWeight: FontWeight.normal,
                 fontFamily: 'Noto Sans JP',
                 textAlign: TextAlign.center,
