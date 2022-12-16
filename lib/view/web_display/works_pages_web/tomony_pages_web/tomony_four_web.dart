@@ -193,7 +193,7 @@ class TomonyFour extends StatelessWidget {
                                   targetSize: deviceHeight, value: 0.02),
                               LongText(
                                 text:
-                                    "生理に関することを付き合う段階で全て調べた。\n一方的に怒られるが、好きだからイライラしない\n不満があったらパートナーと話しあう。\nバレると怒られるのが嫌なため、相談はしない",
+                                    "生理に関することを付き合う段階で全て調べた。\n一方的に怒られるが、好きだからイライラしない\n不満があったら彼女と話しあう。\nバレると怒られるのが嫌なため、相談はしない",
                                 color: const Color.fromRGBO(0, 0, 0, 0.6),
                                 fontSize: deviceHeight * 0.02,
                                 fontWeight: FontWeight.normal,

@@ -243,7 +243,7 @@ class TomonyFive extends StatelessWidget {
                                         children: [
                                           const IssueTopic(
                                             isuueTopic: "ターゲット",
-                                            isuueDetail: "パートナーがいる若者",
+                                            isuueDetail: "彼女がいる男性",
                                             isuueDisc: "は",
                                             containerColor: Color.fromRGBO(
                                                 135, 196, 149, 0.6),

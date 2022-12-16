@@ -43,7 +43,7 @@ class AboutFive extends ConsumerWidget {
                       imagePath: 'https://i.imgur.com/R58XrDL.png',
                       appName: 'Tomony',
                       fontName: "Arial Black",
-                      appDisc: '生理中のパートナーのお悩み質問',
+                      appDisc: '男性向けの生理のお悩み質問相談',
                       path: '/tomony',
                     ),
                     WorksTopicContents(

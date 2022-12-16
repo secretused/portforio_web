@@ -225,8 +225,8 @@ class TomonyThree extends StatelessWidget {
                                         detail: "生理経験なしの若者の悩みを調査",
                                       ),
                                       ProcessDetail(
-                                        process: "自分の認識の誤りを修正",
-                                        detail: "パートナーは同姓だけではない",
+                                        process: "インタビュー項目の検討",
+                                        detail: "本質を引き出すためのオープンクエスチョン",
                                       ),
                                       ProcessDetail(
                                         process: "インタビュー",
@@ -286,7 +286,7 @@ class TomonyThree extends StatelessWidget {
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
                                 BodyText(
-                                  text: "あまり検索したり、パートナーと生理の話をしていないのでは？",
+                                  text: "あまり検索したり、彼女と生理の話をしていないのでは？",
                                   color: const Color.fromRGBO(1, 1, 1, 0.8),
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.normal,

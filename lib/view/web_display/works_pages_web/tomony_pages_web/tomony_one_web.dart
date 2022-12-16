@@ -28,7 +28,7 @@ class TomonyOne extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               BodyText(
-                text: "生理中のパートナーのお悩み質問",
+                text: "男性向けの生理のお悩み質問相談",
                 color: Colors.white,
                 fontFamily: '源ノ角ゴシック VF',
                 fontSize: deviceHeight * 0.03,

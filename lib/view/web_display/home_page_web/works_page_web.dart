@@ -60,7 +60,7 @@ class WorksPage extends ConsumerWidget {
       indexNumber: '01',
       topicColor: Color(0xFF87C495),
       imagePath: 'https://i.imgur.com/R58XrDL.png',
-      catchPhrase: '生理中のパートナーのお悩み質問',
+      catchPhrase: '男性向けの生理のお悩み質問相談',
       title: 'TOMONY',
       fontName: "Arial Black",
       paddingLeft: 0.33,

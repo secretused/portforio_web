@@ -25,7 +25,7 @@ class TomonyTwo extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               BodyText(
-                text: "生理中のパートナーへの複雑な感情を",
+                text: "生理中の彼女への複雑な感情を",
                 color: const Color(0xFF87C495),
                 fontSize: deviceHeight * 0.05,
                 fontWeight: FontWeight.bold,
@@ -42,7 +42,7 @@ class TomonyTwo extends StatelessWidget {
               HeightSizedBox(targetSize: deviceHeight, value: 0.03),
               HighPaddingText(
                 text:
-                    "生理中のパートナーのお悩み質問アプリ「TOMONY」は、生理中のパートナーがいる方の\n悩みや問題を、それぞれのパートナーの関係性や状況を明確にできる質問項目に沿って\n生理の知識や解決策を気軽に質問することができるアプリです。",
+                    "男性向けの生理のお悩み質問相談アプリ「TOMONY」は、生理中の彼女がいる男性の\n悩みや問題を、それぞれのカップルの関係性や状況を明確にできる質問項目に沿って\n生理の知識や解決策を気軽に質問することができるアプリです。",
                 color: Colors.black,
                 fontSize: deviceHeight * 0.02,
                 fontWeight: FontWeight.normal,
