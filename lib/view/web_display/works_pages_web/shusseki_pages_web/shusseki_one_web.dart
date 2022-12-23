@@ -16,7 +16,7 @@ class ShussekiOne extends StatelessWidget {
 
     return Container(
       color: const Color(0xFF379BA5),
-      height: deviceHeight - 100,
+      height: deviceHeight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_web/view/web_display/home_page_web/appbar_web.dart';
+import 'package:go_router/go_router.dart';
 
 import '../works_pages_web/tomony_pages_web/tomony_five_web.dart';
 import '../works_pages_web/tomony_pages_web/tomony_four_web.dart';
@@ -17,13 +17,26 @@ class Tomony extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var deviceHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
-      appBar: const PreferredSize(
-        preferredSize: Size.fromHeight(100),
-        child: CustomAppbarWeb(
-          backgroundColor: Color(0xFF87C495),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(deviceHeight * 0.1),
+        child: AppBar(
+          backgroundColor: Colors.white.withOpacity(0.0),
+          leading: IconButton(
+            padding: EdgeInsets.zero,
+            icon: Icon(
+              Icons.navigate_before,
+              size: deviceHeight * 0.09,
+              color: const Color.fromRGBO(0, 0, 0, 0.6),
+            ),
+            onPressed: () => GoRouter.of(context).go("/"),
+          ),
+          elevation: 0.0,
         ),
       ),
+      extendBodyBehindAppBar: true,
       body: SingleChildScrollView(
         child: Column(
           children: const [

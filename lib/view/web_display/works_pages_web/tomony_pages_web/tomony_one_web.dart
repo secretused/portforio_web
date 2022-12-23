@@ -15,7 +15,7 @@ class TomonyOne extends StatelessWidget {
 
     return Container(
       color: const Color(0xFF87C495),
-      height: deviceHeight - 100,
+      height: deviceHeight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
