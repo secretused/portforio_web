@@ -234,64 +234,6 @@ class ShussekiThree extends StatelessWidget {
                     )
                   ],
                 ),
-                // HeightSizedBox(targetSize: deviceHeight, value: 0.02),
-                //     SizedBox(
-                //       height: deviceHeight * 0.3,
-                //       child: Container(
-                //         decoration: BoxDecoration(
-                //           borderRadius: BorderRadius.circular(10),
-                //           color: const Color.fromRGBO(151, 151, 151, 0.1),
-                //         ),
-                //         child: Padding(
-                //           padding: EdgeInsets.all(deviceHeight * 0.03),
-                //           child: Column(
-                //             mainAxisAlignment: MainAxisAlignment.center,
-                //             crossAxisAlignment: CrossAxisAlignment.center,
-                //             children: [
-                //               BodyText(
-                //                 text: "開発で難しかった点",
-                //                 color: Colors.black,
-                //                 fontSize: deviceHeight * 0.025,
-                //                 fontWeight: FontWeight.bold,
-                //                 fontFamily: "Noto Sans JP",
-                //               ),
-                //               HeightSizedBox(
-                //                   targetSize: deviceHeight, value: 0.025),
-                //               BodyText(
-                //                 text: "データベースのデータを非同期処理で保存・受け取る",
-                //                 color: const Color.fromRGBO(1, 1, 1, 0.8),
-                //                 fontSize: deviceHeight * 0.02,
-                //                 fontWeight: FontWeight.normal,
-                //                 fontFamily: "Noto Sans JP",
-                //               ),
-                //               HeightSizedBox(
-                //                   targetSize: deviceHeight, value: 0.02),
-                //               HighPaddingText(
-                //                 text: "リリースまわりの設定や\nFlutter以外でのエラーに苦戦しました",
-                //                 color: const Color.fromRGBO(1, 1, 1, 0.8),
-                //                 fontSize: deviceHeight * 0.02,
-                //                 fontWeight: FontWeight.normal,
-                //                 fontFamily: "Noto Sans JP",
-                //                 textAlign: TextAlign.center,
-                //                 paddingValue: 1.3,
-                //               ),
-                //               HeightSizedBox(
-                //                   targetSize: deviceHeight, value: 0.02),
-                //               HighPaddingText(
-                //                 text:
-                //                     "情報が少ないので海外の記事を読んだり\n質問サイトで英語での質問をする必要があった",
-                //                 color: const Color.fromRGBO(1, 1, 1, 0.8),
-                //                 fontSize: deviceHeight * 0.02,
-                //                 fontWeight: FontWeight.normal,
-                //                 fontFamily: "Noto Sans JP",
-                //                 textAlign: TextAlign.center,
-                //                 paddingValue: 1.3,
-                //               ),
-                //             ],
-                //           ),
-                //         ),
-                //       ),
-                //     ),
               ),
             ],
           )

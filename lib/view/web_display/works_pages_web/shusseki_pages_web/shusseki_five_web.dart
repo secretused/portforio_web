@@ -151,7 +151,7 @@ class ShussekiFive extends StatelessWidget {
               WidthSizedBox(targetSize: deviceWidth, value: 0.015),
               SizedBox(
                 width: deviceWidth * 0.4,
-                height: deviceHeight * 0.6,
+                height: deviceHeight * 0.625,
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
@@ -259,7 +259,7 @@ class ShussekiFive extends StatelessWidget {
                             ),
                           ],
                         ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.025),
+                        HeightSizedBox(targetSize: deviceHeight, value: 0.03),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
