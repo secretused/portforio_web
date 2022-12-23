@@ -16,7 +16,7 @@ class OtherWorksOne extends StatelessWidget {
 
     return Container(
       color: const Color(0xFFCBCBCB),
-      height: deviceHeight - 100,
+      height: deviceHeight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[

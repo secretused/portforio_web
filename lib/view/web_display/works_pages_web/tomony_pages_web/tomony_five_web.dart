@@ -16,7 +16,7 @@ class TomonyFive extends StatelessWidget {
 
     return Container(
       color: Colors.white,
-      height: deviceHeight - 100,
+      height: deviceHeight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[

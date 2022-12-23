@@ -452,9 +452,9 @@ class WorksTopicContents extends ConsumerWidget {
         BodyText(
           text: index,
           color: const Color.fromRGBO(151, 151, 151, 1),
-          fontSize: deviceHeight * 0.05,
+          fontSize: deviceHeight * 0.06,
           fontWeight: FontWeight.bold,
-          fontFamily: "源ノ角ゴシック VF",
+          fontFamily: "Bebas Neue",
         ),
         WidthSizedBox(targetSize: deviceWidth, value: 0.01),
         MouseRegion(
@@ -468,11 +468,11 @@ class WorksTopicContents extends ConsumerWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: SizedBox(
-                height: deviceHeight * 0.25,
-                width: deviceHeight * 0.25,
+                height: deviceHeight * 0.28,
+                width: deviceHeight * 0.28,
                 child: Padding(
                   padding: EdgeInsets.all(
-                    deviceHeight * 0.03,
+                    deviceHeight * 0.025,
                   ),
                   child: Image.network(
                     imagePath,
@@ -482,7 +482,7 @@ class WorksTopicContents extends ConsumerWidget {
             ),
           ),
         ),
-        HeightSizedBox(targetSize: deviceHeight, value: 0.02),
+        HeightSizedBox(targetSize: deviceHeight, value: 0.018),
         MouseRegion(
           onEnter: (_) => _worksEnter(ref, appName),
           onExit: (_) => _worksExit(ref),
@@ -500,14 +500,14 @@ class WorksTopicContents extends ConsumerWidget {
                   fontWeight: FontWeight.bold,
                   fontFamily: fontName,
                 ),
-                HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+                HeightSizedBox(targetSize: deviceHeight, value: 0.015),
                 BodyText(
                   text: appDisc,
                   color:
                       (_appName == appName && _worksTopicContentsProviderStatus)
                           ? topicColor
                           : const Color.fromRGBO(151, 151, 151, 1),
-                  fontSize: deviceHeight * 0.02,
+                  fontSize: deviceHeight * 0.023,
                   fontWeight: FontWeight.bold,
                   fontFamily: "源ノ角ゴシック VF",
                 )

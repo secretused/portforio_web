@@ -15,7 +15,7 @@ class TomonySix extends StatelessWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
     return Container(
       color: Colors.white,
-      height: deviceHeight - 100,
+      height: deviceHeight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,

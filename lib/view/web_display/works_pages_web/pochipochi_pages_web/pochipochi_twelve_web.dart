@@ -22,7 +22,7 @@ class PochipochiTwelve extends ConsumerWidget {
 
     return Container(
       color: Colors.white,
-      height: deviceHeight - 100,
+      height: deviceHeight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -38,9 +38,10 @@ class PochipochiTwelve extends ConsumerWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: "源ノ角ゴシック VF",
               ),
+              HeightSizedBox(targetSize: deviceHeight, value: 0.03),
               Padding(
-                padding: EdgeInsets.all(
-                  deviceHeight * 0.03,
+                padding: EdgeInsets.symmetric(
+                  horizontal: deviceHeight * 0.03,
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,

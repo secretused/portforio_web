@@ -15,7 +15,7 @@ class PochipochiOne extends StatelessWidget {
 
     return Container(
       color: const Color(0xFFEBAA14),
-      height: deviceHeight - 100,
+      height: deviceHeight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[

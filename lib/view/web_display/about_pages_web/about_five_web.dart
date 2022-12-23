@@ -16,7 +16,7 @@ class AboutFive extends ConsumerWidget {
 
     return Container(
       color: Colors.white,
-      height: deviceHeight - 100,
+      height: deviceHeight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -27,13 +27,13 @@ class AboutFive extends ConsumerWidget {
               BodyText(
                 text: "Works",
                 color: const Color.fromRGBO(3, 144, 126, 1),
-                fontSize: deviceHeight * 0.1,
+                fontSize: deviceHeight * 0.12,
                 fontWeight: FontWeight.bold,
                 fontFamily: "Bebas Neue",
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.04),
+              HeightSizedBox(targetSize: deviceHeight, value: 0.03),
               SizedBox(
-                width: deviceWidth * 0.8,
+                width: deviceWidth * 0.9,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: const [
@@ -75,12 +75,6 @@ class AboutFive extends ConsumerWidget {
                     ),
                   ],
                 ),
-              ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.075),
-              const WorksNavigationButton(
-                buttonText: 'View More',
-                fontValue: 0.02,
-                sizeValue: 0.02,
               ),
             ],
           ),

@@ -6,7 +6,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'firebase_options.dart';
 import 'provider/provider.dart';
 import 'utils/mobile_widget/about_widget_mobile.dart';
-import 'view/web_display/home_page_web/appbar_web.dart';
 import 'view/web_display/home_page_web/about_page_web.dart';
 import 'view/web_display/home_page_web/works_page_web.dart';
 
@@ -123,14 +122,19 @@ class _MyHomePage extends ConsumerWidget {
       builder: (context, constraints) {
         if (constraints.maxWidth > 1199) {
           // PC
-          return const Scaffold(
-            appBar: PreferredSize(
-              preferredSize: Size.fromHeight(100),
-              child: CustomAppbarWeb(
-                backgroundColor: Color.fromRGBO(3, 144, 126, 1),
-              ),
+          return Scaffold(
+            appBar: AppBar(
+              backgroundColor: Colors.white.withOpacity(0.0),
+              elevation: 0.0,
             ),
-            body: AboutPageWeb(),
+            extendBodyBehindAppBar: true,
+            // PreferredSize(
+            //   preferredSize: Size.fromHeight(100),
+            //   child: CustomAppbarWeb(
+            //     backgroundColor: Color.fromRGBO(3, 144, 126, 1),
+            //   ),
+            // ),
+            body: const AboutPageWeb(),
           );
         } else if (constraints.maxWidth <= 1200 &&
             constraints.maxWidth >= 800) {
@@ -139,8 +143,7 @@ class _MyHomePage extends ConsumerWidget {
             appBar: PreferredSize(
               preferredSize: Size.fromHeight(60),
               child: CustomAppbarMobile(
-                // backgroundColor: Color.fromRGBO(3, 144, 126, 1),
-                backgroundColor: Colors.red,
+                backgroundColor: Color.fromRGBO(3, 144, 126, 1),
               ),
             ),
             endDrawer: DrawerWidget(),
