@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../../utils/project_widget/about_widget.dart';
 import '../../../../../utils/extract_widget.dart';
 import '../../../../utils/project_widget/works_widget.dart';
 
@@ -22,11 +21,11 @@ class PochipochiThree extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Column(
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                width: deviceWidth * 0.9,
+                height: deviceHeight * 0.55,
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
@@ -46,9 +45,9 @@ class PochipochiThree extends StatelessWidget {
                         bottom: deviceHeight * 0.02,
                         left: deviceHeight * 0.03,
                         right: deviceHeight * 0.03),
-                    child: Row(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -74,272 +73,180 @@ class PochipochiThree extends StatelessWidget {
                                   ),
                                   HeightSizedBox(
                                       targetSize: deviceHeight, value: 0.01),
-                                  BodyText(
+                                  HighPaddingText(
                                     text:
-                                        "アプリ開発を始めた頃に彼女からの要望があり、自分はその言葉に少し耳を疑いました。",
+                                        "アプリ開発を始めた頃に彼女からの要望があり、自分はその言葉に少し耳を疑いました。\n飽和に近い状態の幼児向けアプリでどうして少ないと感じているのか？\n実際、彼女の2歳の姪はアプリより動画視聴を主に楽しんでいるため、要望に興味を持ち\n制作に至りました。",
                                     color: const Color.fromRGBO(0, 0, 0, 0.6),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
                                     fontFamily: "Noto Sans JP",
-                                  ),
-                                  BodyText(
-                                    text:
-                                        "飽和に近い状態の幼児向けアプリでどうして少ないと感じているのか？と思いました。現に、彼女の姪は",
-                                    color: const Color.fromRGBO(0, 0, 0, 0.6),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.normal,
-                                    fontFamily: "Noto Sans JP",
-                                  ),
-                                  BodyText(
-                                    text:
-                                        "アプリよりYoutubeでの動画視聴をメインに楽しんでいるため、要望に興味を持ち、制作に至りました。",
-                                    color: const Color.fromRGBO(0, 0, 0, 0.6),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.normal,
-                                    fontFamily: "Noto Sans JP",
+                                    paddingValue: 1.3,
+                                    textAlign: TextAlign.left,
                                   ),
                                 ],
                               ),
                             ),
-                            BodyText(
-                              text: "仮説",
-                              color: const Color(0xFFEBAA14),
-                              fontSize: deviceHeight * 0.028,
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(deviceHeight * 0.02),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  ShadowContainerText(
-                                    deviceHeight: deviceHeight,
-                                    text: '幼児アプリは数も多く、やはり十分なものが揃っているのではないか？',
-                                  ),
-                                  HeightSizedBox(
-                                      targetSize: deviceHeight, value: 0.01),
-                                  ShadowContainerText(
-                                    deviceHeight: deviceHeight,
-                                    text: '幼児は飽きやすく、1つのものを長く使えないのでは？',
-                                  ),
-                                ],
-                              ),
-                            )
                           ],
                         ),
-                        const ImageWidget(
-                          heightValue: 0.3,
-                          imagePath: "https://i.imgur.com/J7MEDOp.png",
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: deviceWidth * 0.9,
-                child: Padding(
-                  padding: EdgeInsets.only(
-                      top: deviceHeight * 0.03,
-                      right: deviceHeight * 0.03,
-                      left: deviceHeight * 0.03),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          BodyText(
-                            text: "インタビュー",
-                            color: const Color(0xFFEBAA14),
-                            fontSize: deviceHeight * 0.028,
-                            fontWeight: FontWeight.bold,
-                            fontFamily: "源ノ角ゴシック VF",
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(left: deviceHeight * 0.03),
-                            child: Row(
+                        Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Column(
-                                  children: const [
-                                    TrueCircle(
-                                      sizeValue: 0.015,
-                                      color: Color(0xFFEBAA14),
-                                    ),
-                                    VerticalLine(
-                                      heightPadding: 0.01,
-                                      heightValue: 0.05,
-                                      lineColor: Color(0xFFEBAA14),
-                                    ),
-                                    TrueCircle(
-                                      sizeValue: 0.015,
-                                      color: Color(0xFFEBAA14),
-                                    ),
-                                    VerticalLine(
-                                      heightPadding: 0.01,
-                                      heightValue: 0.05,
-                                      lineColor: Color(0xFFEBAA14),
-                                    ),
-                                    TrueCircle(
-                                      sizeValue: 0.015,
-                                      color: Color(0xFFEBAA14),
-                                    ),
-                                    VerticalLine(
-                                      heightPadding: 0.01,
-                                      heightValue: 0.05,
-                                      lineColor: Color(0xFFEBAA14),
-                                    ),
-                                    TrueCircle(
-                                      sizeValue: 0.015,
-                                      color: Color(0xFFEBAA14),
-                                    ),
-                                  ],
+                                BodyText(
+                                  text: "仮説",
+                                  color: const Color(0xFFEBAA14),
+                                  fontSize: deviceHeight * 0.028,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: "源ノ角ゴシック VF",
                                 ),
-                                WidthSizedBox(
-                                    targetSize: deviceWidth, value: 0.01),
-                                SizedBox(
-                                  height: deviceHeight * 0.3,
+                                Padding(
+                                  padding: EdgeInsets.all(deviceHeight * 0.02),
                                   child: Column(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
-                                    children: const [
-                                      ProcessDetail(
-                                        process: "ターゲットと仮説立案",
-                                        detail: "課題と疑問の真相を確かめる",
+                                    children: [
+                                      ShadowContainerText(
+                                        deviceHeight: deviceHeight,
+                                        text: '幼児アプリは数も多く、十分なものが揃っているのでは？',
                                       ),
-                                      ProcessDetail(
-                                        process: "インタビュー",
-                                        detail: "女性の方数名に実施",
-                                      ),
-                                      ProcessDetail(
-                                        process: "調査(インターネット)",
-                                        detail: "幼児アプリについての意見を調査",
-                                      ),
-                                      ProcessDetail(
-                                        process: "分析",
-                                        detail: "結果をもとに課題を抽出",
+                                      HeightSizedBox(
+                                          targetSize: deviceHeight,
+                                          value: 0.015),
+                                      ShadowContainerText(
+                                        deviceHeight: deviceHeight,
+                                        text: '幼児は飽きやすく、1つのものを長く使えないのでは？',
                                       ),
                                     ],
                                   ),
                                 ),
                               ],
                             ),
-                          )
-                        ],
-                      ),
-                      WidthSizedBox(targetSize: deviceWidth, value: 0.03),
-                      SizedBox(
-                        height: deviceHeight * 0.3,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color.fromRGBO(151, 151, 151, 0.1),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsets.all(deviceHeight * 0.03),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                BodyText(
-                                  text: "現時点での疑問",
-                                  color: Colors.black,
-                                  fontSize: deviceHeight * 0.025,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: "Noto Sans JP",
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.025),
-                                BodyText(
-                                  text: "なぜ幼児アプリが少ないと思っているのか？",
-                                  color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.02),
-                                HighPaddingText(
-                                  text:
-                                      "本当に幼児はアプリに飽きてしまっているのか\nカスタマイズ性を求めているのか？",
-                                  color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
-                                  textAlign: TextAlign.center,
-                                  paddingValue: 1.3,
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.02),
-                                HighPaddingText(
-                                  text: "保護者目線では幼児の興味・関心の動向を\nどう捉えているのだろうか？",
-                                  color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
-                                  textAlign: TextAlign.center,
-                                  paddingValue: 1.3,
-                                ),
-                              ],
+                            const ImageWidget(
+                              heightValue: 0.175,
+                              imagePath: "https://i.imgur.com/UTHcmTY.png",
                             ),
-                          ),
+                          ],
                         ),
-                      ),
-                      WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                      SizedBox(
-                        height: deviceHeight * 0.3,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: const Color.fromRGBO(151, 151, 151, 0.1),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsets.all(deviceHeight * 0.03),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                BodyText(
-                                  text: "課題発見前の仮説",
-                                  color: Colors.black,
-                                  fontSize: deviceHeight * 0.025,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: "Noto Sans JP",
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.025),
-                                HighPaddingText(
-                                  text:
-                                      "Youtubeで既に満足しているように見受けられるが\nそれでもなぜアプリが必要なのかが鍵になるのでは？",
-                                  color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
-                                  textAlign: TextAlign.center,
-                                  paddingValue: 1.3,
-                                ),
-                                HeightSizedBox(
-                                    targetSize: deviceHeight, value: 0.02),
-                                HighPaddingText(
-                                  text:
-                                      "幼児それぞれの興味・関心にあったベストな\nコンテンツを含んだアプリがないのでは？",
-                                  color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
-                                  textAlign: TextAlign.center,
-                                  paddingValue: 1.3,
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: deviceHeight * 0.03,
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: deviceWidth * 0.35,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: const Color.fromRGBO(151, 151, 151, 0.1),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.all(deviceHeight * 0.035),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              BodyText(
+                                text: "現時点での疑問",
+                                color: Colors.black,
+                                fontSize: deviceHeight * 0.025,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "Noto Sans JP",
+                              ),
+                              HeightSizedBox(
+                                  targetSize: deviceHeight, value: 0.025),
+                              BodyText(
+                                text: "なぜ幼児アプリが少ないと思っているのか？",
+                                color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                fontSize: deviceHeight * 0.02,
+                                fontWeight: FontWeight.normal,
+                                fontFamily: "Noto Sans JP",
+                              ),
+                              HeightSizedBox(
+                                  targetSize: deviceHeight, value: 0.02),
+                              HighPaddingText(
+                                text: "本当に幼児はアプリに飽きてしまっているのか\nカスタマイズ性を求めているのか？",
+                                color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                fontSize: deviceHeight * 0.02,
+                                fontWeight: FontWeight.normal,
+                                fontFamily: "Noto Sans JP",
+                                textAlign: TextAlign.center,
+                                paddingValue: 1.3,
+                              ),
+                              HeightSizedBox(
+                                  targetSize: deviceHeight, value: 0.02),
+                              HighPaddingText(
+                                text: "保護者目線では幼児の興味・関心の動向を\nどう捉えているのだろうか？",
+                                color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                fontSize: deviceHeight * 0.02,
+                                fontWeight: FontWeight.normal,
+                                fontFamily: "Noto Sans JP",
+                                textAlign: TextAlign.center,
+                                paddingValue: 1.3,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    HeightSizedBox(targetSize: deviceHeight, value: 0.02),
+                    SizedBox(
+                      width: deviceWidth * 0.35,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: const Color.fromRGBO(151, 151, 151, 0.1),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.all(deviceHeight * 0.035),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              BodyText(
+                                text: "課題発見前の仮説",
+                                color: Colors.black,
+                                fontSize: deviceHeight * 0.025,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "Noto Sans JP",
+                              ),
+                              HeightSizedBox(
+                                  targetSize: deviceHeight, value: 0.025),
+                              HighPaddingText(
+                                text:
+                                    "Youtubeで既に満足しているように見受けられるが\nそれでもなぜアプリが必要なのかが鍵になるのでは？",
+                                color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                fontSize: deviceHeight * 0.02,
+                                fontWeight: FontWeight.normal,
+                                fontFamily: "Noto Sans JP",
+                                textAlign: TextAlign.center,
+                                paddingValue: 1.3,
+                              ),
+                              HeightSizedBox(
+                                  targetSize: deviceHeight, value: 0.02),
+                              HighPaddingText(
+                                text:
+                                    "幼児それぞれの興味・関心にあったベストな\nコンテンツを含んだアプリがないのでは？",
+                                color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                fontSize: deviceHeight * 0.02,
+                                fontWeight: FontWeight.normal,
+                                fontFamily: "Noto Sans JP",
+                                textAlign: TextAlign.center,
+                                paddingValue: 1.3,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],

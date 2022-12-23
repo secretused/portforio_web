@@ -11,6 +11,7 @@ import '../works_pages_web/shusseki_pages_web/shusseki_six_web.dart';
 import '../works_pages_web/shusseki_pages_web/shusseki_seven_web.dart';
 import '../works_pages_web/shusseki_pages_web/shusseki_eight_web.dart';
 import '../works_pages_web/shusseki_pages_web/shusseki_nine_web.dart';
+import '../works_pages_web/shusseki_pages_web/shusseki_ten_web.dart';
 
 class Shusseki extends ConsumerWidget {
   const Shusseki({Key? key}) : super(key: key);
@@ -49,6 +50,7 @@ class Shusseki extends ConsumerWidget {
             ShussekiSeven(),
             ShussekiEight(),
             ShussekiNine(),
+            ShussekiTen(),
           ],
         ),
       ),

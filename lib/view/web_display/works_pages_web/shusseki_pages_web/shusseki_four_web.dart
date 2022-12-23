@@ -41,7 +41,7 @@ class ShussekiFour extends StatelessWidget {
                         BodyText(
                           text: "モックアップ",
                           color: Colors.black,
-                          fontSize: deviceHeight * 0.04,
+                          fontSize: deviceHeight * 0.035,
                           fontWeight: FontWeight.bold,
                           fontFamily: "Noto Snas JP",
                         ),
@@ -67,7 +67,7 @@ class ShussekiFour extends StatelessWidget {
                         BodyText(
                           text: "一部の機能",
                           color: Colors.black,
-                          fontSize: deviceHeight * 0.04,
+                          fontSize: deviceHeight * 0.035,
                           fontWeight: FontWeight.bold,
                           fontFamily: "Noto Snas JP",
                         ),

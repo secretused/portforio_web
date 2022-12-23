@@ -20,11 +20,9 @@ class OtherWorksOne extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          SizedBox(
-            height: deviceHeight * 0.8,
-            child: Image.network(
-              "https://i.imgur.com/POd7NXF.png",
-            ),
+          const ImageWidget(
+            heightValue: 0.8,
+            imagePath: "https://i.imgur.com/POd7NXF.png",
           ),
           WidthSizedBox(targetSize: deviceWidth, value: 0.03),
           Column(
