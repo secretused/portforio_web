@@ -205,7 +205,7 @@ class PochipochiSix extends StatelessWidget {
                                             value: 0.01),
                                         HighPaddingText(
                                           text:
-                                              "埼玉県のマンションに在住。\nしっかりした性格で\n仕事も育児も両立している。\n旦那さんは建築設計事務所に勤めている。",
+                                              "しっかりした性格で\n仕事も育児も両立している。\n旦那さんは建築設計事務所に勤めている。",
                                           color: Colors.black,
                                           fontSize: deviceHeight * 0.02,
                                           fontWeight: FontWeight.normal,
@@ -250,7 +250,7 @@ class PochipochiSix extends StatelessWidget {
                                     children: [
                                       HighPaddingText(
                                         text:
-                                            "広告代理店の営業部門に勤めており、1年間の産休を明けて\nリモートワークをメインに3ヶ月前から業務に復帰した。リモート\nワークになってから日菜ちゃんの面倒を付きっきりで出来なくなり\n業務中に泣いてしまったり、心配で離席してしまうことが多い。\n週に1,2日は会社に出社しないといけないため、母親を家に呼び\n日菜ちゃんの面倒を見てもらっているが、泣き出してしまうことも多い。",
+                                            "1年間の産休を明けてリモートをメインに3ヶ月前から業務に復帰した。\nリモートになってから日菜ちゃんの面倒を付きっきりで出来なくなり\n業務中に泣いてしまったり、心配で離席してしまうことが多い。\n週に1,2日は会社に出社しないといけないため、母親を家に呼び\n日菜ちゃんの面倒を見てもらっているが、泣き出してしまうことも多い。",
                                         color: Colors.black,
                                         fontSize: deviceHeight * 0.02,
                                         fontWeight: FontWeight.normal,

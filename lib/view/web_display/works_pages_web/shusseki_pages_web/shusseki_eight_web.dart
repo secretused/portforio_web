@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../utils/extract_widget.dart';
-import '../../../../utils/project_widget/works_widget.dart';
 
-// マネタイズ・デザイン
+// UI改修後　UI
 class ShussekiEight extends StatelessWidget {
   const ShussekiEight({
     Key? key,
@@ -20,242 +19,154 @@ class ShussekiEight extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
+        children: <Widget>[
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              SizedBox(
-                width: deviceWidth * 0.67,
-                child: Column(
+            children: [
+              BodyText(
+                text: "UIの変化",
+                color: const Color(0xFF379BA5),
+                fontSize: deviceHeight * 0.035,
+                fontWeight: FontWeight.bold,
+                fontFamily: "源ノ角ゴシック VF",
+              ),
+              Padding(
+                padding: EdgeInsets.all(deviceHeight * 0.03),
+                child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    BodyText(
-                      text: "マネタイズ",
-                      color: const Color(0xFF379BA5),
-                      fontSize: deviceHeight * 0.035,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "源ノ角ゴシック VF",
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        BodyText(
+                          text: "Before",
+                          color: Colors.black,
+                          fontSize: deviceHeight * 0.03,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "Noto Snas JP",
+                        ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            const ImageWidget(
+                              heightValue: 0.33,
+                              imagePath: "https://i.imgur.com/sPpXecU.png",
+                            ),
+                            WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+                            const ImageWidget(
+                              heightValue: 0.33,
+                              imagePath: "https://i.imgur.com/BYjCQss.png",
+                            ),
+                            WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+                            const ImageWidget(
+                              heightValue: 0.33,
+                              imagePath: "https://i.imgur.com/ihV37xj.png",
+                            ),
+                            WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+                            const ImageWidget(
+                              heightValue: 0.33,
+                              imagePath: "https://i.imgur.com/2DzJX8r.png",
+                            ),
+                          ],
+                        ),
+                        HeightSizedBox(targetSize: deviceHeight, value: 0.02),
+                        Container(
+                          color: const Color.fromRGBO(0, 0, 0, 0.3),
+                          height: 0.1,
+                          width: deviceWidth * 0.47,
+                        ),
+                        HeightSizedBox(targetSize: deviceHeight, value: 0.02),
+                        BodyText(
+                          text: "After",
+                          color: Colors.black,
+                          fontSize: deviceHeight * 0.03,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "Noto Snas JP",
+                        ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            const ImageWidget(
+                              heightValue: 0.33,
+                              imagePath: "https://i.imgur.com/zbpIv7k.png",
+                            ),
+                            WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+                            const ImageWidget(
+                              heightValue: 0.33,
+                              imagePath: "https://i.imgur.com/ZZd5lXL.png",
+                            ),
+                            WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+                            const ImageWidget(
+                              heightValue: 0.33,
+                              imagePath: "https://i.imgur.com/zUphl8Y.png",
+                            ),
+                            WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+                            const ImageWidget(
+                              heightValue: 0.33,
+                              imagePath: "https://i.imgur.com/0LAsoFt.png",
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
-                    Padding(
-                      padding: EdgeInsets.all(deviceHeight * 0.03),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          BodyText(
-                            text: "AdMob広告収入",
-                            color: const Color.fromRGBO(0, 0, 0, 0.8),
-                            fontSize: deviceHeight * 0.03,
-                            fontWeight: FontWeight.bold,
-                            fontFamily: "Noto Sans JP",
-                          ),
-                          HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                          HighPaddingText(
-                            text:
-                                "現在、マネタイズは導入されておりませんが、アップデート後に\nAdMobを導入し、広告収入を機能の妨げにならない画面のみ\n下部にバナーを表示したいと思っております",
-                            color: const Color.fromRGBO(0, 0, 0, 0.8),
-                            fontSize: deviceHeight * 0.02,
-                            fontWeight: FontWeight.normal,
-                            fontFamily: "Noto Sans JP",
-                            textAlign: TextAlign.start,
-                            paddingValue: 1.3,
-                          ),
-                        ],
-                      ),
+                    WidthSizedBox(targetSize: deviceWidth, value: 0.05),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        HeightSizedBox(targetSize: deviceHeight, value: 0.03),
+                        Row(
+                          children: [
+                            const ImageWidget(
+                              heightValue: 0.45,
+                              imagePath: "https://i.imgur.com/zbpIv7k.png",
+                            ),
+                            WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+                            const ImageWidget(
+                              heightValue: 0.45,
+                              imagePath: "https://i.imgur.com/zUphl8Y.png",
+                            ),
+                          ],
+                        ),
+                        HeightSizedBox(targetSize: deviceHeight, value: 0.03),
+                        HighPaddingText(
+                          text:
+                              "・一目見て分かる程ひどいタスクベースな画面から\n　オブジェクトとアクションを取り出し、まとめ上げたことにより\n　画面遷移数を大幅に減少させることが出来ました。",
+                          color: const Color.fromRGBO(0, 0, 0, 0.8),
+                          fontSize: deviceHeight * 0.02,
+                          fontWeight: FontWeight.normal,
+                          fontFamily: "Noto Sans JP",
+                          textAlign: TextAlign.start,
+                          paddingValue: 1.3,
+                        ),
+                        HeightSizedBox(targetSize: deviceHeight, value: 0.02),
+                        HighPaddingText(
+                          text:
+                              "・分散していた組織情報を一画面に集約し、入館のかなめとなる\n　QRコードを常に表示することで、入館スピードの向上を図りました。",
+                          color: const Color.fromRGBO(0, 0, 0, 0.8),
+                          fontSize: deviceHeight * 0.02,
+                          fontWeight: FontWeight.normal,
+                          fontFamily: "Noto Sans JP",
+                          textAlign: TextAlign.start,
+                          paddingValue: 1.3,
+                        ),
+                        HeightSizedBox(targetSize: deviceHeight, value: 0.02),
+                        HighPaddingText(
+                          text:
+                              "・優先度はそれほど高くない、組織構成のそれぞれの要素を\n　絞り込み機能で切り替えることによって、余計なタブを増やさずに\n　組織オブジェクト内に納めることが出来ました。",
+                          color: const Color.fromRGBO(0, 0, 0, 0.8),
+                          fontSize: deviceHeight * 0.02,
+                          fontWeight: FontWeight.normal,
+                          fontFamily: "Noto Sans JP",
+                          textAlign: TextAlign.start,
+                          paddingValue: 1.3,
+                        ),
+                      ],
                     ),
                   ],
                 ),
               ),
-              HeightSizedBox(targetSize: deviceWidth, value: 0.03),
-              SizedBox(
-                width: deviceWidth * 0.67,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    BodyText(
-                      text: "デザイン",
-                      color: const Color(0xFF379BA5),
-                      fontSize: deviceHeight * 0.035,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "源ノ角ゴシック VF",
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: deviceHeight * 0.03),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              BodyText(
-                                text: "サービス名",
-                                color: Colors.black,
-                                fontSize: deviceHeight * 0.028,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "源ノ角ゴシック VF",
-                              ),
-                              HeightSizedBox(
-                                  targetSize: deviceHeight, value: 0.02),
-                              Padding(
-                                padding:
-                                    EdgeInsets.only(left: deviceWidth * 0.02),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    BodyText(
-                                      text: "シュッ席",
-                                      color: Colors.black,
-                                      fontSize: deviceHeight * 0.07,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: "源ノ角ゴシック VF",
-                                    ),
-                                    HeightSizedBox(
-                                        targetSize: deviceHeight, value: 0.04),
-                                    HighPaddingText(
-                                      text:
-                                          "「シュッ」とスマートフォンをかざして\n素早く出席を行えることから命名",
-                                      color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                      textAlign: TextAlign.start,
-                                      paddingValue: 1.3,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                          WidthSizedBox(targetSize: deviceWidth, value: 0.04),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const ImageWidget(
-                                heightValue: 0.15,
-                                imagePath: "https://i.imgur.com/5jaDwbV.png",
-                              ),
-                              HeightSizedBox(
-                                  targetSize: deviceHeight, value: 0.02),
-                              LongText(
-                                text: "バインダーを使って\n出席していたことから抜粋",
-                                color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                fontSize: deviceHeight * 0.02,
-                                fontWeight: FontWeight.normal,
-                                fontFamily: "Noto Sans JP",
-                                textAlign: TextAlign.start,
-                              ),
-                            ],
-                          ),
-                          WidthSizedBox(targetSize: deviceWidth, value: 0.04),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              BodyText(
-                                text: "カラー",
-                                color: Colors.black,
-                                fontSize: deviceHeight * 0.028,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "源ノ角ゴシック VF",
-                              ),
-                              HeightSizedBox(
-                                  targetSize: deviceHeight, value: 0.02),
-                              Padding(
-                                padding:
-                                    EdgeInsets.only(left: deviceWidth * 0.02),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    ColorDesignWidget(
-                                      deviceHeight: deviceHeight,
-                                      deviceWidth: deviceWidth,
-                                      colorCode: "379BA5",
-                                      color: const Color(0xFF379BA5),
-                                      rgbColorModel: "R: 55　G: 155　B: 165",
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              HeightSizedBox(
-                                  targetSize: deviceHeight, value: 0.05),
-                              BodyText(
-                                text: "フォント",
-                                color: Colors.black,
-                                fontSize: deviceHeight * 0.028,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "源ノ角ゴシック VF",
-                              ),
-                              HeightSizedBox(
-                                  targetSize: deviceHeight, value: 0.02),
-                              Padding(
-                                padding:
-                                    EdgeInsets.only(left: deviceWidth * 0.02),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      children: [
-                                        BodyText(
-                                          text: "あ",
-                                          color: const Color.fromRGBO(
-                                              0, 0, 0, 0.8),
-                                          fontSize: deviceHeight * 0.04,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: "Open Sans",
-                                        ),
-                                        WidthSizedBox(
-                                            targetSize: deviceWidth,
-                                            value: 0.01),
-                                        BodyText(
-                                          text: "Open Sans",
-                                          color: const Color.fromRGBO(
-                                              0, 0, 0, 0.8),
-                                          fontSize: deviceHeight * 0.025,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: "Open Sans",
-                                        ),
-                                      ],
-                                    ),
-                                    HeightSizedBox(
-                                        targetSize: deviceHeight, value: 0.01),
-                                    Row(
-                                      children: [
-                                        BodyText(
-                                          text: "ロゴ",
-                                          color: const Color.fromRGBO(
-                                              0, 0, 0, 0.8),
-                                          fontSize: deviceHeight * 0.04,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: "源ノ角ゴシック VF",
-                                        ),
-                                        WidthSizedBox(
-                                            targetSize: deviceWidth,
-                                            value: 0.01),
-                                        BodyText(
-                                          text: "源ノ角ゴシック VF",
-                                          color: const Color.fromRGBO(
-                                              0, 0, 0, 0.8),
-                                          fontSize: deviceHeight * 0.025,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: "源ノ角ゴシック VF",
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              )
             ],
           ),
         ],
