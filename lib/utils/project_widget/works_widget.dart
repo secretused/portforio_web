@@ -452,13 +452,14 @@ class IssueTopic extends StatelessWidget {
                 ),
                 child: Padding(
                   padding: EdgeInsets.all(deviceHeight * 0.01),
-                  child: LongText(
+                  child: HighPaddingText(
                     text: isuueDetail,
                     color: const Color.fromRGBO(0, 0, 0, 0.8),
                     fontSize: deviceHeight * 0.02,
                     fontWeight: FontWeight.bold,
                     fontFamily: "源ノ角ゴシック VF",
                     textAlign: TextAlign.start,
+                    paddingValue: 1.3,
                   ),
                 ),
               ),

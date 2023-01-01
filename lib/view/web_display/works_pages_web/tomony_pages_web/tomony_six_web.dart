@@ -14,8 +14,8 @@ class TomonySix extends StatelessWidget {
     var deviceHeight = MediaQuery.of(context).size.height;
     var deviceWidth = MediaQuery.of(context).size.width;
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -116,45 +116,20 @@ class TomonySix extends StatelessWidget {
                               child: Padding(
                                 padding:
                                     EdgeInsets.only(left: deviceWidth * 0.01),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    BodyText(
-                                      text: "地方私立大学2年。趣味はフットサルとドライブ。",
-                                      color: Colors.black,
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                    BodyText(
-                                      text: "少しだらしない。緊張しやすい。怒れない性格。",
-                                      color: Colors.black,
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                    BodyText(
-                                      text: "大学の友達と遊びに出かけたり、飲み会によく行く。",
-                                      color: Colors.black,
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                    BodyText(
-                                      text: "大学1年の頃から付き合っている一個上の彼女がいる。",
-                                      color: Colors.black,
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                  ],
+                                child: HighPaddingText(
+                                  text:
+                                      "地方私立大学2年。趣味はフットサルとドライブ\n少しだらしない。緊張しやすい。怒れない性格\n大学の友達と遊びに出かけたり、飲み会によく行く\n大学1年の頃から付き合っている一個上の彼女がいる",
+                                  color: Colors.black,
+                                  fontSize: deviceHeight * 0.02,
+                                  fontWeight: FontWeight.normal,
+                                  fontFamily: "Noto Sans JP",
+                                  textAlign: TextAlign.start,
+                                  paddingValue: 1.5,
                                 ),
                               ),
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.03),
+                                targetSize: deviceHeight, value: 0.02),
                             Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
@@ -174,51 +149,20 @@ class TomonySix extends StatelessWidget {
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
                             SizedBox(
+                              width: deviceWidth * 0.3,
                               height: deviceHeight * 0.15,
                               child: Padding(
                                 padding:
                                     EdgeInsets.only(left: deviceWidth * 0.01),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    BodyText(
-                                      text: "友達との予定や学校の課題も増えてきて、彼女との",
-                                      color: Colors.black,
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                    BodyText(
-                                      text: "時間を少しおろそかにしてしまい、彼女が生理の時に",
-                                      color: Colors.black,
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                    BodyText(
-                                      text: "喧嘩することが増えてきた。まだ彼女の分からない",
-                                      color: Colors.black,
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                    BodyText(
-                                      text: "ことも多く、彼女が求めている行動ができず",
-                                      color: Colors.black,
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                    BodyText(
-                                      text: "どうすれば良い関係を築けるのか悩んでいる。",
-                                      color: Colors.black,
-                                      fontSize: deviceHeight * 0.02,
-                                      fontWeight: FontWeight.normal,
-                                      fontFamily: "Noto Sans JP",
-                                    ),
-                                  ],
+                                child: HighPaddingText(
+                                  text:
+                                      "友達との予定や学校の課題も増えてきて、彼女との時間を少しおろそかにしてしまい、彼女が生理の時に喧嘩することが増えてきた。\nまだ彼女の分からないことも多く、彼女が求めている行動ができず、どうすれば良い関係を築けるのか悩んでいる。",
+                                  color: Colors.black,
+                                  fontSize: deviceHeight * 0.02,
+                                  fontWeight: FontWeight.normal,
+                                  fontFamily: "Noto Sans JP",
+                                  textAlign: TextAlign.start,
+                                  paddingValue: 1.5,
                                 ),
                               ),
                             ),
@@ -256,30 +200,38 @@ class TomonySix extends StatelessWidget {
                           fontFamily: "Noto Sans JP",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.025),
-                        BodyText(
-                          text: "自分の気持ちを書き出したり、誰かにわかるように言語化できていないのでは？",
-                          color: const Color.fromRGBO(1, 1, 1, 0.8),
-                          fontSize: deviceHeight * 0.02,
-                          fontWeight: FontWeight.normal,
-                          fontFamily: "Noto Sans JP",
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.02),
-                        BodyText(
-                          text: "一度気持ちを整理する前に我慢したり、気持ちをうやむやにしているのでは？",
-                          color: const Color.fromRGBO(1, 1, 1, 0.8),
-                          fontSize: deviceHeight * 0.02,
-                          fontWeight: FontWeight.normal,
-                          fontFamily: "Noto Sans JP",
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.02),
-                        HighPaddingText(
-                          text: "相手を尊重したいため、愚痴や不満は言わないが、自分の気持ちは\nモヤモヤしたままなのでは？",
-                          color: const Color.fromRGBO(1, 1, 1, 0.8),
-                          fontSize: deviceHeight * 0.02,
-                          fontWeight: FontWeight.normal,
-                          fontFamily: "Noto Sans JP",
-                          textAlign: TextAlign.center,
-                          paddingValue: 1.3,
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            BodyText(
+                              text: "自分の気持ちを書き出したり、誰かにわかるように言語化できていないのでは？",
+                              color: const Color.fromRGBO(1, 1, 1, 0.8),
+                              fontSize: deviceHeight * 0.02,
+                              fontWeight: FontWeight.normal,
+                              fontFamily: "Noto Sans JP",
+                            ),
+                            HeightSizedBox(
+                                targetSize: deviceHeight, value: 0.02),
+                            BodyText(
+                              text: "一度気持ちを整理する前に我慢したり、気持ちをうやむやにしているのでは？",
+                              color: const Color.fromRGBO(1, 1, 1, 0.8),
+                              fontSize: deviceHeight * 0.02,
+                              fontWeight: FontWeight.normal,
+                              fontFamily: "Noto Sans JP",
+                            ),
+                            HeightSizedBox(
+                                targetSize: deviceHeight, value: 0.02),
+                            HighPaddingText(
+                              text:
+                                  "相手を尊重したいため、愚痴や不満は言わないが、自分の気持ちは\nモヤモヤしたままなのでは？",
+                              color: const Color.fromRGBO(1, 1, 1, 0.8),
+                              fontSize: deviceHeight * 0.02,
+                              fontWeight: FontWeight.normal,
+                              fontFamily: "Noto Sans JP",
+                              textAlign: TextAlign.start,
+                              paddingValue: 1.5,
+                            ),
+                          ],
                         ),
                       ],
                     ),

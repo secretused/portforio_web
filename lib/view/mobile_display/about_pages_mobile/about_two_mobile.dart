@@ -44,7 +44,7 @@ class AboutTwoMobile extends ConsumerWidget {
                 fontWeight: FontWeight.normal,
                 fontFamily: 'Noto Sans JP',
                 textAlign: TextAlign.center,
-                paddingValue: 1.3,
+                paddingValue: 1.5,
               ),
             ],
           ),

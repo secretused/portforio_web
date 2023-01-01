@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio_web/utils/extract_widget.dart';
 import 'package:portfolio_web/view/web_display/about_pages_web/about_five_web.dart';
 import 'package:portfolio_web/view/web_display/about_pages_web/about_four_web.dart';
 import 'package:portfolio_web/view/web_display/about_pages_web/about_one_web.dart';
 import 'package:portfolio_web/view/web_display/about_pages_web/about_six_web.dart';
-import 'package:portfolio_web/view/web_display/about_pages_web/about_three_web.dart';
 import 'package:portfolio_web/view/web_display/about_pages_web/about_two_web.dart';
+import 'package:portfolio_web/view/web_display/about_pages_web/about_three_web.dart';
 
 class AboutPageWeb extends ConsumerWidget {
   const AboutPageWeb({
@@ -14,21 +15,32 @@ class AboutPageWeb extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    var deviceWidth = MediaQuery.of(context).size.width;
+    var deviceHeight = MediaQuery.of(context).size.height;
+
     return SingleChildScrollView(
       child: Column(
-        children: const [
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
           // 1枚目
-          AboutOneWeb(),
+          const AboutOneWeb(),
+          SizedBox(
+            width: deviceWidth,
+            height: deviceHeight * 0.3,
+            child: const DecoratedBox(
+              decoration: BoxDecoration(color: Colors.white),
+            ),
+          ),
           // 2枚目
-          AboutTwo(),
+          const AboutTwo(),
           // 3枚目
-          AboutThree(),
+          const AboutThree(),
           // 4枚目
-          AboutFour(),
+          const AboutFour(),
           // 5枚目
-          AboutFive(),
+          const AboutFive(),
           // 6枚目
-          AboutSix(),
+          const AboutSix(),
         ],
       ),
     );

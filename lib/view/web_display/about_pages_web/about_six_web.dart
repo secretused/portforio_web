@@ -15,8 +15,8 @@ class AboutSix extends ConsumerWidget {
     var deviceHeight = MediaQuery.of(context).size.height;
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

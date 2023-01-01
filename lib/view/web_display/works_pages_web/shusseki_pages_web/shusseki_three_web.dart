@@ -16,8 +16,8 @@ class ShussekiThree extends StatelessWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -81,8 +81,8 @@ class ShussekiThree extends StatelessWidget {
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
                                     fontFamily: "Noto Sans JP",
-                                    paddingValue: 1.3,
-                                    textAlign: TextAlign.left,
+                                    textAlign: TextAlign.start,
+                                    paddingValue: 2.0,
                                   ),
                                 ],
                               ),
@@ -113,7 +113,7 @@ class ShussekiThree extends StatelessWidget {
                                       ),
                                       HeightSizedBox(
                                           targetSize: deviceHeight,
-                                          value: 0.015),
+                                          value: 0.02),
                                       ShadowContainerText(
                                         deviceHeight: deviceHeight,
                                         text: '入館管理をアナログで管理している地方小規模団体',
@@ -124,7 +124,7 @@ class ShussekiThree extends StatelessWidget {
                               ],
                             ),
                             const ImageWidget(
-                              heightValue: 0.25,
+                              heightValue: 0.2,
                               imagePath: "https://i.imgur.com/llohL9K.png",
                             ),
                           ],

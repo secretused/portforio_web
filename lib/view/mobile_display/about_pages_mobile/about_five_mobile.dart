@@ -63,7 +63,7 @@ class AboutFiveMobile extends ConsumerWidget {
                 fontWeight: FontWeight.normal,
                 fontFamily: "源ノ角ゴシック",
                 textAlign: TextAlign.center,
-                paddingValue: 1.3,
+                paddingValue: 1.5,
               ),
               HeightSizedBox(
                   targetSize: deviceHeight,
@@ -88,7 +88,7 @@ class AboutFiveMobile extends ConsumerWidget {
                 fontWeight: FontWeight.normal,
                 fontFamily: "源ノ角ゴシック",
                 textAlign: TextAlign.center,
-                paddingValue: 1.3,
+                paddingValue: 1.5,
               ),
               HeightSizedBox(
                   targetSize: deviceHeight,
@@ -113,7 +113,7 @@ class AboutFiveMobile extends ConsumerWidget {
                 fontWeight: FontWeight.normal,
                 fontFamily: "源ノ角ゴシック",
                 textAlign: TextAlign.center,
-                paddingValue: 1.3,
+                paddingValue: 1.5,
               ),
             ],
           )

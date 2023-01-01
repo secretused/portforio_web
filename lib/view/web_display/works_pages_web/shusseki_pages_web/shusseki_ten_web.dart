@@ -25,8 +25,8 @@ class ShussekiTen extends ConsumerWidget {
         "https://www.figma.com/file/NfrvRQpW84pxMibw2BJwpR/%E3%82%B7%E3%83%A5%E3%83%83%E5%B8%AD-%E6%94%B9%E4%BF%AEUI?node-id=0%3A1&t=CU8RbQkkPMLy4AD6-1";
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -82,7 +82,7 @@ class ShussekiTen extends ConsumerWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
                               textAlign: TextAlign.center,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
@@ -103,7 +103,7 @@ class ShussekiTen extends ConsumerWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
                               textAlign: TextAlign.center,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                           ],
                         ),
@@ -137,7 +137,7 @@ class ShussekiTen extends ConsumerWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
                               textAlign: TextAlign.center,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.04),
