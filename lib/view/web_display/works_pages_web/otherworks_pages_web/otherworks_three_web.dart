@@ -18,8 +18,8 @@ class OtherWorksThree extends ConsumerWidget {
         "https://drive.google.com/file/d/1rE6F-A_PMxMnSLlz-7C5BQYinOPWc4ma/view";
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -106,7 +106,7 @@ class OtherWorksThree extends ConsumerWidget {
                                 fontWeight: FontWeight.normal,
                                 fontFamily: "源ノ角ゴシック VF",
                                 textAlign: TextAlign.start,
-                                paddingValue: 1.3,
+                                paddingValue: 1.5,
                               ),
                               textColor: const Color(0xFF726353),
                             ),
@@ -122,7 +122,7 @@ class OtherWorksThree extends ConsumerWidget {
                                 fontWeight: FontWeight.normal,
                                 fontFamily: "源ノ角ゴシック VF",
                                 textAlign: TextAlign.start,
-                                paddingValue: 1.3,
+                                paddingValue: 1.5,
                               ),
                               textColor: const Color(0xFF726353),
                             ),
@@ -203,7 +203,7 @@ class OtherWorksThree extends ConsumerWidget {
                                         fontWeight: FontWeight.normal,
                                         fontFamily: "源ノ角ゴシック VF",
                                         textAlign: TextAlign.start,
-                                        paddingValue: 1.3,
+                                        paddingValue: 1.5,
                                       ),
                                       HeightSizedBox(
                                           targetSize: deviceHeight,
@@ -217,7 +217,7 @@ class OtherWorksThree extends ConsumerWidget {
                                         fontWeight: FontWeight.normal,
                                         fontFamily: "源ノ角ゴシック VF",
                                         textAlign: TextAlign.start,
-                                        paddingValue: 1.3,
+                                        paddingValue: 1.5,
                                       ),
                                     ],
                                   ),

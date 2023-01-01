@@ -14,8 +14,8 @@ class PochipochiEight extends StatelessWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -51,7 +51,7 @@ class PochipochiEight extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
-                              paddingValue: 1.4,
+                              paddingValue: 1.5,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -63,7 +63,7 @@ class PochipochiEight extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -74,7 +74,7 @@ class PochipochiEight extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -85,7 +85,7 @@ class PochipochiEight extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               fontFamily: "Noto Snas JP",
                               textAlign: TextAlign.start,
-                              paddingValue: 1.4,
+                              paddingValue: 1.5,
                             ),
                           ],
                         ),

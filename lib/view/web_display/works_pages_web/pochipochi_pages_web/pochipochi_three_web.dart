@@ -15,8 +15,8 @@ class PochipochiThree extends StatelessWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -73,15 +73,18 @@ class PochipochiThree extends StatelessWidget {
                                   ),
                                   HeightSizedBox(
                                       targetSize: deviceHeight, value: 0.01),
-                                  HighPaddingText(
-                                    text:
-                                        "アプリ開発を始めた頃に彼女からの要望があり、自分はその言葉に少し耳を疑いました。\n飽和に近い状態の幼児向けアプリでどうして少ないと感じているのか？\n実際、彼女の2歳の姪はアプリより動画視聴を主に楽しんでいるため、要望に興味を持ち\n制作に至りました。",
-                                    color: const Color.fromRGBO(0, 0, 0, 0.6),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.normal,
-                                    fontFamily: "Noto Sans JP",
-                                    paddingValue: 1.3,
-                                    textAlign: TextAlign.left,
+                                  SizedBox(
+                                    width: deviceWidth * 0.38,
+                                    child: HighPaddingText(
+                                      text:
+                                          "アプリ開発を始めた頃に彼女からの要望があり、自分はその言葉に少し耳を疑いました。飽和に近い状態の幼児向けアプリでどうして少ないと感じているのか？実際、彼女の2歳の姪はアプリより動画視聴を主に楽しんでいるため、要望に興味を持ち、制作に至りました。",
+                                      color: const Color.fromRGBO(0, 0, 0, 0.6),
+                                      fontSize: deviceHeight * 0.02,
+                                      fontWeight: FontWeight.normal,
+                                      fontFamily: "Noto Sans JP",
+                                      paddingValue: 1.5,
+                                      textAlign: TextAlign.start,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -112,7 +115,7 @@ class PochipochiThree extends StatelessWidget {
                                       ),
                                       HeightSizedBox(
                                           targetSize: deviceHeight,
-                                          value: 0.015),
+                                          value: 0.02),
                                       ShadowContainerText(
                                         deviceHeight: deviceHeight,
                                         text: '幼児は飽きやすく、1つのものを長く使えないのでは？',
@@ -161,35 +164,41 @@ class PochipochiThree extends StatelessWidget {
                                 fontFamily: "Noto Sans JP",
                               ),
                               HeightSizedBox(
-                                  targetSize: deviceHeight, value: 0.025),
-                              BodyText(
-                                text: "なぜ幼児アプリが少ないと思っているのか？",
-                                color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                fontSize: deviceHeight * 0.02,
-                                fontWeight: FontWeight.normal,
-                                fontFamily: "Noto Sans JP",
-                              ),
-                              HeightSizedBox(
                                   targetSize: deviceHeight, value: 0.02),
-                              HighPaddingText(
-                                text: "本当に幼児はアプリに飽きてしまっているのか\nカスタマイズ性を求めているのか？",
-                                color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                fontSize: deviceHeight * 0.02,
-                                fontWeight: FontWeight.normal,
-                                fontFamily: "Noto Sans JP",
-                                textAlign: TextAlign.center,
-                                paddingValue: 1.3,
-                              ),
-                              HeightSizedBox(
-                                  targetSize: deviceHeight, value: 0.02),
-                              HighPaddingText(
-                                text: "保護者目線では幼児の興味・関心の動向を\nどう捉えているのだろうか？",
-                                color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                fontSize: deviceHeight * 0.02,
-                                fontWeight: FontWeight.normal,
-                                fontFamily: "Noto Sans JP",
-                                textAlign: TextAlign.center,
-                                paddingValue: 1.3,
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  BodyText(
+                                    text: "なぜ幼児アプリが少ないと思っているのか？",
+                                    color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                    fontSize: deviceHeight * 0.02,
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily: "Noto Sans JP",
+                                  ),
+                                  HeightSizedBox(
+                                      targetSize: deviceHeight, value: 0.02),
+                                  HighPaddingText(
+                                    text:
+                                        "本当に幼児はアプリに飽きてしまっているのか？\nカスタマイズ性を求めているのか？",
+                                    color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                    fontSize: deviceHeight * 0.02,
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily: "Noto Sans JP",
+                                    textAlign: TextAlign.start,
+                                    paddingValue: 1.5,
+                                  ),
+                                  HeightSizedBox(
+                                      targetSize: deviceHeight, value: 0.02),
+                                  HighPaddingText(
+                                    text: "保護者目線では幼児の興味・関心の動向をどう\n捉えているのだろうか？",
+                                    color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                    fontSize: deviceHeight * 0.02,
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily: "Noto Sans JP",
+                                    textAlign: TextAlign.start,
+                                    paddingValue: 1.5,
+                                  ),
+                                ],
                               ),
                             ],
                           ),
@@ -218,28 +227,33 @@ class PochipochiThree extends StatelessWidget {
                                 fontFamily: "Noto Sans JP",
                               ),
                               HeightSizedBox(
-                                  targetSize: deviceHeight, value: 0.025),
-                              HighPaddingText(
-                                text:
-                                    "Youtubeで既に満足しているように見受けられるが\nそれでもなぜアプリが必要なのかが鍵になるのでは？",
-                                color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                fontSize: deviceHeight * 0.02,
-                                fontWeight: FontWeight.normal,
-                                fontFamily: "Noto Sans JP",
-                                textAlign: TextAlign.center,
-                                paddingValue: 1.3,
-                              ),
-                              HeightSizedBox(
                                   targetSize: deviceHeight, value: 0.02),
-                              HighPaddingText(
-                                text:
-                                    "幼児それぞれの興味・関心にあったベストな\nコンテンツを含んだアプリがないのでは？",
-                                color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                fontSize: deviceHeight * 0.02,
-                                fontWeight: FontWeight.normal,
-                                fontFamily: "Noto Sans JP",
-                                textAlign: TextAlign.center,
-                                paddingValue: 1.3,
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  HighPaddingText(
+                                    text:
+                                        "Youtubeで既に満足しているように見受けられるが\nそれでもなぜアプリが必要なのかが鍵になるのでは？",
+                                    color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                    fontSize: deviceHeight * 0.02,
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily: "Noto Sans JP",
+                                    textAlign: TextAlign.start,
+                                    paddingValue: 1.5,
+                                  ),
+                                  HeightSizedBox(
+                                      targetSize: deviceHeight, value: 0.02),
+                                  HighPaddingText(
+                                    text:
+                                        "幼児それぞれの興味・関心にあったベストな\nコンテンツを含んだアプリがないのでは？",
+                                    color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                    fontSize: deviceHeight * 0.02,
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily: "Noto Sans JP",
+                                    textAlign: TextAlign.start,
+                                    paddingValue: 1.5,
+                                  ),
+                                ],
                               ),
                             ],
                           ),

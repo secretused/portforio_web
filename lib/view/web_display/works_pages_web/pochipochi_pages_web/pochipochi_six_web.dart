@@ -15,8 +15,8 @@ class PochipochiSix extends StatelessWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -26,7 +26,7 @@ class PochipochiSix extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                height: deviceHeight * 0.25,
+                height: deviceHeight * 0.275,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -72,12 +72,18 @@ class PochipochiSix extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.01),
-                                BodyText(
-                                  text: "カスタマイズ性があり、アプリも共に成長していく必要がある",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                  fontSize: deviceHeight * 0.02,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: "Noto Sans JP",
+                                SizedBox(
+                                  width: deviceWidth * 0.3,
+                                  child: HighPaddingText(
+                                    text:
+                                        "作られたものを提供するのではなく、自由なカスタマイズ性があり、アプリも共に成長していく必要がある",
+                                    color: const Color.fromRGBO(0, 0, 0, 0.8),
+                                    fontSize: deviceHeight * 0.02,
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily: "Noto Sans JP",
+                                    textAlign: TextAlign.start,
+                                    paddingValue: 1.5,
+                                  ),
                                 ),
                               ],
                             ),
@@ -108,13 +114,13 @@ class PochipochiSix extends StatelessWidget {
                                 targetSize: deviceHeight, value: 0.025),
                             HighPaddingText(
                               text:
-                                  "Youtubeの動画コンテンツに問題はないが、操作性だけが難しく\n幼児が誤操作をしてしまい、保護者の手間が増えているのでは？",
+                                  "Youtubeの動画コンテンツに問題はないが、操作性だけが難しく、\n幼児が誤操作をしてしまい、保護者の手間が増えているのでは？",
                               color: const Color.fromRGBO(1, 1, 1, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
                               textAlign: TextAlign.center,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -126,7 +132,7 @@ class PochipochiSix extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
                               textAlign: TextAlign.center,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                           ],
                         ),
@@ -211,7 +217,7 @@ class PochipochiSix extends StatelessWidget {
                                           fontWeight: FontWeight.normal,
                                           fontFamily: "源ノ角ゴシック VF",
                                           textAlign: TextAlign.start,
-                                          paddingValue: 1.3,
+                                          paddingValue: 1.5,
                                         ),
                                       ],
                                     ),
@@ -319,7 +325,7 @@ class PochipochiSix extends StatelessWidget {
                                           fontWeight: FontWeight.normal,
                                           fontFamily: "源ノ角ゴシック VF",
                                           textAlign: TextAlign.start,
-                                          paddingValue: 1.3,
+                                          paddingValue: 1.5,
                                         ),
                                       ],
                                     ),

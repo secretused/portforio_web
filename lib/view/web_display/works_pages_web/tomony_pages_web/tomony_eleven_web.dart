@@ -21,8 +21,8 @@ class TomonyEleven extends ConsumerWidget {
         "https://www.figma.com/file/uQf8EItAZKndlzsWlKgxeA/%E7%94%9F%E7%90%86%E8%B3%AA%E5%95%8F%E3%82%A2%E3%83%97%E3%83%AA-UI?node-id=0%3A1&t=TAFCb0xpwiuxJCZy-1";
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -127,7 +127,7 @@ class TomonyEleven extends ConsumerWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
                               textAlign: TextAlign.center,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                           ],
                         ),

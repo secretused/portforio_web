@@ -112,6 +112,7 @@ class BodyText extends StatelessWidget {
         fontSize: fontSize,
         fontFamily: fontFamily,
         fontWeight: fontWeight,
+        letterSpacing: fontSize * 0.05,
         height: 1.1,
       ),
     );
@@ -184,6 +185,7 @@ class HighPaddingText extends StatelessWidget {
         fontFamily: fontFamily,
         fontWeight: fontWeight,
         height: paddingValue,
+        letterSpacing: fontSize * 0.05,
       ),
     );
   }

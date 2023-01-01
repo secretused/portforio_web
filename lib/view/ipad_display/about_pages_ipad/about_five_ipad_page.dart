@@ -53,7 +53,7 @@ class AboutFiveIPad extends StatelessWidget {
                 fontWeight: FontWeight.normal,
                 fontFamily: "源ノ角ゴシック",
                 textAlign: TextAlign.center,
-                paddingValue: 1.3,
+                paddingValue: 1.5,
               ),
               HeightSizedBox(targetSize: deviceHeight, value: 0.04),
               BodyText(
@@ -72,7 +72,7 @@ class AboutFiveIPad extends StatelessWidget {
                 fontWeight: FontWeight.normal,
                 fontFamily: "源ノ角ゴシック",
                 textAlign: TextAlign.center,
-                paddingValue: 1.3,
+                paddingValue: 1.5,
               ),
               HeightSizedBox(targetSize: deviceHeight, value: 0.04),
               BodyText(
@@ -91,7 +91,7 @@ class AboutFiveIPad extends StatelessWidget {
                 fontWeight: FontWeight.normal,
                 fontFamily: "源ノ角ゴシック",
                 textAlign: TextAlign.center,
-                paddingValue: 1.3,
+                paddingValue: 1.5,
               ),
             ],
           )

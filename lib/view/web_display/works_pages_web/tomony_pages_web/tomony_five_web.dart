@@ -15,8 +15,8 @@ class TomonyFive extends StatelessWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
@@ -34,7 +34,7 @@ class TomonyFive extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(deviceHeight * 0.03),
                 child: SizedBox(
-                  width: deviceWidth * 0.71,
+                  width: deviceWidth * 0.75,
                   child: Column(
                     children: [
                       Container(
@@ -203,92 +203,89 @@ class TomonyFive extends StatelessWidget {
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          SizedBox(
-                            width: deviceWidth * 0.46,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                boxShadow: const [
-                                  BoxShadow(
-                                    color: Color.fromRGBO(151, 151, 151, 0.3),
-                                    spreadRadius: 1,
-                                    blurRadius: 2,
-                                    offset: Offset(1, 1),
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Color.fromRGBO(151, 151, 151, 0.3),
+                                  spreadRadius: 1,
+                                  blurRadius: 2,
+                                  offset: Offset(1, 1),
+                                ),
+                              ],
+                              color: Colors.white,
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.all(deviceHeight * 0.03),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  BodyText(
+                                    text: "課題の特定",
+                                    color: Colors.black,
+                                    fontSize: deviceHeight * 0.028,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: "源ノ角ゴシック VF",
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                      top: deviceHeight * 0.02,
+                                      left: deviceHeight * 0.02,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        const IssueTopic(
+                                          isuueTopic: "ターゲット",
+                                          isuueDetail: "パートナーがいる男性",
+                                          isuueDisc: "は",
+                                          containerColor: Color.fromRGBO(
+                                              135, 196, 149, 0.6),
+                                        ),
+                                        HeightSizedBox(
+                                            targetSize: deviceHeight,
+                                            value: 0.02),
+                                        const IssueTopic(
+                                          isuueTopic: "欲求",
+                                          isuueDetail: "相手を尊重し、円満な関係を築きたい",
+                                          isuueDisc: "のだが",
+                                          containerColor: Color.fromRGBO(
+                                              135, 196, 149, 0.6),
+                                        ),
+                                        HeightSizedBox(
+                                            targetSize: deviceHeight,
+                                            value: 0.02),
+                                        const IssueTopic(
+                                          isuueTopic: "課題",
+                                          isuueDetail:
+                                              "生理中の相手の気持ちや、適切な対応方法が分からず\n気持ちを我慢したり、不満を溜め込んでしまう",
+                                          isuueDisc: "ため",
+                                          containerColor: Color.fromRGBO(
+                                              135, 196, 149, 0.6),
+                                        ),
+                                        HeightSizedBox(
+                                            targetSize: deviceHeight,
+                                            value: 0.02),
+                                        const IssueTopic(
+                                          isuueTopic: "提供価値",
+                                          isuueDetail:
+                                              "経験豊富な人から、分からないことや前提知識を教えてもらい\n関係性を向上すると同時に、気持ちが楽になる",
+                                          isuueDisc: "体験を提供する",
+                                          containerColor: Color.fromRGBO(
+                                              135, 196, 149, 0.6),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ],
-                                color: Colors.white,
-                              ),
-                              child: Padding(
-                                padding: EdgeInsets.all(deviceHeight * 0.03),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    BodyText(
-                                      text: "課題の特定",
-                                      color: Colors.black,
-                                      fontSize: deviceHeight * 0.028,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: "源ノ角ゴシック VF",
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsets.only(
-                                        top: deviceHeight * 0.02,
-                                        left: deviceHeight * 0.02,
-                                      ),
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          const IssueTopic(
-                                            isuueTopic: "ターゲット",
-                                            isuueDetail: "パートナーがいる男性",
-                                            isuueDisc: "は",
-                                            containerColor: Color.fromRGBO(
-                                                135, 196, 149, 0.6),
-                                          ),
-                                          HeightSizedBox(
-                                              targetSize: deviceHeight,
-                                              value: 0.02),
-                                          const IssueTopic(
-                                            isuueTopic: "欲求",
-                                            isuueDetail: "相手を尊重し、円満な関係を築きたい",
-                                            isuueDisc: "のだが",
-                                            containerColor: Color.fromRGBO(
-                                                135, 196, 149, 0.6),
-                                          ),
-                                          HeightSizedBox(
-                                              targetSize: deviceHeight,
-                                              value: 0.02),
-                                          const IssueTopic(
-                                            isuueTopic: "課題",
-                                            isuueDetail:
-                                                "生理中の相手の気持ちや、適切な対応方法が分からず\n気持ちを我慢したり、不満を溜め込んでしまう",
-                                            isuueDisc: "ため",
-                                            containerColor: Color.fromRGBO(
-                                                135, 196, 149, 0.6),
-                                          ),
-                                          HeightSizedBox(
-                                              targetSize: deviceHeight,
-                                              value: 0.02),
-                                          const IssueTopic(
-                                            isuueTopic: "提供価値",
-                                            isuueDetail:
-                                                "経験豊富な人から、分からないことや前提知識を教えてもらい\n関係性を向上すると同時に、気持ちが楽になる",
-                                            isuueDisc: "体験を提供する",
-                                            containerColor: Color.fromRGBO(
-                                                135, 196, 149, 0.6),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
                               ),
                             ),
                           ),
-                          WidthSizedBox(targetSize: deviceWidth, value: 0.015),
+                          WidthSizedBox(targetSize: deviceWidth, value: 0.025),
                           const ImageWidget(
                             heightValue: 0.4,
                             imagePath: "https://i.imgur.com/def1C01.png",

@@ -14,8 +14,8 @@ class TomonyTwo extends StatelessWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -42,7 +42,7 @@ class TomonyTwo extends StatelessWidget {
               HeightSizedBox(targetSize: deviceHeight, value: 0.03),
               HighPaddingText(
                 text:
-                    "男性向けの生理のお悩み質問相談アプリ「TOMONY」は、生理中の彼女がいる男性の\n悩みや問題を、それぞれのカップルの関係性や状況を明確にできる質問項目に沿って\n生理の知識や解決策を気軽に質問することができるアプリです。",
+                    "男性向けの生理のお悩み質問相談アプリ「TOMONY」は、生理中の彼女がいる\n男性の悩みや問題を、それぞれのカップルの関係性や状況を明確にできる質問\n項目に沿って、生理の知識や解決策を気軽に質問することができるアプリです。",
                 color: Colors.black,
                 fontSize: deviceHeight * 0.02,
                 fontWeight: FontWeight.normal,

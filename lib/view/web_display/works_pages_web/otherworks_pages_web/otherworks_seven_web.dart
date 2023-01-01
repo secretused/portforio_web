@@ -19,8 +19,8 @@ class OtherWorksSeven extends StatelessWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -83,7 +83,7 @@ class OtherWorksSeven extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "源ノ角ゴシック VF",
                               textAlign: TextAlign.start,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
@@ -104,7 +104,7 @@ class OtherWorksSeven extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "源ノ角ゴシック VF",
                               textAlign: TextAlign.start,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -125,7 +125,7 @@ class OtherWorksSeven extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "源ノ角ゴシック VF",
                               textAlign: TextAlign.start,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                           ],
                         ),

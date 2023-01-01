@@ -15,8 +15,8 @@ class ShussekiNine extends StatelessWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -59,7 +59,7 @@ class ShussekiNine extends StatelessWidget {
                             fontWeight: FontWeight.normal,
                             fontFamily: "Noto Sans JP",
                             textAlign: TextAlign.start,
-                            paddingValue: 1.3,
+                            paddingValue: 1.5,
                           ),
                         ],
                       ),
@@ -121,7 +121,7 @@ class ShussekiNine extends StatelessWidget {
                                       fontWeight: FontWeight.normal,
                                       fontFamily: "Noto Sans JP",
                                       textAlign: TextAlign.start,
-                                      paddingValue: 1.3,
+                                      paddingValue: 1.5,
                                     ),
                                   ],
                                 ),

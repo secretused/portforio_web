@@ -21,8 +21,8 @@ class PochipochiTwelve extends ConsumerWidget {
         "https://www.figma.com/file/DfI5iNN3wSBKdO98IpgK66/%E5%B9%BC%E5%85%90%E3%82%A2%E3%83%97%E3%83%AA-UI?node-id=96%3A223&t=jRiZBvMrgXIb1dBt-1";
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -78,7 +78,7 @@ class PochipochiTwelve extends ConsumerWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
                               textAlign: TextAlign.center,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
@@ -99,7 +99,7 @@ class PochipochiTwelve extends ConsumerWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
                               textAlign: TextAlign.center,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                           ],
                         ),
@@ -133,7 +133,7 @@ class PochipochiTwelve extends ConsumerWidget {
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
                               textAlign: TextAlign.center,
-                              paddingValue: 1.3,
+                              paddingValue: 1.5,
                             ),
                           ],
                         ),

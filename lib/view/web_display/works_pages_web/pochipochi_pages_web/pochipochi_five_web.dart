@@ -15,8 +15,8 @@ class PochipochiFive extends StatelessWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      color: Colors.white,
       height: deviceHeight,
+      color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
@@ -33,11 +33,11 @@ class PochipochiFive extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.all(deviceHeight * 0.03),
-                child: Column(
-                  children: [
-                    SizedBox(
-                      width: deviceWidth * 0.75,
-                      child: Column(
+                child: SizedBox(
+                  width: deviceWidth * 0.8,
+                  child: Column(
+                    children: [
+                      Column(
                         children: [
                           Container(
                             decoration: BoxDecoration(
@@ -209,206 +209,211 @@ class PochipochiFive extends StatelessWidget {
                           ),
                         ],
                       ),
-                    ),
-                    HeightSizedBox(targetSize: deviceHeight, value: 0.02),
-                    SizedBox(
-                      height: deviceHeight * 0.5,
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          //調べた事柄
-                          Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: Color.fromRGBO(151, 151, 151, 0.3), //色
-                                  spreadRadius: 1,
-                                  blurRadius: 2,
-                                  offset: Offset(1, 1),
-                                ),
-                              ],
-                              color: Colors.white,
-                            ),
-                            child: Padding(
-                              padding: EdgeInsets.all(deviceHeight * 0.03),
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Column(
-                                    children: [
-                                      LongText(
-                                        text: "幼児のスマートフォン利用における\n健康への影響を調べた結果",
-                                        color: Colors.black,
-                                        fontSize: deviceHeight * 0.028,
-                                        fontWeight: FontWeight.bold,
-                                        fontFamily: "源ノ角ゴシック VF",
-                                        textAlign: TextAlign.center,
-                                      ),
-                                      HeightSizedBox(
-                                          targetSize: deviceHeight,
-                                          value: 0.02),
-                                      BodyText(
-                                        text: "自分が使っているため、不安だけど使わせている。",
-                                        color:
-                                            const Color.fromRGBO(0, 0, 0, 0.8),
-                                        fontSize: deviceHeight * 0.02,
-                                        fontWeight: FontWeight.normal,
-                                        fontFamily: "Noto Sans JP",
-                                      ),
-                                    ],
-                                  ),
-                                  Column(
-                                    children: [
-                                      BodyText(
-                                        text: "身体への影響",
-                                        color:
-                                            const Color.fromRGBO(0, 0, 0, 0.8),
-                                        fontSize: deviceHeight * 0.025,
-                                        fontWeight: FontWeight.bold,
-                                        fontFamily: "Noto Sans JP",
-                                      ),
-                                      HeightSizedBox(
-                                          targetSize: deviceHeight,
-                                          value: 0.02),
-                                      Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Row(
-                                            children: [
-                                              BodyText(
-                                                text: "視力の低下",
-                                                color: const Color.fromRGBO(
-                                                    1, 1, 1, 0.8),
-                                                fontSize: deviceHeight * 0.02,
-                                                fontWeight: FontWeight.normal,
-                                                fontFamily: "Noto Sans JP",
-                                              ),
-                                              WidthSizedBox(
-                                                  targetSize: deviceWidth,
-                                                  value: 0.01),
-                                              BodyText(
-                                                text: ">",
-                                                color: const Color.fromRGBO(
-                                                    1, 1, 1, 0.8),
-                                                fontSize: deviceHeight * 0.02,
-                                                fontWeight: FontWeight.normal,
-                                                fontFamily: "Noto Sans JP",
-                                              ),
-                                              WidthSizedBox(
-                                                  targetSize: deviceWidth,
-                                                  value: 0.01),
-                                              BodyText(
-                                                text: "スマホの近距離使用",
-                                                color: const Color(0xFFEBAA14),
-                                                fontSize: deviceHeight * 0.025,
-                                                fontWeight: FontWeight.bold,
-                                                fontFamily: "Noto Sans JP",
-                                              ),
-                                            ],
-                                          ),
-                                          HeightSizedBox(
-                                              targetSize: deviceHeight,
-                                              value: 0.01),
-                                          Row(
-                                            children: [
-                                              BodyText(
-                                                text: "睡眠への悪影響",
-                                                color: const Color.fromRGBO(
-                                                    1, 1, 1, 0.8),
-                                                fontSize: deviceHeight * 0.02,
-                                                fontWeight: FontWeight.normal,
-                                                fontFamily: "Noto Sans JP",
-                                              ),
-                                              WidthSizedBox(
-                                                  targetSize: deviceWidth,
-                                                  value: 0.01),
-                                              BodyText(
-                                                text: ">",
-                                                color: const Color.fromRGBO(
-                                                    1, 1, 1, 0.8),
-                                                fontSize: deviceHeight * 0.02,
-                                                fontWeight: FontWeight.normal,
-                                                fontFamily: "Noto Sans JP",
-                                              ),
-                                              WidthSizedBox(
-                                                  targetSize: deviceWidth,
-                                                  value: 0.01),
-                                              BodyText(
-                                                text: "ブルーライト",
-                                                color: const Color(0xFFEBAA14),
-                                                fontSize: deviceHeight * 0.025,
-                                                fontWeight: FontWeight.bold,
-                                                fontFamily: "Noto Sans JP",
-                                              ),
-                                            ],
-                                          ),
-                                          HeightSizedBox(
-                                              targetSize: deviceHeight,
-                                              value: 0.01),
-                                          Row(
-                                            children: [
-                                              BodyText(
-                                                text: "姿勢の悪化",
-                                                color: const Color.fromRGBO(
-                                                    1, 1, 1, 0.8),
-                                                fontSize: deviceHeight * 0.02,
-                                                fontWeight: FontWeight.normal,
-                                                fontFamily: "Noto Sans JP",
-                                              ),
-                                              WidthSizedBox(
-                                                  targetSize: deviceWidth,
-                                                  value: 0.01),
-                                              BodyText(
-                                                text: ">",
-                                                color: const Color.fromRGBO(
-                                                    1, 1, 1, 0.8),
-                                                fontSize: deviceHeight * 0.02,
-                                                fontWeight: FontWeight.normal,
-                                                fontFamily: "Noto Sans JP",
-                                              ),
-                                              WidthSizedBox(
-                                                  targetSize: deviceWidth,
-                                                  value: 0.01),
-                                              BodyText(
-                                                text: "長時間の前傾姿勢",
-                                                color: const Color(0xFFEBAA14),
-                                                fontSize: deviceHeight * 0.025,
-                                                fontWeight: FontWeight.bold,
-                                                fontFamily: "Noto Sans JP",
-                                              ),
-                                            ],
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                  BodyText(
-                                    text: "⬇︎",
-                                    color: const Color.fromRGBO(1, 1, 1, 0.8),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "Noto Sans JP",
-                                  ),
-                                  BodyText(
-                                    text: "スマホ利用は１５分程度が理想",
-                                    color: Colors.black,
-                                    fontSize: deviceHeight * 0.025,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: "Noto Sans JP",
+                      HeightSizedBox(targetSize: deviceHeight, value: 0.02),
+                      SizedBox(
+                        height: deviceHeight * 0.52,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            //調べた事柄
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                boxShadow: const [
+                                  BoxShadow(
+                                    color:
+                                        Color.fromRGBO(151, 151, 151, 0.3), //色
+                                    spreadRadius: 1,
+                                    blurRadius: 2,
+                                    offset: Offset(1, 1),
                                   ),
                                 ],
+                                color: Colors.white,
+                              ),
+                              child: Padding(
+                                padding: EdgeInsets.all(deviceHeight * 0.03),
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Column(
+                                      children: [
+                                        LongText(
+                                          text:
+                                              "幼児のスマートフォン利用における\n健康への影響を調べた結果",
+                                          color: Colors.black,
+                                          fontSize: deviceHeight * 0.028,
+                                          fontWeight: FontWeight.bold,
+                                          fontFamily: "源ノ角ゴシック VF",
+                                          textAlign: TextAlign.center,
+                                        ),
+                                        HeightSizedBox(
+                                            targetSize: deviceHeight,
+                                            value: 0.02),
+                                        BodyText(
+                                          text: "自分が使っているため、不安だけど使わせている。",
+                                          color: const Color.fromRGBO(
+                                              0, 0, 0, 0.8),
+                                          fontSize: deviceHeight * 0.02,
+                                          fontWeight: FontWeight.normal,
+                                          fontFamily: "Noto Sans JP",
+                                        ),
+                                      ],
+                                    ),
+                                    Column(
+                                      children: [
+                                        BodyText(
+                                          text: "身体への影響",
+                                          color: const Color.fromRGBO(
+                                              0, 0, 0, 0.8),
+                                          fontSize: deviceHeight * 0.025,
+                                          fontWeight: FontWeight.bold,
+                                          fontFamily: "Noto Sans JP",
+                                        ),
+                                        HeightSizedBox(
+                                            targetSize: deviceHeight,
+                                            value: 0.02),
+                                        Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Row(
+                                              children: [
+                                                BodyText(
+                                                  text: "視力の低下",
+                                                  color: const Color.fromRGBO(
+                                                      1, 1, 1, 0.8),
+                                                  fontSize: deviceHeight * 0.02,
+                                                  fontWeight: FontWeight.normal,
+                                                  fontFamily: "Noto Sans JP",
+                                                ),
+                                                WidthSizedBox(
+                                                    targetSize: deviceWidth,
+                                                    value: 0.01),
+                                                BodyText(
+                                                  text: ">",
+                                                  color: const Color.fromRGBO(
+                                                      1, 1, 1, 0.8),
+                                                  fontSize: deviceHeight * 0.02,
+                                                  fontWeight: FontWeight.normal,
+                                                  fontFamily: "Noto Sans JP",
+                                                ),
+                                                WidthSizedBox(
+                                                    targetSize: deviceWidth,
+                                                    value: 0.01),
+                                                BodyText(
+                                                  text: "スマホの近距離使用",
+                                                  color:
+                                                      const Color(0xFFEBAA14),
+                                                  fontSize:
+                                                      deviceHeight * 0.025,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontFamily: "Noto Sans JP",
+                                                ),
+                                              ],
+                                            ),
+                                            HeightSizedBox(
+                                                targetSize: deviceHeight,
+                                                value: 0.01),
+                                            Row(
+                                              children: [
+                                                BodyText(
+                                                  text: "睡眠への悪影響",
+                                                  color: const Color.fromRGBO(
+                                                      1, 1, 1, 0.8),
+                                                  fontSize: deviceHeight * 0.02,
+                                                  fontWeight: FontWeight.normal,
+                                                  fontFamily: "Noto Sans JP",
+                                                ),
+                                                WidthSizedBox(
+                                                    targetSize: deviceWidth,
+                                                    value: 0.01),
+                                                BodyText(
+                                                  text: ">",
+                                                  color: const Color.fromRGBO(
+                                                      1, 1, 1, 0.8),
+                                                  fontSize: deviceHeight * 0.02,
+                                                  fontWeight: FontWeight.normal,
+                                                  fontFamily: "Noto Sans JP",
+                                                ),
+                                                WidthSizedBox(
+                                                    targetSize: deviceWidth,
+                                                    value: 0.01),
+                                                BodyText(
+                                                  text: "ブルーライト",
+                                                  color:
+                                                      const Color(0xFFEBAA14),
+                                                  fontSize:
+                                                      deviceHeight * 0.025,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontFamily: "Noto Sans JP",
+                                                ),
+                                              ],
+                                            ),
+                                            HeightSizedBox(
+                                                targetSize: deviceHeight,
+                                                value: 0.01),
+                                            Row(
+                                              children: [
+                                                BodyText(
+                                                  text: "姿勢の悪化",
+                                                  color: const Color.fromRGBO(
+                                                      1, 1, 1, 0.8),
+                                                  fontSize: deviceHeight * 0.02,
+                                                  fontWeight: FontWeight.normal,
+                                                  fontFamily: "Noto Sans JP",
+                                                ),
+                                                WidthSizedBox(
+                                                    targetSize: deviceWidth,
+                                                    value: 0.01),
+                                                BodyText(
+                                                  text: ">",
+                                                  color: const Color.fromRGBO(
+                                                      1, 1, 1, 0.8),
+                                                  fontSize: deviceHeight * 0.02,
+                                                  fontWeight: FontWeight.normal,
+                                                  fontFamily: "Noto Sans JP",
+                                                ),
+                                                WidthSizedBox(
+                                                    targetSize: deviceWidth,
+                                                    value: 0.01),
+                                                BodyText(
+                                                  text: "長時間の前傾姿勢",
+                                                  color:
+                                                      const Color(0xFFEBAA14),
+                                                  fontSize:
+                                                      deviceHeight * 0.025,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontFamily: "Noto Sans JP",
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                    BodyText(
+                                      text: "⬇︎",
+                                      color: const Color.fromRGBO(1, 1, 1, 0.8),
+                                      fontSize: deviceHeight * 0.02,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: "Noto Sans JP",
+                                    ),
+                                    BodyText(
+                                      text: "スマホ利用は１５分程度が理想",
+                                      color: Colors.black,
+                                      fontSize: deviceHeight * 0.025,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: "Noto Sans JP",
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                          WidthSizedBox(targetSize: deviceWidth, value: 0.02),
-                          //課題の特定
-                          SizedBox(
-                            width: deviceWidth * 0.44,
-                            child: Container(
+                            WidthSizedBox(targetSize: deviceWidth, value: 0.02),
+                            //課題の特定
+                            Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
                                 boxShadow: const [
@@ -442,7 +447,7 @@ class PochipochiFive extends StatelessWidget {
                                           left: deviceHeight * 0.02),
                                       child: Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.center,
+                                            CrossAxisAlignment.start,
                                         children: [
                                           const IssueTopic(
                                             isuueTopic: "ターゲット",
@@ -491,11 +496,11 @@ class PochipochiFive extends StatelessWidget {
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
