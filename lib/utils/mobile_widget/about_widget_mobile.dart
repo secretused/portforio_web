@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../provider/provider.dart';
@@ -402,5 +403,96 @@ class WorksTopicRightMobile extends ConsumerWidget {
   void _textLongPress(WidgetRef ref, String appName) {
     ref.read(appNameProvider.notifier).update((state) => appName);
     ref.read(worksTopicContentsProvider.notifier).update((state) => true);
+  }
+}
+
+// スキル テキストアイコン
+class AboutSkillText extends StatelessWidget {
+  const AboutSkillText({
+    Key? key,
+    required this.text,
+    required this.fontValue,
+    required this.sizeValue,
+  }) : super(key: key);
+
+  final double sizeValue;
+  final double fontValue;
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    var deviceHeight = MediaQuery.of(context).size.height;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Container(
+          width: deviceHeight * sizeValue,
+          height: deviceHeight * sizeValue,
+          decoration: BoxDecoration(
+            color: const Color.fromRGBO(151, 151, 151, 0.5),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Center(
+            child: Padding(
+              padding: EdgeInsets.only(
+                  top: deviceHeight * 0.005,
+                  bottom: deviceHeight * 0.005,
+                  right: deviceHeight * 0.005,
+                  left: deviceHeight * 0.008),
+              child: BodyText(
+                text: text,
+                color: Colors.white,
+                fontFamily: 'Noto Sans JP',
+                fontSize: deviceHeight * fontValue,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+// スキル イメージアイコン
+class AboutSkillIcon extends StatelessWidget {
+  const AboutSkillIcon({
+    Key? key,
+    required this.imagePath,
+    required this.sizeValue,
+    required this.imageValue,
+  }) : super(key: key);
+
+  final double sizeValue;
+  final String imagePath;
+  final double imageValue;
+
+  @override
+  Widget build(BuildContext context) {
+    var deviceHeight = MediaQuery.of(context).size.height;
+
+    return Column(
+      children: [
+        Container(
+          width: deviceHeight * sizeValue,
+          height: deviceHeight * sizeValue,
+          decoration: BoxDecoration(
+            color: const Color.fromRGBO(151, 151, 151, 0.5),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Center(
+            child: Padding(
+              padding: EdgeInsets.all(deviceHeight * 0.005),
+              child: SvgPicture.asset(
+                imagePath,
+                width: deviceHeight * imageValue,
+                height: deviceHeight * imageValue,
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
   }
 }

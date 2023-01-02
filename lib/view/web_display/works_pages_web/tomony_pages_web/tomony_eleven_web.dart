@@ -78,7 +78,7 @@ class TomonyEleven extends ConsumerWidget {
                               fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.03),
+                                targetSize: deviceHeight, value: 0.05),
                             BodyText(
                               text: "課題のインサイトを深堀りし、必要なUIを設計できた",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
@@ -126,7 +126,7 @@ class TomonyEleven extends ConsumerWidget {
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
-                              textAlign: TextAlign.center,
+                              textAlign: TextAlign.start,
                               paddingValue: 1.5,
                             ),
                           ],
@@ -150,12 +150,6 @@ class TomonyEleven extends ConsumerWidget {
                           path: 'https://i.imgur.com/uZTvT8k.png',
                         ),
                       ],
-                    ),
-                    HeightSizedBox(targetSize: deviceWidth, value: 0.03),
-                    const WorksNavigationButton(
-                      buttonText: 'View More',
-                      fontValue: 0.02,
-                      sizeValue: 0.02,
                     ),
                   ],
                 ),

@@ -37,18 +37,19 @@ class AboutTwo extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: deviceWidth * 0.33,
+                    width: deviceWidth * 0.4,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             ClipRRect(
                               borderRadius: BorderRadius.circular(180),
                               child: const ImageWidget(
                                 heightValue: 0.2,
-                                imagePath: "https://i.imgur.com/p3o4bTd.jpg",
+                                imagePath: "https://i.imgur.com/8R7AbIr.jpg",
                               ),
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.03),
@@ -110,19 +111,19 @@ class AboutTwo extends StatelessWidget {
                                 FiveLevelEvaluation(
                                   one: TrueCircle(
                                     sizeValue: 0.02,
-                                    color: Color(0xFF919191),
+                                    color: Color.fromRGBO(0, 0, 0, 0.6),
                                   ),
                                   two: TrueCircle(
                                     sizeValue: 0.02,
-                                    color: Color(0xFF919191),
+                                    color: Color.fromRGBO(0, 0, 0, 0.6),
                                   ),
                                   three: TrueCircle(
                                     sizeValue: 0.02,
-                                    color: Color(0xFF919191),
+                                    color: Color.fromRGBO(0, 0, 0, 0.6),
                                   ),
                                   four: TrueCircle(
                                     sizeValue: 0.02,
-                                    color: Color(0xFF919191),
+                                    color: Color.fromRGBO(0, 0, 0, 0.6),
                                   ),
                                   five: FalseCircle(
                                     sizeValue: 0.02,
@@ -141,15 +142,15 @@ class AboutTwo extends StatelessWidget {
                                 FiveLevelEvaluation(
                                   one: TrueCircle(
                                     sizeValue: 0.02,
-                                    color: Color(0xFF919191),
+                                    color: Color.fromRGBO(0, 0, 0, 0.6),
                                   ),
                                   two: TrueCircle(
                                     sizeValue: 0.02,
-                                    color: Color(0xFF919191),
+                                    color: Color.fromRGBO(0, 0, 0, 0.6),
                                   ),
                                   three: TrueCircle(
                                     sizeValue: 0.02,
-                                    color: Color(0xFF919191),
+                                    color: Color.fromRGBO(0, 0, 0, 0.6),
                                   ),
                                   four: FalseCircle(
                                     sizeValue: 0.02,
@@ -172,18 +173,19 @@ class AboutTwo extends StatelessWidget {
                                 FiveLevelEvaluation(
                                   one: TrueCircle(
                                     sizeValue: 0.02,
-                                    color: Color(0xFF919191),
+                                    color: Color.fromRGBO(0, 0, 0, 0.6),
                                   ),
                                   two: TrueCircle(
-                                      sizeValue: 0.02,
-                                      color: Color(0xFF919191)),
+                                    sizeValue: 0.02,
+                                    color: Color.fromRGBO(0, 0, 0, 0.6),
+                                  ),
                                   three: TrueCircle(
                                     sizeValue: 0.02,
-                                    color: Color(0xFF919191),
+                                    color: Color.fromRGBO(0, 0, 0, 0.6),
                                   ),
                                   four: TrueCircle(
                                     sizeValue: 0.02,
-                                    color: Color(0xFF919191),
+                                    color: Color.fromRGBO(0, 0, 0, 0.6),
                                   ),
                                   five: FalseCircle(
                                     sizeValue: 0.02,
@@ -199,33 +201,61 @@ class AboutTwo extends StatelessWidget {
                         SmallTitleUnderline(
                           smallTitle: 'スキル',
                           sizeValue: 0.03,
-                          lineLength: deviceWidth * 0.32,
+                          lineLength: deviceWidth * 0.39,
                           paddingValue: 0.005,
                           alignment: CrossAxisAlignment.start,
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.03),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: const [
-                            SkillText(
-                                text: 'Ai', fontValue: 0.035, sizeValue: 0.07),
-                            SkillText(
-                                text: 'Ps', fontValue: 0.035, sizeValue: 0.07),
-                            SkillText(
-                                text: 'Xd', fontValue: 0.035, sizeValue: 0.07),
-                            SkilIcon(
+                        SizedBox(
+                          width: deviceWidth * 0.38,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              SkillText(
+                                text: 'Ai',
+                                fontValue: 0.035,
+                                sizeValue: 0.07,
+                                skillName: "illustorator",
+                                skillDiscriptions: '基本操作',
+                              ),
+                              SkillText(
+                                text: 'Ps',
+                                fontValue: 0.035,
+                                sizeValue: 0.07,
+                                skillName: "Photoshop",
+                                skillDiscriptions: '基本操作',
+                              ),
+                              SkillText(
+                                text: 'Xd',
+                                fontValue: 0.035,
+                                sizeValue: 0.07,
+                                skillName: "Xd",
+                                skillDiscriptions: '基本操作',
+                              ),
+                              SkillIcon(
                                 sizeValue: 0.07,
                                 imageValue: 0.04,
-                                imagePath: 'assets/figma.svg'),
-                            SkilIcon(
+                                imagePath: 'assets/figma.svg',
+                                skillName: "Figma",
+                                skillDiscriptions: '実務経験\n1年',
+                              ),
+                              SkillIcon(
                                 sizeValue: 0.07,
                                 imageValue: 0.04,
-                                imagePath: 'assets/flutter.svg'),
-                            SkilIcon(
+                                imagePath: 'assets/flutter.svg',
+                                skillName: "Flutter",
+                                skillDiscriptions: 'アプリ\nリリース',
+                              ),
+                              SkillIcon(
                                 sizeValue: 0.07,
                                 imageValue: 0.04,
-                                imagePath: 'assets/python.svg'),
-                          ],
+                                imagePath: 'assets/python.svg',
+                                skillName: "Python",
+                                skillDiscriptions: 'Webサイト\n制作可能',
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),

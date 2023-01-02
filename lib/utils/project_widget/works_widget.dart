@@ -527,7 +527,7 @@ class ColorDesignWidget extends StatelessWidget {
               fontWeight: FontWeight.normal,
               fontFamily: "Noto Sans JP",
             ),
-            HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+            HeightSizedBox(targetSize: deviceHeight, value: 0.005),
             BodyText(
               text: rgbColorModel,
               color: const Color.fromRGBO(0, 0, 0, 0.8),
