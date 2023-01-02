@@ -137,7 +137,7 @@ class PochipochiEleven extends StatelessWidget {
                                       paddingValue: 1.5,
                                     ),
                                     HeightSizedBox(
-                                        targetSize: deviceHeight, value: 0.01),
+                                        targetSize: deviceHeight, value: 0.015),
                                     HighPaddingText(
                                       text:
                                           "幼児の言いやすいパ行とタ行を\n反復させることで、いち早くアプリを\n覚えてもらい、保護者の方にも幼児が\n何をしたいのか伝わりやすくする",

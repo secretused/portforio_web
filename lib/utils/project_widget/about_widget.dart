@@ -76,11 +76,9 @@ class DotLine extends StatelessWidget {
       lineThickness: lineThickness,
       dashLength: dashLength,
       dashColor: dashColor,
-      // dashGradient: [Colors.red, Colors.blue],
       dashRadius: 0.0,
       dashGapLength: 4.0,
       dashGapColor: Colors.transparent,
-      // dashGapGradient: [Colors.red, Colors.blue],
       dashGapRadius: 0.0,
     );
   }
@@ -249,79 +247,128 @@ class SkillText extends StatelessWidget {
     required this.text,
     required this.fontValue,
     required this.sizeValue,
+    required this.skillName,
+    required this.skillDiscriptions,
   }) : super(key: key);
 
   final double sizeValue;
   final double fontValue;
   final String text;
+  final String skillName;
+  final String skillDiscriptions;
 
   @override
   Widget build(BuildContext context) {
+    var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
 
-    return Center(
-      child: Container(
-        width: deviceHeight * sizeValue,
-        height: deviceHeight * sizeValue,
-        decoration: BoxDecoration(
-          color: const Color.fromRGBO(151, 151, 151, 0.5),
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Center(
-          child: Padding(
-            padding: EdgeInsets.only(
-                top: deviceHeight * 0.005,
-                bottom: deviceHeight * 0.005,
-                right: deviceHeight * 0.005,
-                left: deviceHeight * 0.008),
-            child: BodyText(
-              text: text,
-              color: Colors.white,
-              fontFamily: 'Noto Sans JP',
-              fontSize: deviceHeight * fontValue,
-              fontWeight: FontWeight.bold,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Container(
+          width: deviceHeight * sizeValue,
+          height: deviceHeight * sizeValue,
+          decoration: BoxDecoration(
+            color: const Color.fromRGBO(151, 151, 151, 0.5),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Center(
+            child: Padding(
+              padding: EdgeInsets.only(
+                  top: deviceHeight * 0.005,
+                  bottom: deviceHeight * 0.005,
+                  right: deviceHeight * 0.005,
+                  left: deviceHeight * 0.008),
+              child: BodyText(
+                text: text,
+                color: Colors.white,
+                fontFamily: 'Noto Sans JP',
+                fontSize: deviceHeight * fontValue,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),
-      ),
+        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
+        BodyText(
+          text: skillName,
+          color: const Color.fromRGBO(0, 0, 0, 0.7),
+          fontFamily: 'Noto Sans JP',
+          fontSize: deviceWidth * 0.009,
+          fontWeight: FontWeight.bold,
+        ),
+        HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+        BodyText(
+          text: skillDiscriptions,
+          color: const Color.fromRGBO(0, 0, 0, 0.8),
+          fontFamily: 'Noto Sans JP',
+          fontSize: deviceWidth * 0.009,
+          fontWeight: FontWeight.normal,
+        ),
+      ],
     );
   }
 }
 
 // スキル イメージアイコン
-class SkilIcon extends StatelessWidget {
-  const SkilIcon({
+class SkillIcon extends StatelessWidget {
+  const SkillIcon({
     Key? key,
     required this.imagePath,
     required this.sizeValue,
     required this.imageValue,
+    required this.skillName,
+    required this.skillDiscriptions,
   }) : super(key: key);
 
   final double sizeValue;
   final String imagePath;
   final double imageValue;
+  final String skillName;
+  final String skillDiscriptions;
 
   @override
   Widget build(BuildContext context) {
+    var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
 
-    return Container(
-      width: deviceHeight * sizeValue,
-      height: deviceHeight * sizeValue,
-      decoration: BoxDecoration(
-        color: const Color.fromRGBO(151, 151, 151, 0.5),
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Center(
-        child: Padding(
-          padding: EdgeInsets.all(deviceHeight * 0.005),
-          child: SvgPicture.asset(
-            imagePath,
-            width: deviceHeight * imageValue,
-            height: deviceHeight * imageValue,
+    return Column(
+      children: [
+        Container(
+          width: deviceHeight * sizeValue,
+          height: deviceHeight * sizeValue,
+          decoration: BoxDecoration(
+            color: const Color.fromRGBO(151, 151, 151, 0.5),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Center(
+            child: Padding(
+              padding: EdgeInsets.all(deviceHeight * 0.005),
+              child: SvgPicture.asset(
+                imagePath,
+                width: deviceHeight * imageValue,
+                height: deviceHeight * imageValue,
+              ),
+            ),
           ),
         ),
-      ),
+        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
+        BodyText(
+          text: skillName,
+          color: const Color.fromRGBO(0, 0, 0, 0.7),
+          fontFamily: 'Noto Sans JP',
+          fontSize: deviceWidth * 0.009,
+          fontWeight: FontWeight.bold,
+        ),
+        HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+        BodyText(
+          text: skillDiscriptions,
+          color: const Color.fromRGBO(0, 0, 0, 0.8),
+          fontFamily: 'Noto Sans JP',
+          fontSize: deviceWidth * 0.009,
+          fontWeight: FontWeight.normal,
+        ),
+      ],
     );
   }
 }

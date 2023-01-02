@@ -76,12 +76,6 @@ class AboutSixIPad extends ConsumerWidget {
                   ),
                 ],
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.03),
-              const WorksNavigationButton(
-                buttonText: 'View More',
-                fontValue: 0.03,
-                sizeValue: 0.015,
-              ),
             ],
           ),
         ],

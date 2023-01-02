@@ -72,21 +72,14 @@ class TomonyTen extends StatelessWidget {
                                   ),
                                   HeightSizedBox(
                                       targetSize: deviceHeight, value: 0.01),
-                                  BodyText(
-                                    text: "「辛い時こそともに」という意味",
+                                  HighPaddingText(
+                                    text: "「辛い時こそともに」という意味\n言いやすさとシンプルさで選びました",
                                     color: const Color.fromRGBO(0, 0, 0, 0.8),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
                                     fontFamily: "Noto Sans JP",
-                                  ),
-                                  HeightSizedBox(
-                                      targetSize: deviceHeight, value: 0.01),
-                                  BodyText(
-                                    text: "言いやすさとシンプルさで選びました",
-                                    color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.normal,
-                                    fontFamily: "Noto Sans JP",
+                                    textAlign: TextAlign.start,
+                                    paddingValue: 1.5,
                                   ),
                                 ],
                               ),
@@ -119,13 +112,14 @@ class TomonyTen extends StatelessWidget {
                                 Padding(
                                   padding:
                                       EdgeInsets.only(left: deviceWidth * 0.03),
-                                  child: LongText(
+                                  child: HighPaddingText(
                                     text: "2人で寄り添い合い\n抱擁感のあるイメージ",
                                     color: const Color.fromRGBO(0, 0, 0, 0.8),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
                                     fontFamily: "Noto Sans JP",
                                     textAlign: TextAlign.start,
+                                    paddingValue: 1.5,
                                   ),
                                 ),
                               ],
@@ -176,39 +170,18 @@ class TomonyTen extends StatelessWidget {
                                   ),
                                   HeightSizedBox(
                                       targetSize: deviceHeight, value: 0.025),
-                                  BodyText(
-                                    text: "メインカラーはリラックス・自然体・協調性の",
-                                    color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.normal,
-                                    fontFamily: "Noto Sans JP",
-                                  ),
-                                  HeightSizedBox(
-                                      targetSize: deviceHeight, value: 0.01),
-                                  BodyText(
-                                    text: "色言葉と、男性のイメージを持つ緑。パートナーで",
-                                    color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.normal,
-                                    fontFamily: "Noto Sans JP",
-                                  ),
-                                  HeightSizedBox(
-                                      targetSize: deviceHeight, value: 0.01),
-                                  BodyText(
-                                    text: "ある女性の印象を持たせるためにアクセント",
-                                    color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.normal,
-                                    fontFamily: "Noto Sans JP",
-                                  ),
-                                  HeightSizedBox(
-                                      targetSize: deviceHeight, value: 0.01),
-                                  BodyText(
-                                    text: "カラーはサーモンピンクにしました。",
-                                    color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                    fontSize: deviceHeight * 0.02,
-                                    fontWeight: FontWeight.normal,
-                                    fontFamily: "Noto Sans JP",
+                                  SizedBox(
+                                    width: deviceWidth * 0.25,
+                                    child: HighPaddingText(
+                                      text:
+                                          "メインカラーはリラックス・自然体・協調性の色言葉と、男性のイメージを持つ緑。パートナーである女性の印象を持たせるためにアクセントカラーはサーモンピンクにしました",
+                                      color: const Color.fromRGBO(0, 0, 0, 0.8),
+                                      fontSize: deviceHeight * 0.02,
+                                      fontWeight: FontWeight.normal,
+                                      fontFamily: "Noto Sans JP",
+                                      textAlign: TextAlign.start,
+                                      paddingValue: 1.5,
+                                    ),
                                   ),
                                 ],
                               ),

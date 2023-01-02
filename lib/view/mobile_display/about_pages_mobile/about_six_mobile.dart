@@ -79,12 +79,6 @@ class AboutSixMobile extends ConsumerWidget {
                   ),
                 ],
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.05),
-              WorksNavigationButton(
-                buttonText: 'View More',
-                fontValue: 0.03,
-                sizeValue: _mobileDirectionProviderStatus ? 0.04 : 0.015,
-              ),
             ],
           ),
         ],

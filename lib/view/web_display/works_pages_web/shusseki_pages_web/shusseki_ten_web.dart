@@ -74,15 +74,18 @@ class ShussekiTen extends ConsumerWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.015),
-                            HighPaddingText(
-                              text:
-                                  "見た目だけだと思っていたデザインは\n自分が今まで1番重要視していた「機能」と密接に関わり合っていて\nただ作るのではなく戦略から表層までを一貫して行うことが\n良いサービスに近づくと気づくことが出来ました。",
-                              color: const Color.fromRGBO(0, 0, 0, 0.8),
-                              fontSize: deviceHeight * 0.02,
-                              fontWeight: FontWeight.normal,
-                              fontFamily: "Noto Sans JP",
-                              textAlign: TextAlign.center,
-                              paddingValue: 1.5,
+                            SizedBox(
+                              width: deviceWidth * 0.3,
+                              child: HighPaddingText(
+                                text:
+                                    "見た目だけだと思っていたデザインは自分が今まで1番重要視していた「機能」と密接に関わり合っていて、ただ作るのではなく戦略から表層までを一貫して行うことが、良いサービスに近づくと気づくことが出来ました。",
+                                color: const Color.fromRGBO(0, 0, 0, 0.8),
+                                fontSize: deviceHeight * 0.02,
+                                fontWeight: FontWeight.normal,
+                                fontFamily: "Noto Sans JP",
+                                textAlign: TextAlign.start,
+                                paddingValue: 1.5,
+                              ),
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
@@ -95,15 +98,18 @@ class ShussekiTen extends ConsumerWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.015),
-                            HighPaddingText(
-                              text:
-                                  "リリース後でも、よりユーザーが使いやすいデザインや\nサービス要件があるのではないか？と常に考え続け\n柔軟にアップデートし続ける姿勢の重要さを実感しました。",
-                              color: const Color.fromRGBO(0, 0, 0, 0.8),
-                              fontSize: deviceHeight * 0.02,
-                              fontWeight: FontWeight.normal,
-                              fontFamily: "Noto Sans JP",
-                              textAlign: TextAlign.center,
-                              paddingValue: 1.5,
+                            SizedBox(
+                              width: deviceWidth * 0.3,
+                              child: HighPaddingText(
+                                text:
+                                    "リリース後でも、よりユーザーが使いやすいデザインやサービス要件があるのではないか？と常に考え続け、柔軟にアップデートし続ける姿勢の重要さを実感しました。",
+                                color: const Color.fromRGBO(0, 0, 0, 0.8),
+                                fontSize: deviceHeight * 0.02,
+                                fontWeight: FontWeight.normal,
+                                fontFamily: "Noto Sans JP",
+                                textAlign: TextAlign.start,
+                                paddingValue: 1.5,
+                              ),
                             ),
                           ],
                         ),
@@ -129,42 +135,43 @@ class ShussekiTen extends ConsumerWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.015),
-                            HighPaddingText(
-                              text:
-                                  "デザインを見ていると、エンジニアが実装可能なのか？と\n思う時がよくあります。自分のコミュニティが実現できる\n度合いを十分に理解して、よりディレクションを意識した\n実践的なプロジェクトを磨きたいと思います。",
-                              color: const Color.fromRGBO(0, 0, 0, 0.8),
-                              fontSize: deviceHeight * 0.02,
-                              fontWeight: FontWeight.normal,
-                              fontFamily: "Noto Sans JP",
-                              textAlign: TextAlign.center,
-                              paddingValue: 1.5,
-                            ),
-                            HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.04),
-                            Row(
-                              children: [
-                                BodyText(
-                                  text: "UI改修後モックアップ",
-                                  color: const Color.fromRGBO(0, 0, 0, 0.8),
-                                  fontSize: deviceHeight * 0.025,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: "Noto Sans JP",
-                                ),
-                                WidthSizedBox(
-                                    targetSize: deviceWidth, value: 0.01),
-                                const IconButtonWidget(
-                                  imageValue: 0.06,
-                                  iconValue: 0.05,
-                                  link: _figmaMockUpUrl,
-                                  path: 'https://i.imgur.com/pQ88SXh.png',
-                                ),
-                              ],
+                            SizedBox(
+                              width: deviceWidth * 0.3,
+                              child: HighPaddingText(
+                                text:
+                                    "デザインを見ていると、エンジニアが実装可能なのか？と思う時がよくあります。自分のコミュニティが実現できる度合いを十分に理解して、よりディレクションを意識した実践的なプロジェクトを磨きたいと思います。",
+                                color: const Color.fromRGBO(0, 0, 0, 0.8),
+                                fontSize: deviceHeight * 0.02,
+                                fontWeight: FontWeight.normal,
+                                fontFamily: "Noto Sans JP",
+                                textAlign: TextAlign.start,
+                                paddingValue: 1.5,
+                              ),
                             ),
                           ],
                         ),
                       ],
                     ),
-                    HeightSizedBox(targetSize: deviceHeight, value: 0.1),
+                    HeightSizedBox(targetSize: deviceHeight, value: 0.03),
+                    Row(
+                      children: [
+                        BodyText(
+                          text: "UI改修後モックアップ",
+                          color: const Color.fromRGBO(0, 0, 0, 0.8),
+                          fontSize: deviceHeight * 0.025,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "Noto Sans JP",
+                        ),
+                        WidthSizedBox(targetSize: deviceWidth, value: 0.01),
+                        const IconButtonWidget(
+                          imageValue: 0.06,
+                          iconValue: 0.05,
+                          link: _figmaMockUpUrl,
+                          path: 'https://i.imgur.com/pQ88SXh.png',
+                        ),
+                      ],
+                    ),
+                    HeightSizedBox(targetSize: deviceHeight, value: 0.05),
                     Row(
                       children: [
                         Column(
@@ -227,12 +234,6 @@ class ShussekiTen extends ConsumerWidget {
                           ],
                         ),
                       ],
-                    ),
-                    HeightSizedBox(targetSize: deviceWidth, value: 0.03),
-                    const WorksNavigationButton(
-                      buttonText: 'View More',
-                      fontValue: 0.02,
-                      sizeValue: 0.02,
                     ),
                   ],
                 ),

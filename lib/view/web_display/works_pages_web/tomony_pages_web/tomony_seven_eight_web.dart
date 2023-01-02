@@ -152,7 +152,7 @@ class TomonyEight extends StatelessWidget {
                               fontFamily: "Noto Snas JP",
                             ),
                             Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
@@ -233,7 +233,7 @@ class TomonyEight extends StatelessWidget {
                               fontFamily: "Noto Snas JP",
                             ),
                             Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
@@ -243,7 +243,7 @@ class TomonyEight extends StatelessWidget {
                                   fontSize: deviceHeight * 0.02,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: "Noto Snas JP",
-                                  textAlign: TextAlign.center,
+                                  textAlign: TextAlign.start,
                                   paddingValue: 1.5,
                                 ),
                                 HeightSizedBox(

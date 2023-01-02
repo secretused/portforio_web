@@ -207,7 +207,7 @@ class OtherWorksThree extends ConsumerWidget {
                                       ),
                                       HeightSizedBox(
                                           targetSize: deviceHeight,
-                                          value: 0.01),
+                                          value: 0.015),
                                       HighPaddingText(
                                         text:
                                             "・チームの一人一人を見渡して、意見の取捨選択を行ったり\n　メンバーを信じ、サポートし続ける大切さを実感しました。",

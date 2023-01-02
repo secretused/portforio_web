@@ -52,20 +52,14 @@ class TomonyNine extends StatelessWidget {
                           imagePath: "https://i.imgur.com/IgTQaEX.png",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        BodyText(
-                          text: "恋愛初心者の質問のハードルを下げるために",
+                        HighPaddingText(
+                          text: "恋愛初心者の質問のハードルを下げるために\n質問フォームで初心者マークの有無を選べる",
                           color: const Color.fromRGBO(0, 0, 0, 0.8),
                           fontSize: deviceHeight * 0.02,
                           fontWeight: FontWeight.normal,
                           fontFamily: "Noto Sans JP",
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
-                        BodyText(
-                          text: "質問フォームで初心者マークの有無を選べる",
-                          color: const Color.fromRGBO(0, 0, 0, 0.8),
-                          fontSize: deviceHeight * 0.02,
-                          fontWeight: FontWeight.normal,
-                          fontFamily: "Noto Sans JP",
+                          textAlign: TextAlign.start,
+                          paddingValue: 1.5,
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.1),
                         BodyText(
@@ -81,20 +75,15 @@ class TomonyNine extends StatelessWidget {
                           imagePath: "https://i.imgur.com/WQR5ct3.png",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        BodyText(
-                          text: "質問・回答・ベストアンサーそれぞれでスコアを獲得",
+                        HighPaddingText(
+                          text:
+                              "質問・回答・ベストアンサーそれぞれでスコアを獲得\n一定のスコアに到達するとマスターになることができる",
                           color: const Color.fromRGBO(0, 0, 0, 0.8),
                           fontSize: deviceHeight * 0.02,
                           fontWeight: FontWeight.normal,
                           fontFamily: "Noto Sans JP",
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
-                        BodyText(
-                          text: "一定のスコアに到達するとマスターになることができる",
-                          color: const Color.fromRGBO(0, 0, 0, 0.8),
-                          fontSize: deviceHeight * 0.02,
-                          fontWeight: FontWeight.normal,
-                          fontFamily: "Noto Sans JP",
+                          textAlign: TextAlign.start,
+                          paddingValue: 1.5,
                         ),
                       ],
                     ),
@@ -139,21 +128,14 @@ class TomonyNine extends StatelessWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
-                            BodyText(
-                              text: "質問にチップを付与可能",
+                            HighPaddingText(
+                              text: "質問にチップを付与可能\n10%の手数料を差し引きます",
                               color: const Color.fromRGBO(0, 0, 0, 0.8),
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.normal,
                               fontFamily: "Noto Sans JP",
-                            ),
-                            HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.005),
-                            BodyText(
-                              text: "10%の手数料を差し引きます",
-                              color: const Color.fromRGBO(0, 0, 0, 0.8),
-                              fontSize: deviceHeight * 0.02,
-                              fontWeight: FontWeight.normal,
-                              fontFamily: "Noto Sans JP",
+                              textAlign: TextAlign.start,
+                              paddingValue: 1.5,
                             ),
                           ],
                         ),
@@ -173,30 +155,18 @@ class TomonyNine extends StatelessWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
-                            BodyText(
-                              text: "マスターは1回の質問の料金を設定できる。",
-                              color: const Color.fromRGBO(0, 0, 0, 0.8),
-                              fontSize: deviceHeight * 0.02,
-                              fontWeight: FontWeight.normal,
-                              fontFamily: "Noto Sans JP",
-                            ),
-                            HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.005),
-                            BodyText(
-                              text: "回答者はマスターを選び、料金を払うことで",
-                              color: const Color.fromRGBO(0, 0, 0, 0.8),
-                              fontSize: deviceHeight * 0.02,
-                              fontWeight: FontWeight.normal,
-                              fontFamily: "Noto Sans JP",
-                            ),
-                            HeightSizedBox(
-                                targetSize: deviceHeight, value: 0.005),
-                            BodyText(
-                              text: "マスターの高度な回答を得ることができる",
-                              color: const Color.fromRGBO(0, 0, 0, 0.8),
-                              fontSize: deviceHeight * 0.02,
-                              fontWeight: FontWeight.normal,
-                              fontFamily: "Noto Sans JP",
+                            SizedBox(
+                              width: deviceWidth * 0.25,
+                              child: HighPaddingText(
+                                text:
+                                    "マスターは1回の質問の料金を設定できる。\n回答者はマスターを選び、料金を払うことで、マスターの高度な回答を得ることができる",
+                                color: const Color.fromRGBO(0, 0, 0, 0.8),
+                                fontSize: deviceHeight * 0.02,
+                                fontWeight: FontWeight.normal,
+                                fontFamily: "Noto Sans JP",
+                                textAlign: TextAlign.start,
+                                paddingValue: 1.5,
+                              ),
                             ),
                           ],
                         ),
