@@ -20,9 +20,9 @@ class OtherWorksOne extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          const ImageWidget(
+          const AssetsImage(
             heightValue: 0.8,
-            imagePath: "https://i.imgur.com/POd7NXF.png",
+            imagePath: "about/otherworks_display.png",
           ),
           WidthSizedBox(targetSize: deviceWidth, value: 0.03),
           Column(

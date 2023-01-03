@@ -145,8 +145,11 @@ class OtherWorksSeven extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                const ImageLinkWidget(_kindleUrl, 0.18,
-                                    "https://i.imgur.com/wCegYhl.jpg"),
+                                const ImageLinkWidget(
+                                  _kindleUrl,
+                                  0.18,
+                                  "otherworks/otherworks_kindle.jpeg",
+                                ),
                               ],
                             ),
                           ],

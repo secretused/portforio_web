@@ -35,17 +35,17 @@ class TomonySeven extends StatelessWidget {
                 padding: EdgeInsets.all(deviceHeight * 0.03),
                 child: Row(
                   children: [
-                    const ImageWidget(
+                    const AssetsImage(
                       heightValue: 0.7,
-                      imagePath: "https://i.imgur.com/P1zdOQu.png",
+                      imagePath: "tomony/tomony_concept.png",
                     ),
-                    const ImageWidget(
+                    const AssetsImage(
                       heightValue: 0.7,
-                      imagePath: "https://i.imgur.com/wJvCVFK.png",
+                      imagePath: "tomony/tomony_question1.png",
                     ),
-                    const ImageWidget(
+                    const AssetsImage(
                       heightValue: 0.7,
-                      imagePath: "https://i.imgur.com/nRMcoad.png",
+                      imagePath: "tomony/tomony_question2.png",
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.04),
                     Column(
@@ -191,9 +191,9 @@ class TomonyEight extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                const ImageWidget(
+                                const AssetsImage(
                                   heightValue: 0.6,
-                                  imagePath: "https://i.imgur.com/FszIG7K.png",
+                                  imagePath: "tomony/tomony_search_default.png",
                                 ),
                               ],
                             ),
@@ -209,9 +209,9 @@ class TomonyEight extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                const ImageWidget(
+                                const AssetsImage(
                                   heightValue: 0.6,
-                                  imagePath: "https://i.imgur.com/tkq9mS8.png",
+                                  imagePath: "tomony/tomony_search_result.png",
                                 ),
                               ],
                             ),
@@ -265,9 +265,9 @@ class TomonyEight extends StatelessWidget {
                           children: [
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.6,
-                              imagePath: "https://i.imgur.com/QQNx0VH.png",
+                              imagePath: "tomony/tomony_topics.png",
                             ),
                           ],
                         ),

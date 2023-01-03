@@ -19,9 +19,9 @@ class PochipochiOne extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          const ImageWidget(
+          const AssetsImage(
             heightValue: 0.9,
-            imagePath: "https://i.imgur.com/jNFOx30.png",
+            imagePath: "about/pochipochi_display.png",
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,

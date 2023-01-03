@@ -44,9 +44,9 @@ class TomonySix extends StatelessWidget {
                           children: [
                             ClipRRect(
                               borderRadius: BorderRadius.circular(180),
-                              child: const ImageWidget(
+                              child: const AssetsImage(
                                 heightValue: 0.2,
-                                imagePath: "https://i.imgur.com/iE4j4o9.png",
+                                imagePath: "tomony/tomony_persona.png",
                               ),
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.03),

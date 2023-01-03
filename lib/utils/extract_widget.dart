@@ -266,7 +266,7 @@ class IconButtonWidget extends ConsumerWidget {
               ),
             ],
           ),
-          child: ImageWidget(
+          child: AssetsImage(
             heightValue: (_imagePath == path && _iconButtonProviderStatus)
                 ? imageValue
                 : imageValue,
@@ -287,9 +287,9 @@ class IconButtonWidget extends ConsumerWidget {
   }
 }
 
-// イメージ
-class ImageWidget extends StatelessWidget {
-  const ImageWidget({
+// アセットイメージ
+class AssetsImage extends StatelessWidget {
+  const AssetsImage({
     Key? key,
     required this.heightValue,
     required this.imagePath,
@@ -304,12 +304,7 @@ class ImageWidget extends StatelessWidget {
 
     return SizedBox(
       height: deviceHeight * heightValue,
-      child: CachedNetworkImage(
-        imageUrl: imagePath,
-        placeholder: (context, url) => const Center(
-          child: CircularProgressIndicator(),
-        ),
-      ),
+      child: Image.asset(imagePath),
     );
   }
 }

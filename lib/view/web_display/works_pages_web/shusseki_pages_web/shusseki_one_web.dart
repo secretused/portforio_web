@@ -20,9 +20,9 @@ class ShussekiOne extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          const ImageWidget(
+          const AssetsImage(
             heightValue: 0.9,
-            imagePath: "https://i.imgur.com/2Mn21yC.png",
+            imagePath: "about/shusseki_display.png",
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
