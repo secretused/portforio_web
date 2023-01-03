@@ -67,9 +67,9 @@ class OtherWorksFour extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const ImageWidget(
+                                const AssetsImage(
                                   heightValue: 0.3,
-                                  imagePath: "https://i.imgur.com/qnNkLu8.jpg",
+                                  imagePath: "otherworks/otherworks_nft1.jpeg",
                                 ),
                                 HeightSizedBox(
                                   targetSize: deviceHeight,

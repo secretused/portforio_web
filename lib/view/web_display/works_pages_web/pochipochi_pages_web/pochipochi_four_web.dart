@@ -80,10 +80,10 @@ class PochipochiFour extends StatelessWidget {
                                       width: 6.0,
                                     ),
                                   ),
-                                  child: const ImageWidget(
+                                  child: const AssetsImage(
                                     heightValue: 0.3,
                                     imagePath:
-                                        "https://i.imgur.com/cnghG8X.png",
+                                        "pochipochi/pochipochi_interview1.png",
                                   ),
                                 ),
                                 HeightSizedBox(
@@ -155,10 +155,10 @@ class PochipochiFour extends StatelessWidget {
                                     alignment:
                                         AlignmentDirectional.bottomCenter,
                                     children: [
-                                      const ImageWidget(
+                                      const AssetsImage(
                                         heightValue: 0.3,
                                         imagePath:
-                                            "https://i.imgur.com/sYOygsl.png",
+                                            "pochipochi/pochipochi_interview2.png",
                                       ),
                                       Padding(
                                         padding: EdgeInsets.only(
@@ -228,10 +228,10 @@ class PochipochiFour extends StatelessWidget {
                                       width: 6.0,
                                     ),
                                   ),
-                                  child: const ImageWidget(
+                                  child: const AssetsImage(
                                     heightValue: 0.3,
                                     imagePath:
-                                        "https://i.imgur.com/TtJ5jeQ.png",
+                                        "pochipochi/pochipochi_interview3.png",
                                   ),
                                 ),
                                 HeightSizedBox(

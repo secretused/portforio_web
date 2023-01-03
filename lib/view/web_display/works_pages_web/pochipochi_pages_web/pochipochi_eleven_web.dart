@@ -43,9 +43,9 @@ class PochipochiEleven extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const ImageWidget(
+                          const AssetsImage(
                             heightValue: 0.25,
-                            imagePath: "https://i.imgur.com/BUePyZn.png",
+                            imagePath: "pochipochi/pochipochi_premiumPlan.png",
                           ),
                           WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                           Column(

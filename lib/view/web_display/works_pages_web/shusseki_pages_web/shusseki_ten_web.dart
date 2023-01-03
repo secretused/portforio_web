@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../../utils/project_widget/about_widget.dart';
 import '../../../../utils/extract_widget.dart';
 
 // 感想・改善点
@@ -167,7 +166,7 @@ class ShussekiTen extends ConsumerWidget {
                           imageValue: 0.06,
                           iconValue: 0.05,
                           link: _figmaMockUpUrl,
-                          path: 'https://i.imgur.com/pQ88SXh.png',
+                          path: 'icon/figma_icon1.png',
                         ),
                       ],
                     ),
@@ -180,7 +179,7 @@ class ShussekiTen extends ConsumerWidget {
                               iconValue: 0.06,
                               imageValue: 0.05,
                               link: _appStoreUrl,
-                              path: 'https://i.imgur.com/5jaDwbV.png',
+                              path: 'shusseki/shusseki_icon.png',
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
@@ -200,7 +199,7 @@ class ShussekiTen extends ConsumerWidget {
                               iconValue: 0.06,
                               imageValue: 0.05,
                               link: _figmaWorkUrl,
-                              path: 'https://i.imgur.com/uZTvT8k.png',
+                              path: 'icon/figma_icon2.png',
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
@@ -220,7 +219,7 @@ class ShussekiTen extends ConsumerWidget {
                               iconValue: 0.06,
                               imageValue: 0.05,
                               link: _figmaUIUrl,
-                              path: 'https://i.imgur.com/1pkEq73.png',
+                              path: 'icon/figma_icon3.png',
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),

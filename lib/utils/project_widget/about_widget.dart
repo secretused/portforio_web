@@ -521,9 +521,7 @@ class WorksTopicContents extends ConsumerWidget {
                   padding: EdgeInsets.all(
                     deviceHeight * 0.025,
                   ),
-                  child: Image.network(
-                    imagePath,
-                  ),
+                  child: Image.asset(imagePath),
                 ),
               ),
             ),

@@ -47,9 +47,9 @@ class AboutTwo extends StatelessWidget {
                           children: [
                             ClipRRect(
                               borderRadius: BorderRadius.circular(180),
-                              child: const ImageWidget(
+                              child: const AssetsImage(
                                 heightValue: 0.2,
-                                imagePath: "https://i.imgur.com/8R7AbIr.jpg",
+                                imagePath: "about/profile_image.jpeg",
                               ),
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.03),
@@ -236,21 +236,21 @@ class AboutTwo extends StatelessWidget {
                               SkillIcon(
                                 sizeValue: 0.07,
                                 imageValue: 0.04,
-                                imagePath: 'assets/figma.svg',
+                                imagePath: 'icon/figma.svg',
                                 skillName: "Figma",
                                 skillDiscriptions: '実務経験\n1年',
                               ),
                               SkillIcon(
                                 sizeValue: 0.07,
                                 imageValue: 0.04,
-                                imagePath: 'assets/flutter.svg',
+                                imagePath: 'icon/flutter.svg',
                                 skillName: "Flutter",
                                 skillDiscriptions: 'アプリ\nリリース',
                               ),
                               SkillIcon(
                                 sizeValue: 0.07,
                                 imageValue: 0.04,
-                                imagePath: 'assets/python.svg',
+                                imagePath: 'icon/python.svg',
                                 skillName: "Python",
                                 skillDiscriptions: 'Webサイト\n制作可能',
                               ),

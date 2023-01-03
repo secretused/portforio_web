@@ -126,9 +126,9 @@ class TomonyThree extends StatelessWidget {
                                 )
                               ],
                             ),
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.2,
-                              imagePath: "https://i.imgur.com/QL6xkNp.png",
+                              imagePath: "tomony/tomony_overview.png",
                             ),
                           ],
                         ),

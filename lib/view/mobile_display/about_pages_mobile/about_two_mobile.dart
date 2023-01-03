@@ -37,10 +37,10 @@ class AboutTwoMobile extends ConsumerWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(180),
-                      child: ImageWidget(
+                      child: AssetsImage(
                         heightValue:
                             _mobileDirectionProviderStatus ? 0.4 : 0.15,
-                        imagePath: "https://i.imgur.com/8R7AbIr.jpg",
+                        imagePath: "about/profile_image.jpeg",
                       ),
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.03),
@@ -225,173 +225,47 @@ class AboutTwoMobile extends ConsumerWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        AboutSkillText(
-                          text: 'Ai',
-                          sizeValue:
-                              _mobileDirectionProviderStatus ? 0.12 : 0.06,
-                          fontValue:
-                              _mobileDirectionProviderStatus ? 0.06 : 0.03,
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
-                        BodyText(
-                          text: "illustorator",
-                          color: const Color.fromRGBO(0, 0, 0, 0.7),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        BodyText(
-                          text: "基本操作",
-                          color: const Color.fromRGBO(0, 0, 0, 0.8),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ],
+                    AboutSkillText(
+                      text: 'Ai',
+                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                      fontValue: _mobileDirectionProviderStatus ? 0.06 : 0.03,
+                      skillName: "illustorator",
+                      skillDiscriptions: '基本操作',
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        AboutSkillText(
-                          text: 'Ps',
-                          sizeValue:
-                              _mobileDirectionProviderStatus ? 0.12 : 0.06,
-                          fontValue:
-                              _mobileDirectionProviderStatus ? 0.06 : 0.03,
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
-                        BodyText(
-                          text: "Photoshop",
-                          color: const Color.fromRGBO(0, 0, 0, 0.7),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        BodyText(
-                          text: "基本操作",
-                          color: const Color.fromRGBO(0, 0, 0, 0.8),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ],
+                    AboutSkillText(
+                      text: 'Ps',
+                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                      fontValue: _mobileDirectionProviderStatus ? 0.06 : 0.03,
+                      skillName: "Photoshop",
+                      skillDiscriptions: '基本操作',
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        AboutSkillText(
-                          text: 'Xd',
-                          sizeValue:
-                              _mobileDirectionProviderStatus ? 0.12 : 0.06,
-                          fontValue:
-                              _mobileDirectionProviderStatus ? 0.06 : 0.03,
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
-                        BodyText(
-                          text: "Xd",
-                          color: const Color.fromRGBO(0, 0, 0, 0.7),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        BodyText(
-                          text: "基本操作",
-                          color: const Color.fromRGBO(0, 0, 0, 0.8),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ],
+                    AboutSkillText(
+                      text: 'Xd',
+                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                      fontValue: _mobileDirectionProviderStatus ? 0.06 : 0.03,
+                      skillName: "Xd",
+                      skillDiscriptions: '基本操作',
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        AboutSkillIcon(
-                          sizeValue:
-                              _mobileDirectionProviderStatus ? 0.12 : 0.06,
-                          imageValue:
-                              _mobileDirectionProviderStatus ? 0.07 : 0.035,
-                          imagePath: 'assets/figma.svg',
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
-                        BodyText(
-                          text: "Figma",
-                          color: const Color.fromRGBO(0, 0, 0, 0.7),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        BodyText(
-                          text: "実務経験\n1年",
-                          color: const Color.fromRGBO(0, 0, 0, 0.8),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ],
+                    AboutSkillIcon(
+                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                      imageValue: _mobileDirectionProviderStatus ? 0.07 : 0.035,
+                      imagePath: 'icon/figma.svg',
+                      skillName: "Figma",
+                      skillDiscriptions: '実務経験\n1年',
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        AboutSkillIcon(
-                          sizeValue:
-                              _mobileDirectionProviderStatus ? 0.12 : 0.06,
-                          imageValue:
-                              _mobileDirectionProviderStatus ? 0.07 : 0.035,
-                          imagePath: 'assets/flutter.svg',
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
-                        BodyText(
-                          text: "Flutter",
-                          color: const Color.fromRGBO(0, 0, 0, 0.7),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        BodyText(
-                          text: "アプリ\nリリース",
-                          color: const Color.fromRGBO(0, 0, 0, 0.8),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ],
+                    AboutSkillIcon(
+                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                      imageValue: _mobileDirectionProviderStatus ? 0.07 : 0.035,
+                      imagePath: 'icon/flutter.svg',
+                      skillName: "Flutter",
+                      skillDiscriptions: 'アプリ\nリリース',
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        AboutSkillIcon(
-                          sizeValue:
-                              _mobileDirectionProviderStatus ? 0.12 : 0.06,
-                          imageValue:
-                              _mobileDirectionProviderStatus ? 0.07 : 0.035,
-                          imagePath: 'assets/python.svg',
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
-                        BodyText(
-                          text: "Python",
-                          color: const Color.fromRGBO(0, 0, 0, 0.7),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        BodyText(
-                          text: "Webサイト\n制作可能",
-                          color: const Color.fromRGBO(0, 0, 0, 0.8),
-                          fontFamily: 'Noto Sans JP',
-                          fontSize: deviceWidth * 0.009,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ],
+                    AboutSkillIcon(
+                      sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
+                      imageValue: _mobileDirectionProviderStatus ? 0.07 : 0.035,
+                      imagePath: 'icon/python.svg',
+                      skillName: "Python",
+                      skillDiscriptions: 'Webサイト\n制作可能',
                     ),
                   ],
                 ),

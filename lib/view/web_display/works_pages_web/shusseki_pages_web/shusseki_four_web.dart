@@ -49,13 +49,13 @@ class ShussekiFour extends StatelessWidget {
                         Stack(
                           alignment: Alignment.center,
                           children: const [
-                            ImageWidget(
+                            AssetsImage(
                               heightValue: 0.55,
-                              imagePath: "https://i.imgur.com/b9XZFPP.gif",
+                              imagePath: "shusseki/shusseki_mockup.gif",
                             ),
-                            ImageWidget(
+                            AssetsImage(
                               heightValue: 0.59,
-                              imagePath: "https://i.imgur.com/iZYuwvA.png",
+                              imagePath: "shusseki/mockup_frame.png",
                             ),
                           ],
                         ),
@@ -85,9 +85,9 @@ class ShussekiFour extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.01),
-                                const ImageWidget(
+                                const AssetsImage(
                                   heightValue: 0.6,
-                                  imagePath: "https://i.imgur.com/iB5MXAf.png",
+                                  imagePath: "shusseki/shusseki_app_user.png",
                                 ),
                               ],
                             ),
@@ -102,9 +102,10 @@ class ShussekiFour extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.01),
-                                const ImageWidget(
+                                const AssetsImage(
                                   heightValue: 0.6,
-                                  imagePath: "https://i.imgur.com/f7ZcK2d.png",
+                                  imagePath:
+                                      "shusseki/shusseki_app_calender.png",
                                 ),
                               ],
                             ),
@@ -119,9 +120,9 @@ class ShussekiFour extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.01),
-                                const ImageWidget(
+                                const AssetsImage(
                                   heightValue: 0.6,
-                                  imagePath: "https://i.imgur.com/2DzJX8r.png",
+                                  imagePath: "shusseki/shusseki_app_qr.png",
                                 ),
                               ],
                             ),

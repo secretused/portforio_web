@@ -617,7 +617,7 @@ class ImageLinkWidget extends ConsumerWidget {
             color: Colors.white,
           ),
           width: deviceWidth * imageWidthValue,
-          child: Image.network(imagePath),
+          child: Image.asset(imagePath),
         ),
       ),
     );

@@ -65,9 +65,9 @@ class OtherWorksThree extends ConsumerWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.25,
-                              imagePath: "https://i.imgur.com/DuxQVPx.jpg",
+                              imagePath: "otherworks/otherworks_contest2.jpeg",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
@@ -171,8 +171,11 @@ class OtherWorksThree extends ConsumerWidget {
                                 ),
                                 Padding(
                                   padding: EdgeInsets.all(deviceHeight * 0.015),
-                                  child: const ImageLinkWidget(_pdfUrl, 0.3,
-                                      "https://i.imgur.com/EgtF30v.png"),
+                                  child: const ImageLinkWidget(
+                                    _pdfUrl,
+                                    0.3,
+                                    "otherworks/otherworks_contest1.png",
+                                  ),
                                 ),
                               ],
                             ),

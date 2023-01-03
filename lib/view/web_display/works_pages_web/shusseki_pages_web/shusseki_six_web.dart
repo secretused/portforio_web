@@ -104,9 +104,9 @@ class ShussekiSix extends StatelessWidget {
                           )
                         ],
                       ),
-                      const ImageWidget(
+                      const AssetsImage(
                         heightValue: 0.3,
-                        imagePath: "https://i.imgur.com/htHfPUH.png",
+                        imagePath: "shusseki/shusseki_overview2.png",
                       ),
                     ],
                   ),
@@ -163,9 +163,9 @@ class ShussekiSix extends StatelessWidget {
                     WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                     Column(
                       children: [
-                        const ImageWidget(
+                        const AssetsImage(
                           heightValue: 0.2,
-                          imagePath: "https://i.imgur.com/7BDf19N.png",
+                          imagePath: "shusseki/shusseki_overview3.png",
                         ),
                         BodyText(
                           text: "→",

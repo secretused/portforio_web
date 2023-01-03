@@ -73,9 +73,10 @@ class PochipochiTen extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.015),
-                                const ImageWidget(
+                                const AssetsImage(
                                   heightValue: 0.6,
-                                  imagePath: "https://i.imgur.com/KKryqRL.png",
+                                  imagePath:
+                                      "pochipochi/pochipochi_setting.png",
                                 ),
                               ],
                             ),
@@ -91,9 +92,9 @@ class PochipochiTen extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                const ImageWidget(
+                                const AssetsImage(
                                   heightValue: 0.6,
-                                  imagePath: "https://i.imgur.com/omjz6QS.png",
+                                  imagePath: "pochipochi/pochipochi_timer.png",
                                 ),
                               ],
                             ),
@@ -151,9 +152,9 @@ class PochipochiTen extends StatelessWidget {
                           children: [
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.6,
-                              imagePath: "https://i.imgur.com/ILPVBKd.png",
+                              imagePath: "pochipochi/pochipochi_notion.png",
                             ),
                           ],
                         ),

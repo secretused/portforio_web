@@ -49,24 +49,24 @@ class ShussekiEight extends StatelessWidget {
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.33,
-                              imagePath: "https://i.imgur.com/sPpXecU.png",
+                              imagePath: "shusseki/shusseki_app_attendance.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.33,
-                              imagePath: "https://i.imgur.com/BYjCQss.png",
+                              imagePath: "shusseki/shusseki_app_management.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.33,
-                              imagePath: "https://i.imgur.com/ihV37xj.png",
+                              imagePath: "shusseki/shusseki_app_mypage.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.33,
-                              imagePath: "https://i.imgur.com/2DzJX8r.png",
+                              imagePath: "shusseki/shusseki_app_qr.png",
                             ),
                           ],
                         ),
@@ -87,24 +87,24 @@ class ShussekiEight extends StatelessWidget {
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.33,
-                              imagePath: "https://i.imgur.com/zbpIv7k.png",
+                              imagePath: "shusseki/shusseki_attendance.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.33,
-                              imagePath: "https://i.imgur.com/ZZd5lXL.png",
+                              imagePath: "shusseki/shusseki_member.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.33,
-                              imagePath: "https://i.imgur.com/zUphl8Y.png",
+                              imagePath: "shusseki/shusseki_community.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.33,
-                              imagePath: "https://i.imgur.com/0LAsoFt.png",
+                              imagePath: "shusseki/shusseki_profile.png",
                             ),
                           ],
                         ),
@@ -118,14 +118,14 @@ class ShussekiEight extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.03),
                         Row(
                           children: [
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.45,
-                              imagePath: "https://i.imgur.com/zbpIv7k.png",
+                              imagePath: "shusseki/shusseki_attendance.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const ImageWidget(
+                            const AssetsImage(
                               heightValue: 0.45,
-                              imagePath: "https://i.imgur.com/zUphl8Y.png",
+                              imagePath: "shusseki/shusseki_community.png",
                             ),
                           ],
                         ),

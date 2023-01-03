@@ -243,9 +243,7 @@ class WorksTopicLeftMobile extends ConsumerWidget {
                 padding: EdgeInsets.all(
                   deviceWidth * 0.015,
                 ),
-                child: Image.network(
-                  imagePath,
-                ),
+                child: Image.asset(imagePath),
               ),
             ),
           ),
@@ -381,9 +379,7 @@ class WorksTopicRightMobile extends ConsumerWidget {
                 padding: EdgeInsets.all(
                   deviceWidth * 0.015,
                 ),
-                child: Image.network(
-                  imagePath,
-                ),
+                child: Image.asset(imagePath),
               ),
             ),
           ),
@@ -407,21 +403,28 @@ class WorksTopicRightMobile extends ConsumerWidget {
 }
 
 // スキル テキストアイコン
-class AboutSkillText extends StatelessWidget {
+class AboutSkillText extends ConsumerWidget {
   const AboutSkillText({
     Key? key,
     required this.text,
     required this.fontValue,
     required this.sizeValue,
+    required this.skillName,
+    required this.skillDiscriptions,
   }) : super(key: key);
 
   final double sizeValue;
   final double fontValue;
   final String text;
+  final String skillName;
+  final String skillDiscriptions;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     var deviceHeight = MediaQuery.of(context).size.height;
+
+    final bool _mobileDirectionProviderStatus =
+        ref.watch(mobileDirectionProvider);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -450,27 +453,54 @@ class AboutSkillText extends StatelessWidget {
             ),
           ),
         ),
+        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
+        BodyText(
+          text: skillName,
+          color: const Color.fromRGBO(0, 0, 0, 0.7),
+          fontFamily: 'Noto Sans JP',
+          fontSize: _mobileDirectionProviderStatus
+              ? deviceHeight * 0.018
+              : deviceHeight * 0.009,
+          fontWeight: FontWeight.bold,
+        ),
+        HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+        BodyText(
+          text: skillDiscriptions,
+          color: const Color.fromRGBO(0, 0, 0, 0.8),
+          fontFamily: 'Noto Sans JP',
+          fontSize: _mobileDirectionProviderStatus
+              ? deviceHeight * 0.018
+              : deviceHeight * 0.009,
+          fontWeight: FontWeight.normal,
+        ),
       ],
     );
   }
 }
 
 // スキル イメージアイコン
-class AboutSkillIcon extends StatelessWidget {
+class AboutSkillIcon extends ConsumerWidget {
   const AboutSkillIcon({
     Key? key,
     required this.imagePath,
     required this.sizeValue,
     required this.imageValue,
+    required this.skillName,
+    required this.skillDiscriptions,
   }) : super(key: key);
 
   final double sizeValue;
   final String imagePath;
   final double imageValue;
+  final String skillName;
+  final String skillDiscriptions;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     var deviceHeight = MediaQuery.of(context).size.height;
+
+    final bool _mobileDirectionProviderStatus =
+        ref.watch(mobileDirectionProvider);
 
     return Column(
       children: [
@@ -491,6 +521,26 @@ class AboutSkillIcon extends StatelessWidget {
               ),
             ),
           ),
+        ),
+        HeightSizedBox(targetSize: deviceHeight, value: 0.005),
+        BodyText(
+          text: skillName,
+          color: const Color.fromRGBO(0, 0, 0, 0.7),
+          fontFamily: 'Noto Sans JP',
+          fontSize: _mobileDirectionProviderStatus
+              ? deviceHeight * 0.018
+              : deviceHeight * 0.009,
+          fontWeight: FontWeight.bold,
+        ),
+        HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+        BodyText(
+          text: skillDiscriptions,
+          color: const Color.fromRGBO(0, 0, 0, 0.8),
+          fontFamily: 'Noto Sans JP',
+          fontSize: _mobileDirectionProviderStatus
+              ? deviceHeight * 0.018
+              : deviceHeight * 0.009,
+          fontWeight: FontWeight.normal,
         ),
       ],
     );
