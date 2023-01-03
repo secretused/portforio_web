@@ -67,7 +67,7 @@ class OtherWorksTwo extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const AssetsImage(
+                                const ImageWidget(
                                   heightValue: 0.3,
                                   imagePath:
                                       "otherworks/otherworks_contest1.png",

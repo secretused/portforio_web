@@ -35,15 +35,15 @@ class PochipochiSeven extends StatelessWidget {
                 padding: EdgeInsets.all(deviceHeight * 0.03),
                 child: Row(
                   children: [
-                    const AssetsImage(
+                    const ImageWidget(
                       heightValue: 0.7,
                       imagePath: "pochipochi/pochipochi_stage1.png",
                     ),
-                    const AssetsImage(
+                    const ImageWidget(
                       heightValue: 0.7,
                       imagePath: "pochipochi/pochipochi_stage2.png",
                     ),
-                    const AssetsImage(
+                    const ImageWidget(
                       heightValue: 0.7,
                       imagePath: "pochipochi/pochipochi_stage3.png",
                     ),

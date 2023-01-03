@@ -65,7 +65,7 @@ class OtherWorksThree extends ConsumerWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.25,
                               imagePath: "otherworks/otherworks_contest2.jpeg",
                             ),

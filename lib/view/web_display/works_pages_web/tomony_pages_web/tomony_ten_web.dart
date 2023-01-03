@@ -103,7 +103,7 @@ class TomonyTen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const AssetsImage(
+                                const ImageWidget(
                                   heightValue: 0.15,
                                   imagePath: "tomony/tomony_icon.png",
                                 ),

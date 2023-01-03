@@ -170,7 +170,7 @@ class PochipochiSix extends StatelessWidget {
                                   children: [
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(180),
-                                      child: const AssetsImage(
+                                      child: const ImageWidget(
                                         heightValue: 0.2,
                                         imagePath:
                                             "pochipochi/pochipochi_persona1.png",
@@ -278,7 +278,7 @@ class PochipochiSix extends StatelessWidget {
                                   children: [
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(180),
-                                      child: const AssetsImage(
+                                      child: const ImageWidget(
                                         heightValue: 0.2,
                                         imagePath:
                                             "pochipochi/pochipochi_persona2.png",

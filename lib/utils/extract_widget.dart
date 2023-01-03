@@ -266,7 +266,7 @@ class IconButtonWidget extends ConsumerWidget {
               ),
             ],
           ),
-          child: AssetsImage(
+          child: ImageWidget(
             heightValue: (_imagePath == path && _iconButtonProviderStatus)
                 ? imageValue
                 : imageValue,
@@ -288,8 +288,8 @@ class IconButtonWidget extends ConsumerWidget {
 }
 
 // アセットイメージ
-class AssetsImage extends StatelessWidget {
-  const AssetsImage({
+class ImageWidget extends StatelessWidget {
+  const ImageWidget({
     Key? key,
     required this.heightValue,
     required this.imagePath,

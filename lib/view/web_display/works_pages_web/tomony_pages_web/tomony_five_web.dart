@@ -286,7 +286,7 @@ class TomonyFive extends StatelessWidget {
                             ),
                           ),
                           WidthSizedBox(targetSize: deviceWidth, value: 0.025),
-                          const AssetsImage(
+                          const ImageWidget(
                             heightValue: 0.4,
                             imagePath: "tomony/tomony_problem.png",
                           ),

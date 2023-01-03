@@ -49,22 +49,22 @@ class ShussekiEight extends StatelessWidget {
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.33,
                               imagePath: "shusseki/shusseki_app_attendance.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.33,
                               imagePath: "shusseki/shusseki_app_management.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.33,
                               imagePath: "shusseki/shusseki_app_mypage.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.33,
                               imagePath: "shusseki/shusseki_app_qr.png",
                             ),
@@ -87,22 +87,22 @@ class ShussekiEight extends StatelessWidget {
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.33,
                               imagePath: "shusseki/shusseki_attendance.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.33,
                               imagePath: "shusseki/shusseki_member.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.33,
                               imagePath: "shusseki/shusseki_community.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.33,
                               imagePath: "shusseki/shusseki_profile.png",
                             ),
@@ -118,12 +118,12 @@ class ShussekiEight extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.03),
                         Row(
                           children: [
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.45,
                               imagePath: "shusseki/shusseki_attendance.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.45,
                               imagePath: "shusseki/shusseki_community.png",
                             ),

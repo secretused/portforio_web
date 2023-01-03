@@ -20,7 +20,7 @@ class OtherWorksOne extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          const AssetsImage(
+          const ImageWidget(
             heightValue: 0.8,
             imagePath: "about/otherworks_display.png",
           ),

@@ -60,7 +60,7 @@ class OtherWorksFive extends StatelessWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.25,
                               imagePath: "otherworks/otherworks_nft1.jpeg",
                             ),
@@ -153,7 +153,7 @@ class OtherWorksFive extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                const AssetsImage(
+                                const ImageWidget(
                                   heightValue: 0.25,
                                   imagePath: "otherworks/otherworks_nft2.jpeg",
                                 ),

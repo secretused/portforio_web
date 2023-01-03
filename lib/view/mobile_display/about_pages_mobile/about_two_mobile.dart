@@ -37,7 +37,7 @@ class AboutTwoMobile extends ConsumerWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(180),
-                      child: AssetsImage(
+                      child: ImageWidget(
                         heightValue:
                             _mobileDirectionProviderStatus ? 0.4 : 0.15,
                         imagePath: "about/profile_image.jpeg",

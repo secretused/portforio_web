@@ -49,11 +49,11 @@ class ShussekiFour extends StatelessWidget {
                         Stack(
                           alignment: Alignment.center,
                           children: const [
-                            AssetsImage(
+                            ImageWidget(
                               heightValue: 0.55,
                               imagePath: "shusseki/shusseki_mockup.gif",
                             ),
-                            AssetsImage(
+                            ImageWidget(
                               heightValue: 0.59,
                               imagePath: "shusseki/mockup_frame.png",
                             ),
@@ -85,7 +85,7 @@ class ShussekiFour extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.01),
-                                const AssetsImage(
+                                const ImageWidget(
                                   heightValue: 0.6,
                                   imagePath: "shusseki/shusseki_app_user.png",
                                 ),
@@ -102,7 +102,7 @@ class ShussekiFour extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.01),
-                                const AssetsImage(
+                                const ImageWidget(
                                   heightValue: 0.6,
                                   imagePath:
                                       "shusseki/shusseki_app_calender.png",
@@ -120,7 +120,7 @@ class ShussekiFour extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.01),
-                                const AssetsImage(
+                                const ImageWidget(
                                   heightValue: 0.6,
                                   imagePath: "shusseki/shusseki_app_qr.png",
                                 ),

@@ -127,7 +127,7 @@ class ShussekiNine extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const AssetsImage(
+                            const ImageWidget(
                               heightValue: 0.15,
                               imagePath: "shusseki/shusseki_icon.png",
                             ),
