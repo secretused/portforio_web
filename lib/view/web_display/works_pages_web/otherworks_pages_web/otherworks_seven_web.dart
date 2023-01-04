@@ -148,7 +148,7 @@ class OtherWorksSeven extends StatelessWidget {
                                 const ImageLinkWidget(
                                   _kindleUrl,
                                   0.18,
-                                  "assets/otherworks/otherworks_kindle.jpeg",
+                                  "otherworks/otherworks_kindle.jpeg",
                                 ),
                               ],
                             ),
