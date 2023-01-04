@@ -40,7 +40,7 @@ class AboutTwoMobile extends ConsumerWidget {
                       child: ImageWidget(
                         heightValue:
                             _mobileDirectionProviderStatus ? 0.4 : 0.15,
-                        imagePath: "about/profile_image.jpeg",
+                        imagePath: "assets/about/profile_image.jpeg",
                       ),
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.03),
@@ -249,21 +249,21 @@ class AboutTwoMobile extends ConsumerWidget {
                     AboutSkillIcon(
                       sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
                       imageValue: _mobileDirectionProviderStatus ? 0.07 : 0.035,
-                      imagePath: 'icon/figma.svg',
+                      imagePath: 'assets/icon/figma.svg',
                       skillName: "Figma",
                       skillDiscriptions: '実務経験\n1年',
                     ),
                     AboutSkillIcon(
                       sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
                       imageValue: _mobileDirectionProviderStatus ? 0.07 : 0.035,
-                      imagePath: 'icon/flutter.svg',
+                      imagePath: 'assets/icon/flutter.svg',
                       skillName: "Flutter",
                       skillDiscriptions: 'アプリ\nリリース',
                     ),
                     AboutSkillIcon(
                       sizeValue: _mobileDirectionProviderStatus ? 0.12 : 0.06,
                       imageValue: _mobileDirectionProviderStatus ? 0.07 : 0.035,
-                      imagePath: 'icon/python.svg',
+                      imagePath: 'assets/icon/python.svg',
                       skillName: "Python",
                       skillDiscriptions: 'Webサイト\n制作可能',
                     ),

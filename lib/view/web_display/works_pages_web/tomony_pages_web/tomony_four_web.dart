@@ -71,7 +71,8 @@ class TomonyFour extends StatelessWidget {
                                   ),
                                   child: const ImageWidget(
                                     heightValue: 0.3,
-                                    imagePath: "tomony/tomony_interview1.png",
+                                    imagePath:
+                                        "assets/tomony/tomony_interview1.png",
                                   ),
                                 ),
                                 HeightSizedBox(
@@ -129,7 +130,7 @@ class TomonyFour extends StatelessWidget {
                                       const ImageWidget(
                                         heightValue: 0.3,
                                         imagePath:
-                                            "tomony/tomony_interview2.png",
+                                            "assets/tomony/tomony_interview2.png",
                                       ),
                                       Padding(
                                         padding: EdgeInsets.only(
@@ -190,7 +191,8 @@ class TomonyFour extends StatelessWidget {
                                   ),
                                   child: const ImageWidget(
                                     heightValue: 0.3,
-                                    imagePath: "tomony/tomony_interview3.png",
+                                    imagePath:
+                                        "assets/tomony/tomony_interview3.png",
                                   ),
                                 ),
                                 HeightSizedBox(
