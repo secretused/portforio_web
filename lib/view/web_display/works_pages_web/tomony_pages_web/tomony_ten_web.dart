@@ -105,7 +105,7 @@ class TomonyTen extends StatelessWidget {
                               children: [
                                 const ImageWidget(
                                   heightValue: 0.15,
-                                  imagePath: "/assets/tomony/tomony_icon.png",
+                                  imagePath: "tomony/tomony_icon.png",
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),

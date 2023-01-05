@@ -55,7 +55,7 @@ class TomonyTwo extends StatelessWidget {
           WidthSizedBox(targetSize: deviceWidth, value: 0.03),
           const ImageWidget(
             heightValue: 0.9,
-            imagePath: "/assets/tomony/tomony_concept.png",
+            imagePath: "tomony/tomony_concept.png",
           ),
         ],
       ),

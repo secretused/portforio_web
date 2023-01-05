@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/extract_widget.dart';
+import '../../../../utils/extract_widget.dart';
 
 class AboutOneWeb extends StatelessWidget {
   const AboutOneWeb({

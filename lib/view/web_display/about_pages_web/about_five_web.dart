@@ -40,7 +40,7 @@ class AboutFive extends ConsumerWidget {
                     WorksTopicContents(
                       index: '01',
                       topicColor: Color(0xFF87C495),
-                      imagePath: '/assets/about/tomony_display.png',
+                      imagePath: 'about/tomony_display.png',
                       appName: 'Tomony',
                       fontName: "Arial Black",
                       appDisc: '男性向けの生理のお悩み質問相談',
@@ -49,7 +49,7 @@ class AboutFive extends ConsumerWidget {
                     WorksTopicContents(
                       index: '02',
                       topicColor: Color(0xFF379BA5),
-                      imagePath: '/assets/about/shusseki_display.png',
+                      imagePath: 'about/shusseki_display.png',
                       appName: 'シュッ席',
                       fontName: "源ノ角ゴシック VF",
                       appDisc: 'QRコードで簡単入館',
@@ -58,7 +58,7 @@ class AboutFive extends ConsumerWidget {
                     WorksTopicContents(
                       index: '03',
                       topicColor: Color(0xFFEBAA14),
-                      imagePath: '/assets/about/pochipochi_display.png',
+                      imagePath: 'about/pochipochi_display.png',
                       appName: 'ぽちぽち',
                       fontName: "しあさって",
                       appDisc: '長く使える幼児向け音声再生アプリ',
@@ -67,7 +67,7 @@ class AboutFive extends ConsumerWidget {
                     WorksTopicContents(
                       index: '04',
                       topicColor: Color(0xFFCBCBCB),
-                      imagePath: '/assets/about/otherworks_display.png',
+                      imagePath: 'about/otherworks_display.png',
                       appName: 'OtherWorks',
                       fontName: "源ノ角ゴシック VF",
                       appDisc: '学校でのその他の活動',
