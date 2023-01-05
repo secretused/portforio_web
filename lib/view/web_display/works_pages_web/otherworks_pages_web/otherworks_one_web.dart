@@ -22,8 +22,8 @@ class OtherWorksOne extends StatelessWidget {
         children: <Widget>[
           const ImageWidget(
             heightValue: 0.8,
-            imagePath:
-                "https://secretused.github.io/utasan_portfolio/assets/about/otherworks_display.png",
+            // imagePath: "about/otherworks_display.png",
+            imagePath: "https://i.imgur.com/POd7NXF.png",
           ),
           WidthSizedBox(targetSize: deviceWidth, value: 0.03),
           Column(

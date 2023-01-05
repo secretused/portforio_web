@@ -166,8 +166,8 @@ class ShussekiTen extends ConsumerWidget {
                           imageValue: 0.06,
                           iconValue: 0.05,
                           link: _figmaMockUpUrl,
-                          path:
-                              'https://secretused.github.io/utasan_portfolio/assets/icon/figma_icon1.png',
+                          // path: 'icon/figma_icon1.png',
+                          path: 'https://i.imgur.com/pQ88SXh.png',
                         ),
                       ],
                     ),
@@ -180,8 +180,8 @@ class ShussekiTen extends ConsumerWidget {
                               iconValue: 0.06,
                               imageValue: 0.05,
                               link: _appStoreUrl,
-                              path:
-                                  'https://secretused.github.io/utasan_portfolio/assets/shusseki/shusseki_icon.png',
+                              // path: 'shusseki/shusseki_icon.png',
+                              path: 'https://i.imgur.com/5jaDwbV.png',
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
@@ -201,8 +201,8 @@ class ShussekiTen extends ConsumerWidget {
                               iconValue: 0.06,
                               imageValue: 0.05,
                               link: _figmaWorkUrl,
-                              path:
-                                  'https://secretused.github.io/utasan_portfolio/assets/icon/figma_icon2.png',
+                              // path: 'icon/figma_icon2.png',
+                              path: 'https://i.imgur.com/uZTvT8k.png',
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
@@ -222,8 +222,8 @@ class ShussekiTen extends ConsumerWidget {
                               iconValue: 0.06,
                               imageValue: 0.05,
                               link: _figmaUIUrl,
-                              path:
-                                  'https://secretused.github.io/utasan_portfolio/assets/icon/figma_icon3.png',
+                              // path: 'icon/figma_icon3.png',
+                              path: 'https://i.imgur.com/1pkEq73.png',
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),

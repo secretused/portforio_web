@@ -155,16 +155,16 @@ class PochipochiTwelve extends ConsumerWidget {
                           iconValue: 0.06,
                           imageValue: 0.05,
                           link: _notionUrl,
-                          path:
-                              'https://secretused.github.io/utasan_portfolio/assets/icon/notion_icon.png',
+                          // path: 'icon/notion_icon.png',
+                          path: 'https://i.imgur.com/mzA6IxP.png',
                         ),
                         WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                         const IconButtonWidget(
                           iconValue: 0.06,
                           imageValue: 0.05,
                           link: _figmaUrl,
-                          path:
-                              'https://secretused.github.io/utasan_portfolio/assets/icon/figma_icon1.png',
+                          // path: 'icon/figma_icon1.png',
+                          path: 'https://i.imgur.com/uZTvT8k.png',
                         ),
                       ],
                     ),

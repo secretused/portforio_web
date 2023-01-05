@@ -94,13 +94,13 @@ class PochipochiEight extends StatelessWidget {
                     WidthSizedBox(targetSize: deviceWidth, value: 0.04),
                     const ImageWidget(
                       heightValue: 0.7,
-                      imagePath:
-                          "https://secretused.github.io/utasan_portfolio/assets/pochipochi/pochipochi_iconEdit.png",
+                      // imagePath: "pochipochi/pochipochi_iconEdit.png",
+                      imagePath: "https://i.imgur.com/c15EU2r.png",
                     ),
                     const ImageWidget(
                       heightValue: 0.7,
-                      imagePath:
-                          "https://secretused.github.io/utasan_portfolio/assets/pochipochi/pochipochi_iconList.png",
+                      // imagePath: "pochipochi/pochipochi_iconList.png",
+                      imagePath: "https://i.imgur.com/bCaPTj8.png",
                     ),
                   ],
                 ),

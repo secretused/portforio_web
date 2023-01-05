@@ -51,13 +51,13 @@ class ShussekiFour extends StatelessWidget {
                           children: const [
                             ImageWidget(
                               heightValue: 0.55,
-                              imagePath:
-                                  "https://secretused.github.io/utasan_portfolio/assets/shusseki/shusseki_mockup.gif",
+                              // imagePath: "shusseki/shusseki_mockup.gif",
+                              imagePath: "https://i.imgur.com/b9XZFPP.gif",
                             ),
                             ImageWidget(
                               heightValue: 0.59,
-                              imagePath:
-                                  "https://secretused.github.io/utasan_portfolio/assets/shusseki/mockup_frame.png",
+                              // imagePath: "shusseki/mockup_frame.png",
+                              imagePath: "https://i.imgur.com/iZYuwvA.png",
                             ),
                           ],
                         ),
@@ -89,8 +89,8 @@ class ShussekiFour extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.01),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  imagePath:
-                                      "https://secretused.github.io/utasan_portfolio/assets/shusseki/shusseki_app_user.png",
+                                  // imagePath: "shusseki/shusseki_app_user.png",
+                                  imagePath: "https://i.imgur.com/iB5MXAf.png",
                                 ),
                               ],
                             ),
@@ -108,7 +108,8 @@ class ShussekiFour extends StatelessWidget {
                                 const ImageWidget(
                                   heightValue: 0.6,
                                   imagePath:
-                                      "https://secretused.github.io/utasan_portfolio/assets/shusseki/shusseki_app_calender.png",
+                                      // "shusseki/shusseki_app_calender.png",
+                                      "https://i.imgur.com/f7ZcK2d.png",
                                 ),
                               ],
                             ),
@@ -125,8 +126,8 @@ class ShussekiFour extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.01),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  imagePath:
-                                      "https://secretused.github.io/utasan_portfolio/assets/shusseki/shusseki_app_qr.png",
+                                  // imagePath: "shusseki/shusseki_app_qr.png",
+                                  imagePath: "https://i.imgur.com/2DzJX8r.png",
                                 ),
                               ],
                             ),

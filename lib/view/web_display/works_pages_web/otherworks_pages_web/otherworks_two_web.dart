@@ -70,7 +70,8 @@ class OtherWorksTwo extends StatelessWidget {
                                 const ImageWidget(
                                   heightValue: 0.3,
                                   imagePath:
-                                      "https://secretused.github.io/utasan_portfolio/assets/otherworks/otherworks_contest1.png",
+                                      // "otherworks/otherworks_contest1.png",
+                                      "https://i.imgur.com/EgtF30v.png",
                                 ),
                                 HeightSizedBox(
                                   targetSize: deviceHeight,

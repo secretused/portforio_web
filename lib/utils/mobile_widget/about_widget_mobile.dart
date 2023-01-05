@@ -243,7 +243,10 @@ class WorksTopicLeftMobile extends ConsumerWidget {
                 padding: EdgeInsets.all(
                   deviceWidth * 0.015,
                 ),
-                child: Image.asset(imagePath),
+                // child: Image.asset(imagePath),
+                child: Image.network(
+                  imagePath,
+                ),
               ),
             ),
           ),
@@ -379,7 +382,10 @@ class WorksTopicRightMobile extends ConsumerWidget {
                 padding: EdgeInsets.all(
                   deviceWidth * 0.015,
                 ),
-                child: Image.asset(imagePath),
+                // child: Image.asset(imagePath),
+                child: Image.network(
+                  imagePath,
+                ),
               ),
             ),
           ),

@@ -69,8 +69,8 @@ class OtherWorksFour extends StatelessWidget {
                               children: [
                                 const ImageWidget(
                                   heightValue: 0.3,
-                                  imagePath:
-                                      "https://secretused.github.io/utasan_portfolio/assets/otherworks/otherworks_nft1.jpeg",
+                                  // imagePath: "otherworks/otherworks_nft1.jpeg",
+                                  imagePath: "https://i.imgur.com/qnNkLu8.jpg",
                                 ),
                                 HeightSizedBox(
                                   targetSize: deviceHeight,

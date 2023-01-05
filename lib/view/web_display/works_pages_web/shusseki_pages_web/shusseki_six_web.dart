@@ -106,8 +106,8 @@ class ShussekiSix extends StatelessWidget {
                       ),
                       const ImageWidget(
                         heightValue: 0.3,
-                        imagePath:
-                            "https://secretused.github.io/utasan_portfolio/assets/shusseki/shusseki_overview2.png",
+                        // imagePath: "shusseki/shusseki_overview2.png",
+                        imagePath: "https://i.imgur.com/htHfPUH.png",
                       ),
                     ],
                   ),
@@ -166,8 +166,8 @@ class ShussekiSix extends StatelessWidget {
                       children: [
                         const ImageWidget(
                           heightValue: 0.2,
-                          imagePath:
-                              "https://secretused.github.io/utasan_portfolio/assets/shusseki/shusseki_overview3.png",
+                          // imagePath: "shusseki/shusseki_overview3.png",
+                          imagePath: "https://i.imgur.com/7BDf19N.png",
                         ),
                         BodyText(
                           text: "→",

@@ -83,7 +83,8 @@ class PochipochiFour extends StatelessWidget {
                                   child: const ImageWidget(
                                     heightValue: 0.3,
                                     imagePath:
-                                        "https://secretused.github.io/utasan_portfolio/assets/pochipochi/pochipochi_interview1.png",
+                                        // "pochipochi/pochipochi_interview1.png",
+                                        "https://i.imgur.com/cnghG8X.png",
                                   ),
                                 ),
                                 HeightSizedBox(
@@ -158,7 +159,8 @@ class PochipochiFour extends StatelessWidget {
                                       const ImageWidget(
                                         heightValue: 0.3,
                                         imagePath:
-                                            "https://secretused.github.io/utasan_portfolio/assets/pochipochi/pochipochi_interview2.png",
+                                            // "pochipochi/pochipochi_interview2.png",
+                                            "https://i.imgur.com/sYOygsl.png",
                                       ),
                                       Padding(
                                         padding: EdgeInsets.only(
@@ -231,7 +233,8 @@ class PochipochiFour extends StatelessWidget {
                                   child: const ImageWidget(
                                     heightValue: 0.3,
                                     imagePath:
-                                        "https://secretused.github.io/utasan_portfolio/assets/pochipochi/pochipochi_interview3.png",
+                                        // "pochipochi/pochipochi_interview3.png",
+                                        "https://i.imgur.com/TtJ5jeQ.png",
                                   ),
                                 ),
                                 HeightSizedBox(

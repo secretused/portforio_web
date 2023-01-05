@@ -41,8 +41,8 @@ class AboutSixMobile extends ConsumerWidget {
                   const WorksTopicLeftMobile(
                     index: '01',
                     topicColor: Color(0xFF87C495),
-                    imagePath:
-                        'https://secretused.github.io/utasan_portfolio/assets/about/tomony_display.png',
+                    // imagePath: 'about/tomony_display.png',
+                    imagePath: 'https://i.imgur.com/R58XrDL.png',
                     appName: 'Tomony',
                     fontName: "Arial Black",
                     appDisc: '男性向けの生理のお悩み質問相談',
@@ -52,8 +52,8 @@ class AboutSixMobile extends ConsumerWidget {
                   const WorksTopicRightMobile(
                     index: '02',
                     topicColor: Color(0xFF379BA5),
-                    imagePath:
-                        'https://secretused.github.io/utasan_portfolio/assets/about/shusseki_display.png',
+                    // imagePath: 'about/shusseki_display.png',
+                    imagePath: 'https://i.imgur.com/2Mn21yC.png',
                     appName: 'シュッ席',
                     fontName: "源ノ角ゴシック VF",
                     appDisc: 'QRコードで簡単入館',
@@ -63,8 +63,8 @@ class AboutSixMobile extends ConsumerWidget {
                   const WorksTopicLeftMobile(
                     index: '03',
                     topicColor: Color(0xFFEBAA14),
-                    imagePath:
-                        'https://secretused.github.io/utasan_portfolio/assets/https://secretused.github.io/utasan_portfolio/assets/pochipochi_display.png',
+                    // imagePath: 'pochipochi_display.png',
+                    imagePath: 'https://i.imgur.com/jNFOx30.png',
                     appName: 'ぽちぽち',
                     fontName: "しあさって",
                     appDisc: '長く使える幼児向け音声再生アプリ',
@@ -74,8 +74,8 @@ class AboutSixMobile extends ConsumerWidget {
                   const WorksTopicRightMobile(
                     index: '04',
                     topicColor: Color(0xFFCBCBCB),
-                    imagePath:
-                        'https://secretused.github.io/utasan_portfolio/assets/about/otherworks_display.png',
+                    // imagePath: 'about/otherworks_display.png',
+                    imagePath: 'https://i.imgur.com/POd7NXF.png',
                     appName: 'OtherWorks',
                     fontName: "源ノ角ゴシック VF",
                     appDisc: '学校でのその他の活動',

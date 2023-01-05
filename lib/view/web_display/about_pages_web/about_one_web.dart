@@ -28,8 +28,8 @@ class AboutOneWeb extends StatelessWidget {
                   alignment: Alignment.centerRight,
                   child: ImageWidget(
                     heightValue: deviceHeight,
-                    imagePath:
-                        "https://secretused.github.io/utasan_portfolio/assets/about/display_mockup.png",
+                    // imagePath: "about/display_mockup.png",
+                    imagePath: "https://i.imgur.com/uo2dbX3.png",
                   ),
                 ),
                 Padding(

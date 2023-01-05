@@ -71,8 +71,9 @@ class TomonyFour extends StatelessWidget {
                                   ),
                                   child: const ImageWidget(
                                     heightValue: 0.3,
+                                    // imagePath: "tomony/tomony_interview1.png",
                                     imagePath:
-                                        "https://secretused.github.io/utasan_portfolio/assets/tomony/tomony_interview1.png",
+                                        "https://i.imgur.com/ghKJwKI.png",
                                   ),
                                 ),
                                 HeightSizedBox(
@@ -129,8 +130,10 @@ class TomonyFour extends StatelessWidget {
                                     children: [
                                       const ImageWidget(
                                         heightValue: 0.3,
+                                        // imagePath:
+                                        //     "tomony/tomony_interview2.png",
                                         imagePath:
-                                            "https://secretused.github.io/utasan_portfolio/assets/tomony/tomony_interview2.png",
+                                            "https://i.imgur.com/9V4DkJn.png",
                                       ),
                                       Padding(
                                         padding: EdgeInsets.only(
@@ -191,8 +194,9 @@ class TomonyFour extends StatelessWidget {
                                   ),
                                   child: const ImageWidget(
                                     heightValue: 0.3,
+                                    // imagePath: "tomony/tomony_interview3.png",
                                     imagePath:
-                                        "https://secretused.github.io/utasan_portfolio/assets/tomony/tomony_interview3.png",
+                                        "https://i.imgur.com/Eskdj6Q.png",
                                   ),
                                 ),
                                 HeightSizedBox(

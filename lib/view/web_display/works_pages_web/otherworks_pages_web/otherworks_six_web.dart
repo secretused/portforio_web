@@ -70,8 +70,8 @@ class OtherWorksSix extends StatelessWidget {
                           children: [
                             const ImageWidget(
                               heightValue: 0.53,
-                              imagePath:
-                                  "https://secretused.github.io/utasan_portfolio/assets/otherworks/otherworks_kindle.jpeg",
+                              // imagePath: "otherworks/otherworks_kindle.jpeg",
+                              imagePath: "https://i.imgur.com/wCegYhl.jpg",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                             Column(
