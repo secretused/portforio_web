@@ -9,9 +9,8 @@ class AboutOneWeb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // deviceWidth
     var deviceWidth = MediaQuery.of(context).size.width;
-    // 821
+
     var deviceHeight = MediaQuery.of(context).size.height;
 
     return Container(
