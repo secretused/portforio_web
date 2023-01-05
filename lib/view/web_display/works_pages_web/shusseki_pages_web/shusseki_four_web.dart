@@ -51,11 +51,11 @@ class ShussekiFour extends StatelessWidget {
                           children: const [
                             ImageWidget(
                               heightValue: 0.55,
-                              imagePath: "shusseki/shusseki_mockup.gif",
+                              imagePath: "assets/shusseki/shusseki_mockup.gif",
                             ),
                             ImageWidget(
                               heightValue: 0.59,
-                              imagePath: "shusseki/mockup_frame.png",
+                              imagePath: "assets/shusseki/mockup_frame.png",
                             ),
                           ],
                         ),
@@ -87,7 +87,8 @@ class ShussekiFour extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.01),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  imagePath: "shusseki/shusseki_app_user.png",
+                                  imagePath:
+                                      "assets/shusseki/shusseki_app_user.png",
                                 ),
                               ],
                             ),
@@ -105,7 +106,7 @@ class ShussekiFour extends StatelessWidget {
                                 const ImageWidget(
                                   heightValue: 0.6,
                                   imagePath:
-                                      "shusseki/shusseki_app_calender.png",
+                                      "assets/shusseki/shusseki_app_calender.png",
                                 ),
                               ],
                             ),
@@ -122,7 +123,8 @@ class ShussekiFour extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.01),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  imagePath: "shusseki/shusseki_app_qr.png",
+                                  imagePath:
+                                      "assets/shusseki/shusseki_app_qr.png",
                                 ),
                               ],
                             ),

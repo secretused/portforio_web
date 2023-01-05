@@ -51,22 +51,25 @@ class ShussekiEight extends StatelessWidget {
                           children: [
                             const ImageWidget(
                               heightValue: 0.33,
-                              imagePath: "shusseki/shusseki_app_attendance.png",
+                              imagePath:
+                                  "assets/shusseki/shusseki_app_attendance.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              imagePath: "shusseki/shusseki_app_management.png",
+                              imagePath:
+                                  "assets/shusseki/shusseki_app_management.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              imagePath: "shusseki/shusseki_app_mypage.png",
+                              imagePath:
+                                  "assets/shusseki/shusseki_app_mypage.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              imagePath: "shusseki/shusseki_app_qr.png",
+                              imagePath: "assets/shusseki/shusseki_app_qr.png",
                             ),
                           ],
                         ),
@@ -89,22 +92,24 @@ class ShussekiEight extends StatelessWidget {
                           children: [
                             const ImageWidget(
                               heightValue: 0.33,
-                              imagePath: "shusseki/shusseki_attendance.png",
+                              imagePath:
+                                  "assets/shusseki/shusseki_attendance.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              imagePath: "shusseki/shusseki_member.png",
+                              imagePath: "assets/shusseki/shusseki_member.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              imagePath: "shusseki/shusseki_community.png",
+                              imagePath:
+                                  "assets/shusseki/shusseki_community.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.33,
-                              imagePath: "shusseki/shusseki_profile.png",
+                              imagePath: "assets/shusseki/shusseki_profile.png",
                             ),
                           ],
                         ),
@@ -120,12 +125,14 @@ class ShussekiEight extends StatelessWidget {
                           children: [
                             const ImageWidget(
                               heightValue: 0.45,
-                              imagePath: "shusseki/shusseki_attendance.png",
+                              imagePath:
+                                  "assets/shusseki/shusseki_attendance.png",
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                             const ImageWidget(
                               heightValue: 0.45,
-                              imagePath: "shusseki/shusseki_community.png",
+                              imagePath:
+                                  "assets/shusseki/shusseki_community.png",
                             ),
                           ],
                         ),

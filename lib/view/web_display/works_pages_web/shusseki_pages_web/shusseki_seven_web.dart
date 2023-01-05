@@ -49,7 +49,7 @@ class ShussekiSeven extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         const ImageWidget(
                           heightValue: 0.7,
-                          imagePath: "shusseki/shusseki_userflow.png",
+                          imagePath: "assets/shusseki/shusseki_userflow.png",
                         ),
                       ],
                     ),
@@ -67,7 +67,7 @@ class ShussekiSeven extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         const ImageWidget(
                           heightValue: 0.4,
-                          imagePath: "shusseki/shusseki_modeling.png",
+                          imagePath: "assets/shusseki/shusseki_modeling.png",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.02),
                         BodyText(
@@ -80,7 +80,7 @@ class ShussekiSeven extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         const ImageWidget(
                           heightValue: 0.25,
-                          imagePath: "shusseki/shusseki_navigation.png",
+                          imagePath: "assets/shusseki/shusseki_navigation.png",
                         ),
                       ],
                     ),

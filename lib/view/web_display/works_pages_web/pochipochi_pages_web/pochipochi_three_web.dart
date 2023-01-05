@@ -127,7 +127,8 @@ class PochipochiThree extends StatelessWidget {
                             ),
                             const ImageWidget(
                               heightValue: 0.175,
-                              imagePath: "pochipochi/pochipochi_overview.png",
+                              imagePath:
+                                  "about/pochipochi/pochipochi_overview.png",
                             ),
                           ],
                         ),

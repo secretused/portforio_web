@@ -37,15 +37,15 @@ class PochipochiSeven extends StatelessWidget {
                   children: [
                     const ImageWidget(
                       heightValue: 0.7,
-                      imagePath: "pochipochi/pochipochi_stage1.png",
+                      imagePath: "about/pochipochi/pochipochi_stage1.png",
                     ),
                     const ImageWidget(
                       heightValue: 0.7,
-                      imagePath: "pochipochi/pochipochi_stage2.png",
+                      imagePath: "about/pochipochi/pochipochi_stage2.png",
                     ),
                     const ImageWidget(
                       heightValue: 0.7,
-                      imagePath: "pochipochi/pochipochi_stage3.png",
+                      imagePath: "about/pochipochi/pochipochi_stage3.png",
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.04),
                     Column(
