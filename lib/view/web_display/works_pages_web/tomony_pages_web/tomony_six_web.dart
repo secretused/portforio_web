@@ -46,7 +46,7 @@ class TomonySix extends StatelessWidget {
                               borderRadius: BorderRadius.circular(180),
                               child: const ImageWidget(
                                 heightValue: 0.2,
-                                imagePath: "assets/tomony/tomony_persona.png",
+                                imagePath: "/assets/tomony/tomony_persona.png",
                               ),
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.03),

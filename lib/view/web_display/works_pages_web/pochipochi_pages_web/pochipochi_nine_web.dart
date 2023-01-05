@@ -102,12 +102,12 @@ class PochipochiNine extends StatelessWidget {
                     WidthSizedBox(targetSize: deviceWidth, value: 0.04),
                     const ImageWidget(
                       heightValue: 0.7,
-                      imagePath: "assets/pochipochi/pochipochi_movieEdit.png",
+                      imagePath: "/assets/pochipochi/pochipochi_movieEdit.png",
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.01),
                     const ImageWidget(
                       heightValue: 0.35,
-                      imagePath: "assets/pochipochi/pochipochi_youtube.png",
+                      imagePath: "/assets/pochipochi/pochipochi_youtube.png",
                     ),
                   ],
                 ),
