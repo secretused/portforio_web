@@ -74013,7 +74013,7 @@ v(a){var s,r,q=null,p="Objective-bold",o=t.w,n=a.p(o).f.a.a,m=a.p(o).f.a.b
 o=m*0.15
 s=t.p
 r=m*0.04
-return A.Z(q,A.L(A.a([A.aq(A.fQ(B.bb,A.a([new A.er(B.ee,q,q,new A.aE(m,"/assets/about/display_mockup.png",q),q),new A.O(new A.H(n*0.05,0,0,0),A.m(A.a([A.L(A.a([new A.k("Yuta",B.l,o,B.e,p,q),new A.k("Toba",B.l,o,B.e,p,q)],s),B.f,q,B.h,B.c),new A.j(m,0.01,q),A.L(A.a([new A.a1(n,0.01,q),new A.k("\u9ce5\u7fbd\u60a0\u592a",B.l,r,B.e,p,q),new A.a1(n,0.01,q),new A.k("/",B.l,r,B.e,p,q),new A.a1(n,0.01,q),new A.k("Design Portfolio",B.l,r,B.e,p,q)],s),B.f,q,B.h,B.c)],s),B.f,q,B.m,B.c),q)],s),B.fp),q,n)],s),B.f,q,B.m,B.c),B.n,q,q,m,q,q,q,q)}}
+return A.Z(q,A.L(A.a([A.aq(A.fQ(B.bb,A.a([new A.er(B.ee,q,q,new A.aE(m,"about/display_mockup.png",q),q),new A.O(new A.H(n*0.05,0,0,0),A.m(A.a([A.L(A.a([new A.k("Yuta",B.l,o,B.e,p,q),new A.k("Toba",B.l,o,B.e,p,q)],s),B.f,q,B.h,B.c),new A.j(m,0.01,q),A.L(A.a([new A.a1(n,0.01,q),new A.k("\u9ce5\u7fbd\u60a0\u592a",B.l,r,B.e,p,q),new A.a1(n,0.01,q),new A.k("/",B.l,r,B.e,p,q),new A.a1(n,0.01,q),new A.k("Design Portfolio",B.l,r,B.e,p,q)],s),B.f,q,B.h,B.c)],s),B.f,q,B.m,B.c),q)],s),B.fp),q,n)],s),B.f,q,B.m,B.c),B.n,q,q,m,q,q,q,q)}}
 A.Fx.prototype={
 b6(a,b){var s=null,r=t.w,q=a.p(r).f.a.a,p=a.p(r).f.a.b
 r=t.p
