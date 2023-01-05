@@ -68,7 +68,7 @@ class OtherWorksThree extends ConsumerWidget {
                             const ImageWidget(
                               heightValue: 0.25,
                               imagePath:
-                                  "assets/otherworks/otherworks_contest2.jpeg",
+                                  "https://secretused.github.io/utasan_portfolio/assets/otherworks/otherworks_contest2.jpeg",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
@@ -175,7 +175,7 @@ class OtherWorksThree extends ConsumerWidget {
                                   child: const ImageLinkWidget(
                                     _pdfUrl,
                                     0.3,
-                                    "assets/otherworks/otherworks_contest1.png",
+                                    "https://secretused.github.io/utasan_portfolio/assets/otherworks/otherworks_contest1.png",
                                   ),
                                 ),
                               ],

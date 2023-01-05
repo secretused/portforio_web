@@ -49,7 +49,8 @@ class AboutTwo extends StatelessWidget {
                               borderRadius: BorderRadius.circular(180),
                               child: const ImageWidget(
                                 heightValue: 0.2,
-                                imagePath: "assets/about/profile_image.jpeg",
+                                imagePath:
+                                    "https://secretused.github.io/utasan_portfolio/assets/about/profile_image.jpeg",
                               ),
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.03),
@@ -236,21 +237,24 @@ class AboutTwo extends StatelessWidget {
                               SkillIcon(
                                 sizeValue: 0.07,
                                 imageValue: 0.04,
-                                imagePath: 'assets/icon/figma.svg',
+                                imagePath:
+                                    'https://secretused.github.io/utasan_portfolio/assets/icon/figma.svg',
                                 skillName: "Figma",
                                 skillDiscriptions: '実務経験\n1年',
                               ),
                               SkillIcon(
                                 sizeValue: 0.07,
                                 imageValue: 0.04,
-                                imagePath: 'assets/icon/flutter.svg',
+                                imagePath:
+                                    'https://secretused.github.io/utasan_portfolio/assets/icon/flutter.svg',
                                 skillName: "Flutter",
                                 skillDiscriptions: 'アプリ\nリリース',
                               ),
                               SkillIcon(
                                 sizeValue: 0.07,
                                 imageValue: 0.04,
-                                imagePath: 'assets/icon/python.svg',
+                                imagePath:
+                                    'https://secretused.github.io/utasan_portfolio/assets/icon/python.svg',
                                 skillName: "Python",
                                 skillDiscriptions: 'Webサイト\n制作可能',
                               ),

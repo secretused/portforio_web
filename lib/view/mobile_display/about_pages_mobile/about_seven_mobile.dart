@@ -40,21 +40,24 @@ class AboutSevenMobile extends ConsumerWidget {
                     link: twitteUrl,
                     iconValue: _mobileDirectionProviderStatus ? 0.12 : 0.045,
                     imageValue: _mobileDirectionProviderStatus ? 0.1 : 0.035,
-                    path: "assets/icon/twitter_icon.png",
+                    path:
+                        "https://secretused.github.io/utasan_portfolio/assets/icon/twitter_icon.png",
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.05),
                   IconButtonWidget(
                     link: githubUrl,
                     iconValue: _mobileDirectionProviderStatus ? 0.12 : 0.045,
                     imageValue: _mobileDirectionProviderStatus ? 0.1 : 0.035,
-                    path: "assets/icon/github_icon.png",
+                    path:
+                        "https://secretused.github.io/utasan_portfolio/assets/icon/github_icon.png",
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.05),
                   IconButtonWidget(
                     link: qiitaUrl,
                     iconValue: _mobileDirectionProviderStatus ? 0.12 : 0.045,
                     imageValue: _mobileDirectionProviderStatus ? 0.1 : 0.035,
-                    path: "assets/icon/qiita_icon.png",
+                    path:
+                        "https://secretused.github.io/utasan_portfolio/assets/icon/qiita_icon.png",
                   ),
                 ],
               ),

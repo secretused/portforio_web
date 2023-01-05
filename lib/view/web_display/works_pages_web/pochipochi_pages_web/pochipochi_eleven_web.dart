@@ -46,7 +46,7 @@ class PochipochiEleven extends StatelessWidget {
                           const ImageWidget(
                             heightValue: 0.25,
                             imagePath:
-                                "about/pochipochi/pochipochi_premiumPlan.png",
+                                "https://secretused.github.io/utasan_portfolio/assets/pochipochi/pochipochi_premiumPlan.png",
                           ),
                           WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                           Column(

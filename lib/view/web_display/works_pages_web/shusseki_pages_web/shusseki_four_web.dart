@@ -51,11 +51,13 @@ class ShussekiFour extends StatelessWidget {
                           children: const [
                             ImageWidget(
                               heightValue: 0.55,
-                              imagePath: "assets/shusseki/shusseki_mockup.gif",
+                              imagePath:
+                                  "https://secretused.github.io/utasan_portfolio/assets/shusseki/shusseki_mockup.gif",
                             ),
                             ImageWidget(
                               heightValue: 0.59,
-                              imagePath: "assets/shusseki/mockup_frame.png",
+                              imagePath:
+                                  "https://secretused.github.io/utasan_portfolio/assets/shusseki/mockup_frame.png",
                             ),
                           ],
                         ),
@@ -88,7 +90,7 @@ class ShussekiFour extends StatelessWidget {
                                 const ImageWidget(
                                   heightValue: 0.6,
                                   imagePath:
-                                      "assets/shusseki/shusseki_app_user.png",
+                                      "https://secretused.github.io/utasan_portfolio/assets/shusseki/shusseki_app_user.png",
                                 ),
                               ],
                             ),
@@ -106,7 +108,7 @@ class ShussekiFour extends StatelessWidget {
                                 const ImageWidget(
                                   heightValue: 0.6,
                                   imagePath:
-                                      "assets/shusseki/shusseki_app_calender.png",
+                                      "https://secretused.github.io/utasan_portfolio/assets/shusseki/shusseki_app_calender.png",
                                 ),
                               ],
                             ),
@@ -124,7 +126,7 @@ class ShussekiFour extends StatelessWidget {
                                 const ImageWidget(
                                   heightValue: 0.6,
                                   imagePath:
-                                      "assets/shusseki/shusseki_app_qr.png",
+                                      "https://secretused.github.io/utasan_portfolio/assets/shusseki/shusseki_app_qr.png",
                                 ),
                               ],
                             ),

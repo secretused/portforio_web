@@ -38,21 +38,24 @@ class AboutSix extends ConsumerWidget {
                     link: twitteUrl,
                     imageValue: 0.06,
                     iconValue: 0.05,
-                    path: "assets/icon/twitter_icon.png",
+                    path:
+                        "https://secretused.github.io/utasan_portfolio/assets/icon/twitter_icon.png",
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                   const IconButtonWidget(
                     link: githubUrl,
                     imageValue: 0.06,
                     iconValue: 0.05,
-                    path: "assets/icon/github_icon.png",
+                    path:
+                        "https://secretused.github.io/utasan_portfolio/assets/icon/github_icon.png",
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                   const IconButtonWidget(
                     link: qiitaUrl,
                     imageValue: 0.06,
                     iconValue: 0.05,
-                    path: "assets/icon/qiita_icon.png",
+                    path:
+                        "https://secretused.github.io/utasan_portfolio/assets/icon/qiita_icon.png",
                   ),
                 ],
               ),

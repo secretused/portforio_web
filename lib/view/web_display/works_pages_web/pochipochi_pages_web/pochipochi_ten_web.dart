@@ -76,7 +76,7 @@ class PochipochiTen extends StatelessWidget {
                                 const ImageWidget(
                                   heightValue: 0.6,
                                   imagePath:
-                                      "about/pochipochi/pochipochi_setting.png",
+                                      "https://secretused.github.io/utasan_portfolio/assets/pochipochi/pochipochi_setting.png",
                                 ),
                               ],
                             ),
@@ -95,7 +95,7 @@ class PochipochiTen extends StatelessWidget {
                                 const ImageWidget(
                                   heightValue: 0.6,
                                   imagePath:
-                                      "about/pochipochi/pochipochi_timer.png",
+                                      "https://secretused.github.io/utasan_portfolio/assets/pochipochi/pochipochi_timer.png",
                                 ),
                               ],
                             ),
@@ -156,7 +156,7 @@ class PochipochiTen extends StatelessWidget {
                             const ImageWidget(
                               heightValue: 0.6,
                               imagePath:
-                                  "about/pochipochi/pochipochi_notion.png",
+                                  "https://secretused.github.io/utasan_portfolio/assets/pochipochi/pochipochi_notion.png",
                             ),
                           ],
                         ),

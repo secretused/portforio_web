@@ -173,7 +173,7 @@ class PochipochiSix extends StatelessWidget {
                                       child: const ImageWidget(
                                         heightValue: 0.2,
                                         imagePath:
-                                            "about/pochipochi/pochipochi_persona1.png",
+                                            "https://secretused.github.io/utasan_portfolio/assets/pochipochi/pochipochi_persona1.png",
                                       ),
                                     ),
                                     WidthSizedBox(
@@ -281,7 +281,7 @@ class PochipochiSix extends StatelessWidget {
                                       child: const ImageWidget(
                                         heightValue: 0.2,
                                         imagePath:
-                                            "about/pochipochi/pochipochi_persona2.png",
+                                            "https://secretused.github.io/utasan_portfolio/assets/pochipochi/pochipochi_persona2.png",
                                       ),
                                     ),
                                     WidthSizedBox(

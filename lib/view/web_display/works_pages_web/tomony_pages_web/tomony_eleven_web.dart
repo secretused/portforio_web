@@ -140,14 +140,16 @@ class TomonyEleven extends ConsumerWidget {
                           iconValue: 0.06,
                           imageValue: 0.05,
                           link: _notionUrl,
-                          path: 'assets/icon/notion_icon.png',
+                          path:
+                              'https://secretused.github.io/utasan_portfolio/assets/icon/notion_icon.png',
                         ),
                         WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                         const IconButtonWidget(
                           iconValue: 0.06,
                           imageValue: 0.05,
                           link: _figmaUrl,
-                          path: 'assets/icon/figma_icon1.png',
+                          path:
+                              'https://secretused.github.io/utasan_portfolio/assets/icon/figma_icon1.png',
                         ),
                       ],
                     ),

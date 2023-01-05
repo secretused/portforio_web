@@ -21,7 +21,8 @@ class PochipochiOne extends StatelessWidget {
         children: <Widget>[
           const ImageWidget(
             heightValue: 0.9,
-            imagePath: "assets/about/pochipochi_display.png",
+            imagePath:
+                "https://secretused.github.io/utasan_portfolio/assets/about/pochipochi_display.png",
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
