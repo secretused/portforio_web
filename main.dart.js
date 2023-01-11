@@ -70845,7 +70845,7 @@ return A.Z(a6,A.L(A.a([A.ao(A.m(A.a([new A.l7("\u81ea\u5206\u5e74\u8868",a7,a8*0
 A.El.prototype={
 b4(a,b){var s,r,q,p,o,n,m,l,k=null,j="Objective-bold",i=t.w,h=a.p(i).f.a.a,g=a.p(i).f.a.b,f=b.bW($.hh(),t.y)
 i=f?B.e8:B.a1
-s=f?"assets/about/mobile_mockup2":"assets/about/mobile_mockup1"
+s=f?"assets/about/mobile_mockup2.png":"assets/about/mobile_mockup1.png"
 r=f?h*0.2:h*0.03
 q=f?B.m:B.Jh
 p=f?g*0.15:h*0.13
