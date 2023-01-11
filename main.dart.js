@@ -70845,7 +70845,7 @@ return A.Z(a6,A.L(A.a([A.ao(A.m(A.a([new A.l7("\u81ea\u5206\u5e74\u8868",a7,a8*0
 A.El.prototype={
 b4(a,b){var s,r,q,p,o,n,m,l,k=null,j="Objective-bold",i=t.w,h=a.p(i).f.a.a,g=a.p(i).f.a.b,f=b.bW($.hh(),t.y)
 i=f?B.e8:B.a1
-s=f?"assets/about/mobile_mockup2.png":"assets/about/mobile_mockup1.png"
+s=f?"assets/about/mobile_mockup1.png":"assets/about/mobile_mockup2.png"
 r=f?h*0.2:h*0.03
 q=f?B.m:B.Jh
 p=f?g*0.15:h*0.13
@@ -77884,7 +77884,7 @@ B.xd=new A.le(0,0)
 B.Tk=new A.le(-2,-2)
 B.Tq=new A.Ax("01",B.N,"https:com/R58XrDL.png","Tomony","Arial Black","\u7537\u6027\u5411\u3051\u306e\u751f\u7406\u306e\u304a\u60a9\u307f\u8cea\u554f\u76f8\u8ac7","/tomony",null)
 B.Tr=new A.Ax("03",B.O,"https:com/jNFOx30.png","\u307d\u3061\u307d\u3061","\u3057\u3042\u3055\u3063\u3066","\u9577\u304f\u4f7f\u3048\u308b\u5e7c\u5150\u5411\u3051\u97f3\u58f0\u518d\u751f\u30a2\u30d7\u30ea","/pochipochi",null)
-B.Ts=new A.Ay("03",B.O,"pochipochi_display.png","\u307d\u3061\u307d\u3061","\u3057\u3042\u3055\u3063\u3066","\u9577\u304f\u4f7f\u3048\u308b\u5e7c\u5150\u5411\u3051\u97f3\u58f0\u518d\u751f\u30a2\u30d7\u30ea","/pochipochi",null)
+B.Ts=new A.Ay("03",B.O,"assets/about/pochipochi_display.png","\u307d\u3061\u307d\u3061","\u3057\u3042\u3055\u3063\u3066","\u9577\u304f\u4f7f\u3048\u308b\u5e7c\u5150\u5411\u3051\u97f3\u58f0\u518d\u751f\u30a2\u30d7\u30ea","/pochipochi",null)
 B.Tt=new A.Ay("01",B.N,"assets/about/tomony_display.png","Tomony","Arial Black","\u7537\u6027\u5411\u3051\u306e\u751f\u7406\u306e\u304a\u60a9\u307f\u8cea\u554f\u76f8\u8ac7","/tomony",null)
 B.Tu=new A.AA("02",B.W,"assets/about/shusseki_display.png","\u30b7\u30e5\u30c3\u5e2d","QR\u30b3\u30fc\u30c9\u3067\u7c21\u5358\u5165\u9928","/shusseki",null)
 B.Tv=new A.Az("02",B.W,"https:com/2Mn21yC.png","\u30b7\u30e5\u30c3\u5e2d","QR\u30b3\u30fc\u30c9\u3067\u7c21\u5358\u5165\u9928","/shusseki",null)
