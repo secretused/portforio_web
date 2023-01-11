@@ -288,8 +288,8 @@ class IconButtonWidget extends ConsumerWidget {
 }
 
 // // アセットイメージ
-class AssetImage extends StatelessWidget {
-  const AssetImage({
+class AssetsWidget extends StatelessWidget {
+  const AssetsWidget({
     Key? key,
     required this.heightValue,
     required this.imagePath,
