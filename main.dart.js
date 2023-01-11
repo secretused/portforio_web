@@ -73458,7 +73458,7 @@ $1(a){return!1},
 $S:17}
 A.FY.prototype={
 v(a){var s=null,r=a.p(t.w).f
-return A.ap(new A.on(A.aq5(s,s,new A.w_("about/otherworks_display.png",s,s)),s,s,s,s,s,s,B.hw,s,s,B.U,B.bW,!1,s),r.a.b*0.8,s)}}
+return A.ap(new A.on(A.aq5(s,s,new A.w_("assets/about/otherworks_display.png",s,s)),s,s,s,s,s,s,B.hw,s,s,B.U,B.bW,!1,s),r.a.b*0.8,s)}}
 A.aF.prototype={
 v(a){var s=a.p(t.w).f
 return A.ap(A.at_(null,this.d,new A.a3D()),s.a.b*this.c,null)}}
