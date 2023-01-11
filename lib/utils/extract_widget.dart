@@ -326,13 +326,7 @@ class ImageWidthWidget extends StatelessWidget {
 
     return SizedBox(
       height: deviceHeight * widthValue,
-      child: CachedNetworkImage(
-        fit: BoxFit.cover,
-        imageUrl: imagePath,
-        placeholder: (context, url) => const Center(
-          child: CircularProgressIndicator(),
-        ),
-      ),
+      child: Image.asset(imagePath),
     );
   }
 }
