@@ -22,7 +22,7 @@ class OtherWorksOne extends StatelessWidget {
         children: <Widget>[
           const AssetsWidget(
             heightValue: 0.8,
-            imagePath: "about/otherworks_display.png",
+            imagePath: "assets/about/otherworks_display.png",
             // imagePath: "https://i.imgur.com/POd7NXF.png",
           ),
           WidthSizedBox(targetSize: deviceWidth, value: 0.03),
