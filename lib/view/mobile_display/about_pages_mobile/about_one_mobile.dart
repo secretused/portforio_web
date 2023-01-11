@@ -36,8 +36,8 @@ class AboutOneMobile extends ConsumerWidget {
                   child: ImageWidthWidget(
                     widthValue: deviceWidth,
                     imagePath: _mobileDirectionProviderStatus
-                        ? "assets/about/mobile_mockup2.png"
-                        : "assets/about/mobile_mockup1.png",
+                        ? "assets/about/mobile_mockup1.png"
+                        : "assets/about/mobile_mockup2.png",
                   ),
                 ),
                 Padding(

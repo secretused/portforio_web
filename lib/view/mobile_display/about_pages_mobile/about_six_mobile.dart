@@ -61,7 +61,7 @@ class AboutSixMobile extends ConsumerWidget {
                   const WorksTopicLeftMobile(
                     index: '03',
                     topicColor: Color(0xFFEBAA14),
-                    imagePath: 'pochipochi_display.png',
+                    imagePath: 'assets/about/pochipochi_display.png',
                     appName: 'ぽちぽち',
                     fontName: "しあさって",
                     appDisc: '長く使える幼児向け音声再生アプリ',
