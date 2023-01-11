@@ -288,26 +288,26 @@ class IconButtonWidget extends ConsumerWidget {
 }
 
 // // アセットイメージ
-// class ImageWidget extends StatelessWidget {
-//   const ImageWidget({
-//     Key? key,
-//     required this.heightValue,
-//     required this.imagePath,
-//   }) : super(key: key);
+class AssetImage extends StatelessWidget {
+  const AssetImage({
+    Key? key,
+    required this.heightValue,
+    required this.imagePath,
+  }) : super(key: key);
 
-//   final double heightValue;
-//   final String imagePath;
+  final double heightValue;
+  final String imagePath;
 
-//   @override
-//   Widget build(BuildContext context) {
-//     var deviceHeight = MediaQuery.of(context).size.height;
+  @override
+  Widget build(BuildContext context) {
+    var deviceHeight = MediaQuery.of(context).size.height;
 
-//     return SizedBox(
-//       height: deviceHeight * heightValue,
-//       child: Image.asset(imagePath),
-//     );
-//   }
-// }
+    return SizedBox(
+      height: deviceHeight * heightValue,
+      child: Image.asset(imagePath),
+    );
+  }
+}
 
 // アセットイメージ
 class ImageWidget extends StatelessWidget {
