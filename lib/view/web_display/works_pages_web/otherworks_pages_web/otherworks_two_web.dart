@@ -67,11 +67,11 @@ class OtherWorksTwo extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const ImageWidget(
+                                const AssetsWidget(
                                   heightValue: 0.3,
                                   imagePath:
-                                      // "otherworks/otherworks_contest1.png",
-                                      "https://i.imgur.com/EgtF30v.png",
+                                      "otherworks/otherworks_contest1.png",
+                                  // "https://i.imgur.com/EgtF30v.png",
                                 ),
                                 HeightSizedBox(
                                   targetSize: deviceHeight,
