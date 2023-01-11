@@ -149,7 +149,6 @@ class OtherWorksSeven extends StatelessWidget {
                                   _kindleUrl,
                                   0.18,
                                   "assets/otherworks/otherworks_kindle.jpeg",
-                                  // "https:com/wCegYhl.jpg",
                                 ),
                               ],
                             ),

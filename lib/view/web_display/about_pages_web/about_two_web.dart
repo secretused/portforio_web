@@ -47,7 +47,7 @@ class AboutTwo extends StatelessWidget {
                           children: [
                             ClipRRect(
                               borderRadius: BorderRadius.circular(180),
-                              child: const ImageWidget(
+                              child: const ImagesWidget(
                                 heightValue: 0.2,
                                 imagePath: "assets/about/profile_image.jpeg",
                               ),

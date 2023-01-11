@@ -47,7 +47,7 @@ class ShussekiSeven extends StatelessWidget {
                           fontFamily: "Noto Snas JP",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        const ImageWidget(
+                        const ImagesWidget(
                           heightValue: 0.7,
                           imagePath: "assets/shusseki/shusseki_userflow.png",
                         ),
@@ -65,7 +65,7 @@ class ShussekiSeven extends StatelessWidget {
                           fontFamily: "Noto Snas JP",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        const ImageWidget(
+                        const ImagesWidget(
                           heightValue: 0.4,
                           imagePath: "assets/shusseki/shusseki_modeling.png",
                         ),
@@ -78,7 +78,7 @@ class ShussekiSeven extends StatelessWidget {
                           fontFamily: "Noto Snas JP",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        const ImageWidget(
+                        const ImagesWidget(
                           heightValue: 0.25,
                           imagePath: "assets/shusseki/shusseki_navigation.png",
                         ),

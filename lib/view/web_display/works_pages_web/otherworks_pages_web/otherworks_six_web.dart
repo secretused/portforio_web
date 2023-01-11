@@ -68,7 +68,7 @@ class OtherWorksSix extends StatelessWidget {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const ImageWidget(
+                            const ImagesWidget(
                               heightValue: 0.53,
                               imagePath:
                                   "assets/otherworks/otherworks_kindle.jpeg",

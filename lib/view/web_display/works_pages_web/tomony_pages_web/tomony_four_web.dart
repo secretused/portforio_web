@@ -69,7 +69,7 @@ class TomonyFour extends StatelessWidget {
                                       width: 6.0,
                                     ),
                                   ),
-                                  child: const ImageWidget(
+                                  child: const ImagesWidget(
                                     heightValue: 0.3,
                                     imagePath:
                                         "assets/tomony/tomony_interview1.png",
@@ -129,7 +129,7 @@ class TomonyFour extends StatelessWidget {
                                     alignment:
                                         AlignmentDirectional.bottomCenter,
                                     children: [
-                                      const ImageWidget(
+                                      const ImagesWidget(
                                         heightValue: 0.3,
                                         imagePath:
                                             "assets/tomony/tomony_interview2.png",
@@ -193,7 +193,7 @@ class TomonyFour extends StatelessWidget {
                                       width: 6.0,
                                     ),
                                   ),
-                                  child: const ImageWidget(
+                                  child: const ImagesWidget(
                                     heightValue: 0.3,
                                     imagePath:
                                         "assets/tomony/tomony_interview3.png",

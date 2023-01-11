@@ -47,7 +47,7 @@ class TomonyNine extends StatelessWidget {
                           fontFamily: "Noto Sans JP",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        const ImageWidget(
+                        const ImagesWidget(
                           heightValue: 0.13,
                           imagePath: "assets/tomony/tomony_beginner.png",
                         ),
@@ -70,7 +70,7 @@ class TomonyNine extends StatelessWidget {
                           fontFamily: "Noto Sans JP",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
-                        const ImageWidget(
+                        const ImagesWidget(
                           heightValue: 0.2,
                           imagePath: "assets/tomony/tomony_score.png",
                         ),
@@ -112,7 +112,7 @@ class TomonyNine extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        const ImageWidget(
+                        const ImagesWidget(
                           heightValue: 0.3,
                           imagePath: "assets/tomony/tomony_chip.png",
                         ),
@@ -171,7 +171,7 @@ class TomonyNine extends StatelessWidget {
                           ],
                         ),
                         WidthSizedBox(targetSize: deviceWidth, value: 0.03),
-                        const ImageWidget(
+                        const ImagesWidget(
                           heightValue: 0.3,
                           imagePath: "assets/tomony/tomony_master.png",
                         ),

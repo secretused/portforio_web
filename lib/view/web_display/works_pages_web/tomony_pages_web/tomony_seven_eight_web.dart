@@ -35,15 +35,15 @@ class TomonySeven extends StatelessWidget {
                 padding: EdgeInsets.all(deviceHeight * 0.03),
                 child: Row(
                   children: [
-                    const ImageWidget(
+                    const ImagesWidget(
                       heightValue: 0.7,
                       imagePath: "assets/tomony/tomony_concept.png",
                     ),
-                    const ImageWidget(
+                    const ImagesWidget(
                       heightValue: 0.7,
                       imagePath: "assets/tomony/tomony_question1.png",
                     ),
-                    const ImageWidget(
+                    const ImagesWidget(
                       heightValue: 0.7,
                       imagePath: "assets/tomony/tomony_question2.png",
                     ),
@@ -191,7 +191,7 @@ class TomonyEight extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                const ImageWidget(
+                                const ImagesWidget(
                                   heightValue: 0.6,
                                   imagePath:
                                       "assets/tomony/tomony_search_default.png",
@@ -210,7 +210,7 @@ class TomonyEight extends StatelessWidget {
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
-                                const ImageWidget(
+                                const ImagesWidget(
                                   heightValue: 0.6,
                                   imagePath:
                                       "assets/tomony/tomony_search_result.png",
@@ -267,7 +267,7 @@ class TomonyEight extends StatelessWidget {
                           children: [
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            const ImageWidget(
+                            const ImagesWidget(
                               heightValue: 0.6,
                               imagePath: "assets/tomony/tomony_topics.png",
                             ),
