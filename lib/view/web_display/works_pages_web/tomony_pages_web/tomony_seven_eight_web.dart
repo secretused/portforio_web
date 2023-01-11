@@ -37,18 +37,15 @@ class TomonySeven extends StatelessWidget {
                   children: [
                     const ImageWidget(
                       heightValue: 0.7,
-                      // imagePath: "tomony/tomony_concept.png",
-                      imagePath: "https://i.imgur.com/P1zdOQu.png",
+                      imagePath: "assets/tomony/tomony_concept.png",
                     ),
                     const ImageWidget(
                       heightValue: 0.7,
-                      // imagePath: "tomony/tomony_question1.png",
-                      imagePath: "https://i.imgur.com/wJvCVFK.png",
+                      imagePath: "assets/tomony/tomony_question1.png",
                     ),
                     const ImageWidget(
                       heightValue: 0.7,
-                      // imagePath: "tomony/tomony_question2.png",
-                      imagePath: "https://i.imgur.com/nRMcoad.png",
+                      imagePath: "assets/tomony/tomony_question2.png",
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.04),
                     Column(
@@ -196,8 +193,8 @@ class TomonyEight extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.02),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  // imagePath: "tomony/tomony_search_default.png",
-                                  imagePath: "https://i.imgur.com/FszIG7K.png",
+                                  imagePath:
+                                      "assets/tomony/tomony_search_default.png",
                                 ),
                               ],
                             ),
@@ -215,8 +212,8 @@ class TomonyEight extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.02),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  // imagePath: "tomony/tomony_search_result.png",
-                                  imagePath: "https://i.imgur.com/tkq9mS8.png",
+                                  imagePath:
+                                      "assets/tomony/tomony_search_result.png",
                                 ),
                               ],
                             ),
@@ -272,8 +269,7 @@ class TomonyEight extends StatelessWidget {
                                 targetSize: deviceHeight, value: 0.02),
                             const ImageWidget(
                               heightValue: 0.6,
-                              // imagePath: "tomony/tomony_topics.png",
-                              imagePath: "https://i.imgur.com/QQNx0VH.png",
+                              imagePath: "assets/tomony/tomony_topics.png",
                             ),
                           ],
                         ),

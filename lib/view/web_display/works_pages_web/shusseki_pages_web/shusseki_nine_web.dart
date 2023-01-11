@@ -129,8 +129,7 @@ class ShussekiNine extends StatelessWidget {
                           children: [
                             const ImageWidget(
                               heightValue: 0.15,
-                              // imagePath: "shusseki/shusseki_icon.png",
-                              imagePath: "https://i.imgur.com/5jaDwbV.png",
+                              imagePath: "assets/shusseki/shusseki_icon.png",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),

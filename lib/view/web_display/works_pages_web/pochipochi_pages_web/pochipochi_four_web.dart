@@ -83,8 +83,8 @@ class PochipochiFour extends StatelessWidget {
                                   child: const ImageWidget(
                                     heightValue: 0.3,
                                     imagePath:
-                                        // "pochipochi/pochipochi_interview1.png",
-                                        "https://i.imgur.com/cnghG8X.png",
+                                        "assets/pochipochi/pochipochi_interview1.png",
+                                    // "https:com/cnghG8X.png",
                                   ),
                                 ),
                                 HeightSizedBox(
@@ -159,8 +159,8 @@ class PochipochiFour extends StatelessWidget {
                                       const ImageWidget(
                                         heightValue: 0.3,
                                         imagePath:
-                                            // "pochipochi/pochipochi_interview2.png",
-                                            "https://i.imgur.com/sYOygsl.png",
+                                            "assets/pochipochi/pochipochi_interview2.png",
+                                        // "https:com/sYOygsl.png",
                                       ),
                                       Padding(
                                         padding: EdgeInsets.only(
@@ -233,8 +233,8 @@ class PochipochiFour extends StatelessWidget {
                                   child: const ImageWidget(
                                     heightValue: 0.3,
                                     imagePath:
-                                        // "pochipochi/pochipochi_interview3.png",
-                                        "https://i.imgur.com/TtJ5jeQ.png",
+                                        "assets/pochipochi/pochipochi_interview3.png",
+                                    // "https:com/TtJ5jeQ.png",
                                   ),
                                 ),
                                 HeightSizedBox(

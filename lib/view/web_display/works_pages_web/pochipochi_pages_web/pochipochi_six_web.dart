@@ -173,8 +173,8 @@ class PochipochiSix extends StatelessWidget {
                                       child: const ImageWidget(
                                         heightValue: 0.2,
                                         imagePath:
-                                            // "pochipochi/pochipochi_persona1.png",
-                                            "https://i.imgur.com/D8FYpPj.png",
+                                            "assets/pochipochi/pochipochi_persona1.png",
+                                        // "https:com/D8FYpPj.png",
                                       ),
                                     ),
                                     WidthSizedBox(
@@ -282,8 +282,8 @@ class PochipochiSix extends StatelessWidget {
                                       child: const ImageWidget(
                                         heightValue: 0.2,
                                         imagePath:
-                                            // "pochipochi/pochipochi_persona2.png",
-                                            "https://i.imgur.com/HBhSURO.png",
+                                            "assets/pochipochi/pochipochi_persona2.png",
+                                        // "https:com/HBhSURO.png",
                                       ),
                                     ),
                                     WidthSizedBox(

@@ -40,8 +40,7 @@ class AboutTwoMobile extends ConsumerWidget {
                       child: ImageWidget(
                         heightValue:
                             _mobileDirectionProviderStatus ? 0.4 : 0.15,
-                        // imagePath: "about/profile_image.jpeg",
-                        imagePath: "https://i.imgur.com/8R7AbIr.jpg",
+                        imagePath: "assets/about/profile_image.jpeg",
                       ),
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.03),

@@ -76,8 +76,8 @@ class PochipochiTen extends StatelessWidget {
                                 const ImageWidget(
                                   heightValue: 0.6,
                                   imagePath:
-                                      // "pochipochi/pochipochi_setting.png",
-                                      "https://i.imgur.com/KKryqRL.png",
+                                      "assets/pochipochi/pochipochi_setting.png",
+                                  // "https:com/KKryqRL.png",
                                 ),
                               ],
                             ),
@@ -95,8 +95,8 @@ class PochipochiTen extends StatelessWidget {
                                     targetSize: deviceHeight, value: 0.02),
                                 const ImageWidget(
                                   heightValue: 0.6,
-                                  // imagePath: "pochipochi/pochipochi_timer.png",
-                                  imagePath: "https://i.imgur.com/omjz6QS.png",
+                                  imagePath:
+                                      "assets/pochipochi/pochipochi_timer.png",
                                 ),
                               ],
                             ),
@@ -156,8 +156,8 @@ class PochipochiTen extends StatelessWidget {
                                 targetSize: deviceHeight, value: 0.02),
                             const ImageWidget(
                               heightValue: 0.6,
-                              // imagePath: "pochipochi/pochipochi_notion.png",
-                              imagePath: "https://i.imgur.com/ILPVBKd.png",
+                              imagePath:
+                                  "assets/pochipochi/pochipochi_notion.png",
                             ),
                           ],
                         ),

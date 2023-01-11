@@ -49,8 +49,7 @@ class TomonyNine extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         const ImageWidget(
                           heightValue: 0.13,
-                          // imagePath: "tomony/tomony_beginner.png",
-                          imagePath: "https://i.imgur.com/IgTQaEX.png",
+                          imagePath: "assets/tomony/tomony_beginner.png",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         HighPaddingText(
@@ -73,8 +72,7 @@ class TomonyNine extends StatelessWidget {
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         const ImageWidget(
                           heightValue: 0.2,
-                          // imagePath: "tomony/tomony_score.png",
-                          imagePath: "https://i.imgur.com/WQR5ct3.png",
+                          imagePath: "assets/tomony/tomony_score.png",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.01),
                         HighPaddingText(
@@ -116,8 +114,7 @@ class TomonyNine extends StatelessWidget {
                       children: [
                         const ImageWidget(
                           heightValue: 0.3,
-                          // imagePath: "tomony/tomony_chip.png",
-                          imagePath: "https://i.imgur.com/SU9DPwE.png",
+                          imagePath: "assets/tomony/tomony_chip.png",
                         ),
                         WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                         Column(
@@ -176,8 +173,7 @@ class TomonyNine extends StatelessWidget {
                         WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                         const ImageWidget(
                           heightValue: 0.3,
-                          // imagePath: "tomony/tomony_master.png",
-                          imagePath: "https://i.imgur.com/kirjgm5.png",
+                          imagePath: "assets/tomony/tomony_master.png",
                         ),
                       ],
                     )

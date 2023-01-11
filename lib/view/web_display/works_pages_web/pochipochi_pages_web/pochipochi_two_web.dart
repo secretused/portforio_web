@@ -47,8 +47,7 @@ class PochipochiTwo extends StatelessWidget {
           WidthSizedBox(targetSize: deviceWidth, value: 0.03),
           const ImageWidget(
             heightValue: 0.9,
-            // imagePath: "pochipochi/pochipochi_concept.png",
-            imagePath: "https://i.imgur.com/oeL93ry.png",
+            imagePath: "assets/pochipochi/pochipochi_concept.png",
           ),
         ],
       ),

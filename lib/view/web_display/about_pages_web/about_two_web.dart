@@ -49,8 +49,7 @@ class AboutTwo extends StatelessWidget {
                               borderRadius: BorderRadius.circular(180),
                               child: const ImageWidget(
                                 heightValue: 0.2,
-                                // imagePath: "about/profile_image.jpeg",
-                                imagePath: "https://i.imgur.com/8R7AbIr.jpg",
+                                imagePath: "assets/about/profile_image.jpeg",
                               ),
                             ),
                             WidthSizedBox(targetSize: deviceWidth, value: 0.03),

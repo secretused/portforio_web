@@ -59,7 +59,7 @@ class WorksPage extends ConsumerWidget {
     const WorksTopic(
       indexNumber: '01',
       topicColor: Color(0xFF87C495),
-      imagePath: 'https://i.imgur.com/R58XrDL.png',
+      imagePath: 'https:com/R58XrDL.png',
       catchPhrase: '男性向けの生理のお悩み質問相談',
       title: 'TOMONY',
       fontName: "Arial Black",
@@ -70,7 +70,7 @@ class WorksPage extends ConsumerWidget {
     const WorksTopic(
       indexNumber: '02',
       topicColor: Color(0xFF379BA5),
-      imagePath: 'https://i.imgur.com/2Mn21yC.png',
+      imagePath: 'https:com/2Mn21yC.png',
       catchPhrase: 'QRコードで簡単入館',
       title: 'シュッ席',
       fontName: "源ノ角ゴシック VF",
@@ -81,7 +81,7 @@ class WorksPage extends ConsumerWidget {
     const WorksTopic(
       indexNumber: '03',
       topicColor: Color(0xFFEBAA14),
-      imagePath: 'https://i.imgur.com/jNFOx30.png',
+      imagePath: 'https:com/jNFOx30.png',
       catchPhrase: '長く使える幼児向け音声再生アプリ',
       title: 'ぽちぽち',
       fontName: "しあさって",
@@ -92,7 +92,7 @@ class WorksPage extends ConsumerWidget {
     const WorksTopic(
       indexNumber: '04',
       topicColor: Color(0xFFCBCBCB),
-      imagePath: 'https://i.imgur.com/g0RSo7d.png',
+      imagePath: 'https:com/g0RSo7d.png',
       catchPhrase: '学校でのその他の活動',
       title: 'OtherWorks',
       fontName: "源ノ角ゴシック VF",
