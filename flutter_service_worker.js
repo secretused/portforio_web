@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "main.dart.js": "a74124f99b4865077dcd02fba2cac803",
+  "main.dart.js": "f8d792b850fe52c576245ee3873d7cdf",
 "canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
 "canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
 "canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
@@ -14,7 +14,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
-"assets/AssetManifest.json": "8ac9b3f6caaafcd54d7c282b77cd88d0",
+"assets/AssetManifest.json": "d923e22d00d0ed0d7822ab8df50a6058",
 "assets/shaders/ink_sparkle.frag": "649a9e0c077e69b83d585e4c89d16f04",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
@@ -61,8 +61,10 @@ const RESOURCES = {
 "assets/assets/about/pochipochi_display.png": "f3e55294e0d75a231528e3e34057cdbe",
 "assets/assets/about/otherworks_display.png": "bb0988e4664a71d7bff3e54ee24852c2",
 "assets/assets/about/shusseki_display.png": "b77a78f4f01c25d2bc8e0bdd9fec09b0",
+"assets/assets/about/mobile_mockup2.png": "8b77cf488cd7e67a9130861a95c298f6",
 "assets/assets/about/profile_image.jpeg": "0ad5a4ffc137930ef3bc6cb2baf39def",
 "assets/assets/about/tomony_display.png": "fbd47b81e4c67d90ea463748eb40768f",
+"assets/assets/about/mobile_mockup1.png": "a6a838d9f0c6cf31c99a8a82d53bc379",
 "assets/assets/about/display_mockup.png": "1a61874cb0f3ab6bb3b99db2d580ecd1",
 "assets/assets/otherworks/otherworks_nft1.jpeg": "4149ac448abf71c40a06f952b09d8b12",
 "assets/assets/otherworks/otherworks_contest2.jpeg": "1c246a70ba1915be8cd0438e01ceb5b4",
@@ -101,8 +103,8 @@ const RESOURCES = {
 "assets/assets/tomony/tomony_question2.png": "d82da8b784041ba7d777ee9ecc224943",
 "assets/assets/NOTICES": "f0172b97d20487878545f5c6bdc60f11",
 "assets/NOTICES": "8e021c5dcc32d38b4e381c64251af7a6",
-"index.html": "4988c2bd91ef1a561dbaa08b9863083e",
-"/": "4988c2bd91ef1a561dbaa08b9863083e",
+"index.html": "d12f01b767aa6fb6f3c4006f891a53fd",
+"/": "d12f01b767aa6fb6f3c4006f891a53fd",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "version.json": "cc132570d6d238130e38adc59e1f998d"
 };
