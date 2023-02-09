@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:portfolio_web/view/web_display/home_page_web/footer.dart';
 
+import '../../../provider/provider.dart';
 import '../works_pages_web/shusseki_pages_web/shusseki_one_web.dart';
 import '../works_pages_web/shusseki_pages_web/shusseki_two_web.dart';
 import '../works_pages_web/shusseki_pages_web/shusseki_three_web.dart';
@@ -19,6 +21,12 @@ class Shusseki extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceHeight = MediaQuery.of(context).size.height;
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      ref
+          .read(footerColorProvider.notifier)
+          .update((state) => const Color(0xFF379BA5));
+    });
 
     return Scaffold(
       appBar: PreferredSize(
@@ -51,6 +59,7 @@ class Shusseki extends ConsumerWidget {
             ShussekiEight(),
             ShussekiNine(),
             ShussekiTen(),
+            Footer(),
           ],
         ),
       ),

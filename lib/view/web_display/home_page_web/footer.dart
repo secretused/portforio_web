@@ -4,8 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../provider/provider.dart';
 import '../../../utils/extract_widget.dart';
 
-class AboutSix extends ConsumerWidget {
-  const AboutSix({
+class Footer extends ConsumerWidget {
+  const Footer({
     Key? key,
   }) : super(key: key);
 
@@ -14,9 +14,11 @@ class AboutSix extends ConsumerWidget {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
 
+    final _footerColorProviderStatus = ref.watch(footerColorProvider);
+
     return Container(
       height: deviceHeight * 0.3,
-      color: const Color.fromRGBO(3, 144, 126, 1),
+      color: _footerColorProviderStatus,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

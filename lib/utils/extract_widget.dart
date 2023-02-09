@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -244,6 +243,7 @@ class IconButtonWidget extends ConsumerWidget {
 
     final String _imagePath = ref.watch(imagePathProvider);
     final bool _iconButtonProviderStatus = ref.watch(iconButtonProvider);
+    final _footerColorProviderStatus = ref.watch(footerColorProvider);
 
     return MouseRegion(
       onEnter: (_) => _iconEnter(ref, path),
@@ -255,7 +255,7 @@ class IconButtonWidget extends ConsumerWidget {
           decoration: BoxDecoration(
             color: (link == twitteUrl || link == githubUrl || link == qiitaUrl)
                 ? (_imagePath == path && _iconButtonProviderStatus)
-                    ? const Color.fromRGBO(3, 144, 126, 1)
+                    ? _footerColorProviderStatus
                     : const Color.fromRGBO(237, 237, 237, 1)
                 : Colors.transparent,
             borderRadius: BorderRadius.circular(180),
