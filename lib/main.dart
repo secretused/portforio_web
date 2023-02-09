@@ -120,6 +120,13 @@ class _MyHomePage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return LayoutBuilder(
       builder: (context, constraints) {
+        // Home遷移時にFooterのカラーを戻す
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          ref
+              .read(footerColorProvider.notifier)
+              .update((state) => const Color.fromRGBO(3, 144, 126, 1));
+        });
+
         if (constraints.maxWidth > 1199) {
           // PC
           return Scaffold(
@@ -128,12 +135,6 @@ class _MyHomePage extends ConsumerWidget {
               elevation: 0.0,
             ),
             extendBodyBehindAppBar: true,
-            // PreferredSize(
-            //   preferredSize: Size.fromHeight(100),
-            //   child: CustomAppbarWeb(
-            //     backgroundColor: Color.fromRGBO(3, 144, 126, 1),
-            //   ),
-            // ),
             body: const AboutPageWeb(),
           );
         } else if (constraints.maxWidth <= 1200 &&

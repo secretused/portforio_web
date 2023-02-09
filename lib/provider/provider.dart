@@ -1,4 +1,10 @@
+import 'dart:ui';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+//Footerの色
+final footerColorProvider =
+    StateProvider((ref) => const Color.fromRGBO(3, 144, 126, 1));
 
 // WorksPageアニメーション
 final worksTopicProvider = StateProvider((ref) => false);

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:portfolio_web/view/web_display/home_page_web/footer.dart';
 
+import '../../../provider/provider.dart';
 import '../works_pages_web/otherworks_pages_web/otherworks_one_web.dart';
 import '../works_pages_web/otherworks_pages_web/otherworks_three_web.dart';
 import '../works_pages_web/otherworks_pages_web/otherworks_two_web.dart';
@@ -16,6 +18,12 @@ class OtherWorks extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceHeight = MediaQuery.of(context).size.height;
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      ref
+          .read(footerColorProvider.notifier)
+          .update((state) => const Color(0xFFCBCBCB));
+    });
 
     return Scaffold(
       appBar: PreferredSize(
@@ -45,6 +53,7 @@ class OtherWorks extends ConsumerWidget {
             OtherWorksFive(),
             OtherWorksSix(),
             OtherWorksSeven(),
+            Footer(),
           ],
         ),
       ),

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../provider/provider.dart';
+import '../home_page_web/footer.dart';
 import '../works_pages_web/pochipochi_pages_web/pochipochi_one_web.dart';
 import '../works_pages_web/pochipochi_pages_web/pochipochi_two_web.dart';
 import '../works_pages_web/pochipochi_pages_web/pochipochi_three_web.dart';
@@ -21,6 +23,12 @@ class Pochipochi extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceHeight = MediaQuery.of(context).size.height;
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      ref
+          .read(footerColorProvider.notifier)
+          .update((state) => const Color(0xFFEBAA14));
+    });
 
     return Scaffold(
       appBar: PreferredSize(
@@ -55,6 +63,7 @@ class Pochipochi extends ConsumerWidget {
             PochipochiTen(),
             PochipochiEleven(),
             PochipochiTwelve(),
+            Footer(),
           ],
         ),
       ),
