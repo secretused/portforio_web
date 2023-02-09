@@ -29,7 +29,7 @@ class PochipochiFive extends StatelessWidget {
                 color: const Color(0xFFEBAA14),
                 fontSize: deviceHeight * 0.028,
                 fontWeight: FontWeight.bold,
-                fontFamily: "源ノ角ゴシック VF",
+                fontFamily: "Noto Sans JP",
               ),
               Padding(
                 padding: EdgeInsets.all(deviceHeight * 0.03),
@@ -68,7 +68,7 @@ class PochipochiFive extends StatelessWidget {
                                         color: Colors.black,
                                         fontSize: deviceHeight * 0.028,
                                         fontWeight: FontWeight.bold,
-                                        fontFamily: "源ノ角ゴシック VF",
+                                        fontFamily: "Noto Sans JP",
                                       ),
                                       Padding(
                                         padding: EdgeInsets.only(
@@ -148,7 +148,7 @@ class PochipochiFive extends StatelessWidget {
                                         color: Colors.black,
                                         fontSize: deviceHeight * 0.028,
                                         fontWeight: FontWeight.bold,
-                                        fontFamily: "源ノ角ゴシック VF",
+                                        fontFamily: "Noto Sans JP",
                                       ),
                                       Padding(
                                         padding: EdgeInsets.only(
@@ -245,7 +245,7 @@ class PochipochiFive extends StatelessWidget {
                                           color: Colors.black,
                                           fontSize: deviceHeight * 0.028,
                                           fontWeight: FontWeight.bold,
-                                          fontFamily: "源ノ角ゴシック VF",
+                                          fontFamily: "Noto Sans JP",
                                           textAlign: TextAlign.center,
                                         ),
                                         HeightSizedBox(
@@ -439,7 +439,7 @@ class PochipochiFive extends StatelessWidget {
                                       color: Colors.black,
                                       fontSize: deviceHeight * 0.028,
                                       fontWeight: FontWeight.bold,
-                                      fontFamily: "源ノ角ゴシック VF",
+                                      fontFamily: "Noto Sans JP",
                                     ),
                                     Padding(
                                       padding: EdgeInsets.only(

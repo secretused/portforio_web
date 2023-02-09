@@ -45,7 +45,7 @@ class WorksTopicLeftMobile extends ConsumerWidget {
           color: const Color.fromRGBO(151, 151, 151, 1),
           fontSize: deviceWidth * 0.04,
           fontWeight: FontWeight.bold,
-          fontFamily: "源ノ角ゴシック VF",
+          fontFamily: "Noto Sans JP",
         ),
         WidthSizedBox(targetSize: deviceWidth, value: 0.015),
         GestureDetector(
@@ -98,7 +98,7 @@ class WorksTopicLeftMobile extends ConsumerWidget {
               color: const Color.fromRGBO(151, 151, 151, 1),
               fontSize: deviceWidth * 0.02,
               fontWeight: FontWeight.bold,
-              fontFamily: "源ノ角ゴシック VF",
+              fontFamily: "Noto Sans JP",
             ),
           ],
         ),
@@ -179,7 +179,7 @@ class WorksTopicRightMobile extends ConsumerWidget {
               color: const Color.fromRGBO(151, 151, 151, 1),
               fontSize: deviceWidth * 0.02,
               fontWeight: FontWeight.bold,
-              fontFamily: "源ノ角ゴシック VF",
+              fontFamily: "Noto Sans JP",
             )
           ],
         ),
@@ -209,7 +209,7 @@ class WorksTopicRightMobile extends ConsumerWidget {
           color: const Color.fromRGBO(151, 151, 151, 1),
           fontSize: deviceWidth * 0.04,
           fontWeight: FontWeight.bold,
-          fontFamily: "源ノ角ゴシック VF",
+          fontFamily: "Noto Sans JP",
         ),
       ],
     );

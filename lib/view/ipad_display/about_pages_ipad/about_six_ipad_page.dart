@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../utils/ipad_widget/about_widget_ipad.dart';
-import '../../../utils/project_widget/about_widget.dart';
+
 import '../../../utils/extract_widget.dart';
 
 class AboutSixIPad extends ConsumerWidget {
@@ -17,7 +17,6 @@ class AboutSixIPad extends ConsumerWidget {
 
     return Container(
       color: Colors.white,
-      height: deviceHeight - 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -38,7 +37,7 @@ class AboutSixIPad extends ConsumerWidget {
                   const WorksTopicLeftMobile(
                     index: '01',
                     topicColor: Color(0xFF87C495),
-                    imagePath: 'https:com/R58XrDL.png',
+                    imagePath: 'assets/about/tomony_display.png',
                     appName: 'Tomony',
                     fontName: "Arial Black",
                     appDisc: '男性向けの生理のお悩み質問相談',
@@ -48,9 +47,9 @@ class AboutSixIPad extends ConsumerWidget {
                   const WorksTopicRightMobile(
                     index: '02',
                     topicColor: Color(0xFF379BA5),
-                    imagePath: 'https:com/2Mn21yC.png',
+                    imagePath: 'assets/about/shusseki_display.png',
                     appName: 'シュッ席',
-                    fontName: "源ノ角ゴシック VF",
+                    fontName: "Noto Sans JP",
                     appDisc: 'QRコードで簡単入館',
                     path: '/shusseki',
                   ),
@@ -58,7 +57,7 @@ class AboutSixIPad extends ConsumerWidget {
                   const WorksTopicLeftMobile(
                     index: '03',
                     topicColor: Color(0xFFEBAA14),
-                    imagePath: 'https:com/jNFOx30.png',
+                    imagePath: 'assets/about/pochipochi_display.png',
                     appName: 'ぽちぽち',
                     fontName: "しあさって",
                     appDisc: '長く使える幼児向け音声再生アプリ',
@@ -68,9 +67,9 @@ class AboutSixIPad extends ConsumerWidget {
                   const WorksTopicRightMobile(
                     index: '04',
                     topicColor: Color(0xFFCBCBCB),
-                    imagePath: 'https:com/POd7NXF.png',
+                    imagePath: 'assets/about/otherworks_display.png',
                     appName: 'OtherWorks',
-                    fontName: "源ノ角ゴシック VF",
+                    fontName: "Noto Sans JP",
                     appDisc: '学校でのその他の活動',
                     path: '/otherWorks',
                   ),

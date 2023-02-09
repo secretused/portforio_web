@@ -32,14 +32,14 @@ class OtherWorksOne extends StatelessWidget {
               BodyText(
                 text: "学校でのその他の活動",
                 color: Colors.white,
-                fontFamily: '源ノ角ゴシック VF',
+                fontFamily: 'Noto Sans JP',
                 fontSize: deviceHeight * 0.03,
                 fontWeight: FontWeight.normal,
               ),
               BodyText(
                 text: "OtherWorks",
                 color: Colors.white,
-                fontFamily: '源ノ角ゴシック VF',
+                fontFamily: 'Noto Sans JP',
                 fontSize: deviceHeight * 0.1,
                 fontWeight: FontWeight.bold,
               ),

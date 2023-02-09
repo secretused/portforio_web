@@ -19,7 +19,7 @@ class AboutFour extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               BodyText(
@@ -33,14 +33,15 @@ class AboutFour extends StatelessWidget {
                 text: "私が価値創出できる3つの強み",
                 color: Colors.black,
                 fontSize: deviceHeight * 0.03,
-                fontWeight: FontWeight.normal,
-                fontFamily: "Nasu",
+                fontWeight: FontWeight.bold,
+                fontFamily: "Noto Sans JP",
               ),
               HeightSizedBox(targetSize: deviceHeight, value: 0.02),
               SizedBox(
-                width: deviceWidth * 0.52,
+                width: deviceWidth * 0.8,
+                // width: deviceWidth * 0.52,
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     HeightSizedBox(targetSize: deviceHeight, value: 0.02),
                     BodyText(
@@ -57,7 +58,7 @@ class AboutFour extends StatelessWidget {
                       color: const Color.fromRGBO(0, 0, 0, 0.8),
                       fontSize: deviceHeight * 0.023,
                       fontWeight: FontWeight.normal,
-                      fontFamily: "源ノ角ゴシック",
+                      fontFamily: "Noto Sans JP",
                       textAlign: TextAlign.start,
                       paddingValue: 1.5,
                     ),
@@ -76,7 +77,7 @@ class AboutFour extends StatelessWidget {
                       color: const Color.fromRGBO(0, 0, 0, 0.8),
                       fontSize: deviceHeight * 0.023,
                       fontWeight: FontWeight.normal,
-                      fontFamily: "源ノ角ゴシック",
+                      fontFamily: "Noto Sans JP",
                       textAlign: TextAlign.start,
                       paddingValue: 1.5,
                     ),
@@ -95,7 +96,7 @@ class AboutFour extends StatelessWidget {
                       color: const Color.fromRGBO(0, 0, 0, 0.8),
                       fontSize: deviceHeight * 0.023,
                       fontWeight: FontWeight.normal,
-                      fontFamily: "源ノ角ゴシック",
+                      fontFamily: "Noto Sans JP",
                       textAlign: TextAlign.start,
                       paddingValue: 1.5,
                     ),

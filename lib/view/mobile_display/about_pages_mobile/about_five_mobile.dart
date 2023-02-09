@@ -38,7 +38,7 @@ class AboutFiveMobile extends ConsumerWidget {
                 color: Colors.black,
                 fontSize: deviceWidth * 0.03,
                 fontWeight: FontWeight.normal,
-                fontFamily: "Nasu",
+                fontFamily: "Noto Sans JP",
               ),
               HeightSizedBox(
                   targetSize: deviceHeight,
@@ -61,7 +61,7 @@ class AboutFiveMobile extends ConsumerWidget {
                     ? deviceHeight * 0.045
                     : deviceWidth * 0.025,
                 fontWeight: FontWeight.normal,
-                fontFamily: "源ノ角ゴシック",
+                fontFamily: "Noto Sans JP",
                 textAlign: TextAlign.center,
                 paddingValue: 1.5,
               ),
@@ -86,7 +86,7 @@ class AboutFiveMobile extends ConsumerWidget {
                     ? deviceHeight * 0.045
                     : deviceWidth * 0.025,
                 fontWeight: FontWeight.normal,
-                fontFamily: "源ノ角ゴシック",
+                fontFamily: "Noto Sans JP",
                 textAlign: TextAlign.center,
                 paddingValue: 1.5,
               ),
@@ -111,7 +111,7 @@ class AboutFiveMobile extends ConsumerWidget {
                     ? deviceHeight * 0.045
                     : deviceWidth * 0.025,
                 fontWeight: FontWeight.normal,
-                fontFamily: "源ノ角ゴシック",
+                fontFamily: "Noto Sans JP",
                 textAlign: TextAlign.center,
                 paddingValue: 1.5,
               ),

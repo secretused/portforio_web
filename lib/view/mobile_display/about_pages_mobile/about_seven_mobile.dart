@@ -18,7 +18,8 @@ class AboutSevenMobile extends ConsumerWidget {
         ref.watch(mobileDirectionProvider);
 
     return Container(
-      color: Colors.white,
+      height: deviceHeight * 0.3,
+      color: const Color.fromRGBO(3, 144, 126, 1),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -26,15 +27,23 @@ class AboutSevenMobile extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              BodyText(
-                text: "Thank you",
-                color: Colors.black,
-                fontSize: deviceWidth * 0.15,
-                fontWeight: FontWeight.bold,
-                fontFamily: "Bebas Neue",
+              Text(
+                "Yuta Toba Design Portfolio",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: _mobileDirectionProviderStatus
+                      ? deviceHeight * 0.05
+                      : deviceHeight * 0.05,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Bebas Neue",
+                  letterSpacing: 0.05,
+                  height: 1.0,
+                ),
               ),
+              HeightSizedBox(targetSize: deviceWidth, value: 0.02),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   IconButtonWidget(
                     link: twitteUrl,
@@ -58,13 +67,15 @@ class AboutSevenMobile extends ConsumerWidget {
                   ),
                 ],
               ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.01),
+              HeightSizedBox(targetSize: deviceWidth, value: 0.01),
               BodyText(
                 text: "t.yuta.v9410@icloud.com",
                 color: Colors.black,
-                fontSize: deviceWidth * 0.03,
-                fontWeight: FontWeight.normal,
-                fontFamily: "Nasu",
+                fontSize: _mobileDirectionProviderStatus
+                    ? deviceHeight * 0.02
+                    : deviceHeight * 0.02,
+                fontWeight: FontWeight.bold,
+                fontFamily: "Noto Sans JP",
               )
             ],
           )

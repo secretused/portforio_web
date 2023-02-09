@@ -36,7 +36,7 @@ class TomonyEleven extends ConsumerWidget {
                 color: const Color(0xFF87C495),
                 fontSize: deviceHeight * 0.035,
                 fontWeight: FontWeight.bold,
-                fontFamily: "源ノ角ゴシック VF",
+                fontFamily: "Noto Sans JP",
               ),
               HeightSizedBox(targetSize: deviceHeight, value: 0.03),
               Padding(
@@ -57,7 +57,7 @@ class TomonyEleven extends ConsumerWidget {
                               color: Colors.black,
                               fontSize: deviceHeight * 0.03,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
@@ -106,7 +106,7 @@ class TomonyEleven extends ConsumerWidget {
                               color: Colors.black,
                               fontSize: deviceHeight * 0.03,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),

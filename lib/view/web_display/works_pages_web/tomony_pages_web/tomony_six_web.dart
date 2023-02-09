@@ -30,7 +30,7 @@ class TomonySix extends StatelessWidget {
                 color: const Color(0xFF87C495),
                 fontSize: deviceHeight * 0.028,
                 fontWeight: FontWeight.bold,
-                fontFamily: "源ノ角ゴシック VF",
+                fontFamily: "Noto Sans JP",
               ),
               Padding(
                 padding: EdgeInsets.all(deviceHeight * 0.03),
@@ -59,7 +59,7 @@ class TomonySix extends StatelessWidget {
                                   color: Colors.black,
                                   fontSize: deviceHeight * 0.025,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: "源ノ角ゴシック VF",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.015),
@@ -105,7 +105,7 @@ class TomonySix extends StatelessWidget {
                                   color: Colors.black,
                                   fontSize: deviceHeight * 0.018,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: "源ノ角ゴシック VF",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                               ),
                             ),
@@ -142,7 +142,7 @@ class TomonySix extends StatelessWidget {
                                   color: Colors.black,
                                   fontSize: deviceHeight * 0.018,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: "源ノ角ゴシック VF",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                               ),
                             ),
@@ -264,7 +264,7 @@ class TomonySix extends StatelessWidget {
                           color: Colors.black,
                           fontSize: deviceHeight * 0.028,
                           fontWeight: FontWeight.bold,
-                          fontFamily: "源ノ角ゴシック VF",
+                          fontFamily: "Noto Sans JP",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.02),
                         BodyText(
@@ -272,7 +272,7 @@ class TomonySix extends StatelessWidget {
                           color: const Color(0xFF87C495),
                           fontSize: deviceHeight * 0.023,
                           fontWeight: FontWeight.bold,
-                          fontFamily: "源ノ角ゴシック VF",
+                          fontFamily: "Noto Sans JP",
                         ),
                         HeightSizedBox(targetSize: deviceHeight, value: 0.025),
                         Row(

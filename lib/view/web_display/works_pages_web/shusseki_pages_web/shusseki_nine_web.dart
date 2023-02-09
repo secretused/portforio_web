@@ -34,7 +34,7 @@ class ShussekiNine extends StatelessWidget {
                     color: const Color(0xFF379BA5),
                     fontSize: deviceHeight * 0.035,
                     fontWeight: FontWeight.bold,
-                    fontFamily: "源ノ角ゴシック VF",
+                    fontFamily: "Noto Sans JP",
                   ),
                   Padding(
                     padding: EdgeInsets.all(deviceHeight * 0.03),
@@ -74,7 +74,7 @@ class ShussekiNine extends StatelessWidget {
                     color: const Color(0xFF379BA5),
                     fontSize: deviceHeight * 0.035,
                     fontWeight: FontWeight.bold,
-                    fontFamily: "源ノ角ゴシック VF",
+                    fontFamily: "Noto Sans JP",
                   ),
                   Padding(
                     padding: EdgeInsets.only(left: deviceHeight * 0.03),
@@ -89,7 +89,7 @@ class ShussekiNine extends StatelessWidget {
                               color: Colors.black,
                               fontSize: deviceHeight * 0.028,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -104,7 +104,7 @@ class ShussekiNine extends StatelessWidget {
                                     color: Colors.black,
                                     fontSize: deviceHeight * 0.07,
                                     fontWeight: FontWeight.bold,
-                                    fontFamily: "源ノ角ゴシック VF",
+                                    fontFamily: "Noto Sans JP",
                                   ),
                                   HeightSizedBox(
                                       targetSize: deviceHeight, value: 0.04),
@@ -156,7 +156,7 @@ class ShussekiNine extends StatelessWidget {
                               color: Colors.black,
                               fontSize: deviceHeight * 0.028,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -184,7 +184,7 @@ class ShussekiNine extends StatelessWidget {
                               color: Colors.black,
                               fontSize: deviceHeight * 0.028,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -227,17 +227,17 @@ class ShussekiNine extends StatelessWidget {
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.04,
                                         fontWeight: FontWeight.bold,
-                                        fontFamily: "源ノ角ゴシック VF",
+                                        fontFamily: "Noto Sans JP",
                                       ),
                                       WidthSizedBox(
                                           targetSize: deviceWidth, value: 0.01),
                                       BodyText(
-                                        text: "源ノ角ゴシック VF",
+                                        text: "Noto Sans JP",
                                         color:
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.025,
                                         fontWeight: FontWeight.bold,
-                                        fontFamily: "源ノ角ゴシック VF",
+                                        fontFamily: "Noto Sans JP",
                                       ),
                                     ],
                                   ),

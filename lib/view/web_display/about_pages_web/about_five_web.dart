@@ -20,63 +20,66 @@ class AboutFive extends ConsumerWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              BodyText(
-                text: "Works",
-                color: const Color.fromRGBO(3, 144, 126, 1),
-                fontSize: deviceHeight * 0.12,
-                fontWeight: FontWeight.bold,
-                fontFamily: "Bebas Neue",
-              ),
-              HeightSizedBox(targetSize: deviceHeight, value: 0.03),
-              SizedBox(
-                width: deviceWidth * 0.9,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [
-                    WorksTopicContents(
-                      index: '01',
-                      topicColor: Color(0xFF87C495),
-                      imagePath: 'assets/about/tomony_display.png',
-                      appName: 'Tomony',
-                      fontName: "Arial Black",
-                      appDisc: '男性向けの生理のお悩み質問相談',
-                      path: '/tomony',
-                    ),
-                    WorksTopicContents(
-                      index: '02',
-                      topicColor: Color(0xFF379BA5),
-                      imagePath: 'assets/about/shusseki_display.png',
-                      appName: 'シュッ席',
-                      fontName: "源ノ角ゴシック VF",
-                      appDisc: 'QRコードで簡単入館',
-                      path: '/shusseki',
-                    ),
-                    WorksTopicContents(
-                      index: '03',
-                      topicColor: Color(0xFFEBAA14),
-                      imagePath: 'assets/about/pochipochi_display.png',
-                      appName: 'ぽちぽち',
-                      fontName: "しあさって",
-                      appDisc: '長く使える幼児向け音声再生アプリ',
-                      path: '/pochipochi',
-                    ),
-                    WorksTopicContents(
-                      index: '04',
-                      topicColor: Color(0xFFCBCBCB),
-                      imagePath: 'assets/about/otherworks_display.png',
-                      appName: 'OtherWorks',
-                      fontName: "源ノ角ゴシック VF",
-                      appDisc: '学校でのその他の活動',
-                      path: '/otherWorks',
-                    ),
-                  ],
+          SizedBox(
+            width: deviceWidth * 0.8,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                BodyText(
+                  text: "Works",
+                  color: const Color.fromRGBO(3, 144, 126, 1),
+                  fontSize: deviceHeight * 0.12,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Bebas Neue",
                 ),
-              ),
-            ],
+                HeightSizedBox(targetSize: deviceHeight, value: 0.03),
+                SizedBox(
+                  width: deviceWidth * 0.9,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      WorksTopicContents(
+                        index: '01',
+                        topicColor: Color(0xFF87C495),
+                        imagePath: 'assets/about/tomony_display.png',
+                        appName: 'Tomony',
+                        fontName: "Arial Black",
+                        appDisc: '男性向けの生理のお悩み質問相談',
+                        path: '/tomony',
+                      ),
+                      WorksTopicContents(
+                        index: '02',
+                        topicColor: Color(0xFF379BA5),
+                        imagePath: 'assets/about/shusseki_display.png',
+                        appName: 'シュッ席',
+                        fontName: "Noto Sans JP",
+                        appDisc: 'QRコードで簡単入館',
+                        path: '/shusseki',
+                      ),
+                      WorksTopicContents(
+                        index: '03',
+                        topicColor: Color(0xFFEBAA14),
+                        imagePath: 'assets/about/pochipochi_display.png',
+                        appName: 'ぽちぽち',
+                        fontName: "しあさって",
+                        appDisc: '長く使える幼児向け音声再生アプリ',
+                        path: '/pochipochi',
+                      ),
+                      WorksTopicContents(
+                        index: '04',
+                        topicColor: Color(0xFFCBCBCB),
+                        imagePath: 'assets/about/otherworks_display.png',
+                        appName: 'OtherWorks',
+                        fontName: "Noto Sans JP",
+                        appDisc: '学校でのその他の活動',
+                        path: '/otherWorks',
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),

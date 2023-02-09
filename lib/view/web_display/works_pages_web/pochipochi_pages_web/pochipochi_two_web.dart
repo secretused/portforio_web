@@ -29,7 +29,7 @@ class PochipochiTwo extends StatelessWidget {
                 color: const Color(0xFFEBAA14),
                 fontSize: deviceHeight * 0.05,
                 fontWeight: FontWeight.bold,
-                fontFamily: "源ノ角ゴシック VF",
+                fontFamily: "Noto Sans JP",
               ),
               HeightSizedBox(targetSize: deviceHeight, value: 0.03),
               HighPaddingText(

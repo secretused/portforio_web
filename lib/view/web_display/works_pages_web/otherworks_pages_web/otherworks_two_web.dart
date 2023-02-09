@@ -56,7 +56,7 @@ class OtherWorksTwo extends StatelessWidget {
                         color: const Color(0xFF726353),
                         fontSize: deviceHeight * 0.035,
                         fontWeight: FontWeight.bold,
-                        fontFamily: "源ノ角ゴシック VF",
+                        fontFamily: "Noto Sans JP",
                       ),
                       Padding(
                         padding: EdgeInsets.all(deviceHeight * 0.02),
@@ -82,7 +82,7 @@ class OtherWorksTwo extends StatelessWidget {
                                   color: Colors.black,
                                   fontSize: deviceHeight * 0.025,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: "源ノ角ゴシック VF",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                                 HeightSizedBox(
                                   targetSize: deviceHeight,
@@ -91,7 +91,7 @@ class OtherWorksTwo extends StatelessWidget {
                                 BodyText(
                                   text: "「新・学校の七不思議」",
                                   color: const Color(0xFF726353),
-                                  fontFamily: '源ノ角ゴシック VF',
+                                  fontFamily: 'Noto Sans JP',
                                   fontSize: deviceHeight * 0.04,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -164,7 +164,7 @@ class OtherWorksTwo extends StatelessWidget {
                                       color: const Color(0xFF726353),
                                       fontSize: deviceHeight * 0.028,
                                       fontWeight: FontWeight.bold,
-                                      fontFamily: "源ノ角ゴシック VF",
+                                      fontFamily: "Noto Sans JP",
                                     ),
                                     Padding(
                                       padding:
@@ -176,7 +176,7 @@ class OtherWorksTwo extends StatelessWidget {
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.02,
                                         fontWeight: FontWeight.normal,
-                                        fontFamily: "源ノ角ゴシック VF",
+                                        fontFamily: "Noto Sans JP",
                                         textAlign: TextAlign.start,
                                         paddingValue: 1.5,
                                       ),
@@ -193,7 +193,7 @@ class OtherWorksTwo extends StatelessWidget {
                                       color: const Color(0xFF726353),
                                       fontSize: deviceHeight * 0.028,
                                       fontWeight: FontWeight.bold,
-                                      fontFamily: "源ノ角ゴシック VF",
+                                      fontFamily: "Noto Sans JP",
                                     ),
                                     Padding(
                                       padding: EdgeInsets.only(

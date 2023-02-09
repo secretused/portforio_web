@@ -56,7 +56,7 @@ class OtherWorksFour extends StatelessWidget {
                         color: const Color(0xFF677790),
                         fontSize: deviceHeight * 0.035,
                         fontWeight: FontWeight.bold,
-                        fontFamily: "源ノ角ゴシック VF",
+                        fontFamily: "Noto Sans JP",
                       ),
                       Padding(
                         padding: EdgeInsets.all(deviceHeight * 0.03),
@@ -81,7 +81,7 @@ class OtherWorksFour extends StatelessWidget {
                                   color: Colors.black,
                                   fontSize: deviceHeight * 0.025,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: "源ノ角ゴシック VF",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                                 HeightSizedBox(
                                   targetSize: deviceHeight,
@@ -90,7 +90,7 @@ class OtherWorksFour extends StatelessWidget {
                                 BodyText(
                                   text: "「Contradicting World」",
                                   color: const Color(0xFF677790),
-                                  fontFamily: '源ノ角ゴシック VF',
+                                  fontFamily: 'Noto Sans JP',
                                   fontSize: deviceHeight * 0.04,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -159,7 +159,7 @@ class OtherWorksFour extends StatelessWidget {
                                       color: const Color(0xFF677790),
                                       fontSize: deviceHeight * 0.028,
                                       fontWeight: FontWeight.bold,
-                                      fontFamily: "源ノ角ゴシック VF",
+                                      fontFamily: "Noto Sans JP",
                                     ),
                                     Padding(
                                       padding:
@@ -171,7 +171,7 @@ class OtherWorksFour extends StatelessWidget {
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.02,
                                         fontWeight: FontWeight.normal,
-                                        fontFamily: "源ノ角ゴシック VF",
+                                        fontFamily: "Noto Sans JP",
                                         textAlign: TextAlign.start,
                                         paddingValue: 1.5,
                                       ),
@@ -188,7 +188,7 @@ class OtherWorksFour extends StatelessWidget {
                                       color: const Color(0xFF677790),
                                       fontSize: deviceHeight * 0.028,
                                       fontWeight: FontWeight.bold,
-                                      fontFamily: "源ノ角ゴシック VF",
+                                      fontFamily: "Noto Sans JP",
                                     ),
                                     Padding(
                                       padding: EdgeInsets.only(

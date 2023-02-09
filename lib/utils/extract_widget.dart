@@ -253,7 +253,11 @@ class IconButtonWidget extends ConsumerWidget {
         child: Container(
           height: deviceHeight * iconValue,
           decoration: BoxDecoration(
-            color: Colors.transparent,
+            color: (link == twitteUrl || link == githubUrl || link == qiitaUrl)
+                ? (_imagePath == path && _iconButtonProviderStatus)
+                    ? const Color.fromRGBO(3, 144, 126, 1)
+                    : const Color.fromRGBO(237, 237, 237, 1)
+                : Colors.transparent,
             borderRadius: BorderRadius.circular(180),
             boxShadow: [
               BoxShadow(

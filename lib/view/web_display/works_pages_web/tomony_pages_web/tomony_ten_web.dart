@@ -30,7 +30,7 @@ class TomonyTen extends StatelessWidget {
                 color: const Color(0xFF87C495),
                 fontSize: deviceHeight * 0.035,
                 fontWeight: FontWeight.bold,
-                fontFamily: "源ノ角ゴシック VF",
+                fontFamily: "Noto Sans JP",
               ),
               Padding(
                 padding: EdgeInsets.only(
@@ -53,7 +53,7 @@ class TomonyTen extends StatelessWidget {
                               color: Colors.black,
                               fontSize: deviceHeight * 0.028,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
@@ -95,7 +95,7 @@ class TomonyTen extends StatelessWidget {
                               color: Colors.black,
                               fontSize: deviceHeight * 0.028,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -141,7 +141,7 @@ class TomonyTen extends StatelessWidget {
                               color: Colors.black,
                               fontSize: deviceHeight * 0.028,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
@@ -197,7 +197,7 @@ class TomonyTen extends StatelessWidget {
                               color: Colors.black,
                               fontSize: deviceHeight * 0.028,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),

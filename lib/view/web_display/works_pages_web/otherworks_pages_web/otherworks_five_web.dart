@@ -32,7 +32,7 @@ class OtherWorksFive extends StatelessWidget {
                     color: const Color(0xFF677790),
                     fontSize: deviceHeight * 0.035,
                     fontWeight: FontWeight.bold,
-                    fontFamily: "源ノ角ゴシック VF",
+                    fontFamily: "Noto Sans JP",
                   ),
                   Padding(
                     padding: EdgeInsets.all(deviceHeight * 0.03),
@@ -45,7 +45,7 @@ class OtherWorksFive extends StatelessWidget {
                             BodyText(
                               text: "Contradicting World",
                               color: Colors.black,
-                              fontFamily: '源ノ角ゴシック VF',
+                              fontFamily: 'Noto Sans JP',
                               fontSize: deviceHeight * 0.03,
                               fontWeight: FontWeight.bold,
                             ),
@@ -54,7 +54,7 @@ class OtherWorksFive extends StatelessWidget {
                             BodyText(
                               text: "矛盾する世界",
                               color: Colors.black,
-                              fontFamily: '源ノ角ゴシック VF',
+                              fontFamily: 'Noto Sans JP',
                               fontSize: deviceHeight * 0.02,
                               fontWeight: FontWeight.bold,
                             ),
@@ -75,7 +75,7 @@ class OtherWorksFive extends StatelessWidget {
                                   color: const Color(0xFF677790),
                                   fontSize: deviceHeight * 0.028,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: "源ノ角ゴシック VF",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                                 Padding(
                                   padding: EdgeInsets.all(deviceHeight * 0.015),
@@ -85,7 +85,7 @@ class OtherWorksFive extends StatelessWidget {
                                     color: const Color.fromRGBO(0, 0, 0, 0.8),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
-                                    fontFamily: "源ノ角ゴシック VF",
+                                    fontFamily: "Noto Sans JP",
                                     textAlign: TextAlign.start,
                                     paddingValue: 1.5,
                                   ),
@@ -102,7 +102,7 @@ class OtherWorksFive extends StatelessWidget {
                                   color: const Color(0xFF677790),
                                   fontSize: deviceHeight * 0.028,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: "源ノ角ゴシック VF",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                                 Padding(
                                   padding: EdgeInsets.all(deviceHeight * 0.015),
@@ -116,7 +116,7 @@ class OtherWorksFive extends StatelessWidget {
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.02,
                                         fontWeight: FontWeight.normal,
-                                        fontFamily: "源ノ角ゴシック VF",
+                                        fontFamily: "Noto Sans JP",
                                       ),
                                       HeightSizedBox(
                                           targetSize: deviceHeight,
@@ -127,7 +127,7 @@ class OtherWorksFive extends StatelessWidget {
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.02,
                                         fontWeight: FontWeight.normal,
-                                        fontFamily: "源ノ角ゴシック VF",
+                                        fontFamily: "Noto Sans JP",
                                       ),
                                     ],
                                   ),
@@ -150,7 +150,7 @@ class OtherWorksFive extends StatelessWidget {
                                   color: const Color(0xFF677790),
                                   fontSize: deviceHeight * 0.028,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: "源ノ角ゴシック VF",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                                 HeightSizedBox(
                                     targetSize: deviceHeight, value: 0.02),
@@ -171,7 +171,7 @@ class OtherWorksFive extends StatelessWidget {
                                   color: const Color(0xFF677790),
                                   fontSize: deviceHeight * 0.028,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: "源ノ角ゴシック VF",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                                 Padding(
                                   padding: EdgeInsets.all(deviceHeight * 0.015),
@@ -181,7 +181,7 @@ class OtherWorksFive extends StatelessWidget {
                                     color: const Color.fromRGBO(0, 0, 0, 0.8),
                                     fontSize: deviceHeight * 0.02,
                                     fontWeight: FontWeight.normal,
-                                    fontFamily: "源ノ角ゴシック VF",
+                                    fontFamily: "Noto Sans JP",
                                     textAlign: TextAlign.start,
                                     paddingValue: 1.5,
                                   ),
