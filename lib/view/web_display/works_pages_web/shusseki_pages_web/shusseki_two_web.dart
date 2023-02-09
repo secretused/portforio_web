@@ -29,7 +29,7 @@ class ShussekiTwo extends StatelessWidget {
                 color: const Color(0xFF379BA5),
                 fontSize: deviceHeight * 0.05,
                 fontWeight: FontWeight.bold,
-                fontFamily: "源ノ角ゴシック VF",
+                fontFamily: "Noto Sans JP",
               ),
               HeightSizedBox(targetSize: deviceHeight, value: 0.01),
               BodyText(
@@ -37,7 +37,7 @@ class ShussekiTwo extends StatelessWidget {
                 color: const Color(0xFF379BA5),
                 fontSize: deviceHeight * 0.05,
                 fontWeight: FontWeight.bold,
-                fontFamily: "源ノ角ゴシック VF",
+                fontFamily: "Noto Sans JP",
               ),
               HeightSizedBox(targetSize: deviceHeight, value: 0.03),
               HighPaddingText(

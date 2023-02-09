@@ -30,7 +30,7 @@ class PochipochiOne extends StatelessWidget {
               BodyText(
                 text: "長く使える幼児向け音声再生アプリ",
                 color: Colors.white,
-                fontFamily: '源ノ角ゴシック VF',
+                fontFamily: 'Noto Sans JP',
                 fontSize: deviceHeight * 0.03,
                 fontWeight: FontWeight.normal,
               ),

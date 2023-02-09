@@ -45,12 +45,12 @@ class AboutTwoMobile extends ConsumerWidget {
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                     Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         BodyText(
                           text: "Yuta Toba",
                           color: const Color.fromRGBO(0, 0, 0, 0.8),
-                          fontFamily: '源ノ角ゴシック VF',
+                          fontFamily: 'Noto Sans JP',
                           fontSize: deviceWidth * 0.02,
                           fontWeight: FontWeight.bold,
                         ),
@@ -58,7 +58,7 @@ class AboutTwoMobile extends ConsumerWidget {
                         BodyText(
                           text: "鳥羽悠太",
                           color: const Color.fromRGBO(0, 0, 0, 0.8),
-                          fontFamily: '源ノ角ゴシック VF',
+                          fontFamily: 'Noto Sans JP',
                           fontSize: deviceWidth * 0.05,
                           fontWeight: FontWeight.bold,
                         ),
@@ -68,7 +68,7 @@ class AboutTwoMobile extends ConsumerWidget {
                           color: const Color.fromRGBO(0, 0, 0, 0.8),
                           fontSize: deviceWidth * 0.02,
                           fontWeight: FontWeight.normal,
-                          fontFamily: "源ノ角ゴシック VF",
+                          fontFamily: "Noto Sans JP",
                           textAlign: TextAlign.start,
                           paddingValue: 1.5,
                         ),

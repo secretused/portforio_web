@@ -56,7 +56,7 @@ class OtherWorksSix extends StatelessWidget {
                         color: const Color(0xFFC7814B),
                         fontSize: deviceHeight * 0.035,
                         fontWeight: FontWeight.bold,
-                        fontFamily: "源ノ角ゴシック VF",
+                        fontFamily: "Noto Sans JP",
                       ),
                       Padding(
                         padding: EdgeInsets.only(
@@ -83,7 +83,7 @@ class OtherWorksSix extends StatelessWidget {
                                   color: Colors.black,
                                   fontSize: deviceHeight * 0.025,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: "源ノ角ゴシック VF",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                                 HeightSizedBox(
                                   targetSize: deviceHeight,
@@ -92,7 +92,7 @@ class OtherWorksSix extends StatelessWidget {
                                 BodyText(
                                   text: "短編小説集「混沌」",
                                   color: const Color(0xFFC7814B),
-                                  fontFamily: '源ノ角ゴシック VF',
+                                  fontFamily: 'Noto Sans JP',
                                   fontSize: deviceHeight * 0.04,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -156,7 +156,7 @@ class OtherWorksSix extends StatelessWidget {
                                       color: const Color(0xFFC7814B),
                                       fontSize: deviceHeight * 0.028,
                                       fontWeight: FontWeight.bold,
-                                      fontFamily: "源ノ角ゴシック VF",
+                                      fontFamily: "Noto Sans JP",
                                     ),
                                     Padding(
                                       padding:
@@ -168,7 +168,7 @@ class OtherWorksSix extends StatelessWidget {
                                             const Color.fromRGBO(0, 0, 0, 0.8),
                                         fontSize: deviceHeight * 0.02,
                                         fontWeight: FontWeight.normal,
-                                        fontFamily: "源ノ角ゴシック VF",
+                                        fontFamily: "Noto Sans JP",
                                         textAlign: TextAlign.start,
                                         paddingValue: 1.5,
                                       ),
@@ -185,7 +185,7 @@ class OtherWorksSix extends StatelessWidget {
                                       color: const Color(0xFFC7814B),
                                       fontSize: deviceHeight * 0.028,
                                       fontWeight: FontWeight.bold,
-                                      fontFamily: "源ノ角ゴシック VF",
+                                      fontFamily: "Noto Sans JP",
                                     ),
                                     Padding(
                                       padding: EdgeInsets.only(

@@ -31,14 +31,14 @@ class ShussekiOne extends StatelessWidget {
               BodyText(
                 text: "QRコードで簡単入館",
                 color: Colors.white,
-                fontFamily: '源ノ角ゴシック VF',
+                fontFamily: 'Noto Sans JP',
                 fontSize: deviceHeight * 0.03,
                 fontWeight: FontWeight.normal,
               ),
               BodyText(
                 text: "シュッ席",
                 color: Colors.white,
-                fontFamily: '源ノ角ゴシック VF',
+                fontFamily: 'Noto Sans JP',
                 fontSize: deviceHeight * 0.1,
                 fontWeight: FontWeight.bold,
               ),
@@ -82,7 +82,7 @@ class ShussekiOne extends StatelessWidget {
                         text:
                             'アプリ制作: Flutter・Firebase・illustrator\nUI改修: Figma',
                         color: Colors.white,
-                        fontFamily: '源ノ角ゴシック VF',
+                        fontFamily: 'Noto Sans JP',
                         fontSize: deviceHeight * 0.025,
                         fontWeight: FontWeight.normal,
                         textAlign: TextAlign.start,
@@ -106,7 +106,7 @@ class ShussekiOne extends StatelessWidget {
                       HighPaddingText(
                         text: 'アプリ制作: 2022.2 (3ヶ月間)\nUI改修: 2022.10 (1週間)',
                         color: Colors.white,
-                        fontFamily: '源ノ角ゴシック VF',
+                        fontFamily: 'Noto Sans JP',
                         fontSize: deviceHeight * 0.025,
                         fontWeight: FontWeight.normal,
                         textAlign: TextAlign.start,

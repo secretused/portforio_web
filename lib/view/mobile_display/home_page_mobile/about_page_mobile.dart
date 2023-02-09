@@ -75,11 +75,6 @@ class AboutPageIphone extends ConsumerWidget {
           ),
           // 7枚目
           const AboutSevenMobile(),
-
-          HaightColorContainer(
-            targetSize: deviceWidth,
-            value: 0.1,
-          ),
         ],
       ),
     );

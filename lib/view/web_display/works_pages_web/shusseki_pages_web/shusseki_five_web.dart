@@ -198,7 +198,7 @@ class ShussekiFive extends StatelessWidget {
                               color: const Color(0xFF379BA5),
                               fontSize: deviceHeight * 0.028,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             Padding(
                               padding: EdgeInsets.all(deviceHeight * 0.02),
@@ -283,7 +283,7 @@ class ShussekiFive extends StatelessWidget {
                               color: const Color(0xFF379BA5),
                               fontSize: deviceHeight * 0.028,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             Padding(
                               padding: EdgeInsets.all(deviceHeight * 0.02),

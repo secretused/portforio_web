@@ -14,7 +14,6 @@ class AboutFiveIPad extends StatelessWidget {
 
     return Container(
       color: Colors.white,
-      height: deviceHeight - 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -34,7 +33,7 @@ class AboutFiveIPad extends StatelessWidget {
                 color: Colors.black,
                 fontSize: deviceWidth * 0.03,
                 fontWeight: FontWeight.normal,
-                fontFamily: "Nasu",
+                fontFamily: "Noto Sans JP",
               ),
               HeightSizedBox(targetSize: deviceHeight, value: 0.04),
               BodyText(
@@ -51,7 +50,7 @@ class AboutFiveIPad extends StatelessWidget {
                 color: const Color.fromRGBO(0, 0, 0, 0.8),
                 fontSize: deviceWidth * 0.02,
                 fontWeight: FontWeight.normal,
-                fontFamily: "源ノ角ゴシック",
+                fontFamily: "Noto Sans JP",
                 textAlign: TextAlign.center,
                 paddingValue: 1.5,
               ),
@@ -70,7 +69,7 @@ class AboutFiveIPad extends StatelessWidget {
                 color: const Color.fromRGBO(0, 0, 0, 0.8),
                 fontSize: deviceWidth * 0.02,
                 fontWeight: FontWeight.normal,
-                fontFamily: "源ノ角ゴシック",
+                fontFamily: "Noto Sans JP",
                 textAlign: TextAlign.center,
                 paddingValue: 1.5,
               ),
@@ -89,7 +88,7 @@ class AboutFiveIPad extends StatelessWidget {
                 color: const Color.fromRGBO(0, 0, 0, 0.8),
                 fontSize: deviceWidth * 0.02,
                 fontWeight: FontWeight.normal,
-                fontFamily: "源ノ角ゴシック",
+                fontFamily: "Noto Sans JP",
                 textAlign: TextAlign.center,
                 paddingValue: 1.5,
               ),

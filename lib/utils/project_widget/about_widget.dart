@@ -452,7 +452,7 @@ class MyHistoryTopic extends StatelessWidget {
               color: eventColor,
               fontSize: deviceWidth * 0.01,
               fontWeight: FontWeight.normal,
-              fontFamily: "源ノ角ゴシック VF",
+              fontFamily: "Noto Sans JP",
             ),
           ],
         ),
@@ -554,7 +554,7 @@ class WorksTopicContents extends ConsumerWidget {
                           : const Color.fromRGBO(151, 151, 151, 1),
                   fontSize: deviceHeight * 0.023,
                   fontWeight: FontWeight.bold,
-                  fontFamily: "源ノ角ゴシック VF",
+                  fontFamily: "Noto Sans JP",
                 )
               ],
             ),

@@ -30,7 +30,7 @@ class TomonyOne extends StatelessWidget {
               BodyText(
                 text: "男性向けの生理のお悩み質問相談",
                 color: Colors.white,
-                fontFamily: '源ノ角ゴシック VF',
+                fontFamily: 'Noto Sans JP',
                 fontSize: deviceHeight * 0.03,
                 fontWeight: FontWeight.normal,
               ),

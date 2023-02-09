@@ -58,7 +58,7 @@ class ShussekiThree extends StatelessWidget {
                               color: const Color(0xFF379BA5),
                               fontSize: deviceHeight * 0.028,
                               fontWeight: FontWeight.bold,
-                              fontFamily: "源ノ角ゴシック VF",
+                              fontFamily: "Noto Sans JP",
                             ),
                             Padding(
                               padding: EdgeInsets.all(deviceHeight * 0.03),
@@ -70,7 +70,7 @@ class ShussekiThree extends StatelessWidget {
                                     color: Colors.black,
                                     fontSize: deviceHeight * 0.03,
                                     fontWeight: FontWeight.bold,
-                                    fontFamily: "源ノ角ゴシック VF",
+                                    fontFamily: "Noto Sans JP",
                                   ),
                                   HeightSizedBox(
                                       targetSize: deviceHeight, value: 0.01),
@@ -99,7 +99,7 @@ class ShussekiThree extends StatelessWidget {
                                   color: const Color(0xFF379BA5),
                                   fontSize: deviceHeight * 0.028,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: "源ノ角ゴシック VF",
+                                  fontFamily: "Noto Sans JP",
                                 ),
                                 Padding(
                                   padding: EdgeInsets.all(deviceHeight * 0.02),
@@ -149,7 +149,7 @@ class ShussekiThree extends StatelessWidget {
                       color: const Color(0xFF379BA5),
                       fontSize: deviceHeight * 0.028,
                       fontWeight: FontWeight.bold,
-                      fontFamily: "源ノ角ゴシック VF",
+                      fontFamily: "Noto Sans JP",
                     ),
                     HeightSizedBox(targetSize: deviceHeight, value: 0.02),
                     Padding(

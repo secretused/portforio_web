@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio_web/utils/extract_widget.dart';
 import 'package:portfolio_web/view/web_display/about_pages_web/about_five_web.dart';
 import 'package:portfolio_web/view/web_display/about_pages_web/about_four_web.dart';
 import 'package:portfolio_web/view/web_display/about_pages_web/about_one_web.dart';

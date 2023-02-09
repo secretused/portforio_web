@@ -29,7 +29,7 @@ class AboutThreeMobile extends ConsumerWidget {
               BodyText(
                 text: "誰もがデザインを考える世界に",
                 color: const Color.fromRGBO(0, 0, 0, 0.8),
-                fontFamily: 'Nasu',
+                fontFamily: 'Noto Sans JP',
                 fontSize: deviceWidth * 0.05,
                 fontWeight: FontWeight.bold,
               ),

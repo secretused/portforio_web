@@ -29,7 +29,7 @@ class TomonyNine extends StatelessWidget {
                 color: const Color(0xFF87C495),
                 fontSize: deviceHeight * 0.035,
                 fontWeight: FontWeight.bold,
-                fontFamily: "源ノ角ゴシック VF",
+                fontFamily: "Noto Sans JP",
               ),
               Padding(
                 padding: EdgeInsets.symmetric(
@@ -102,7 +102,7 @@ class TomonyNine extends StatelessWidget {
                 color: const Color(0xFF87C495),
                 fontSize: deviceHeight * 0.035,
                 fontWeight: FontWeight.bold,
-                fontFamily: "源ノ角ゴシック VF",
+                fontFamily: "Noto Sans JP",
               ),
               Padding(
                 padding: EdgeInsets.symmetric(
