@@ -19,7 +19,7 @@ class TomonyOne extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          const ImagesWidget(
+          const ImageWidget(
             heightValue: 0.9,
             imagePath: 'assets/about/tomony_display.png',
           ),

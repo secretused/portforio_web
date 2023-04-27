@@ -167,6 +167,7 @@ class ShussekiTen extends ConsumerWidget {
                           iconValue: 0.05,
                           link: _figmaMockUpUrl,
                           path: 'assets/icon/figma_icon1.png',
+                          iconBackColor: Colors.transparent,
                         ),
                       ],
                     ),
@@ -180,6 +181,7 @@ class ShussekiTen extends ConsumerWidget {
                               imageValue: 0.05,
                               link: _appStoreUrl,
                               path: 'assets/shusseki/shusseki_icon.png',
+                              iconBackColor: Colors.transparent,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
@@ -200,6 +202,7 @@ class ShussekiTen extends ConsumerWidget {
                               imageValue: 0.05,
                               link: _figmaWorkUrl,
                               path: 'assets/icon/figma_icon2.png',
+                              iconBackColor: Colors.transparent,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),
@@ -220,6 +223,7 @@ class ShussekiTen extends ConsumerWidget {
                               imageValue: 0.05,
                               link: _figmaUIUrl,
                               path: 'assets/icon/figma_icon3.png',
+                              iconBackColor: Colors.transparent,
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.01),

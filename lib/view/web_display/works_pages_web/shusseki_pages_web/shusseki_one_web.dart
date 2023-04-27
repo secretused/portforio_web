@@ -20,7 +20,7 @@ class ShussekiOne extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          const ImagesWidget(
+          const ImageWidget(
             heightValue: 0.9,
             imagePath: "assets/about/shusseki_display.png",
           ),

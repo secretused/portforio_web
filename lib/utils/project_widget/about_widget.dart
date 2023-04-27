@@ -469,6 +469,7 @@ class WorksTopicContents extends ConsumerWidget {
     required this.topicColor,
     required this.imagePath,
     required this.appName,
+    required this.appNameSize,
     required this.fontName,
     required this.appDisc,
     required this.path,
@@ -478,6 +479,7 @@ class WorksTopicContents extends ConsumerWidget {
   final Color topicColor;
   final String imagePath;
   final String appName;
+  final double appNameSize;
   final String fontName;
   final String appDisc;
   final String path;
@@ -541,7 +543,7 @@ class WorksTopicContents extends ConsumerWidget {
                       (_appName == appName && _worksTopicContentsProviderStatus)
                           ? topicColor
                           : const Color.fromRGBO(0, 0, 0, 0.8),
-                  fontSize: deviceHeight * 0.05,
+                  fontSize: deviceHeight * appNameSize,
                   fontWeight: FontWeight.bold,
                   fontFamily: fontName,
                 ),
@@ -616,5 +618,88 @@ class WorksNavigationButton extends ConsumerWidget {
       ),
       onPressed: () => GoRouter.of(context).go("/works"),
     );
+  }
+}
+
+// 目次切り替えボタン
+class WorksGenreChangeButton extends ConsumerWidget {
+  const WorksGenreChangeButton({
+    Key? key,
+    required this.worksGenre,
+    required this.worksGenreIndex,
+    required this.targetSize,
+  }) : super(key: key);
+
+  final String worksGenre;
+  final int worksGenreIndex;
+  final double targetSize;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final int _worksGenreChangeProviderStatus =
+        ref.watch(worksGenreChangeProvider);
+
+    final int _worksGenreIndex = ref.watch(worksGenreIndexProvider);
+
+    final bool _worksGenreHoverProviderStatus =
+        ref.watch(worksGenreHoverProvider);
+
+    return Column(
+      children: [
+        MouseRegion(
+          onEnter: (_) => _worksGenreButtonEnter(ref, worksGenreIndex),
+          onExit: (_) => _worksGenreExit(ref),
+          child: GestureDetector(
+            onTap: () => ref
+                .read(worksGenreChangeProvider.notifier)
+                .update((state) => worksGenreIndex),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color.fromRGBO(151, 151, 151, 0.3), //色
+                    spreadRadius: 1,
+                    blurRadius: 2,
+                    offset: Offset(1, 1),
+                  ),
+                ],
+                color: (_worksGenreHoverProviderStatus &&
+                            worksGenreIndex == _worksGenreIndex ||
+                        worksGenreIndex == _worksGenreChangeProviderStatus)
+                    ? const Color.fromRGBO(3, 144, 126, 1)
+                    : Colors.white,
+                // : const Color.fromRGBO(151, 151, 151, 0.5),
+              ),
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: targetSize * 0.02,
+                    horizontal: targetSize * 0.025),
+                child: BodyText(
+                  text: worksGenre,
+                  color: (_worksGenreHoverProviderStatus &&
+                              worksGenreIndex == _worksGenreIndex ||
+                          worksGenreIndex == _worksGenreChangeProviderStatus)
+                      ? Colors.white
+                      : const Color.fromRGBO(3, 144, 126, 1),
+                  fontSize: targetSize * 0.023,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Noto Sans JP",
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  void _worksGenreButtonEnter(WidgetRef ref, int index) {
+    ref.read(worksGenreIndexProvider.notifier).update((state) => index);
+    ref.read(worksGenreHoverProvider.notifier).update((state) => true);
+  }
+
+  void _worksGenreExit(WidgetRef ref) {
+    ref.read(worksGenreHoverProvider.notifier).update((state) => false);
   }
 }

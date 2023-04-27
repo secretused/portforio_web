@@ -39,7 +39,9 @@ class AboutPageWeb extends ConsumerWidget {
           // 5枚目
           const AboutFive(),
           // 6枚目
-          const Footer(),
+          const Footer(
+            footerColor: Color.fromRGBO(3, 144, 126, 1),
+          ),
         ],
       ),
     );

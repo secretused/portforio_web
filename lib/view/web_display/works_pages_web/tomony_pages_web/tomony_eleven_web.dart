@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../../utils/project_widget/about_widget.dart';
 import '../../../../utils/extract_widget.dart';
 
 // 感想・改善点
@@ -141,6 +140,7 @@ class TomonyEleven extends ConsumerWidget {
                           imageValue: 0.05,
                           link: _notionUrl,
                           path: 'assets/icon/notion_icon.png',
+                          iconBackColor: Colors.transparent,
                         ),
                         WidthSizedBox(targetSize: deviceWidth, value: 0.03),
                         const IconButtonWidget(
@@ -148,6 +148,7 @@ class TomonyEleven extends ConsumerWidget {
                           imageValue: 0.05,
                           link: _figmaUrl,
                           path: 'assets/icon/figma_icon1.png',
+                          iconBackColor: Colors.transparent,
                         ),
                       ],
                     ),

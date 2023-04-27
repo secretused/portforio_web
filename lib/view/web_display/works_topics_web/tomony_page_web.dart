@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:portfolio_web/view/web_display/home_page_web/footer.dart';
 
-import '../../../provider/provider.dart';
 import '../works_pages_web/tomony_pages_web/tomony_five_web.dart';
 import '../works_pages_web/tomony_pages_web/tomony_four_web.dart';
 import '../works_pages_web/tomony_pages_web/tomony_nine_web.dart';
@@ -21,12 +20,6 @@ class Tomony extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceHeight = MediaQuery.of(context).size.height;
-
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      ref
-          .read(footerColorProvider.notifier)
-          .update((state) => const Color(0xFF87C495));
-    });
 
     return Scaffold(
       appBar: PreferredSize(
@@ -60,7 +53,9 @@ class Tomony extends ConsumerWidget {
             TomonyNine(),
             TomonyTen(),
             TomonyEleven(),
-            Footer(),
+            Footer(
+              footerColor: Color(0xFF87C495),
+            ),
           ],
         ),
       ),

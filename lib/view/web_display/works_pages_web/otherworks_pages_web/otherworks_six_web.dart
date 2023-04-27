@@ -68,7 +68,7 @@ class OtherWorksSix extends StatelessWidget {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const ImagesWidget(
+                            const ImageWidget(
                               heightValue: 0.53,
                               imagePath:
                                   "assets/otherworks/otherworks_kindle.jpeg",
@@ -106,7 +106,7 @@ class OtherWorksSix extends StatelessWidget {
                                     const IconTextBlack(
                                       icon: Icons.insert_drive_file,
                                       iconSize: 0.025,
-                                      text: 'kindle書籍',
+                                      text: 'Kindle書籍',
                                       textSize: 0.02,
                                     ),
                                     HeightSizedBox(

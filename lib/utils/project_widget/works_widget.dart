@@ -1,3 +1,4 @@
+import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -238,7 +239,8 @@ class ShadowContainerText extends StatelessWidget {
         color: const Color.fromRGBO(151, 151, 151, 0.3),
       ),
       child: Padding(
-        padding: EdgeInsets.all(deviceHeight * 0.015),
+        padding: EdgeInsets.symmetric(
+            vertical: deviceHeight * 0.015, horizontal: deviceHeight * 0.0175),
         child: BodyText(
           text: text,
           color: const Color.fromRGBO(0, 0, 0, 0.8),
@@ -546,11 +548,11 @@ class ColorDesignWidget extends StatelessWidget {
 class TitleAndTextWidget extends StatelessWidget {
   const TitleAndTextWidget({
     Key? key,
-    required this.tiltle,
+    required this.title,
     required this.widget,
     required this.textColor,
   }) : super(key: key);
-  final String tiltle;
+  final String title;
   final Widget widget;
   final Color textColor;
 
@@ -562,7 +564,7 @@ class TitleAndTextWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         BodyText(
-          text: tiltle,
+          text: title,
           color: textColor,
           fontSize: deviceHeight * 0.025,
           fontWeight: FontWeight.bold,
@@ -572,7 +574,7 @@ class TitleAndTextWidget extends StatelessWidget {
           targetSize: deviceHeight,
           value: 0.01,
         ),
-        widget,
+        widget
       ],
     );
   }
@@ -619,6 +621,105 @@ class ImageLinkWidget extends ConsumerWidget {
           width: deviceWidth * imageWidthValue,
           child: Image.asset(imagePath),
           // child: Image.network(imagePath),
+        ),
+      ),
+    );
+  }
+
+  void _imageEnter(WidgetRef ref) {
+    ref.read(imageLinkProvider.notifier).update((state) => true);
+  }
+
+  void _imageExit(WidgetRef ref) {
+    ref.read(imageLinkProvider.notifier).update((state) => false);
+  }
+}
+
+// PDFLinkWidget
+class PdfLinkWidget extends ConsumerWidget {
+  const PdfLinkWidget(
+    this.linkPath,
+    this.imageWidthValue,
+    this.imagePath, {
+    Key? key,
+  }) : super(key: key);
+
+  final String linkPath;
+  final double imageWidthValue;
+  final String imagePath;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    var deviceWidth = MediaQuery.of(context).size.width;
+    var deviceHeight = MediaQuery.of(context).size.height;
+
+    final bool _imageLinkProviderStatus = ref.watch(imageLinkProvider);
+
+    final List<String> _pdfImagePathList = [
+      "assets/otherworks/contest_pdf1.png",
+      "assets/otherworks/contest_pdf2.png",
+      "assets/otherworks/contest_pdf3.png",
+      "assets/otherworks/contest_pdf4.png",
+      "assets/otherworks/contest_pdf5.png",
+      "assets/otherworks/contest_pdf6.png",
+      "assets/otherworks/contest_pdf7.png",
+      "assets/otherworks/contest_pdf8.png",
+      "assets/otherworks/contest_pdf9.png",
+    ];
+
+    return MouseRegion(
+      onEnter: (_) => _imageEnter(ref),
+      onExit: (_) => _imageExit(ref),
+      child: GestureDetector(
+        onTap: () => showDialog(
+          context: context,
+          barrierDismissible: true,
+          builder: (_) {
+            return Container(
+              margin: EdgeInsets.all(deviceHeight * 0.15),
+              child: Swiper(
+                duration: 600,
+                pagination: const SwiperPagination(
+                  builder: DotSwiperPaginationBuilder(
+                    color: Colors.grey,
+                    activeColor: Color(0xFF726353),
+                    size: 8,
+                    activeSize: 12,
+                    space: 5,
+                  ),
+                ),
+                itemCount: _pdfImagePathList.length,
+                itemBuilder: (context, index) {
+                  return ImageWidget(
+                    heightValue: 0.25,
+                    imagePath: _pdfImagePathList[index],
+                  );
+                },
+                control: const SwiperControl(
+                  color: Colors.white,
+                ),
+                controller: controller,
+                autoplayDelay: 5000,
+              ),
+            );
+          },
+        ),
+        child: Container(
+          decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: _imageLinkProviderStatus
+                    ? Colors.grey
+                    : Colors.transparent, //色
+                spreadRadius: 5,
+                blurRadius: 5,
+                offset: const Offset(1, 1),
+              ),
+            ],
+            color: Colors.white,
+          ),
+          width: deviceWidth * imageWidthValue,
+          child: Image.asset(imagePath),
         ),
       ),
     );

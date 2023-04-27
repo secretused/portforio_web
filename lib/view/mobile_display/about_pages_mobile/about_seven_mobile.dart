@@ -50,6 +50,7 @@ class AboutSevenMobile extends ConsumerWidget {
                     iconValue: _mobileDirectionProviderStatus ? 0.12 : 0.045,
                     imageValue: _mobileDirectionProviderStatus ? 0.1 : 0.035,
                     path: "assets/icon/twitter_icon.png",
+                    iconBackColor: Colors.transparent,
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.05),
                   IconButtonWidget(
@@ -57,6 +58,7 @@ class AboutSevenMobile extends ConsumerWidget {
                     iconValue: _mobileDirectionProviderStatus ? 0.12 : 0.045,
                     imageValue: _mobileDirectionProviderStatus ? 0.1 : 0.035,
                     path: "assets/icon/github_icon.png",
+                    iconBackColor: Colors.transparent,
                   ),
                   WidthSizedBox(targetSize: deviceWidth, value: 0.05),
                   IconButtonWidget(
@@ -64,6 +66,7 @@ class AboutSevenMobile extends ConsumerWidget {
                     iconValue: _mobileDirectionProviderStatus ? 0.12 : 0.045,
                     imageValue: _mobileDirectionProviderStatus ? 0.1 : 0.035,
                     path: "assets/icon/qiita_icon.png",
+                    iconBackColor: Colors.transparent,
                   ),
                 ],
               ),

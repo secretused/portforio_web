@@ -230,12 +230,14 @@ class IconButtonWidget extends ConsumerWidget {
     required this.imageValue,
     required this.iconValue,
     required this.path,
+    required this.iconBackColor,
   }) : super(key: key);
 
   final String link;
   final double iconValue;
   final double imageValue;
   final String path;
+  final Color iconBackColor;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -243,7 +245,6 @@ class IconButtonWidget extends ConsumerWidget {
 
     final String _imagePath = ref.watch(imagePathProvider);
     final bool _iconButtonProviderStatus = ref.watch(iconButtonProvider);
-    final _footerColorProviderStatus = ref.watch(footerColorProvider);
 
     return MouseRegion(
       onEnter: (_) => _iconEnter(ref, path),
@@ -255,7 +256,7 @@ class IconButtonWidget extends ConsumerWidget {
           decoration: BoxDecoration(
             color: (link == twitteUrl || link == githubUrl || link == qiitaUrl)
                 ? (_imagePath == path && _iconButtonProviderStatus)
-                    ? _footerColorProviderStatus
+                    ? iconBackColor
                     : const Color.fromRGBO(237, 237, 237, 1)
                 : Colors.transparent,
             borderRadius: BorderRadius.circular(180),
@@ -270,7 +271,7 @@ class IconButtonWidget extends ConsumerWidget {
               ),
             ],
           ),
-          child: ImagesWidget(
+          child: ImageWidget(
             heightValue: (_imagePath == path && _iconButtonProviderStatus)
                 ? imageValue
                 : imageValue,
@@ -292,8 +293,8 @@ class IconButtonWidget extends ConsumerWidget {
 }
 
 // // アセットイメージ
-class ImagesWidget extends StatelessWidget {
-  const ImagesWidget({
+class ImageWidget extends StatelessWidget {
+  const ImageWidget({
     Key? key,
     required this.heightValue,
     required this.imagePath,
@@ -313,7 +314,7 @@ class ImagesWidget extends StatelessWidget {
   }
 }
 
-// イメージ
+// 横基準のイメージ
 class ImageWidthWidget extends StatelessWidget {
   const ImageWidthWidget({
     Key? key,

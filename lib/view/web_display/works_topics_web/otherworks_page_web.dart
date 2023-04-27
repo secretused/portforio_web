@@ -19,12 +19,6 @@ class OtherWorks extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceHeight = MediaQuery.of(context).size.height;
 
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      ref
-          .read(footerColorProvider.notifier)
-          .update((state) => const Color(0xFFCBCBCB));
-    });
-
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(deviceHeight * 0.1),
@@ -53,7 +47,9 @@ class OtherWorks extends ConsumerWidget {
             OtherWorksFive(),
             OtherWorksSix(),
             OtherWorksSeven(),
-            Footer(),
+            Footer(
+              footerColor: Color(0xFFCBCBCB),
+            ),
           ],
         ),
       ),
