@@ -7,18 +7,19 @@ import '../../../utils/extract_widget.dart';
 class Footer extends ConsumerWidget {
   const Footer({
     Key? key,
+    required this.footerColor,
   }) : super(key: key);
+
+  final Color footerColor;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
 
-    final _footerColorProviderStatus = ref.watch(footerColorProvider);
-
     return Container(
       height: deviceHeight * 0.3,
-      color: _footerColorProviderStatus,
+      color: footerColor,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -44,25 +45,28 @@ class Footer extends ConsumerWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    const IconButtonWidget(
+                    IconButtonWidget(
                       link: twitteUrl,
                       imageValue: 0.06,
                       iconValue: 0.05,
                       path: "assets/icon/twitter_icon.png",
+                      iconBackColor: footerColor,
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                    const IconButtonWidget(
+                    IconButtonWidget(
                       link: githubUrl,
                       imageValue: 0.06,
                       iconValue: 0.05,
                       path: "assets/icon/github_icon.png",
+                      iconBackColor: footerColor,
                     ),
                     WidthSizedBox(targetSize: deviceWidth, value: 0.01),
-                    const IconButtonWidget(
+                    IconButtonWidget(
                       link: qiitaUrl,
                       imageValue: 0.06,
                       iconValue: 0.05,
                       path: "assets/icon/qiita_icon.png",
+                      iconBackColor: footerColor,
                     ),
                   ],
                 ),

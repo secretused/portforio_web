@@ -79,6 +79,9 @@ flutter:
     - assets/shusseki/
     - assets/pochipochi/
     - assets/otherworks/
+    - assets/corporate/top_page/
+    - assets/corporate/services_page/
+    - assets/corporate/strength_page/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

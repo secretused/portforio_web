@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../provider/provider.dart';
 import '../../../utils/project_widget/about_widget.dart';
 import '../../../utils/extract_widget.dart';
 
@@ -13,6 +14,8 @@ class AboutFive extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     var deviceWidth = MediaQuery.of(context).size.width;
     var deviceHeight = MediaQuery.of(context).size.height;
+
+    final int _worksChangeProviderStatus = ref.watch(worksGenreChangeProvider);
 
     return Container(
       height: deviceHeight,
@@ -35,49 +38,42 @@ class AboutFive extends ConsumerWidget {
                 ),
                 HeightSizedBox(targetSize: deviceHeight, value: 0.03),
                 SizedBox(
-                  width: deviceWidth * 0.9,
+                  width: deviceWidth * 0.37,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
-                      WorksTopicContents(
-                        index: '01',
-                        topicColor: Color(0xFF87C495),
-                        imagePath: 'assets/about/tomony_display.png',
-                        appName: 'Tomony',
-                        fontName: "Arial Black",
-                        appDisc: '男性向けの生理のお悩み質問相談',
-                        path: '/tomony',
+                    children: [
+                      WorksGenreChangeButton(
+                        worksGenre: "ServiceDesign",
+                        worksGenreIndex: 0,
+                        targetSize: deviceHeight,
                       ),
-                      WorksTopicContents(
-                        index: '02',
-                        topicColor: Color(0xFF379BA5),
-                        imagePath: 'assets/about/shusseki_display.png',
-                        appName: 'シュッ席',
-                        fontName: "Noto Sans JP",
-                        appDisc: 'QRコードで簡単入館',
-                        path: '/shusseki',
+                      WorksGenreChangeButton(
+                        worksGenre: "WebDesign",
+                        worksGenreIndex: 1,
+                        targetSize: deviceHeight,
                       ),
-                      WorksTopicContents(
-                        index: '03',
-                        topicColor: Color(0xFFEBAA14),
-                        imagePath: 'assets/about/pochipochi_display.png',
-                        appName: 'ぽちぽち',
-                        fontName: "しあさって",
-                        appDisc: '長く使える幼児向け音声再生アプリ',
-                        path: '/pochipochi',
-                      ),
-                      WorksTopicContents(
-                        index: '04',
-                        topicColor: Color(0xFFCBCBCB),
-                        imagePath: 'assets/about/otherworks_display.png',
-                        appName: 'OtherWorks',
-                        fontName: "Noto Sans JP",
-                        appDisc: '学校でのその他の活動',
-                        path: '/otherWorks',
+                      WorksGenreChangeButton(
+                        worksGenre: "OtherDesign",
+                        worksGenreIndex: 2,
+                        targetSize: deviceHeight,
                       ),
                     ],
                   ),
                 ),
+                HeightSizedBox(targetSize: deviceHeight, value: 0.03),
+                GridView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: worksWidgetList[_worksChangeProviderStatus].length,
+                  itemBuilder: (context, index) {
+                    return worksWidgetList[_worksChangeProviderStatus][index];
+                  },
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    // childAspectRatio: 1 / 1,
+                    crossAxisCount: 3, //ボックスを横に並べる数
+                  ),
+                ),
+                HeightSizedBox(targetSize: deviceHeight, value: 0.03),
               ],
             ),
           ),

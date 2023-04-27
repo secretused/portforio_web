@@ -123,7 +123,7 @@ class ShussekiThree extends StatelessWidget {
                                 )
                               ],
                             ),
-                            const ImagesWidget(
+                            const ImageWidget(
                               heightValue: 0.2,
                               imagePath:
                                   "assets/shusseki/shusseki_overview.png",

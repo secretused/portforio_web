@@ -65,7 +65,7 @@ class OtherWorksThree extends ConsumerWidget {
                             ),
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
-                            const ImagesWidget(
+                            const ImageWidget(
                               heightValue: 0.25,
                               imagePath:
                                   "assets/otherworks/otherworks_contest2.jpeg",
@@ -73,7 +73,7 @@ class OtherWorksThree extends ConsumerWidget {
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.03),
                             TitleAndTextWidget(
-                              tiltle: "制作対象",
+                              title: "制作対象",
                               widget: BodyText(
                                 text: "銀座駅 銀座ツインウォール 構内広告デザイン",
                                 color: const Color.fromRGBO(0, 0, 0, 0.8),
@@ -86,7 +86,7 @@ class OtherWorksThree extends ConsumerWidget {
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
                             TitleAndTextWidget(
-                              tiltle: "課題企業",
+                              title: "課題企業",
                               widget: BodyText(
                                 text: "ヤマハ株式会社",
                                 color: const Color.fromRGBO(0, 0, 0, 0.8),
@@ -99,7 +99,7 @@ class OtherWorksThree extends ConsumerWidget {
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
                             TitleAndTextWidget(
-                              tiltle: "募集課題",
+                              title: "募集課題",
                               widget: HighPaddingText(
                                 text: "楽器未経験者でもヤマハ銀座店に\n行ってみたくなるような広告",
                                 color: const Color.fromRGBO(0, 0, 0, 0.8),
@@ -114,7 +114,7 @@ class OtherWorksThree extends ConsumerWidget {
                             HeightSizedBox(
                                 targetSize: deviceHeight, value: 0.02),
                             TitleAndTextWidget(
-                              tiltle: "応募作品に期待すること",
+                              title: "応募作品に期待すること",
                               widget: HighPaddingText(
                                 text:
                                     "多くの方にヤマハ銀座店に足を運んでいただき\n音楽や楽器の楽しさに触れていただける\nきっかけになる事を期待しております。",
@@ -164,7 +164,7 @@ class OtherWorksThree extends ConsumerWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 BodyText(
-                                  text: "提出作品",
+                                  text: "提出作品(PDFで提出)",
                                   color: const Color(0xFF726353),
                                   fontSize: deviceHeight * 0.028,
                                   fontWeight: FontWeight.bold,
@@ -172,7 +172,7 @@ class OtherWorksThree extends ConsumerWidget {
                                 ),
                                 Padding(
                                   padding: EdgeInsets.all(deviceHeight * 0.015),
-                                  child: const ImageLinkWidget(
+                                  child: const PdfLinkWidget(
                                     _pdfUrl,
                                     0.3,
                                     "assets/otherworks/otherworks_contest1.png",

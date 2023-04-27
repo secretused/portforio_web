@@ -2,6 +2,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio_web/view/web_display/works_topics_web/business_contest_page_web.dart';
+import 'package:portfolio_web/view/web_display/works_topics_web/kindle_page_web.dart';
+import 'package:portfolio_web/view/web_display/works_topics_web/nft_page_web.dart';
+import 'package:portfolio_web/view/web_display/works_topics_web/nzigen_corporate_page_web.dart';
 
 import 'firebase_options.dart';
 import 'provider/provider.dart';
@@ -102,10 +106,38 @@ class MyApp extends ConsumerWidget {
               ),
             ),
             GoRoute(
+              path: 'nzigen_corporate',
+              pageBuilder: (BuildContext context, GoRouterState state) =>
+                  buildPageWithAnimation(
+                const NzigenCorporate(),
+              ),
+            ),
+            GoRoute(
               path: 'otherWorks',
               pageBuilder: (BuildContext context, GoRouterState state) =>
                   buildPageWithAnimation(
                 const OtherWorks(),
+              ),
+            ),
+            GoRoute(
+              path: 'business_contest',
+              pageBuilder: (BuildContext context, GoRouterState state) =>
+                  buildPageWithAnimation(
+                const BusinessContest(),
+              ),
+            ),
+            GoRoute(
+              path: 'nft',
+              pageBuilder: (BuildContext context, GoRouterState state) =>
+                  buildPageWithAnimation(
+                const Nft(),
+              ),
+            ),
+            GoRoute(
+              path: 'kindle',
+              pageBuilder: (BuildContext context, GoRouterState state) =>
+                  buildPageWithAnimation(
+                const Kindle(),
               ),
             ),
           ],
@@ -120,13 +152,6 @@ class _MyHomePage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        // Home遷移時にFooterのカラーを戻す
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          ref
-              .read(footerColorProvider.notifier)
-              .update((state) => const Color.fromRGBO(3, 144, 126, 1));
-        });
-
         if (constraints.maxWidth > 1199) {
           // PC
           return Scaffold(

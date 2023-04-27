@@ -80,7 +80,7 @@ class PochipochiFour extends StatelessWidget {
                                       width: 6.0,
                                     ),
                                   ),
-                                  child: const ImagesWidget(
+                                  child: const ImageWidget(
                                     heightValue: 0.3,
                                     imagePath:
                                         "assets/pochipochi/pochipochi_interview1.png",
@@ -156,7 +156,7 @@ class PochipochiFour extends StatelessWidget {
                                     alignment:
                                         AlignmentDirectional.bottomCenter,
                                     children: [
-                                      const ImagesWidget(
+                                      const ImageWidget(
                                         heightValue: 0.3,
                                         imagePath:
                                             "assets/pochipochi/pochipochi_interview2.png",
@@ -230,7 +230,7 @@ class PochipochiFour extends StatelessWidget {
                                       width: 6.0,
                                     ),
                                   ),
-                                  child: const ImagesWidget(
+                                  child: const ImageWidget(
                                     heightValue: 0.3,
                                     imagePath:
                                         "assets/pochipochi/pochipochi_interview3.png",

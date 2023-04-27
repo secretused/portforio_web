@@ -53,7 +53,7 @@ class ShussekiTwo extends StatelessWidget {
             ],
           ),
           WidthSizedBox(targetSize: deviceWidth, value: 0.03),
-          const ImagesWidget(
+          const ImageWidget(
             heightValue: 0.9,
             imagePath: "assets/shusseki/shusseki_concept.png",
           ),

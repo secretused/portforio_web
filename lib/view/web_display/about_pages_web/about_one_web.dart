@@ -26,7 +26,7 @@ class AboutOneWeb extends StatelessWidget {
               children: [
                 Align(
                   alignment: Alignment.centerRight,
-                  child: ImagesWidget(
+                  child: ImageWidget(
                     heightValue: deviceHeight,
                     imagePath: "assets/about/display_mockup.png",
                   ),
