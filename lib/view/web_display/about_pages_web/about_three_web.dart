@@ -40,10 +40,9 @@ class AboutThree extends StatelessWidget {
               HeightSizedBox(targetSize: deviceHeight, value: 0.03),
               SizedBox(
                 width: deviceWidth * 0.8,
-                // width: deviceWidth * 0.63,
                 child: HighPaddingText(
                   text:
-                      "「何かわからないけど、このデザインいいな」「使いやすくて楽しい、ワクワクする」\n良いデザインとは、自然と人の興味を惹き、魅了する力があると私は思っています。サービス・プロダクトを使ってくれる人のことを最優先に考え、デザインすることで、誰もがデザインを考える世界を、より多くの人にデザインの力で広げていくことが私のミッションです。",
+                      "デザインとは「物事の本質を見極め、人生の価値観や質を上げるもの」だと私は考えております。\n誰もがデザインを考えるということは、より人のことを最優先に考えるということです。\n顧客やユーザーが抱えている課題に対して本質的な価値提供を行い、誰もがデザインを考える世界を\nより多くの人にデザインの力で広げていくことが私のミッションです。",
                   color: const Color.fromRGBO(0, 0, 0, 0.8),
                   fontFamily: 'Noto Sans JP',
                   fontSize: deviceHeight * 0.028,
